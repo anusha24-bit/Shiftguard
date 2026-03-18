@@ -55,8 +55,8 @@ The project will deliver:
 | Team Member | Responsibilities |
 |---|---|
 | Sohan Mahesh | Shift detection module (statistical tests + event-aware logic), evaluation framework |
-| Anusha Ravi Kumar | Data pipeline (collection, feature engineering, preprocessing), EDA |
-| Dishaben Manubhai Patel | SHAP attribution layer, Streamlit dashboard, retraining integration |
+| Anusha Ravi Kumar | SHAP attribution layer, Streamlit dashboard, retraining integration |
+| Dishaben Manubhai Patel | Data pipeline (collection, feature engineering, preprocessing), EDA |
 
 All members will contribute to integration, testing, and the final writeup.
 
