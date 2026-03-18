@@ -38,6 +38,30 @@ The significance of this work extends beyond forex. Any domain where distributio
 
 ---
 
+### Scope of Work
+
+The project will deliver:
+
+1. **Data pipeline** — Collection and preprocessing of forex OHLCV and macroeconomic indicator data (CPI, NFP, interest rates) across major currency pairs.
+2. **Shift detection module** — Statistical detectors (KS, MMD, ADWIN, DDM) integrated with an economic event calendar for dual-mode (scheduled vs. anomalous) shift detection.
+3. **Attribution module** — SHAP-based feature attribution that identifies which feature groups drove each detected shift.
+4. **Human-in-the-loop dashboard** — Streamlit interface for reviewing alerts, inspecting attributions, and triggering selective model retraining.
+5. **Evaluation** — Benchmarking shift detection recall and precision against historical labeled events (e.g., COVID-19, Brexit, major macro releases).
+
+---
+
+### Split of Work
+
+| Team Member | Responsibilities |
+|---|---|
+| Sohan Mahesh | Shift detection module (statistical tests + event-aware logic), evaluation framework |
+| Anusha Ravi Kumar | Data pipeline (collection, feature engineering, preprocessing), EDA |
+| Dishaben Manubhai Patel | SHAP attribution layer, Streamlit dashboard, retraining integration |
+
+All members will contribute to integration, testing, and the final writeup.
+
+---
+
 ### References
 
 - Gama, J., et al. (2014). A survey on concept drift adaptation.
