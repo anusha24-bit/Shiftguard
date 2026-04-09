@@ -1,0 +1,22 @@
+date,event_name,affected_currencies,severity,category
+2015-01-15,SNB removes EUR/CHF floor,EUR CHF,5,central_bank
+2015-08-11,China devalues Yuan,USD JPY AUD,4,fx_policy
+2016-06-23,Brexit referendum result,GBP EUR,5,political
+2016-11-08,Trump election 2016,USD JPY MXN,4,political
+2018-02-05,VIX spike Volmageddon,ALL,4,volatility
+2019-08-05,US-China trade war escalation,USD CNY JPY,4,trade_war
+2020-03-09,COVID crash and oil price war,ALL,5,pandemic
+2020-03-15,Fed emergency rate cut to 0%,USD ALL,5,central_bank
+2021-02-25,US Treasury yield spike,USD XAU,3,rates
+2022-02-24,Russia invades Ukraine,EUR XAU OIL,5,geopolitical
+2022-06-15,Fed 75bps hike first since 1994,USD ALL,4,central_bank
+2022-09-22,BOJ intervention in JPY,JPY,5,central_bank
+2022-09-26,UK mini-budget crisis Truss,GBP,5,political
+2023-03-10,SVB collapse banking crisis,USD XAU,4,financial_crisis
+2023-10-07,Hamas-Israel conflict begins,XAU OIL,4,geopolitical
+2024-07-31,BOJ surprise rate hike,JPY,5,central_bank
+2024-08-05,JPY carry trade unwind,JPY ALL,5,fx_policy
+2024-11-05,Trump election 2024,USD MXN ALL,4,political
+2025-01-20,Trump inauguration tariff threats,USD MXN CAD,4,trade_war
+2025-04-02,US Liberation Day tariffs announced,USD ALL,5,trade_war
+2025-04-07,Global markets crash tariff escalation,ALL,5,trade_war
