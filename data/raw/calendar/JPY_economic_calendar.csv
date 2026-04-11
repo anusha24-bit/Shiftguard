@@ -1,659 +1,659 @@
 date,time_utc,currency,event_name,impact_level,actual_value,forecast_value,previous_value
-"Jan 20, 2015",7:29pm,JPY,Monetary Policy Statement,High,,,
-"Jan 20, 2015",10:30pm,JPY,BOJ Press Conference,High,,,
-"Jan 12, 2015",3:50pm,JPY,Current Account,Medium,0.91T,0.69T,0.95T
-"Jan 14, 2015",3:50pm,JPY,Core Machinery Orders m/m,Medium,1.3%,4.8%,-6.4%
-"Jan 15, 2015",3:50pm,JPY,Tertiary Industry Activity m/m,Medium,0.2%,0.3%,-0.1%
-"Feb 3, 2015",5:30pm,JPY,Average Cash Earnings y/y,Medium,1.6%,1.6%,0.1%
-"Jan 25, 2015",3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Jan 25, 2015",3:50pm,JPY,Trade Balance,Medium,-0.71T,-0.74T,-0.83T
-"Jan 28, 2015",3:50pm,JPY,Retail Sales y/y,Medium,0.2%,1.1%,0.5%
-"Jan 29, 2015",3:30pm,JPY,Household Spending y/y,Medium,-3.4%,-2.3%,-2.5%
-"Jan 29, 2015",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.2%,2.3%
-"Jan 29, 2015",3:50pm,JPY,Prelim Industrial Production m/m,Medium,1.0%,1.3%,-0.5%
-"Feb 8, 2015",3:50pm,JPY,Current Account,Medium,0.98T,0.95T,0.91T
-"Feb 9, 2015",3:50pm,JPY,Tertiary Industry Activity m/m,Medium,-0.3%,0.1%,0.2%
-"Feb 11, 2015",3:50pm,JPY,Core Machinery Orders m/m,Medium,8.3%,2.4%,1.3%
-"Feb 15, 2015",3:50pm,JPY,Prelim GDP q/q,High,0.6%,0.9%,-0.5%
-"Feb 17, 2015",6:49pm,JPY,Monetary Policy Statement,High,,,
-"Feb 17, 2015",10:31pm,JPY,BOJ Press Conference,High,,,
-"Feb 18, 2015",3:50pm,JPY,Trade Balance,Medium,-0.41T,-0.95T,-0.62T
-"Feb 22, 2015",3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Feb 26, 2015",3:30pm,JPY,Household Spending y/y,Medium,-5.1%,-4.0%,-3.4%
-"Feb 26, 2015",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.2%,2.2%
-"Feb 26, 2015",3:50pm,JPY,Prelim Industrial Production m/m,Medium,4.0%,2.9%,0.8%
-"Feb 26, 2015",3:50pm,JPY,Retail Sales y/y,Medium,-2.0%,-1.2%,0.1%
-"Mar 2, 2015",5:30pm,JPY,Average Cash Earnings y/y,Medium,1.3%,0.6%,1.3%
-"Mar 8, 2015",4:50pm,JPY,Current Account,Medium,1.06T,1.16T,0.85T
-"Mar 8, 2015",4:50pm,JPY,Final GDP q/q,Medium,0.4%,0.5%,0.6%
-"Mar 10, 2015",4:50pm,JPY,Core Machinery Orders m/m,Medium,-1.7%,-3.9%,8.3%
-"Mar 11, 2015",4:50pm,JPY,BSI Manufacturing Index,Medium,2.4,5.7,8.1
-"Mar 16, 2015",8:04pm,JPY,Monetary Policy Statement,High,,,
-"Mar 16, 2015",11:32pm,JPY,BOJ Press Conference,High,,,
-"Mar 17, 2015",4:50pm,JPY,Trade Balance,Medium,-0.64T,-1.21T,-0.41T
-"Mar 19, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Mar 26, 2015",4:30pm,JPY,Household Spending y/y,Medium,-2.9%,-3.1%,-5.1%
-"Mar 26, 2015",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.2%,2.2%
-"Mar 26, 2015",4:50pm,JPY,Retail Sales y/y,Medium,-1.8%,-1.4%,-2.0%
-"Mar 29, 2015",4:50pm,JPY,Prelim Industrial Production m/m,Medium,-3.4%,-1.8%,3.7%
-"Mar 31, 2015",4:50pm,JPY,Tankan Manufacturing Index,Medium,12,14,12
-"Mar 31, 2015",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,19,17,16
-"Apr 2, 2015",10:44pm,JPY,Average Cash Earnings y/y,Medium,0.5%,0.7%,0.6%
-"Apr 12, 2015",4:50pm,JPY,Core Machinery Orders m/m,Medium,-0.4%,-2.6%,-1.7%
-"Apr 12, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Apr 7, 2015",4:50pm,JPY,Current Account,Medium,0.60T,0.61T,1.06T
-"Apr 7, 2015",8:36pm,JPY,Monetary Policy Statement,High,,,
-"Apr 7, 2015",11:32pm,JPY,BOJ Press Conference,High,,,
-"Apr 21, 2015",4:50pm,JPY,Trade Balance,Medium,0.00T,-0.41T,-0.57T
-"Apr 27, 2015",4:50pm,JPY,Retail Sales y/y,Medium,-9.7%,-7.4%,-1.7%
-"Apr 29, 2015",4:50pm,JPY,Prelim Industrial Production m/m,Medium,-0.3%,-3.4%,-3.1%
-"Apr 29, 2015",9:04pm,JPY,Monetary Policy Statement,High,,,
-"Apr 29, 2015",11:00pm,JPY,BOJ Outlook Report,Medium,,,
-"Apr 29, 2015",11:31pm,JPY,BOJ Press Conference,High,,,
-"Apr 30, 2015",4:30pm,JPY,Household Spending y/y,Medium,-10.6%,-11.7%,-2.9%
-"Apr 30, 2015",4:30pm,JPY,Tokyo Core CPI y/y,Medium,0.4%,0.5%,2.2%
-"Apr 30, 2015",6:30pm,JPY,Average Cash Earnings y/y,Medium,0.1%,0.4%,0.1%
-"May 7, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"May 12, 2015",4:50pm,JPY,Current Account,Medium,2.07T,1.34T,0.61T
-"May 14, 2015",8:40pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"May 24, 2015",4:50pm,JPY,Trade Balance,Medium,-0.21T,-0.38T,0.01T
-"May 26, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"May 27, 2015",4:50pm,JPY,Retail Sales y/y,Medium,5.0%,5.3%,-9.7%
-"May 28, 2015",4:30pm,JPY,Household Spending y/y,Medium,-1.3%,3.1%,-10.6%
-"May 28, 2015",4:30pm,JPY,Tokyo Core CPI y/y,Medium,0.2%,0.2%,0.4%
-"May 17, 2015",4:50pm,JPY,Core Machinery Orders m/m,Medium,2.9%,1.7%,-0.4%
-"May 19, 2015",4:50pm,JPY,Prelim GDP q/q,High,0.6%,0.4%,0.4%
-"May 21, 2015",7:49pm,JPY,Monetary Policy Statement,High,,,
-"May 21, 2015",11:30pm,JPY,BOJ Press Conference,High,,,
-"May 23, 2015",6:30am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jun 1, 2015",6:30pm,JPY,Average Cash Earnings y/y,Medium,0.9%,0.4%,0.0%
-"Jun 7, 2015",4:50pm,JPY,Current Account,Medium,1.27T,1.45T,2.07T
-"Jun 7, 2015",4:50pm,JPY,Final GDP q/q,Medium,1.0%,0.7%,0.6%
-"Jun 9, 2015",4:50pm,JPY,Core Machinery Orders m/m,Medium,3.8%,-2.0%,2.9%
-"Jun 10, 2015",4:50pm,JPY,BSI Manufacturing Index,Medium,-6.0,3.2,2.4
-"Jun 23, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Jun 25, 2015",4:30pm,JPY,Household Spending y/y,Medium,4.8%,3.5%,-1.3%
-"Jun 25, 2015",4:30pm,JPY,Tokyo Core CPI y/y,Medium,0.1%,0.1%,0.2%
-"Jun 16, 2015",4:50pm,JPY,Trade Balance,Medium,-0.18T,-0.17T,-0.24T
-"Jun 18, 2015",8:04pm,JPY,Monetary Policy Statement,High,,,
-"Jun 18, 2015",11:31pm,JPY,BOJ Press Conference,High,,,
-"Jun 28, 2015",4:50pm,JPY,Retail Sales y/y,Medium,3.0%,2.1%,4.9%
-"Jun 29, 2015",6:30pm,JPY,Average Cash Earnings y/y,Medium,0.6%,0.7%,0.7%
-"Jun 30, 2015",4:50pm,JPY,Tankan Manufacturing Index,Medium,15,12,12
-"Jun 30, 2015",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,23,23,19
-"Jul 7, 2015",4:50pm,JPY,Current Account,Medium,1.64T,1.39T,1.27T
-"Jul 8, 2015",4:50pm,JPY,Core Machinery Orders m/m,Medium,0.6%,-4.8%,3.8%
-"Jul 28, 2015",4:50pm,JPY,Retail Sales y/y,Medium,0.9%,0.8%,3.0%
-"Jul 30, 2015",4:30pm,JPY,Household Spending y/y,Medium,-2.0%,2.0%,4.8%
-"Jul 30, 2015",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.1%,0.0%,0.1%
-"Jul 20, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Jul 22, 2015",4:50pm,JPY,Trade Balance,Medium,-0.25T,-0.25T,-0.16T
-"Aug 6, 2015",8:18pm,JPY,Monetary Policy Statement,High,,,
-"Aug 6, 2015",11:30pm,JPY,BOJ Press Conference,High,,,
-"Jul 14, 2015",8:18pm,JPY,Monetary Policy Statement,High,,,
-"Jul 14, 2015",11:32pm,JPY,BOJ Press Conference,High,,,
-"Aug 9, 2015",4:50pm,JPY,Current Account,Medium,1.30T,1.41T,1.64T
-"Aug 11, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Aug 12, 2015",4:50pm,JPY,Core Machinery Orders m/m,Medium,-7.9%,-5.3%,0.6%
-"Aug 16, 2015",4:50pm,JPY,Prelim GDP q/q,High,-0.4%,-0.5%,1.0%
-"Aug 18, 2015",4:50pm,JPY,Trade Balance,Medium,-0.37T,-0.16T,-0.28T
-"Aug 27, 2015",4:30pm,JPY,Household Spending y/y,Medium,-0.2%,0.9%,-2.0%
-"Aug 27, 2015",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.1%,-0.1%,-0.1%
-"Aug 27, 2015",4:50pm,JPY,Retail Sales y/y,Medium,1.6%,1.1%,1.0%
-"Sep 7, 2015",4:50pm,JPY,Current Account,Medium,1.32T,1.25T,1.30T
-"Sep 7, 2015",4:50pm,JPY,Final GDP q/q,Medium,-0.3%,-0.4%,-0.4%
-"Sep 9, 2015",4:50pm,JPY,Core Machinery Orders m/m,Medium,-3.6%,3.4%,-7.9%
-"Sep 10, 2015",4:50pm,JPY,BSI Manufacturing Index,Medium,11.0,-1.9,-6.0
-"Sep 24, 2015",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.2%,-0.2%,-0.1%
-"Sep 14, 2015",8:07pm,JPY,Monetary Policy Statement,High,,,
-"Sep 14, 2015",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 16, 2015",4:50pm,JPY,Trade Balance,Medium,-0.36T,-0.35T,-0.38T
-"Sep 16, 2015",11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Sep 17, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Sep 29, 2015",4:50pm,JPY,Retail Sales y/y,Medium,0.8%,1.2%,1.8%
-"Sep 30, 2015",4:50pm,JPY,Tankan Manufacturing Index,Medium,12,13,15
-"Sep 30, 2015",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,25,21,23
-"Oct 1, 2015",4:30pm,JPY,Household Spending y/y,Medium,2.9%,0.4%,-0.2%
-"Oct 6, 2015",8:00pm,JPY,Monetary Policy Statement,High,,,
-"Oct 6, 2015",11:31pm,JPY,BOJ Press Conference,High,,,
-"Oct 7, 2015",4:50pm,JPY,Core Machinery Orders m/m,Medium,-5.7%,3.3%,-3.6%
-"Oct 7, 2015",4:50pm,JPY,Current Account,Medium,1.59T,1.28T,1.32T
-"Oct 12, 2015",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Oct 15, 2015",11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Oct 27, 2015",4:50pm,JPY,Retail Sales y/y,Medium,-0.2%,0.4%,0.8%
-"Oct 29, 2015",4:30pm,JPY,Tokyo Core CPI y/y,High,-0.2%,-0.2%,-0.2%
-"Oct 29, 2015",4:30pm,JPY,Household Spending y/y,Medium,-0.4%,1.2%,2.9%
-"Oct 29, 2015",8:22pm,JPY,Monetary Policy Statement,High,,,
-"Oct 29, 2015",11:00pm,JPY,BOJ Outlook Report,High,,,
-"Oct 29, 2015",11:32pm,JPY,BOJ Press Conference,High,,,
-"Nov 4, 2015",3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Nov 5, 2015",8:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Nov 9, 2015",3:50pm,JPY,Current Account,Medium,0.78T,1.50T,1.59T
-"Nov 11, 2015",3:50pm,JPY,Core Machinery Orders m/m,Medium,7.5%,3.3%,-5.7%
-"Nov 15, 2015",3:50pm,JPY,Prelim GDP q/q,High,-0.2%,-0.1%,-0.3%
-"Nov 18, 2015",7:17pm,JPY,Monetary Policy Statement,High,,,
-"Nov 18, 2015",10:31pm,JPY,BOJ Press Conference,High,,,
-"Nov 24, 2015",3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Nov 26, 2015",3:30pm,JPY,Household Spending y/y,Medium,-2.4%,0.0%,-0.4%
-"Nov 26, 2015",3:30pm,JPY,Tokyo Core CPI y/y,Medium,0.0%,-0.1%,-0.2%
-"Nov 29, 2015",3:50pm,JPY,Retail Sales y/y,Medium,1.8%,0.9%,-0.1%
-"Nov 29, 2015",5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Dec 7, 2015",3:45am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Dec 7, 2015",3:50pm,JPY,Current Account,Medium,1.49T,1.53T,0.78T
-"Dec 7, 2015",3:50pm,JPY,Final GDP q/q,Medium,0.3%,0.1%,-0.2%
-"Dec 8, 2015",3:50pm,JPY,Core Machinery Orders m/m,Medium,10.7%,-1.5%,7.5%
-"Dec 9, 2015",3:50pm,JPY,BSI Manufacturing Index,Medium,3.8,12.1,11.0
-"Dec 23, 2015",3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Dec 24, 2015",3:30pm,JPY,Household Spending y/y,Medium,-2.9%,-2.1%,-2.4%
-"Dec 24, 2015",3:30pm,JPY,Tokyo Core CPI y/y,Medium,0.1%,0.1%,0.0%
-"Dec 13, 2015",3:50pm,JPY,Tankan Manufacturing Index,Medium,12,11,12
-"Dec 13, 2015",3:50pm,JPY,Tankan Non-Manufacturing Index,Medium,25,23,25
-"Dec 17, 2015",7:50pm,JPY,Monetary Policy Statement,High,,,
-"Dec 17, 2015",10:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 27, 2015",3:50pm,JPY,Retail Sales y/y,Medium,-1.0%,-0.1%,1.8%
-"Jan 11, 2016",3:50pm,JPY,Current Account,Medium,1.42T,1.52T,1.49T
-"Jan 12, 2016",2:30am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Feb 2, 2016",3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Feb 2, 2016",6:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jan 27, 2016",3:50pm,JPY,Retail Sales y/y,Medium,-1.1%,0.1%,-1.1%
-"Jan 28, 2016",3:30pm,JPY,Household Spending y/y,Medium,-4.4%,-2.3%,-2.9%
-"Jan 28, 2016",3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.1%,0.1%,0.1%
-"Jan 28, 2016",7:38pm,JPY,BOJ Policy Rate,High,-0.10%,,
-"Jan 28, 2016",7:38pm,JPY,Monetary Policy Statement,High,,,
-"Jan 28, 2016",9:00pm,JPY,BOJ Outlook Report,High,,,
-"Jan 28, 2016",10:30pm,JPY,BOJ Press Conference,High,,,
-"Feb 14, 2016",3:50pm,JPY,Prelim GDP q/q,High,-0.4%,-0.3%,0.3%
-"Feb 7, 2016",3:50pm,JPY,Current Account,Medium,1.64T,1.59T,1.42T
-"Feb 8, 2016",7:45pm,JPY,30-y Bond Auction,Medium,1.07|3.0,,1.22|3.7
-"Feb 28, 2016",3:50pm,JPY,Retail Sales y/y,Medium,-0.1%,0.2%,-1.1%
-"Feb 29, 2016",3:30pm,JPY,Household Spending y/y,Medium,-3.1%,-2.5%,-4.4%
-"Feb 25, 2016",3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.1%,0.0%,-0.1%
-"Mar 14, 2016",8:35pm,JPY,BOJ Policy Rate,High,-0.10%,,-0.10%
-"Mar 14, 2016",8:35pm,JPY,Monetary Policy Statement,High,,,
-"Mar 14, 2016",11:32pm,JPY,BOJ Press Conference,High,,,
-"Mar 16, 2016",11:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Mar 17, 2016",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"Mar 6, 2016",7:40pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Mar 7, 2016",3:50pm,JPY,Current Account,Medium,1.49T,1.66T,1.69T
-"Mar 7, 2016",3:50pm,JPY,Final GDP q/q,Medium,-0.3%,-0.4%,-0.4%
-"Mar 10, 2016",3:50pm,JPY,BSI Manufacturing Index,Medium,-7.9,4.2,3.8
-"Mar 24, 2016",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.3%,-0.2%,-0.1%
-"Mar 28, 2016",4:30pm,JPY,Household Spending y/y,Medium,1.2%,-1.8%,-3.1%
-"Mar 28, 2016",4:50pm,JPY,Retail Sales y/y,Medium,0.5%,1.6%,-0.2%
-"Mar 31, 2016",4:50pm,JPY,Tankan Manufacturing Index,Medium,6,8,12
-"Mar 31, 2016",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,22,24,25
-"Apr 10, 2016",11:15pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Apr 6, 2016",5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Apr 7, 2016",4:50pm,JPY,Current Account,Medium,1.73T,1.57T,1.49T
-"Apr 27, 2016",4:30pm,JPY,Household Spending y/y,Medium,-5.3%,-4.0%,1.2%
-"Apr 27, 2016",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.3%,-0.3%,-0.3%
-"Apr 27, 2016",4:50pm,JPY,Retail Sales y/y,Medium,-1.1%,-1.4%,0.4%
-"Apr 27, 2016",8:00pm,JPY,BOJ Policy Rate,High,-0.10%,,-0.10%
-"Apr 27, 2016",8:00pm,JPY,Monetary Policy Statement,High,,,
-"Apr 27, 2016",10:00pm,JPY,BOJ Outlook Report,High,,,
-"Apr 27, 2016",11:30pm,JPY,BOJ Press Conference,High,,,
-"May 8, 2016",4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
-"May 11, 2016",4:50pm,JPY,Current Account,Medium,1.89T,1.90T,1.69T
-"May 17, 2016",4:50pm,JPY,Prelim GDP q/q,Medium,0.4%,0.1%,-0.3%
-"May 26, 2016",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.5%,-0.4%,-0.3%
-"May 29, 2016",4:50pm,JPY,Retail Sales y/y,Medium,-0.8%,-1.2%,-1.0%
-"May 30, 2016",4:30pm,JPY,Household Spending y/y,Medium,-0.4%,-1.3%,-5.3%
-"Jun 7, 2016",4:50pm,JPY,Current Account,Medium,1.63T,2.04T,1.89T
-"Jun 7, 2016",4:50pm,JPY,Final GDP q/q,Medium,0.5%,0.5%,0.4%
-"Jun 15, 2016",7:45pm,JPY,BOJ Policy Rate,High,-0.10%,,-0.10%
-"Jun 15, 2016",7:45pm,JPY,Monetary Policy Statement,High,,,
-"Jun 15, 2016",11:30pm,JPY,BOJ Press Conference,High,,,
-"Jun 28, 2016",4:50pm,JPY,Retail Sales y/y,Medium,-1.9%,-1.6%,-0.9%
-"Jun 30, 2016",4:30pm,JPY,Household Spending y/y,Medium,-1.1%,-1.3%,-0.4%
-"Jun 30, 2016",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.5%,-0.5%,-0.5%
-"Jun 30, 2016",4:50pm,JPY,Tankan Manufacturing Index,Medium,6,4,6
-"Jun 30, 2016",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,19,19,22
-"Jul 6, 2016",5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jul 7, 2016",4:50pm,JPY,Current Account,Medium,1.41T,1.52T,1.63T
-"Jul 9, 2016",All Day,JPY,Upper House Elections,Medium,,,
-"Jul 28, 2016",4:30pm,JPY,Household Spending y/y,Medium,-2.2%,-0.4%,-1.1%
-"Jul 28, 2016",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.4%,-0.4%,-0.5%
-"Jul 28, 2016",4:50pm,JPY,Retail Sales y/y,Medium,-1.4%,-1.2%,-2.1%
-"Jul 28, 2016",8:44pm,JPY,BOJ Outlook Report,High,,,
-"Jul 28, 2016",8:44pm,JPY,BOJ Policy Rate,High,-0.10%,,-0.10%
-"Jul 28, 2016",8:44pm,JPY,Monetary Policy Statement,High,,,
-"Jul 28, 2016",11:30pm,JPY,BOJ Press Conference,High,,,
-"Aug 14, 2016",4:50pm,JPY,Prelim GDP q/q,High,0.0%,0.2%,0.5%
-"Aug 7, 2016",4:50pm,JPY,Current Account,Medium,1.65T,1.60T,1.41T
-"Aug 22, 2016",9:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Aug 25, 2016",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.4%,-0.3%,-0.4%
-"Aug 27, 2016",9:25am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Aug 29, 2016",4:30pm,JPY,Household Spending y/y,Medium,-0.5%,-1.3%,-2.3%
-"Aug 31, 2016",4:50pm,JPY,Capital Spending q/y,Medium,3.1%,5.6%,4.2%
-"Sep 4, 2016",7:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Sep 7, 2016",4:50pm,JPY,Current Account,Medium,1.45T,1.59T,1.65T
-"Sep 7, 2016",4:50pm,JPY,Final GDP q/q,Medium,0.2%,0.0%,0.0%
-"Sep 12, 2016",4:50pm,JPY,BSI Manufacturing Index,Medium,2.9,-6.5,-11.1
-"Sep 20, 2016",9:18pm,JPY,BOJ Policy Rate,High,-0.10%,-0.20%,-0.10%
-"Sep 20, 2016",9:18pm,JPY,Monetary Policy Statement,High,,,
-"Sep 20, 2016",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 25, 2016",10:36pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Sep 28, 2016",11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Sep 29, 2016",4:30pm,JPY,Household Spending y/y,Medium,-4.6%,-2.1%,-0.5%
-"Sep 29, 2016",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.5%,-0.4%,-0.4%
-"Sep 29, 2016",5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Oct 2, 2016",4:50pm,JPY,Tankan Manufacturing Index,Medium,6,7,6
-"Oct 2, 2016",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,18,18,19
-"Oct 10, 2016",4:50pm,JPY,Current Account,Medium,1.98T,1.58T,1.45T
-"Oct 20, 2016",5:54pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Oct 27, 2016",4:30pm,JPY,Household Spending y/y,Medium,-2.1%,-2.6%,-4.6%
-"Oct 27, 2016",4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.4%,-0.5%,-0.5%
-"Oct 31, 2016",7:55pm,JPY,BOJ Outlook Report,High,,,
-"Oct 31, 2016",7:55pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Oct 31, 2016",7:55pm,JPY,Monetary Policy Statement,High,,,
-"Oct 31, 2016",11:30pm,JPY,BOJ Press Conference,High,,,
-"Nov 13, 2016",3:50pm,JPY,Prelim GDP q/q,High,0.5%,0.2%,0.2%
-"Nov 13, 2016",5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Nov 8, 2016",3:50pm,JPY,Current Account,Medium,1.48T,1.98T,1.98T
-"Nov 24, 2016",3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.4%,-0.4%,-0.4%
-"Nov 28, 2016",3:30pm,JPY,Household Spending y/y,Medium,-0.4%,-1.0%,-2.1%
-"Dec 7, 2016",3:50pm,JPY,Current Account,Medium,1.93T,1.57T,1.48T
-"Dec 7, 2016",3:50pm,JPY,Final GDP q/q,Medium,0.3%,0.6%,0.5%
-"Dec 8, 2016",3:50pm,JPY,BSI Manufacturing Index,Medium,7.5,3.4,2.9
-"Dec 19, 2016",6:51pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Dec 19, 2016",6:51pm,JPY,Monetary Policy Statement,High,,,
-"Dec 19, 2016",10:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 13, 2016",3:50pm,JPY,Tankan Manufacturing Index,Medium,10,10,6
-"Dec 13, 2016",3:50pm,JPY,Tankan Non-Manufacturing Index,Medium,18,19,18
-"Dec 26, 2016",3:30pm,JPY,Household Spending y/y,Medium,-1.5%,0.2%,-0.4%
-"Dec 26, 2016",3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.6%,-0.4%,-0.4%
-"Jan 26, 2017",3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.3%,-0.4%,-0.6%
-"Jan 30, 2017",3:30pm,JPY,Household Spending y/y,Medium,-0.3%,-0.8%,-1.5%
-"Jan 30, 2017",6:56pm,JPY,BOJ Outlook Report,High,,,
-"Jan 30, 2017",6:56pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Jan 30, 2017",6:56pm,JPY,Monetary Policy Statement,High,,,
-"Jan 30, 2017",10:30pm,JPY,BOJ Press Conference,High,,,
-"Feb 12, 2017",3:50pm,JPY,Prelim GDP q/q,High,0.2%,0.3%,0.3%
-"Feb 15, 2017",4:25pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Mar 2, 2017",3:30pm,JPY,Household Spending y/y,Medium,-1.2%,-0.3%,-0.3%
-"Mar 7, 2017",3:50pm,JPY,Final GDP q/q,Medium,0.3%,0.4%,0.2%
-"Mar 9, 2017",3:50pm,JPY,BSI Manufacturing Index,Medium,1.1,8.4,7.5
-"Mar 15, 2017",7:54pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Mar 15, 2017",7:54pm,JPY,Monetary Policy Statement,Medium,,,
-"Mar 15, 2017",11:30pm,JPY,BOJ Press Conference,High,,,
-"Mar 30, 2017",4:30pm,JPY,Household Spending y/y,Medium,-3.8%,-1.6%,-1.2%
-"Apr 2, 2017",4:50pm,JPY,Tankan Manufacturing Index,Medium,12,14,10
-"Apr 2, 2017",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,20,19,18
-"Apr 16, 2017",11:15pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Apr 26, 2017",8:14pm,JPY,BOJ Outlook Report,High,,,
-"Apr 26, 2017",8:14pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Apr 26, 2017",8:14pm,JPY,Monetary Policy Statement,High,,,
-"Apr 26, 2017",11:30pm,JPY,BOJ Press Conference,High,,,
-"Apr 27, 2017",4:30pm,JPY,Household Spending y/y,Medium,-1.3%,-0.6%,-3.8%
-"May 17, 2017",4:50pm,JPY,Prelim GDP q/q,Medium,0.5%,0.4%,0.3%
-"Jun 7, 2017",4:50pm,JPY,Final GDP q/q,Medium,0.3%,0.6%,0.5%
-"Jun 15, 2017",7:54pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Jun 15, 2017",7:54pm,JPY,Monetary Policy Statement,High,,,
-"Jun 15, 2017",11:30pm,JPY,BOJ Press Conference,High,,,
-"Jun 28, 2017",6:30am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jul 2, 2017",4:50pm,JPY,Tankan Manufacturing Index,Medium,17,15,12
-"Jul 2, 2017",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,23,24,20
-"Jul 19, 2017",8:10pm,JPY,BOJ Outlook Report,High,,,
-"Jul 19, 2017",8:10pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Jul 19, 2017",8:10pm,JPY,Monetary Policy Statement,High,,,
-"Jul 19, 2017",11:30pm,JPY,BOJ Press Conference,High,,,
-"Aug 13, 2017",4:50pm,JPY,Prelim GDP q/q,Medium,1.0%,0.6%,0.3%
-"Sep 7, 2017",4:50pm,JPY,Final GDP q/q,Medium,0.6%,0.7%,1.0%
-"Sep 20, 2017",8:15pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Sep 20, 2017",8:15pm,JPY,Monetary Policy Statement,High,,,
-"Sep 20, 2017",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 24, 2017",10:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Sep 27, 2017",11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Oct 1, 2017",4:50pm,JPY,Tankan Manufacturing Index,Medium,22,18,17
-"Oct 1, 2017",4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,23,24,23
-"Oct 15, 2017",6:00am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Oct 21, 2017",All Day,JPY,Lower House Elections,High,,,
-"Oct 22, 2017",All Day,JPY,Upper House Elections,Medium,,,
-"Oct 30, 2017",8:05pm,JPY,BOJ Outlook Report,High,,,
-"Oct 30, 2017",8:05pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Oct 30, 2017",8:05pm,JPY,Monetary Policy Statement,High,,,
-"Oct 30, 2017",11:30pm,JPY,BOJ Press Conference,High,,,
-"Nov 5, 2017",5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Nov 13, 2017",9:45am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Nov 14, 2017",2:00am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Nov 14, 2017",3:50pm,JPY,Prelim GDP q/q,Medium,0.3%,0.4%,0.6%
-"Dec 7, 2017",3:50pm,JPY,Final GDP q/q,Medium,0.6%,0.4%,0.3%
-"Dec 14, 2017",3:50pm,JPY,Tankan Manufacturing Index,Medium,25,24,22
-"Dec 14, 2017",3:50pm,JPY,Tankan Non-Manufacturing Index,Medium,23,24,23
-"Dec 20, 2017",6:46pm,JPY,Monetary Policy Statement,High,,,
-"Dec 20, 2017",6:46pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Dec 20, 2017",10:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 25, 2017",8:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jan 22, 2018",7:14pm,JPY,BOJ Outlook Report,High,,,
-"Jan 22, 2018",7:14pm,JPY,Monetary Policy Statement,High,,,
-"Jan 22, 2018",7:14pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Jan 22, 2018",10:30pm,JPY,BOJ Press Conference,High,,,
-"Jan 26, 2018",6:00am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Mar 6, 2018",9:00pm,JPY,Leading Indicators,Medium,104.8%,106.5%,107.4%
-"Mar 8, 2018",6:46pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Mar 8, 2018",6:46pm,JPY,Monetary Policy Statement,High,,,
-"Mar 8, 2018",10:30pm,JPY,BOJ Press Conference,High,,,
-"Apr 11, 2018",5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Apr 26, 2018",8:03pm,JPY,BOJ Outlook Report,High,,,
-"Apr 26, 2018",8:03pm,JPY,Monetary Policy Statement,High,,,
-"Apr 26, 2018",8:03pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Apr 26, 2018",11:29pm,JPY,BOJ Press Conference,High,,,
-"May 15, 2018",4:50pm,JPY,Prelim GDP q/q,Medium,-0.2%,0.0%,0.4%
-"May 29, 2018",5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jun 14, 2018",7:41pm,JPY,Monetary Policy Statement,High,,,
-"Jun 14, 2018",7:41pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Jun 14, 2018",11:28pm,JPY,BOJ Press Conference,High,,,
-"Jun 20, 2018",6:30am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jul 8, 2018",5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jul 30, 2018",9:03pm,JPY,BOJ Outlook Report,High,,,
-"Jul 30, 2018",9:03pm,JPY,Monetary Policy Statement,High,,,
-"Jul 30, 2018",9:03pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Jul 30, 2018",11:29pm,JPY,BOJ Press Conference,High,,,
-"Aug 9, 2018",4:50pm,JPY,Prelim GDP q/q,Medium,0.5%,0.3%,-0.2%
-"Sep 2, 2018",10:40pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Sep 6, 2018",5:00pm,JPY,Average Cash Earnings y/y,Medium,1.5%,2.4%,3.3%
-"Sep 18, 2018",7:47pm,JPY,Monetary Policy Statement,High,,,
-"Sep 18, 2018",7:47pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Sep 18, 2018",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 24, 2018",10:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Oct 4, 2018",5:00pm,JPY,Average Cash Earnings y/y,Medium,0.9%,1.3%,1.6%
-"Oct 17, 2018",5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Oct 18, 2018",11:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Nov 13, 2018",3:50pm,JPY,Prelim GDP q/q,Medium,-0.3%,-0.3%,0.7%
-"Nov 4, 2018",5:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Nov 6, 2018",4:00pm,JPY,Average Cash Earnings y/y,Medium,1.1%,1.2%,0.8%
-"Oct 30, 2018",8:08pm,JPY,BOJ Outlook Report,High,,,
-"Oct 30, 2018",8:08pm,JPY,Monetary Policy Statement,High,,,
-"Oct 30, 2018",8:08pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Oct 30, 2018",11:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 6, 2018",4:00pm,JPY,Average Cash Earnings y/y,Medium,1.5%,1.0%,0.8%
-"Dec 19, 2018",6:52pm,JPY,Monetary Policy Statement,High,,,
-"Dec 19, 2018",6:52pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Dec 19, 2018",10:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 25, 2018",8:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jan 8, 2019",4:00pm,JPY,Average Cash Earnings y/y,Medium,2.0%,1.3%,1.5%
-"Jan 16, 2019",7:20pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jan 22, 2019",6:59pm,JPY,BOJ Outlook Report,High,,,
-"Jan 22, 2019",6:59pm,JPY,Monetary Policy Statement,High,,,
-"Jan 22, 2019",6:59pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Jan 22, 2019",10:30pm,JPY,BOJ Press Conference,High,,,
-"Feb 7, 2019",3:30pm,JPY,Average Cash Earnings y/y,Medium,1.8%,1.7%,1.7%
-"Feb 13, 2019",3:50pm,JPY,Prelim GDP q/q,Medium,0.3%,0.4%,-0.6%
-"Mar 14, 2019",7:40pm,JPY,Monetary Policy Statement,High,,,
-"Mar 14, 2019",11:32pm,JPY,BOJ Press Conference,High,,,
-"Mar 15, 2019",1:55am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Apr 24, 2019",8:27pm,JPY,BOJ Outlook Report,High,,,
-"Apr 24, 2019",8:27pm,JPY,Monetary Policy Statement,High,,,
-"Apr 24, 2019",11:32pm,JPY,BOJ Press Conference,High,,,
-"May 26, 2019",8:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"May 28, 2019",5:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jun 6, 2019",1:25am,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Jun 19, 2019",7:45pm,JPY,Monetary Policy Statement,High,,,
-"Jun 19, 2019",11:30pm,JPY,BOJ Press Conference,High,,,
-"Jul 7, 2019",5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jul 22, 2019",8:00am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jul 29, 2019",7:55pm,JPY,BOJ Outlook Report,High,,,
-"Jul 29, 2019",7:55pm,JPY,Monetary Policy Statement,High,,,
-"Jul 29, 2019",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 18, 2019",7:50pm,JPY,Monetary Policy Statement,High,,,
-"Sep 18, 2019",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 23, 2019",10:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Sep 25, 2019",11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Oct 14, 2019",5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Oct 30, 2019",8:32pm,JPY,BOJ Outlook Report,High,,,
-"Oct 30, 2019",8:32pm,JPY,Monetary Policy Statement,High,,,
-"Oct 30, 2019",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Nov 27, 2019",8:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
-"Dec 18, 2019",6:45pm,JPY,Monetary Policy Statement,High,,,
-"Dec 18, 2019",10:30pm,JPY,BOJ Press Conference,Medium,,,
-"Jan 14, 2020",4:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jan 20, 2020",7:01pm,JPY,Monetary Policy Statement,High,,,
-"Jan 20, 2020",7:02pm,JPY,BOJ Outlook Report,High,,,
-"Jan 20, 2020",10:31pm,JPY,BOJ Press Conference,Medium,,,
-"Jan 24, 2020",1:30am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Mar 15, 2020",10:06pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Mar 15, 2020",10:06pm,JPY,Monetary Policy Statement,High,,,
-"Mar 16, 2020",12:00am,JPY,BOJ Press Conference,Medium,,,
-"Apr 8, 2020",5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Apr 26, 2020",8:08pm,JPY,Monetary Policy Statement,High,,,
-"Apr 26, 2020",8:09pm,JPY,BOJ Outlook Report,High,,,
-"Apr 26, 2020",11:32pm,JPY,BOJ Press Conference,Medium,,,
-"May 21, 2020",6:00pm,JPY,Monetary Policy Statement,High,,,
-"May 25, 2020",6:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jun 15, 2020",7:33pm,JPY,Monetary Policy Statement,High,,,
-"Jun 15, 2020",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Jul 14, 2020",7:57pm,JPY,BOJ Outlook Report,High,,,
-"Jul 14, 2020",7:57pm,JPY,Monetary Policy Statement,High,,,
-"Jul 14, 2020",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Aug 5, 2020",5:00am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Sep 16, 2020",7:52pm,JPY,Monetary Policy Statement,High,,,
-"Sep 16, 2020",11:32pm,JPY,BOJ Press Conference,Medium,,,
-"Oct 6, 2020",4:05pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Oct 28, 2020",8:12pm,JPY,BOJ Outlook Report,High,,,
-"Oct 28, 2020",8:12pm,JPY,Monetary Policy Statement,High,,,
-"Oct 28, 2020",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Dec 17, 2020",7:13pm,JPY,Monetary Policy Statement,High,,,
-"Dec 17, 2020",10:30pm,JPY,BOJ Press Conference,Medium,,,
-"Jan 20, 2021",6:38pm,JPY,BOJ Outlook Report,High,,,
-"Jan 20, 2021",6:38pm,JPY,Monetary Policy Statement,High,,,
-"Jan 20, 2021",10:30pm,JPY,BOJ Press Conference,Medium,,,
-"Mar 15, 2021",9:06pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Mar 18, 2021",8:39pm,JPY,Monetary Policy Statement,Medium,,,
-"Mar 18, 2021",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Mar 24, 2021",7:15pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Apr 26, 2021",8:02pm,JPY,BOJ Outlook Report,High,,,
-"Apr 26, 2021",8:02pm,JPY,Monetary Policy Statement,Medium,,,
-"Apr 26, 2021",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"May 24, 2021",4:06am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jun 17, 2021",8:30pm,JPY,Monetary Policy Statement,Medium,,,
-"Jun 17, 2021",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Jul 15, 2021",7:56pm,JPY,BOJ Outlook Report,High,,,
-"Jul 15, 2021",7:56pm,JPY,Monetary Policy Statement,Medium,,,
-"Jul 15, 2021",11:33pm,JPY,BOJ Press Conference,Medium,,,
-"Jul 27, 2021",12:30am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Sep 21, 2021",7:48pm,JPY,Monetary Policy Statement,Medium,,,
-"Sep 21, 2021",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Sep 26, 2021",10:35pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Sep 29, 2021",8:45am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Sep 30, 2021",12:05am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Oct 4, 2021",9:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Oct 27, 2021",7:45pm,JPY,BOJ Outlook Report,High,,,
-"Oct 27, 2021",7:45pm,JPY,Monetary Policy Statement,Medium,,,
-"Oct 27, 2021",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Oct 30, 2021",All Day,JPY,Lower House Elections,Medium,,,
-"Nov 29, 2021",12:34am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Dec 16, 2021",6:56pm,JPY,Monetary Policy Statement,Medium,,,
-"Dec 16, 2021",10:30pm,JPY,BOJ Press Conference,Medium,,,
-"Dec 22, 2021",8:31pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jan 17, 2022",6:45pm,JPY,BOJ Outlook Report,High,,,
-"Jan 17, 2022",6:45pm,JPY,Monetary Policy Statement,Medium,,,
-"Jan 17, 2022",10:30pm,JPY,BOJ Press Conference,Medium,,,
-"Mar 17, 2022",7:51pm,JPY,Monetary Policy Statement,Medium,,,
-"Mar 17, 2022",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"Apr 10, 2022",5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Apr 12, 2022",11:15pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Apr 27, 2022",8:11pm,JPY,BOJ Outlook Report,High,,,
-"Apr 27, 2022",8:11pm,JPY,Monetary Policy Statement,Medium,,,
-"Apr 27, 2022",11:30pm,JPY,BOJ Press Conference,Medium,,,
-"May 25, 2022",4:05am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jun 16, 2022",7:43pm,JPY,Monetary Policy Statement,High,,,
-"Jun 16, 2022",11:30pm,JPY,BOJ Press Conference,High,,,
-"Jul 10, 2022",All Day,JPY,Upper House Elections,High,,,
-"Jul 10, 2022",5:58pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jul 20, 2022",8:05pm,JPY,BOJ Outlook Report,High,,,
-"Jul 20, 2022",8:05pm,JPY,Monetary Policy Statement,High,,,
-"Jul 20, 2022",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 21, 2022",7:51pm,JPY,Monetary Policy Statement,High,,,
-"Sep 21, 2022",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 25, 2022",10:36pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Oct 5, 2022",7:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Oct 27, 2022",7:50pm,JPY,BOJ Outlook Report,High,,,
-"Oct 27, 2022",7:50pm,JPY,Monetary Policy Statement,High,,,
-"Oct 27, 2022",11:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 1, 2022",5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Dec 19, 2022",7:01pm,JPY,Monetary Policy Statement,High,,,
-"Dec 19, 2022",10:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 25, 2022",8:22pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jan 10, 2023",2:10am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Jan 17, 2023",6:40pm,JPY,BOJ Outlook Report,High,,,
-"Jan 17, 2023",6:40pm,JPY,Monetary Policy Statement,High,,,
-"Jan 17, 2023",10:30pm,JPY,BOJ Press Conference,High,,,
-"Feb 23, 2023",4:34pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Feb 26, 2023",8:10pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Mar 9, 2023",6:31pm,JPY,Monetary Policy Statement,High,,,
-"Mar 9, 2023",10:30pm,JPY,BOJ Press Conference,High,,,
-"Mar 23, 2023",4:30pm,JPY,National Core CPI y/y,Medium,3.1%,3.1%,4.2%
-"Mar 27, 2023",9:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
-"Mar 30, 2023",4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.2%,3.1%,3.3%
-"Apr 27, 2023",4:30pm,JPY,Tokyo Core CPI y/y,High,3.5%,3.2%,3.2%
-"Apr 27, 2023",9:00pm,JPY,BOJ Outlook Report,High,,,
-"Apr 27, 2023",9:00pm,JPY,Monetary Policy Statement,High,,,
-"Apr 27, 2023",9:00pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Apr 27, 2023",11:30pm,JPY,BOJ Press Conference,High,,,
-"May 25, 2023",4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.2%,3.4%,3.5%
-"Jun 15, 2023",7:47pm,JPY,Monetary Policy Statement,High,,,
-"Jun 15, 2023",7:47pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Jun 15, 2023",11:30pm,JPY,BOJ Press Conference,High,,,
-"Jun 28, 2023",6:30am,JPY,BOJ Gov Ueda Speaks,High,,,
-"Jun 29, 2023",4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.2%,3.4%,3.1%
-"Jul 20, 2023",4:30pm,JPY,National Core CPI y/y,Medium,3.3%,3.3%,3.2%
-"Jul 27, 2023",4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.0%,2.9%,3.2%
-"Jul 27, 2023",8:28pm,JPY,BOJ Outlook Report,High,,,
-"Jul 27, 2023",8:28pm,JPY,Monetary Policy Statement,High,,,
-"Jul 27, 2023",8:28pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Jul 27, 2023",11:30pm,JPY,BOJ Press Conference,High,,,
-"Aug 24, 2023",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.8%,2.9%,3.0%
-"Aug 26, 2023",9:25am,JPY,BOJ Gov Ueda Speaks,Medium,,,
-"Sep 21, 2023",7:52pm,JPY,Monetary Policy Statement,High,,,
-"Sep 21, 2023",7:52pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Sep 21, 2023",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 24, 2023",10:35pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Sep 28, 2023",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.6%,2.8%
-"Sep 29, 2023",11:01pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Oct 26, 2023",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.7%,2.5%,2.5%
-"Oct 30, 2023",8:28pm,JPY,BOJ Outlook Report,High,,,
-"Oct 30, 2023",8:28pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
-"Oct 30, 2023",8:28pm,JPY,Monetary Policy Statement,High,,,
-"Oct 30, 2023",11:40pm,JPY,BOJ Press Conference,High,,,
-"Nov 5, 2023",5:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Dec 4, 2023",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.3%,2.4%,2.7%
-"Dec 18, 2023",6:49pm,JPY,Monetary Policy Statement,High,,,
-"Dec 18, 2023",6:49pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Dec 18, 2023",10:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 24, 2023",8:00pm,JPY,BOJ Gov Ueda Speaks,Medium,,,
-"Jan 8, 2024",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.1%,2.1%,2.3%
-"Jan 22, 2024",7:09pm,JPY,BOJ Outlook Report,High,,,
-"Jan 22, 2024",7:09pm,JPY,Monetary Policy Statement,High,,,
-"Jan 22, 2024",7:09pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
-"Jan 22, 2024",10:30pm,JPY,BOJ Press Conference,High,,,
-"Jan 25, 2024",3:30pm,JPY,Tokyo Core CPI y/y,Medium,1.6%,1.9%,2.1%
-"Mar 4, 2024",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.5%,1.8%
-"Mar 4, 2024",8:00pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Mar 10, 2024",4:50pm,JPY,Final GDP q/q,Medium,0.1%,0.3%,-0.1%
-"Mar 18, 2024",8:36pm,JPY,BOJ Policy Rate,High,<0.10%,-0.10%,-0.10%
-"Mar 18, 2024",8:36pm,JPY,Monetary Policy Statement,High,,,
-"Mar 18, 2024",11:30pm,JPY,BOJ Press Conference,High,,,
-"Mar 21, 2024",4:30pm,JPY,National Core CPI y/y,Medium,2.8%,2.8%,2.0%
-"Mar 28, 2024",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.4%,2.4%,2.5%
-"Apr 25, 2024",4:30pm,JPY,Tokyo Core CPI y/y,Medium,1.6%,2.2%,2.4%
-"Apr 25, 2024",8:22pm,JPY,BOJ Outlook Report,High,,,
-"Apr 25, 2024",8:22pm,JPY,BOJ Policy Rate,High,<0.10%,<0.10%,<0.10%
-"Apr 25, 2024",8:22pm,JPY,Monetary Policy Statement,High,,,
-"Apr 25, 2024",11:30pm,JPY,BOJ Press Conference,High,,,
-"May 15, 2024",4:50pm,JPY,Prelim GDP q/q,Medium,-0.5%,-0.3%,0.1%
-"May 26, 2024",5:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"May 30, 2024",4:30pm,JPY,Tokyo Core CPI y/y,Medium,1.9%,1.9%,1.6%
-"Jun 13, 2024",8:23pm,JPY,BOJ Policy Rate,High,<0.10%,<0.10%,<0.10%
-"Jun 13, 2024",8:23pm,JPY,Monetary Policy Statement,High,,,
-"Jun 13, 2024",11:30pm,JPY,BOJ Press Conference,High,,,
-"Jun 27, 2024",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.1%,2.0%,1.9%
-"Jul 25, 2024",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.2%,2.1%
-"Jul 30, 2024",8:57pm,JPY,BOJ Outlook Report,High,,,
-"Jul 30, 2024",8:57pm,JPY,BOJ Policy Rate,High,<0.25%,<0.10%,<0.10%
-"Jul 30, 2024",8:57pm,JPY,Monetary Policy Statement,High,,,
-"Jul 30, 2024",11:30pm,JPY,BOJ Press Conference,High,,,
-"Aug 22, 2024",5:33pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Aug 22, 2024",9:00pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Aug 29, 2024",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.4%,2.2%,2.2%
-"Sep 19, 2024",7:52pm,JPY,BOJ Policy Rate,High,<0.25%,<0.25%,<0.25%
-"Sep 19, 2024",7:52pm,JPY,Monetary Policy Statement,High,,,
-"Sep 19, 2024",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 23, 2024",10:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Sep 26, 2024",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.0%,2.0%,2.4%
-"Oct 24, 2024",4:30pm,JPY,Tokyo Core CPI y/y,Medium,1.8%,1.7%,2.0%
-"Oct 26, 2024",All Day,JPY,Lower House Elections,High,,,
-"Oct 30, 2024",7:48pm,JPY,BOJ Outlook Report,High,,,
-"Oct 30, 2024",7:48pm,JPY,BOJ Policy Rate,High,<0.25%,<0.25%,<0.25%
-"Oct 30, 2024",7:48pm,JPY,Monetary Policy Statement,High,,,
-"Oct 30, 2024",11:30pm,JPY,BOJ Press Conference,High,,,
-"Nov 17, 2024",5:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Nov 20, 2024",9:12pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Nov 28, 2024",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.0%,1.8%
-"Dec 18, 2024",6:52pm,JPY,BOJ Policy Rate,High,<0.25%,<0.25%,<0.25%
-"Dec 18, 2024",6:52pm,JPY,Monetary Policy Statement,High,,,
-"Dec 18, 2024",10:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 26, 2024",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.4%,2.5%,2.2%
-"Jan 23, 2025",7:23pm,JPY,BOJ Outlook Report,High,,,
-"Jan 23, 2025",7:23pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.25%
-"Jan 23, 2025",7:23pm,JPY,Monetary Policy Statement,High,,,
-"Jan 23, 2025",10:30pm,JPY,BOJ Press Conference,High,,,
-"Jan 30, 2025",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.5%,2.4%
-"Feb 27, 2025",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.3%,2.5%
-"Mar 4, 2025",4:30pm,JPY,BOJ Gov Ueda Speaks,Medium,,,
-"Mar 18, 2025",7:25pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
-"Mar 18, 2025",7:25pm,JPY,Monetary Policy Statement,High,,,
-"Mar 18, 2025",11:30pm,JPY,BOJ Press Conference,High,,,
-"Mar 20, 2025",4:30pm,JPY,National Core CPI y/y,Medium,3.0%,2.9%,3.2%
-"Mar 27, 2025",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.4%,2.2%,2.2%
-"Apr 8, 2025",11:15pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Apr 24, 2025",4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.4%,3.2%,2.4%
-"Apr 30, 2025",8:03pm,JPY,BOJ Outlook Report,High,,,
-"Apr 30, 2025",8:03pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
-"Apr 30, 2025",8:03pm,JPY,Monetary Policy Statement,High,,,
-"Apr 30, 2025",11:30pm,JPY,BOJ Press Conference,High,,,
-"May 26, 2025",5:00pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"May 29, 2025",4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.6%,3.5%,3.4%
-"Jun 3, 2025",12:50am,JPY,BOJ Gov Ueda Speaks,High,,,
-"Jun 16, 2025",8:30pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
-"Jun 16, 2025",8:30pm,JPY,Monetary Policy Statement,High,,,
-"Jun 16, 2025",11:30pm,JPY,BOJ Press Conference,High,,,
-"Jun 19, 2025",11:40pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Jun 26, 2025",4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.1%,3.3%,3.6%
-"Jul 1, 2025",6:30am,JPY,BOJ Gov Ueda Speaks,High,,,
-"Jul 20, 2025",All Day,JPY,Upper House Elections,High,,,
-"Jul 24, 2025",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.9%,3.0%,3.1%
-"Jul 30, 2025",7:57pm,JPY,BOJ Outlook Report,High,,,
-"Jul 30, 2025",7:57pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
-"Jul 30, 2025",7:57pm,JPY,Monetary Policy Statement,High,,,
-"Jul 30, 2025",11:30pm,JPY,BOJ Press Conference,High,,,
-"Aug 23, 2025",9:25am,JPY,BOJ Gov Ueda Speaks,High,,,
-"Aug 28, 2025",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.5%,2.9%
-"Sep 18, 2025",8:47pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
-"Sep 18, 2025",8:47pm,JPY,Monetary Policy Statement,High,,,
-"Sep 18, 2025",11:30pm,JPY,BOJ Press Conference,High,,,
-"Sep 25, 2025",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.8%,2.5%
-"Oct 2, 2025",6:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Oct 29, 2025",8:15pm,JPY,BOJ Outlook Report,High,,,
-"Oct 29, 2025",8:15pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
-"Oct 29, 2025",8:15pm,JPY,Monetary Policy Statement,High,,,
-"Oct 29, 2025",11:30pm,JPY,BOJ Press Conference,High,,,
-"Oct 30, 2025",4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.8%,2.6%,2.5%
-"Nov 27, 2025",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.8%,2.7%,2.8%
-"Nov 30, 2025",5:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Dec 9, 2025",1:00am,JPY,BOJ Gov Ueda Speaks,High,,,
-"Dec 18, 2025",7:19pm,JPY,BOJ Policy Rate,High,<0.75%,<0.75%,<0.50%
-"Dec 18, 2025",7:19pm,JPY,Monetary Policy Statement,High,,,
-"Dec 18, 2025",10:30pm,JPY,BOJ Press Conference,High,,,
-"Dec 24, 2025",8:22pm,JPY,BOJ Gov Ueda Speaks,Medium,,,
-"Jan 22, 2026",7:07pm,JPY,BOJ Outlook Report,High,,,
-"Jan 22, 2026",7:07pm,JPY,BOJ Policy Rate,High,<0.75%,<0.75%,<0.75%
-"Jan 22, 2026",7:07pm,JPY,Monetary Policy Statement,High,,,
-"Jan 22, 2026",10:30pm,JPY,BOJ Press Conference,High,,,
-"Jan 29, 2026",3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.0%,2.2%,2.3%
-"Feb 7, 2026",All Day,JPY,Lower House Elections,High,,,
-"Feb 26, 2026",3:30pm,JPY,Tokyo Core CPI y/y,Medium,1.8%,1.7%,2.0%
-"Mar 2, 2026",8:00pm,JPY,BOJ Gov Ueda Speaks,High,,,
-"Mar 18, 2026",7:46pm,JPY,BOJ Policy Rate,High,<0.75%,<0.75%,<0.75%
-"Mar 18, 2026",7:46pm,JPY,Monetary Policy Statement,High,,,
-"Mar 18, 2026",11:30pm,JPY,BOJ Press Conference,High,,,
-"Mar 30, 2026",4:30pm,JPY,Tokyo Core CPI y/y,Medium,1.7%,1.8%,1.8%
+2015-01-20,7:29pm,JPY,Monetary Policy Statement,High,,,
+2015-01-20,10:30pm,JPY,BOJ Press Conference,High,,,
+2015-01-12,3:50pm,JPY,Current Account,Medium,0.91T,0.69T,0.95T
+2015-01-14,3:50pm,JPY,Core Machinery Orders m/m,Medium,1.3%,4.8%,-6.4%
+2015-01-15,3:50pm,JPY,Tertiary Industry Activity m/m,Medium,0.2%,0.3%,-0.1%
+2015-02-03,5:30pm,JPY,Average Cash Earnings y/y,Medium,1.6%,1.6%,0.1%
+2015-01-25,3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-01-25,3:50pm,JPY,Trade Balance,Medium,-0.71T,-0.74T,-0.83T
+2015-01-28,3:50pm,JPY,Retail Sales y/y,Medium,0.2%,1.1%,0.5%
+2015-01-29,3:30pm,JPY,Household Spending y/y,Medium,-3.4%,-2.3%,-2.5%
+2015-01-29,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.2%,2.3%
+2015-01-29,3:50pm,JPY,Prelim Industrial Production m/m,Medium,1.0%,1.3%,-0.5%
+2015-02-08,3:50pm,JPY,Current Account,Medium,0.98T,0.95T,0.91T
+2015-02-09,3:50pm,JPY,Tertiary Industry Activity m/m,Medium,-0.3%,0.1%,0.2%
+2015-02-11,3:50pm,JPY,Core Machinery Orders m/m,Medium,8.3%,2.4%,1.3%
+2015-02-15,3:50pm,JPY,Prelim GDP q/q,High,0.6%,0.9%,-0.5%
+2015-02-17,6:49pm,JPY,Monetary Policy Statement,High,,,
+2015-02-17,10:31pm,JPY,BOJ Press Conference,High,,,
+2015-02-18,3:50pm,JPY,Trade Balance,Medium,-0.41T,-0.95T,-0.62T
+2015-02-22,3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-02-26,3:30pm,JPY,Household Spending y/y,Medium,-5.1%,-4.0%,-3.4%
+2015-02-26,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.2%,2.2%
+2015-02-26,3:50pm,JPY,Prelim Industrial Production m/m,Medium,4.0%,2.9%,0.8%
+2015-02-26,3:50pm,JPY,Retail Sales y/y,Medium,-2.0%,-1.2%,0.1%
+2015-03-02,5:30pm,JPY,Average Cash Earnings y/y,Medium,1.3%,0.6%,1.3%
+2015-03-08,4:50pm,JPY,Current Account,Medium,1.06T,1.16T,0.85T
+2015-03-08,4:50pm,JPY,Final GDP q/q,Medium,0.4%,0.5%,0.6%
+2015-03-10,4:50pm,JPY,Core Machinery Orders m/m,Medium,-1.7%,-3.9%,8.3%
+2015-03-11,4:50pm,JPY,BSI Manufacturing Index,Medium,2.4,5.7,8.1
+2015-03-16,8:04pm,JPY,Monetary Policy Statement,High,,,
+2015-03-16,11:32pm,JPY,BOJ Press Conference,High,,,
+2015-03-17,4:50pm,JPY,Trade Balance,Medium,-0.64T,-1.21T,-0.41T
+2015-03-19,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-03-26,4:30pm,JPY,Household Spending y/y,Medium,-2.9%,-3.1%,-5.1%
+2015-03-26,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.2%,2.2%
+2015-03-26,4:50pm,JPY,Retail Sales y/y,Medium,-1.8%,-1.4%,-2.0%
+2015-03-29,4:50pm,JPY,Prelim Industrial Production m/m,Medium,-3.4%,-1.8%,3.7%
+2015-03-31,4:50pm,JPY,Tankan Manufacturing Index,Medium,12,14,12
+2015-03-31,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,19,17,16
+2015-04-02,10:44pm,JPY,Average Cash Earnings y/y,Medium,0.5%,0.7%,0.6%
+2015-04-12,4:50pm,JPY,Core Machinery Orders m/m,Medium,-0.4%,-2.6%,-1.7%
+2015-04-12,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-04-07,4:50pm,JPY,Current Account,Medium,0.60T,0.61T,1.06T
+2015-04-07,8:36pm,JPY,Monetary Policy Statement,High,,,
+2015-04-07,11:32pm,JPY,BOJ Press Conference,High,,,
+2015-04-21,4:50pm,JPY,Trade Balance,Medium,0.00T,-0.41T,-0.57T
+2015-04-27,4:50pm,JPY,Retail Sales y/y,Medium,-9.7%,-7.4%,-1.7%
+2015-04-29,4:50pm,JPY,Prelim Industrial Production m/m,Medium,-0.3%,-3.4%,-3.1%
+2015-04-29,9:04pm,JPY,Monetary Policy Statement,High,,,
+2015-04-29,11:00pm,JPY,BOJ Outlook Report,Medium,,,
+2015-04-29,11:31pm,JPY,BOJ Press Conference,High,,,
+2015-04-30,4:30pm,JPY,Household Spending y/y,Medium,-10.6%,-11.7%,-2.9%
+2015-04-30,4:30pm,JPY,Tokyo Core CPI y/y,Medium,0.4%,0.5%,2.2%
+2015-04-30,6:30pm,JPY,Average Cash Earnings y/y,Medium,0.1%,0.4%,0.1%
+2015-05-07,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-05-12,4:50pm,JPY,Current Account,Medium,2.07T,1.34T,0.61T
+2015-05-14,8:40pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2015-05-24,4:50pm,JPY,Trade Balance,Medium,-0.21T,-0.38T,0.01T
+2015-05-26,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-05-27,4:50pm,JPY,Retail Sales y/y,Medium,5.0%,5.3%,-9.7%
+2015-05-28,4:30pm,JPY,Household Spending y/y,Medium,-1.3%,3.1%,-10.6%
+2015-05-28,4:30pm,JPY,Tokyo Core CPI y/y,Medium,0.2%,0.2%,0.4%
+2015-05-17,4:50pm,JPY,Core Machinery Orders m/m,Medium,2.9%,1.7%,-0.4%
+2015-05-19,4:50pm,JPY,Prelim GDP q/q,High,0.6%,0.4%,0.4%
+2015-05-21,7:49pm,JPY,Monetary Policy Statement,High,,,
+2015-05-21,11:30pm,JPY,BOJ Press Conference,High,,,
+2015-05-23,6:30am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2015-06-01,6:30pm,JPY,Average Cash Earnings y/y,Medium,0.9%,0.4%,0.0%
+2015-06-07,4:50pm,JPY,Current Account,Medium,1.27T,1.45T,2.07T
+2015-06-07,4:50pm,JPY,Final GDP q/q,Medium,1.0%,0.7%,0.6%
+2015-06-09,4:50pm,JPY,Core Machinery Orders m/m,Medium,3.8%,-2.0%,2.9%
+2015-06-10,4:50pm,JPY,BSI Manufacturing Index,Medium,-6.0,3.2,2.4
+2015-06-23,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-06-25,4:30pm,JPY,Household Spending y/y,Medium,4.8%,3.5%,-1.3%
+2015-06-25,4:30pm,JPY,Tokyo Core CPI y/y,Medium,0.1%,0.1%,0.2%
+2015-06-16,4:50pm,JPY,Trade Balance,Medium,-0.18T,-0.17T,-0.24T
+2015-06-18,8:04pm,JPY,Monetary Policy Statement,High,,,
+2015-06-18,11:31pm,JPY,BOJ Press Conference,High,,,
+2015-06-28,4:50pm,JPY,Retail Sales y/y,Medium,3.0%,2.1%,4.9%
+2015-06-29,6:30pm,JPY,Average Cash Earnings y/y,Medium,0.6%,0.7%,0.7%
+2015-06-30,4:50pm,JPY,Tankan Manufacturing Index,Medium,15,12,12
+2015-06-30,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,23,23,19
+2015-07-07,4:50pm,JPY,Current Account,Medium,1.64T,1.39T,1.27T
+2015-07-08,4:50pm,JPY,Core Machinery Orders m/m,Medium,0.6%,-4.8%,3.8%
+2015-07-28,4:50pm,JPY,Retail Sales y/y,Medium,0.9%,0.8%,3.0%
+2015-07-30,4:30pm,JPY,Household Spending y/y,Medium,-2.0%,2.0%,4.8%
+2015-07-30,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.1%,0.0%,0.1%
+2015-07-20,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-07-22,4:50pm,JPY,Trade Balance,Medium,-0.25T,-0.25T,-0.16T
+2015-08-06,8:18pm,JPY,Monetary Policy Statement,High,,,
+2015-08-06,11:30pm,JPY,BOJ Press Conference,High,,,
+2015-07-14,8:18pm,JPY,Monetary Policy Statement,High,,,
+2015-07-14,11:32pm,JPY,BOJ Press Conference,High,,,
+2015-08-09,4:50pm,JPY,Current Account,Medium,1.30T,1.41T,1.64T
+2015-08-11,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-08-12,4:50pm,JPY,Core Machinery Orders m/m,Medium,-7.9%,-5.3%,0.6%
+2015-08-16,4:50pm,JPY,Prelim GDP q/q,High,-0.4%,-0.5%,1.0%
+2015-08-18,4:50pm,JPY,Trade Balance,Medium,-0.37T,-0.16T,-0.28T
+2015-08-27,4:30pm,JPY,Household Spending y/y,Medium,-0.2%,0.9%,-2.0%
+2015-08-27,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.1%,-0.1%,-0.1%
+2015-08-27,4:50pm,JPY,Retail Sales y/y,Medium,1.6%,1.1%,1.0%
+2015-09-07,4:50pm,JPY,Current Account,Medium,1.32T,1.25T,1.30T
+2015-09-07,4:50pm,JPY,Final GDP q/q,Medium,-0.3%,-0.4%,-0.4%
+2015-09-09,4:50pm,JPY,Core Machinery Orders m/m,Medium,-3.6%,3.4%,-7.9%
+2015-09-10,4:50pm,JPY,BSI Manufacturing Index,Medium,11.0,-1.9,-6.0
+2015-09-24,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.2%,-0.2%,-0.1%
+2015-09-14,8:07pm,JPY,Monetary Policy Statement,High,,,
+2015-09-14,11:30pm,JPY,BOJ Press Conference,High,,,
+2015-09-16,4:50pm,JPY,Trade Balance,Medium,-0.36T,-0.35T,-0.38T
+2015-09-16,11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2015-09-17,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-09-29,4:50pm,JPY,Retail Sales y/y,Medium,0.8%,1.2%,1.8%
+2015-09-30,4:50pm,JPY,Tankan Manufacturing Index,Medium,12,13,15
+2015-09-30,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,25,21,23
+2015-10-01,4:30pm,JPY,Household Spending y/y,Medium,2.9%,0.4%,-0.2%
+2015-10-06,8:00pm,JPY,Monetary Policy Statement,High,,,
+2015-10-06,11:31pm,JPY,BOJ Press Conference,High,,,
+2015-10-07,4:50pm,JPY,Core Machinery Orders m/m,Medium,-5.7%,3.3%,-3.6%
+2015-10-07,4:50pm,JPY,Current Account,Medium,1.59T,1.28T,1.32T
+2015-10-12,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-10-15,11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2015-10-27,4:50pm,JPY,Retail Sales y/y,Medium,-0.2%,0.4%,0.8%
+2015-10-29,4:30pm,JPY,Tokyo Core CPI y/y,High,-0.2%,-0.2%,-0.2%
+2015-10-29,4:30pm,JPY,Household Spending y/y,Medium,-0.4%,1.2%,2.9%
+2015-10-29,8:22pm,JPY,Monetary Policy Statement,High,,,
+2015-10-29,11:00pm,JPY,BOJ Outlook Report,High,,,
+2015-10-29,11:32pm,JPY,BOJ Press Conference,High,,,
+2015-11-04,3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-11-05,8:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2015-11-09,3:50pm,JPY,Current Account,Medium,0.78T,1.50T,1.59T
+2015-11-11,3:50pm,JPY,Core Machinery Orders m/m,Medium,7.5%,3.3%,-5.7%
+2015-11-15,3:50pm,JPY,Prelim GDP q/q,High,-0.2%,-0.1%,-0.3%
+2015-11-18,7:17pm,JPY,Monetary Policy Statement,High,,,
+2015-11-18,10:31pm,JPY,BOJ Press Conference,High,,,
+2015-11-24,3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-11-26,3:30pm,JPY,Household Spending y/y,Medium,-2.4%,0.0%,-0.4%
+2015-11-26,3:30pm,JPY,Tokyo Core CPI y/y,Medium,0.0%,-0.1%,-0.2%
+2015-11-29,3:50pm,JPY,Retail Sales y/y,Medium,1.8%,0.9%,-0.1%
+2015-11-29,5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2015-12-07,3:45am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2015-12-07,3:50pm,JPY,Current Account,Medium,1.49T,1.53T,0.78T
+2015-12-07,3:50pm,JPY,Final GDP q/q,Medium,0.3%,0.1%,-0.2%
+2015-12-08,3:50pm,JPY,Core Machinery Orders m/m,Medium,10.7%,-1.5%,7.5%
+2015-12-09,3:50pm,JPY,BSI Manufacturing Index,Medium,3.8,12.1,11.0
+2015-12-23,3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2015-12-24,3:30pm,JPY,Household Spending y/y,Medium,-2.9%,-2.1%,-2.4%
+2015-12-24,3:30pm,JPY,Tokyo Core CPI y/y,Medium,0.1%,0.1%,0.0%
+2015-12-13,3:50pm,JPY,Tankan Manufacturing Index,Medium,12,11,12
+2015-12-13,3:50pm,JPY,Tankan Non-Manufacturing Index,Medium,25,23,25
+2015-12-17,7:50pm,JPY,Monetary Policy Statement,High,,,
+2015-12-17,10:30pm,JPY,BOJ Press Conference,High,,,
+2015-12-27,3:50pm,JPY,Retail Sales y/y,Medium,-1.0%,-0.1%,1.8%
+2016-01-11,3:50pm,JPY,Current Account,Medium,1.42T,1.52T,1.49T
+2016-01-12,2:30am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-02-02,3:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2016-02-02,6:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-01-27,3:50pm,JPY,Retail Sales y/y,Medium,-1.1%,0.1%,-1.1%
+2016-01-28,3:30pm,JPY,Household Spending y/y,Medium,-4.4%,-2.3%,-2.9%
+2016-01-28,3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.1%,0.1%,0.1%
+2016-01-28,7:38pm,JPY,BOJ Policy Rate,High,-0.10%,,
+2016-01-28,7:38pm,JPY,Monetary Policy Statement,High,,,
+2016-01-28,9:00pm,JPY,BOJ Outlook Report,High,,,
+2016-01-28,10:30pm,JPY,BOJ Press Conference,High,,,
+2016-02-14,3:50pm,JPY,Prelim GDP q/q,High,-0.4%,-0.3%,0.3%
+2016-02-07,3:50pm,JPY,Current Account,Medium,1.64T,1.59T,1.42T
+2016-02-08,7:45pm,JPY,30-y Bond Auction,Medium,1.07|3.0,,1.22|3.7
+2016-02-28,3:50pm,JPY,Retail Sales y/y,Medium,-0.1%,0.2%,-1.1%
+2016-02-29,3:30pm,JPY,Household Spending y/y,Medium,-3.1%,-2.5%,-4.4%
+2016-02-25,3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.1%,0.0%,-0.1%
+2016-03-14,8:35pm,JPY,BOJ Policy Rate,High,-0.10%,,-0.10%
+2016-03-14,8:35pm,JPY,Monetary Policy Statement,High,,,
+2016-03-14,11:32pm,JPY,BOJ Press Conference,High,,,
+2016-03-16,11:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-03-17,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2016-03-06,7:40pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-03-07,3:50pm,JPY,Current Account,Medium,1.49T,1.66T,1.69T
+2016-03-07,3:50pm,JPY,Final GDP q/q,Medium,-0.3%,-0.4%,-0.4%
+2016-03-10,3:50pm,JPY,BSI Manufacturing Index,Medium,-7.9,4.2,3.8
+2016-03-24,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.3%,-0.2%,-0.1%
+2016-03-28,4:30pm,JPY,Household Spending y/y,Medium,1.2%,-1.8%,-3.1%
+2016-03-28,4:50pm,JPY,Retail Sales y/y,Medium,0.5%,1.6%,-0.2%
+2016-03-31,4:50pm,JPY,Tankan Manufacturing Index,Medium,6,8,12
+2016-03-31,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,22,24,25
+2016-04-10,11:15pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-04-06,5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-04-07,4:50pm,JPY,Current Account,Medium,1.73T,1.57T,1.49T
+2016-04-27,4:30pm,JPY,Household Spending y/y,Medium,-5.3%,-4.0%,1.2%
+2016-04-27,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.3%,-0.3%,-0.3%
+2016-04-27,4:50pm,JPY,Retail Sales y/y,Medium,-1.1%,-1.4%,0.4%
+2016-04-27,8:00pm,JPY,BOJ Policy Rate,High,-0.10%,,-0.10%
+2016-04-27,8:00pm,JPY,Monetary Policy Statement,High,,,
+2016-04-27,10:00pm,JPY,BOJ Outlook Report,High,,,
+2016-04-27,11:30pm,JPY,BOJ Press Conference,High,,,
+2016-05-08,4:50pm,JPY,Monetary Policy Meeting Minutes,Medium,,,
+2016-05-11,4:50pm,JPY,Current Account,Medium,1.89T,1.90T,1.69T
+2016-05-17,4:50pm,JPY,Prelim GDP q/q,Medium,0.4%,0.1%,-0.3%
+2016-05-26,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.5%,-0.4%,-0.3%
+2016-05-29,4:50pm,JPY,Retail Sales y/y,Medium,-0.8%,-1.2%,-1.0%
+2016-05-30,4:30pm,JPY,Household Spending y/y,Medium,-0.4%,-1.3%,-5.3%
+2016-06-07,4:50pm,JPY,Current Account,Medium,1.63T,2.04T,1.89T
+2016-06-07,4:50pm,JPY,Final GDP q/q,Medium,0.5%,0.5%,0.4%
+2016-06-15,7:45pm,JPY,BOJ Policy Rate,High,-0.10%,,-0.10%
+2016-06-15,7:45pm,JPY,Monetary Policy Statement,High,,,
+2016-06-15,11:30pm,JPY,BOJ Press Conference,High,,,
+2016-06-28,4:50pm,JPY,Retail Sales y/y,Medium,-1.9%,-1.6%,-0.9%
+2016-06-30,4:30pm,JPY,Household Spending y/y,Medium,-1.1%,-1.3%,-0.4%
+2016-06-30,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.5%,-0.5%,-0.5%
+2016-06-30,4:50pm,JPY,Tankan Manufacturing Index,Medium,6,4,6
+2016-06-30,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,19,19,22
+2016-07-06,5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-07-07,4:50pm,JPY,Current Account,Medium,1.41T,1.52T,1.63T
+2016-07-09,All Day,JPY,Upper House Elections,Medium,,,
+2016-07-28,4:30pm,JPY,Household Spending y/y,Medium,-2.2%,-0.4%,-1.1%
+2016-07-28,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.4%,-0.4%,-0.5%
+2016-07-28,4:50pm,JPY,Retail Sales y/y,Medium,-1.4%,-1.2%,-2.1%
+2016-07-28,8:44pm,JPY,BOJ Outlook Report,High,,,
+2016-07-28,8:44pm,JPY,BOJ Policy Rate,High,-0.10%,,-0.10%
+2016-07-28,8:44pm,JPY,Monetary Policy Statement,High,,,
+2016-07-28,11:30pm,JPY,BOJ Press Conference,High,,,
+2016-08-14,4:50pm,JPY,Prelim GDP q/q,High,0.0%,0.2%,0.5%
+2016-08-07,4:50pm,JPY,Current Account,Medium,1.65T,1.60T,1.41T
+2016-08-22,9:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-08-25,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.4%,-0.3%,-0.4%
+2016-08-27,9:25am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-08-29,4:30pm,JPY,Household Spending y/y,Medium,-0.5%,-1.3%,-2.3%
+2016-08-31,4:50pm,JPY,Capital Spending q/y,Medium,3.1%,5.6%,4.2%
+2016-09-04,7:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-09-07,4:50pm,JPY,Current Account,Medium,1.45T,1.59T,1.65T
+2016-09-07,4:50pm,JPY,Final GDP q/q,Medium,0.2%,0.0%,0.0%
+2016-09-12,4:50pm,JPY,BSI Manufacturing Index,Medium,2.9,-6.5,-11.1
+2016-09-20,9:18pm,JPY,BOJ Policy Rate,High,-0.10%,-0.20%,-0.10%
+2016-09-20,9:18pm,JPY,Monetary Policy Statement,High,,,
+2016-09-20,11:30pm,JPY,BOJ Press Conference,High,,,
+2016-09-25,10:36pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-09-28,11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-09-29,4:30pm,JPY,Household Spending y/y,Medium,-4.6%,-2.1%,-0.5%
+2016-09-29,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.5%,-0.4%,-0.4%
+2016-09-29,5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-10-02,4:50pm,JPY,Tankan Manufacturing Index,Medium,6,7,6
+2016-10-02,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,18,18,19
+2016-10-10,4:50pm,JPY,Current Account,Medium,1.98T,1.58T,1.45T
+2016-10-20,5:54pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-10-27,4:30pm,JPY,Household Spending y/y,Medium,-2.1%,-2.6%,-4.6%
+2016-10-27,4:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.4%,-0.5%,-0.5%
+2016-10-31,7:55pm,JPY,BOJ Outlook Report,High,,,
+2016-10-31,7:55pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2016-10-31,7:55pm,JPY,Monetary Policy Statement,High,,,
+2016-10-31,11:30pm,JPY,BOJ Press Conference,High,,,
+2016-11-13,3:50pm,JPY,Prelim GDP q/q,High,0.5%,0.2%,0.2%
+2016-11-13,5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2016-11-08,3:50pm,JPY,Current Account,Medium,1.48T,1.98T,1.98T
+2016-11-24,3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.4%,-0.4%,-0.4%
+2016-11-28,3:30pm,JPY,Household Spending y/y,Medium,-0.4%,-1.0%,-2.1%
+2016-12-07,3:50pm,JPY,Current Account,Medium,1.93T,1.57T,1.48T
+2016-12-07,3:50pm,JPY,Final GDP q/q,Medium,0.3%,0.6%,0.5%
+2016-12-08,3:50pm,JPY,BSI Manufacturing Index,Medium,7.5,3.4,2.9
+2016-12-19,6:51pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2016-12-19,6:51pm,JPY,Monetary Policy Statement,High,,,
+2016-12-19,10:30pm,JPY,BOJ Press Conference,High,,,
+2016-12-13,3:50pm,JPY,Tankan Manufacturing Index,Medium,10,10,6
+2016-12-13,3:50pm,JPY,Tankan Non-Manufacturing Index,Medium,18,19,18
+2016-12-26,3:30pm,JPY,Household Spending y/y,Medium,-1.5%,0.2%,-0.4%
+2016-12-26,3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.6%,-0.4%,-0.4%
+2017-01-26,3:30pm,JPY,Tokyo Core CPI y/y,Medium,-0.3%,-0.4%,-0.6%
+2017-01-30,3:30pm,JPY,Household Spending y/y,Medium,-0.3%,-0.8%,-1.5%
+2017-01-30,6:56pm,JPY,BOJ Outlook Report,High,,,
+2017-01-30,6:56pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2017-01-30,6:56pm,JPY,Monetary Policy Statement,High,,,
+2017-01-30,10:30pm,JPY,BOJ Press Conference,High,,,
+2017-02-12,3:50pm,JPY,Prelim GDP q/q,High,0.2%,0.3%,0.3%
+2017-02-15,4:25pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2017-03-02,3:30pm,JPY,Household Spending y/y,Medium,-1.2%,-0.3%,-0.3%
+2017-03-07,3:50pm,JPY,Final GDP q/q,Medium,0.3%,0.4%,0.2%
+2017-03-09,3:50pm,JPY,BSI Manufacturing Index,Medium,1.1,8.4,7.5
+2017-03-15,7:54pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2017-03-15,7:54pm,JPY,Monetary Policy Statement,Medium,,,
+2017-03-15,11:30pm,JPY,BOJ Press Conference,High,,,
+2017-03-30,4:30pm,JPY,Household Spending y/y,Medium,-3.8%,-1.6%,-1.2%
+2017-04-02,4:50pm,JPY,Tankan Manufacturing Index,Medium,12,14,10
+2017-04-02,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,20,19,18
+2017-04-16,11:15pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2017-04-26,8:14pm,JPY,BOJ Outlook Report,High,,,
+2017-04-26,8:14pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2017-04-26,8:14pm,JPY,Monetary Policy Statement,High,,,
+2017-04-26,11:30pm,JPY,BOJ Press Conference,High,,,
+2017-04-27,4:30pm,JPY,Household Spending y/y,Medium,-1.3%,-0.6%,-3.8%
+2017-05-17,4:50pm,JPY,Prelim GDP q/q,Medium,0.5%,0.4%,0.3%
+2017-06-07,4:50pm,JPY,Final GDP q/q,Medium,0.3%,0.6%,0.5%
+2017-06-15,7:54pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2017-06-15,7:54pm,JPY,Monetary Policy Statement,High,,,
+2017-06-15,11:30pm,JPY,BOJ Press Conference,High,,,
+2017-06-28,6:30am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2017-07-02,4:50pm,JPY,Tankan Manufacturing Index,Medium,17,15,12
+2017-07-02,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,23,24,20
+2017-07-19,8:10pm,JPY,BOJ Outlook Report,High,,,
+2017-07-19,8:10pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2017-07-19,8:10pm,JPY,Monetary Policy Statement,High,,,
+2017-07-19,11:30pm,JPY,BOJ Press Conference,High,,,
+2017-08-13,4:50pm,JPY,Prelim GDP q/q,Medium,1.0%,0.6%,0.3%
+2017-09-07,4:50pm,JPY,Final GDP q/q,Medium,0.6%,0.7%,1.0%
+2017-09-20,8:15pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2017-09-20,8:15pm,JPY,Monetary Policy Statement,High,,,
+2017-09-20,11:30pm,JPY,BOJ Press Conference,High,,,
+2017-09-24,10:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2017-09-27,11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2017-10-01,4:50pm,JPY,Tankan Manufacturing Index,Medium,22,18,17
+2017-10-01,4:50pm,JPY,Tankan Non-Manufacturing Index,Medium,23,24,23
+2017-10-15,6:00am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2017-10-21,All Day,JPY,Lower House Elections,High,,,
+2017-10-22,All Day,JPY,Upper House Elections,Medium,,,
+2017-10-30,8:05pm,JPY,BOJ Outlook Report,High,,,
+2017-10-30,8:05pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2017-10-30,8:05pm,JPY,Monetary Policy Statement,High,,,
+2017-10-30,11:30pm,JPY,BOJ Press Conference,High,,,
+2017-11-05,5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2017-11-13,9:45am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2017-11-14,2:00am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2017-11-14,3:50pm,JPY,Prelim GDP q/q,Medium,0.3%,0.4%,0.6%
+2017-12-07,3:50pm,JPY,Final GDP q/q,Medium,0.6%,0.4%,0.3%
+2017-12-14,3:50pm,JPY,Tankan Manufacturing Index,Medium,25,24,22
+2017-12-14,3:50pm,JPY,Tankan Non-Manufacturing Index,Medium,23,24,23
+2017-12-20,6:46pm,JPY,Monetary Policy Statement,High,,,
+2017-12-20,6:46pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2017-12-20,10:30pm,JPY,BOJ Press Conference,High,,,
+2017-12-25,8:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-01-22,7:14pm,JPY,BOJ Outlook Report,High,,,
+2018-01-22,7:14pm,JPY,Monetary Policy Statement,High,,,
+2018-01-22,7:14pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2018-01-22,10:30pm,JPY,BOJ Press Conference,High,,,
+2018-01-26,6:00am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-03-06,9:00pm,JPY,Leading Indicators,Medium,104.8%,106.5%,107.4%
+2018-03-08,6:46pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2018-03-08,6:46pm,JPY,Monetary Policy Statement,High,,,
+2018-03-08,10:30pm,JPY,BOJ Press Conference,High,,,
+2018-04-11,5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-04-26,8:03pm,JPY,BOJ Outlook Report,High,,,
+2018-04-26,8:03pm,JPY,Monetary Policy Statement,High,,,
+2018-04-26,8:03pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2018-04-26,11:29pm,JPY,BOJ Press Conference,High,,,
+2018-05-15,4:50pm,JPY,Prelim GDP q/q,Medium,-0.2%,0.0%,0.4%
+2018-05-29,5:00pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-06-14,7:41pm,JPY,Monetary Policy Statement,High,,,
+2018-06-14,7:41pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2018-06-14,11:28pm,JPY,BOJ Press Conference,High,,,
+2018-06-20,6:30am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-07-08,5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-07-30,9:03pm,JPY,BOJ Outlook Report,High,,,
+2018-07-30,9:03pm,JPY,Monetary Policy Statement,High,,,
+2018-07-30,9:03pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2018-07-30,11:29pm,JPY,BOJ Press Conference,High,,,
+2018-08-09,4:50pm,JPY,Prelim GDP q/q,Medium,0.5%,0.3%,-0.2%
+2018-09-02,10:40pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-09-06,5:00pm,JPY,Average Cash Earnings y/y,Medium,1.5%,2.4%,3.3%
+2018-09-18,7:47pm,JPY,Monetary Policy Statement,High,,,
+2018-09-18,7:47pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2018-09-18,11:30pm,JPY,BOJ Press Conference,High,,,
+2018-09-24,10:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-10-04,5:00pm,JPY,Average Cash Earnings y/y,Medium,0.9%,1.3%,1.6%
+2018-10-17,5:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-10-18,11:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2018-11-13,3:50pm,JPY,Prelim GDP q/q,Medium,-0.3%,-0.3%,0.7%
+2018-11-04,5:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2018-11-06,4:00pm,JPY,Average Cash Earnings y/y,Medium,1.1%,1.2%,0.8%
+2018-10-30,8:08pm,JPY,BOJ Outlook Report,High,,,
+2018-10-30,8:08pm,JPY,Monetary Policy Statement,High,,,
+2018-10-30,8:08pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2018-10-30,11:30pm,JPY,BOJ Press Conference,High,,,
+2018-12-06,4:00pm,JPY,Average Cash Earnings y/y,Medium,1.5%,1.0%,0.8%
+2018-12-19,6:52pm,JPY,Monetary Policy Statement,High,,,
+2018-12-19,6:52pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2018-12-19,10:30pm,JPY,BOJ Press Conference,High,,,
+2018-12-25,8:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2019-01-08,4:00pm,JPY,Average Cash Earnings y/y,Medium,2.0%,1.3%,1.5%
+2019-01-16,7:20pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2019-01-22,6:59pm,JPY,BOJ Outlook Report,High,,,
+2019-01-22,6:59pm,JPY,Monetary Policy Statement,High,,,
+2019-01-22,6:59pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2019-01-22,10:30pm,JPY,BOJ Press Conference,High,,,
+2019-02-07,3:30pm,JPY,Average Cash Earnings y/y,Medium,1.8%,1.7%,1.7%
+2019-02-13,3:50pm,JPY,Prelim GDP q/q,Medium,0.3%,0.4%,-0.6%
+2019-03-14,7:40pm,JPY,Monetary Policy Statement,High,,,
+2019-03-14,11:32pm,JPY,BOJ Press Conference,High,,,
+2019-03-15,1:55am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2019-04-24,8:27pm,JPY,BOJ Outlook Report,High,,,
+2019-04-24,8:27pm,JPY,Monetary Policy Statement,High,,,
+2019-04-24,11:32pm,JPY,BOJ Press Conference,High,,,
+2019-05-26,8:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2019-05-28,5:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2019-06-06,1:25am,JPY,BOJ Gov Kuroda Speaks,High,,,
+2019-06-19,7:45pm,JPY,Monetary Policy Statement,High,,,
+2019-06-19,11:30pm,JPY,BOJ Press Conference,High,,,
+2019-07-07,5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2019-07-22,8:00am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2019-07-29,7:55pm,JPY,BOJ Outlook Report,High,,,
+2019-07-29,7:55pm,JPY,Monetary Policy Statement,High,,,
+2019-07-29,11:30pm,JPY,BOJ Press Conference,High,,,
+2019-09-18,7:50pm,JPY,Monetary Policy Statement,High,,,
+2019-09-18,11:30pm,JPY,BOJ Press Conference,High,,,
+2019-09-23,10:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2019-09-25,11:35pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2019-10-14,5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2019-10-30,8:32pm,JPY,BOJ Outlook Report,High,,,
+2019-10-30,8:32pm,JPY,Monetary Policy Statement,High,,,
+2019-10-30,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2019-11-27,8:30pm,JPY,BOJ Gov Kuroda Speaks,High,,,
+2019-12-18,6:45pm,JPY,Monetary Policy Statement,High,,,
+2019-12-18,10:30pm,JPY,BOJ Press Conference,Medium,,,
+2020-01-14,4:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2020-01-20,7:01pm,JPY,Monetary Policy Statement,High,,,
+2020-01-20,7:02pm,JPY,BOJ Outlook Report,High,,,
+2020-01-20,10:31pm,JPY,BOJ Press Conference,Medium,,,
+2020-01-24,1:30am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2020-03-15,10:06pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2020-03-15,10:06pm,JPY,Monetary Policy Statement,High,,,
+2020-03-16,12:00am,JPY,BOJ Press Conference,Medium,,,
+2020-04-08,5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2020-04-26,8:08pm,JPY,Monetary Policy Statement,High,,,
+2020-04-26,8:09pm,JPY,BOJ Outlook Report,High,,,
+2020-04-26,11:32pm,JPY,BOJ Press Conference,Medium,,,
+2020-05-21,6:00pm,JPY,Monetary Policy Statement,High,,,
+2020-05-25,6:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2020-06-15,7:33pm,JPY,Monetary Policy Statement,High,,,
+2020-06-15,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2020-07-14,7:57pm,JPY,BOJ Outlook Report,High,,,
+2020-07-14,7:57pm,JPY,Monetary Policy Statement,High,,,
+2020-07-14,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2020-08-05,5:00am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2020-09-16,7:52pm,JPY,Monetary Policy Statement,High,,,
+2020-09-16,11:32pm,JPY,BOJ Press Conference,Medium,,,
+2020-10-06,4:05pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2020-10-28,8:12pm,JPY,BOJ Outlook Report,High,,,
+2020-10-28,8:12pm,JPY,Monetary Policy Statement,High,,,
+2020-10-28,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2020-12-17,7:13pm,JPY,Monetary Policy Statement,High,,,
+2020-12-17,10:30pm,JPY,BOJ Press Conference,Medium,,,
+2021-01-20,6:38pm,JPY,BOJ Outlook Report,High,,,
+2021-01-20,6:38pm,JPY,Monetary Policy Statement,High,,,
+2021-01-20,10:30pm,JPY,BOJ Press Conference,Medium,,,
+2021-03-15,9:06pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-03-18,8:39pm,JPY,Monetary Policy Statement,Medium,,,
+2021-03-18,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2021-03-24,7:15pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-04-26,8:02pm,JPY,BOJ Outlook Report,High,,,
+2021-04-26,8:02pm,JPY,Monetary Policy Statement,Medium,,,
+2021-04-26,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2021-05-24,4:06am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-06-17,8:30pm,JPY,Monetary Policy Statement,Medium,,,
+2021-06-17,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2021-07-15,7:56pm,JPY,BOJ Outlook Report,High,,,
+2021-07-15,7:56pm,JPY,Monetary Policy Statement,Medium,,,
+2021-07-15,11:33pm,JPY,BOJ Press Conference,Medium,,,
+2021-07-27,12:30am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-09-21,7:48pm,JPY,Monetary Policy Statement,Medium,,,
+2021-09-21,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2021-09-26,10:35pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-09-29,8:45am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-09-30,12:05am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-10-04,9:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-10-27,7:45pm,JPY,BOJ Outlook Report,High,,,
+2021-10-27,7:45pm,JPY,Monetary Policy Statement,Medium,,,
+2021-10-27,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2021-10-30,All Day,JPY,Lower House Elections,Medium,,,
+2021-11-29,12:34am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2021-12-16,6:56pm,JPY,Monetary Policy Statement,Medium,,,
+2021-12-16,10:30pm,JPY,BOJ Press Conference,Medium,,,
+2021-12-22,8:31pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2022-01-17,6:45pm,JPY,BOJ Outlook Report,High,,,
+2022-01-17,6:45pm,JPY,Monetary Policy Statement,Medium,,,
+2022-01-17,10:30pm,JPY,BOJ Press Conference,Medium,,,
+2022-03-17,7:51pm,JPY,Monetary Policy Statement,Medium,,,
+2022-03-17,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2022-04-10,5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2022-04-12,11:15pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2022-04-27,8:11pm,JPY,BOJ Outlook Report,High,,,
+2022-04-27,8:11pm,JPY,Monetary Policy Statement,Medium,,,
+2022-04-27,11:30pm,JPY,BOJ Press Conference,Medium,,,
+2022-05-25,4:05am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2022-06-16,7:43pm,JPY,Monetary Policy Statement,High,,,
+2022-06-16,11:30pm,JPY,BOJ Press Conference,High,,,
+2022-07-10,All Day,JPY,Upper House Elections,High,,,
+2022-07-10,5:58pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2022-07-20,8:05pm,JPY,BOJ Outlook Report,High,,,
+2022-07-20,8:05pm,JPY,Monetary Policy Statement,High,,,
+2022-07-20,11:30pm,JPY,BOJ Press Conference,High,,,
+2022-09-21,7:51pm,JPY,Monetary Policy Statement,High,,,
+2022-09-21,11:30pm,JPY,BOJ Press Conference,High,,,
+2022-09-25,10:36pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2022-10-05,7:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2022-10-27,7:50pm,JPY,BOJ Outlook Report,High,,,
+2022-10-27,7:50pm,JPY,Monetary Policy Statement,High,,,
+2022-10-27,11:30pm,JPY,BOJ Press Conference,High,,,
+2022-12-01,5:30pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2022-12-19,7:01pm,JPY,Monetary Policy Statement,High,,,
+2022-12-19,10:30pm,JPY,BOJ Press Conference,High,,,
+2022-12-25,8:22pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2023-01-10,2:10am,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2023-01-17,6:40pm,JPY,BOJ Outlook Report,High,,,
+2023-01-17,6:40pm,JPY,Monetary Policy Statement,High,,,
+2023-01-17,10:30pm,JPY,BOJ Press Conference,High,,,
+2023-02-23,4:34pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2023-02-26,8:10pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2023-03-09,6:31pm,JPY,Monetary Policy Statement,High,,,
+2023-03-09,10:30pm,JPY,BOJ Press Conference,High,,,
+2023-03-23,4:30pm,JPY,National Core CPI y/y,Medium,3.1%,3.1%,4.2%
+2023-03-27,9:00pm,JPY,BOJ Gov Kuroda Speaks,Medium,,,
+2023-03-30,4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.2%,3.1%,3.3%
+2023-04-27,4:30pm,JPY,Tokyo Core CPI y/y,High,3.5%,3.2%,3.2%
+2023-04-27,9:00pm,JPY,BOJ Outlook Report,High,,,
+2023-04-27,9:00pm,JPY,Monetary Policy Statement,High,,,
+2023-04-27,9:00pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2023-04-27,11:30pm,JPY,BOJ Press Conference,High,,,
+2023-05-25,4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.2%,3.4%,3.5%
+2023-06-15,7:47pm,JPY,Monetary Policy Statement,High,,,
+2023-06-15,7:47pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2023-06-15,11:30pm,JPY,BOJ Press Conference,High,,,
+2023-06-28,6:30am,JPY,BOJ Gov Ueda Speaks,High,,,
+2023-06-29,4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.2%,3.4%,3.1%
+2023-07-20,4:30pm,JPY,National Core CPI y/y,Medium,3.3%,3.3%,3.2%
+2023-07-27,4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.0%,2.9%,3.2%
+2023-07-27,8:28pm,JPY,BOJ Outlook Report,High,,,
+2023-07-27,8:28pm,JPY,Monetary Policy Statement,High,,,
+2023-07-27,8:28pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2023-07-27,11:30pm,JPY,BOJ Press Conference,High,,,
+2023-08-24,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.8%,2.9%,3.0%
+2023-08-26,9:25am,JPY,BOJ Gov Ueda Speaks,Medium,,,
+2023-09-21,7:52pm,JPY,Monetary Policy Statement,High,,,
+2023-09-21,7:52pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2023-09-21,11:30pm,JPY,BOJ Press Conference,High,,,
+2023-09-24,10:35pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2023-09-28,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.6%,2.8%
+2023-09-29,11:01pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2023-10-26,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.7%,2.5%,2.5%
+2023-10-30,8:28pm,JPY,BOJ Outlook Report,High,,,
+2023-10-30,8:28pm,JPY,BOJ Policy Rate,High,-0.10%,-0.10%,-0.10%
+2023-10-30,8:28pm,JPY,Monetary Policy Statement,High,,,
+2023-10-30,11:40pm,JPY,BOJ Press Conference,High,,,
+2023-11-05,5:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2023-12-04,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.3%,2.4%,2.7%
+2023-12-18,6:49pm,JPY,Monetary Policy Statement,High,,,
+2023-12-18,6:49pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2023-12-18,10:30pm,JPY,BOJ Press Conference,High,,,
+2023-12-24,8:00pm,JPY,BOJ Gov Ueda Speaks,Medium,,,
+2024-01-08,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.1%,2.1%,2.3%
+2024-01-22,7:09pm,JPY,BOJ Outlook Report,High,,,
+2024-01-22,7:09pm,JPY,Monetary Policy Statement,High,,,
+2024-01-22,7:09pm,JPY,BOJ Policy Rate,Medium,-0.10%,-0.10%,-0.10%
+2024-01-22,10:30pm,JPY,BOJ Press Conference,High,,,
+2024-01-25,3:30pm,JPY,Tokyo Core CPI y/y,Medium,1.6%,1.9%,2.1%
+2024-03-04,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.5%,1.8%
+2024-03-04,8:00pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2024-03-10,4:50pm,JPY,Final GDP q/q,Medium,0.1%,0.3%,-0.1%
+2024-03-18,8:36pm,JPY,BOJ Policy Rate,High,<0.10%,-0.10%,-0.10%
+2024-03-18,8:36pm,JPY,Monetary Policy Statement,High,,,
+2024-03-18,11:30pm,JPY,BOJ Press Conference,High,,,
+2024-03-21,4:30pm,JPY,National Core CPI y/y,Medium,2.8%,2.8%,2.0%
+2024-03-28,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.4%,2.4%,2.5%
+2024-04-25,4:30pm,JPY,Tokyo Core CPI y/y,Medium,1.6%,2.2%,2.4%
+2024-04-25,8:22pm,JPY,BOJ Outlook Report,High,,,
+2024-04-25,8:22pm,JPY,BOJ Policy Rate,High,<0.10%,<0.10%,<0.10%
+2024-04-25,8:22pm,JPY,Monetary Policy Statement,High,,,
+2024-04-25,11:30pm,JPY,BOJ Press Conference,High,,,
+2024-05-15,4:50pm,JPY,Prelim GDP q/q,Medium,-0.5%,-0.3%,0.1%
+2024-05-26,5:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2024-05-30,4:30pm,JPY,Tokyo Core CPI y/y,Medium,1.9%,1.9%,1.6%
+2024-06-13,8:23pm,JPY,BOJ Policy Rate,High,<0.10%,<0.10%,<0.10%
+2024-06-13,8:23pm,JPY,Monetary Policy Statement,High,,,
+2024-06-13,11:30pm,JPY,BOJ Press Conference,High,,,
+2024-06-27,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.1%,2.0%,1.9%
+2024-07-25,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.2%,2.1%
+2024-07-30,8:57pm,JPY,BOJ Outlook Report,High,,,
+2024-07-30,8:57pm,JPY,BOJ Policy Rate,High,<0.25%,<0.10%,<0.10%
+2024-07-30,8:57pm,JPY,Monetary Policy Statement,High,,,
+2024-07-30,11:30pm,JPY,BOJ Press Conference,High,,,
+2024-08-22,5:33pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2024-08-22,9:00pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2024-08-29,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.4%,2.2%,2.2%
+2024-09-19,7:52pm,JPY,BOJ Policy Rate,High,<0.25%,<0.25%,<0.25%
+2024-09-19,7:52pm,JPY,Monetary Policy Statement,High,,,
+2024-09-19,11:30pm,JPY,BOJ Press Conference,High,,,
+2024-09-23,10:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2024-09-26,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.0%,2.0%,2.4%
+2024-10-24,4:30pm,JPY,Tokyo Core CPI y/y,Medium,1.8%,1.7%,2.0%
+2024-10-26,All Day,JPY,Lower House Elections,High,,,
+2024-10-30,7:48pm,JPY,BOJ Outlook Report,High,,,
+2024-10-30,7:48pm,JPY,BOJ Policy Rate,High,<0.25%,<0.25%,<0.25%
+2024-10-30,7:48pm,JPY,Monetary Policy Statement,High,,,
+2024-10-30,11:30pm,JPY,BOJ Press Conference,High,,,
+2024-11-17,5:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2024-11-20,9:12pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2024-11-28,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.0%,1.8%
+2024-12-18,6:52pm,JPY,BOJ Policy Rate,High,<0.25%,<0.25%,<0.25%
+2024-12-18,6:52pm,JPY,Monetary Policy Statement,High,,,
+2024-12-18,10:30pm,JPY,BOJ Press Conference,High,,,
+2024-12-26,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.4%,2.5%,2.2%
+2025-01-23,7:23pm,JPY,BOJ Outlook Report,High,,,
+2025-01-23,7:23pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.25%
+2025-01-23,7:23pm,JPY,Monetary Policy Statement,High,,,
+2025-01-23,10:30pm,JPY,BOJ Press Conference,High,,,
+2025-01-30,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.5%,2.4%
+2025-02-27,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.2%,2.3%,2.5%
+2025-03-04,4:30pm,JPY,BOJ Gov Ueda Speaks,Medium,,,
+2025-03-18,7:25pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
+2025-03-18,7:25pm,JPY,Monetary Policy Statement,High,,,
+2025-03-18,11:30pm,JPY,BOJ Press Conference,High,,,
+2025-03-20,4:30pm,JPY,National Core CPI y/y,Medium,3.0%,2.9%,3.2%
+2025-03-27,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.4%,2.2%,2.2%
+2025-04-08,11:15pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-04-24,4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.4%,3.2%,2.4%
+2025-04-30,8:03pm,JPY,BOJ Outlook Report,High,,,
+2025-04-30,8:03pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
+2025-04-30,8:03pm,JPY,Monetary Policy Statement,High,,,
+2025-04-30,11:30pm,JPY,BOJ Press Conference,High,,,
+2025-05-26,5:00pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-05-29,4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.6%,3.5%,3.4%
+2025-06-03,12:50am,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-06-16,8:30pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
+2025-06-16,8:30pm,JPY,Monetary Policy Statement,High,,,
+2025-06-16,11:30pm,JPY,BOJ Press Conference,High,,,
+2025-06-19,11:40pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-06-26,4:30pm,JPY,Tokyo Core CPI y/y,Medium,3.1%,3.3%,3.6%
+2025-07-01,6:30am,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-07-20,All Day,JPY,Upper House Elections,High,,,
+2025-07-24,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.9%,3.0%,3.1%
+2025-07-30,7:57pm,JPY,BOJ Outlook Report,High,,,
+2025-07-30,7:57pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
+2025-07-30,7:57pm,JPY,Monetary Policy Statement,High,,,
+2025-07-30,11:30pm,JPY,BOJ Press Conference,High,,,
+2025-08-23,9:25am,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-08-28,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.5%,2.9%
+2025-09-18,8:47pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
+2025-09-18,8:47pm,JPY,Monetary Policy Statement,High,,,
+2025-09-18,11:30pm,JPY,BOJ Press Conference,High,,,
+2025-09-25,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.5%,2.8%,2.5%
+2025-10-02,6:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-10-29,8:15pm,JPY,BOJ Outlook Report,High,,,
+2025-10-29,8:15pm,JPY,BOJ Policy Rate,High,<0.50%,<0.50%,<0.50%
+2025-10-29,8:15pm,JPY,Monetary Policy Statement,High,,,
+2025-10-29,11:30pm,JPY,BOJ Press Conference,High,,,
+2025-10-30,4:30pm,JPY,Tokyo Core CPI y/y,Medium,2.8%,2.6%,2.5%
+2025-11-27,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.8%,2.7%,2.8%
+2025-11-30,5:05pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-12-09,1:00am,JPY,BOJ Gov Ueda Speaks,High,,,
+2025-12-18,7:19pm,JPY,BOJ Policy Rate,High,<0.75%,<0.75%,<0.50%
+2025-12-18,7:19pm,JPY,Monetary Policy Statement,High,,,
+2025-12-18,10:30pm,JPY,BOJ Press Conference,High,,,
+2025-12-24,8:22pm,JPY,BOJ Gov Ueda Speaks,Medium,,,
+2026-01-22,7:07pm,JPY,BOJ Outlook Report,High,,,
+2026-01-22,7:07pm,JPY,BOJ Policy Rate,High,<0.75%,<0.75%,<0.75%
+2026-01-22,7:07pm,JPY,Monetary Policy Statement,High,,,
+2026-01-22,10:30pm,JPY,BOJ Press Conference,High,,,
+2026-01-29,3:30pm,JPY,Tokyo Core CPI y/y,Medium,2.0%,2.2%,2.3%
+2026-02-07,All Day,JPY,Lower House Elections,High,,,
+2026-02-26,3:30pm,JPY,Tokyo Core CPI y/y,Medium,1.8%,1.7%,2.0%
+2026-03-02,8:00pm,JPY,BOJ Gov Ueda Speaks,High,,,
+2026-03-18,7:46pm,JPY,BOJ Policy Rate,High,<0.75%,<0.75%,<0.75%
+2026-03-18,7:46pm,JPY,Monetary Policy Statement,High,,,
+2026-03-18,11:30pm,JPY,BOJ Press Conference,High,,,
+2026-03-30,4:30pm,JPY,Tokyo Core CPI y/y,Medium,1.7%,1.8%,1.8%
