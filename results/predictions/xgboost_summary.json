@@ -1,0 +1,50 @@
+{
+  "EURUSD": {
+    "mae": 0.0011333101625297627,
+    "rmse": 0.0016593008611551694,
+    "dir_acc": 0.6009417304296645,
+    "accuracy": 0.6030606238964097,
+    "f1": 0.6023584905660377,
+    "precision": 0.6007998118089861,
+    "recall": 0.6039252778434618,
+    "best_params": {
+      "learning_rate": 0.01,
+      "max_depth": 5,
+      "n_estimators": 800,
+      "reg_alpha": 0.1,
+      "reg_lambda": 5.0
+    }
+  },
+  "GBPJPY": {
+    "mae": 0.001659545624876437,
+    "rmse": 0.002498794634375314,
+    "dir_acc": 0.5178949846950789,
+    "accuracy": 0.5191900164822227,
+    "f1": 0.47721454173067074,
+    "precision": 0.5509902453443689,
+    "recall": 0.4208624971776925,
+    "best_params": {
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "n_estimators": 300,
+      "reg_alpha": 0.1,
+      "reg_lambda": 5.0
+    }
+  },
+  "XAUUSD": {
+    "mae": 0.0026458059287626404,
+    "rmse": 0.0041735369472553395,
+    "dir_acc": 0.5399952527889865,
+    "accuracy": 0.5403512936150012,
+    "f1": 0.5472822910578609,
+    "precision": 0.5573809523809524,
+    "recall": 0.5375430539609644,
+    "best_params": {
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "n_estimators": 300,
+      "reg_alpha": 0.1,
+      "reg_lambda": 1.0
+    }
+  }
+}
