@@ -1,6 +1,7 @@
 """
-Baseline 1: LSTM + Attention
-All 4 feature groups, 30-bar lookback (= 5 trading days).
+Baseline 1: LSTM (Unidirectional) — Technical Features Only
+Features: RSI(14), EMA(12/26), SMA(20/50), Volume
+30-bar lookback (= 5 trading days).
 Trains on 2015-2019, validates on 2020, tests on 2021-2025.
 
 Usage:
@@ -16,16 +17,14 @@ import torch.nn as nn
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_absolute_error, mean_squared_error
-from sklearn.metrics import accuracy_score, precision_recall_fscore_support, roc_auc_score
+from sklearn.metrics import accuracy_score, precision_recall_fscore_support
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 sys.path.insert(0, PROJECT_ROOT)
 
 PROCESSED_DIR = os.path.join(PROJECT_ROOT, 'data', 'processed')
-RESULTS_DIR = os.path.join(PROJECT_ROOT, 'results', 'predictions')
-FIGURES_DIR = os.path.join(PROJECT_ROOT, 'results', 'figures')
+RESULTS_DIR = os.path.join(PROJECT_ROOT, 'results', 'baseline1')
 os.makedirs(RESULTS_DIR, exist_ok=True)
-os.makedirs(FIGURES_DIR, exist_ok=True)
 
 # --- Config ---
 LOOKBACK = 30       # 30 4H bars = 5 trading days
@@ -38,25 +37,14 @@ EPOCHS = 100
 PATIENCE = 15
 DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-EXCLUDE_COLS = ['datetime_utc', 'date', 'session', 'target_return', 'target_direction', 'volume']
+# Technical features only: RSI, EMA, SMA, volume
+TECHNICAL_FEATURES = ['rsi_14', 'ema_12', 'ema_26', 'sma_20', 'sma_50', 'volume']
 
 
 # ============================================================
-# Model
+# Model — plain unidirectional LSTM (simplest baseline)
 # ============================================================
-class Attention(nn.Module):
-    def __init__(self, hidden_size):
-        super().__init__()
-        self.attn = nn.Linear(hidden_size, 1)
-
-    def forward(self, lstm_output):
-        scores = self.attn(lstm_output)
-        weights = torch.softmax(scores, dim=1)
-        context = (lstm_output * weights).sum(dim=1)
-        return context, weights
-
-
-class LSTMAttention(nn.Module):
+class LSTMBaseline(nn.Module):
     def __init__(self, input_size, hidden_size=128, num_layers=2, dropout=0.3):
         super().__init__()
         self.lstm = nn.LSTM(
@@ -66,7 +54,6 @@ class LSTMAttention(nn.Module):
             dropout=dropout,
             batch_first=True,
         )
-        self.attention = Attention(hidden_size)
         self.fc = nn.Sequential(
             nn.Linear(hidden_size, 64),
             nn.ReLU(),
@@ -77,18 +64,14 @@ class LSTMAttention(nn.Module):
         )
 
     def forward(self, x):
-        lstm_out, _ = self.lstm(x)
-        context, attn_weights = self.attention(lstm_out)
-        return self.fc(context)
+        lstm_out, _ = self.lstm(x)          # (batch, seq, hidden)
+        last_hidden = lstm_out[:, -1, :]    # take last timestep
+        return self.fc(last_hidden)
 
 
 # ============================================================
 # Data helpers
 # ============================================================
-def get_feature_cols(df):
-    return [c for c in df.columns if c not in EXCLUDE_COLS]
-
-
 def create_sequences(data, targets, lookback):
     X, y = [], []
     for i in range(lookback, len(data)):
@@ -186,13 +169,16 @@ def train_model(model, train_loader, val_X, val_y, epochs, patience, lr):
 # ============================================================
 def run_pair(pair_name):
     print(f"\n{'='*60}")
-    print(f"LSTM + Attention — {pair_name}")
+    print(f"BASELINE 1: LSTM (Technical Only) — {pair_name}")
     print(f"{'='*60}")
 
     # Load
     df = pd.read_csv(os.path.join(PROCESSED_DIR, f'{pair_name}_features.csv'))
-    feature_cols = get_feature_cols(df)
-    print(f"  Features: {len(feature_cols)}, Rows: {len(df)}")
+
+    # Use ONLY technical features
+    feature_cols = [c for c in TECHNICAL_FEATURES if c in df.columns]
+    print(f"  Features ({len(feature_cols)}): {feature_cols}")
+    print(f"  Rows: {len(df)}")
 
     # Split
     train_df, val_df, test_df = split_data(df)
@@ -234,7 +220,7 @@ def run_pair(pair_name):
 
     # Model
     input_size = X_train.shape[2]
-    model = LSTMAttention(input_size, HIDDEN_SIZE, NUM_LAYERS, DROPOUT).to(DEVICE)
+    model = LSTMBaseline(input_size, HIDDEN_SIZE, NUM_LAYERS, DROPOUT).to(DEVICE)
     print(f"  Model params: {sum(p.numel() for p in model.parameters()):,}")
 
     # Train
@@ -285,7 +271,7 @@ if __name__ == '__main__':
 
     # Summary table
     print(f"\n{'='*60}")
-    print("BASELINE 1: LSTM + Attention — Summary")
+    print("BASELINE 1: LSTM (Technical Only) — Summary")
     print(f"{'='*60}")
     print(f"{'Pair':<10} {'MAE':<10} {'RMSE':<10} {'Dir Acc':<10} {'F1':<10}")
     print("-" * 50)
