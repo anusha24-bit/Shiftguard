@@ -53,14 +53,14 @@ VIX + VIX change, DXY + DXY change, S&P 500 return, oil return, rolling correlat
 
 ## Model Lineup
 
-| Role | Model | Purpose |
-|---|---|---|
-| Baseline 1 | LSTM + Attention (all 4 groups) | Strong sequence baseline — proves temporal modeling alone isn't enough for adaptive retraining |
-| Baseline 2 | Random Forest (all 4 groups) | Strong bagging baseline — proves bagging can't keep up with boosting under retraining |
-| Baseline 3 | Stacked Ensemble: LSTM+XGBoost→XGBoost meta (all 4 groups) | Complexity baseline — proves stacking adds overhead without improving retraining speed |
-| **Main Model** | **XGBoost (all 4 groups)** | **Best retraining efficiency, native TreeSHAP, fast on small windows** |
+| Role | Model | Features | Purpose |
+|---|---|---|---|
+| Baseline 1 | LSTM (unidirectional) | Technical only: RSI, EMA, SMA, volume | Simplest. Tests if price-only signals are enough |
+| Baseline 2 | Bidirectional LSTM + Custom Attention | All 4 groups (~70 features) | Medium. Better architecture + richer features. Should outperform B1 |
+| Baseline 3 | Stacked: RF + BiLSTM-Attention → LightGBM meta | All 4 groups + B1/B2 predictions | Most complex. Heterogeneous ensemble with boosted meta-learner |
+| **Main Model** | **XGBoost** | **All 4 groups** | **Right-sized — wins on retraining speed despite being simpler than B3** |
 
-All 4 models get the **same features**. The only variable is the algorithm.
+Escalating complexity: B1 (simple) < B2 (deep + attention) < B3 (stacked heterogeneous) < XGBoost (wins on adaptation).
 
 ---
 
@@ -82,11 +82,11 @@ All 4 models get the **same features**. The only variable is the algorithm.
 - Chronological only — no shuffling
 
 ### Phase 3: Model Training & Comparison
-- Train all 4 models on identical features and splits
+- B1: LSTM with technical features only (RSI, EMA, SMA, volume), 30-bar lookback
+- B2: BiLSTM + custom attention, all 4 feature groups, 30-bar lookback
+- B3: Stacked ensemble — RF + BiLSTM predictions + raw features → LightGBM meta-learner
+- Main: XGBoost with all 4 feature groups, tuned via Optuna/GridSearchCV
 - Hyperparameter tuning via TimeSeriesSplit(5) on training set
-- XGBoost tuning: learning_rate, max_depth, n_estimators, reg_alpha, reg_lambda
-- LSTM: hidden=128, layers=2, dropout=0.3, lookback=30 (4H bars = 5 days), attention head
-- RF: GridSearchCV over n_estimators, max_depth, min_samples_leaf
 - Evaluate all with: MAE, RMSE, Directional Accuracy, F1, AUC-ROC
 
 ### Phase 4: Dual-Mode Shift Detection Engine
@@ -130,8 +130,8 @@ All 4 models get the **same features**. The only variable is the algorithm.
 ## Experiments
 
 ### Experiment 1: Model Comparison
-LSTM vs RF vs Stacked Ensemble vs XGBoost — same features, different algorithms.
-Table + bar chart. Proves complexity doesn't improve retraining recovery.
+B1 (LSTM+technical) vs B2 (BiLSTM+attention) vs B3 (stacked RF+BiLSTM→LightGBM) vs XGBoost.
+Table + bar chart. Each baseline escalates in complexity and performance, yet XGBoost wins on retraining.
 
 ### Experiment 2: Ablation Study
 No detection (blind retraining) → Detection only → +Attribution → +Human feedback.
@@ -183,9 +183,9 @@ ShiftGuard/
 │   │   ├── sentiment.py          # Group 4 features
 │   │   └── build_dataset.py      # Merge all groups + targets
 │   ├── models/
-│   │   ├── baseline_lstm.py      # Baseline 1: LSTM + Attention
-│   │   ├── baseline_rf.py        # Baseline 2: Random Forest
-│   │   ├── baseline_stacked.py   # Baseline 3: Stacked Ensemble
+│   │   ├── baseline_lstm.py      # Baseline 1: LSTM (technical features only)
+│   │   ├── baseline_bilstm.py    # Baseline 2: BiLSTM + Custom Attention (all features)
+│   │   ├── baseline_stacked.py   # Baseline 3: RF + BiLSTM → LightGBM meta
 │   │   └── main_xgboost.py       # Main: XGBoost
 │   ├── detection/
 │   │   ├── scheduled.py          # KS + MMD with calendar
@@ -225,8 +225,8 @@ ShiftGuard/
 ## Key Dependencies
 
 ```
-pandas, numpy, scikit-learn, xgboost, lightgbm, catboost
-torch (LSTM + TFT), pytorch-forecasting (TFT)
+pandas, numpy, scikit-learn, xgboost, lightgbm
+torch (LSTM, BiLSTM)
 shap, ta (technical indicators), fredapi
 river (ADWIN), streamlit
 matplotlib, seaborn, plotly
