@@ -1,0 +1,33 @@
+{
+  "Technical (RSI/MACD)": {
+    "name": "Technical (RSI/MACD)",
+    "win_rate": 49.12,
+    "n_trades": 2394,
+    "trade_pct": 100.0,
+    "avg_win": 0.003337,
+    "avg_loss": 0.003486,
+    "profit_factor": 0.93,
+    "total_return": -0.300729
+  },
+  "ML Direction (XGBoost)": {
+    "name": "ML Direction (XGBoost)",
+    "win_rate": 84.04,
+    "n_trades": 2394,
+    "trade_pct": 100.0,
+    "avg_win": 0.003795,
+    "avg_loss": 0.001363,
+    "profit_factor": 14.89,
+    "total_return": 7.123354
+  },
+  "ShiftGuard (Regime-Filtered)": {
+    "name": "ShiftGuard (Regime-Filtered)",
+    "win_rate": 52.48,
+    "n_trades": 766,
+    "trade_pct": 32.0,
+    "avg_win": 0.003611,
+    "avg_loss": 0.003399,
+    "profit_factor": 1.18,
+    "total_return": 0.217699
+  },
+  "regime_retrains": 114
+}

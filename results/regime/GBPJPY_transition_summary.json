@@ -1,0 +1,28 @@
+{
+  "Static": {
+    "accuracy": 0.621,
+    "f1": 0.5916,
+    "precision": 0.4749,
+    "recall": 0.7841,
+    "auc_roc": 0.7009,
+    "retrains": 0
+  },
+  "Blind Monthly": {
+    "accuracy": 0.6055,
+    "f1": 0.5608,
+    "precision": 0.4594,
+    "recall": 0.7196,
+    "auc_roc": 0.6761,
+    "retrains": 0,
+    "f1_improvement_pct": -5.21
+  },
+  "ShiftGuard": {
+    "accuracy": 0.6042,
+    "f1": 0.5604,
+    "precision": 0.4584,
+    "recall": 0.7208,
+    "auc_roc": 0.6755,
+    "retrains": 92,
+    "f1_improvement_pct": -5.27
+  }
+}

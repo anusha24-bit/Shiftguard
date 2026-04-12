@@ -1,0 +1,95 @@
+{
+  "Phase 1": {
+    "character": "Pre-COVID, low vol, steady rates",
+    "test_bars": 2389,
+    "static": {
+      "mae": 0.001652,
+      "dir_acc": 0.5643,
+      "f1": 0.5247,
+      "precision": 0.5857,
+      "recall": 0.4752
+    },
+    "retrained": {
+      "mae": 0.001652,
+      "dir_acc": 0.5643,
+      "f1": 0.5247,
+      "precision": 0.5857,
+      "recall": 0.4752
+    },
+    "shiftguard": {
+      "mae": 0.001652,
+      "dir_acc": 0.5643,
+      "f1": 0.5247,
+      "precision": 0.5857,
+      "recall": 0.4752
+    },
+    "shap_action": "RETRAINED (dominant: sentiment)",
+    "dominant_group": "sentiment",
+    "mae_improvement_retrained": 0.0,
+    "dir_improvement_retrained": 0.0,
+    "mae_improvement_shap": 0.0,
+    "dir_improvement_shap": 0.0
+  },
+  "Phase 2": {
+    "character": "COVID crash, recovery, Fed hike cycle",
+    "test_bars": 2393,
+    "static": {
+      "mae": 0.002445,
+      "dir_acc": 0.5671,
+      "f1": 0.4629,
+      "precision": 0.5963,
+      "recall": 0.3783
+    },
+    "retrained": {
+      "mae": 0.0025,
+      "dir_acc": 0.5387,
+      "f1": 0.5113,
+      "precision": 0.5353,
+      "recall": 0.4894
+    },
+    "shiftguard": {
+      "mae": 0.0025,
+      "dir_acc": 0.5387,
+      "f1": 0.5113,
+      "precision": 0.5353,
+      "recall": 0.4894
+    },
+    "shap_action": "RETRAINED (dominant: sentiment)",
+    "dominant_group": "sentiment",
+    "mae_improvement_retrained": -2.25,
+    "dir_improvement_retrained": -5.01,
+    "mae_improvement_shap": -2.25,
+    "dir_improvement_shap": -5.01
+  },
+  "Phase 3": {
+    "character": "Post-hike, BOJ shift, gold rally, tariffs",
+    "test_bars": 1991,
+    "static": {
+      "mae": 0.003874,
+      "dir_acc": 0.4711,
+      "f1": 0.2951,
+      "precision": 0.5744,
+      "recall": 0.1986
+    },
+    "retrained": {
+      "mae": 0.003823,
+      "dir_acc": 0.4932,
+      "f1": 0.5154,
+      "precision": 0.5514,
+      "recall": 0.4838
+    },
+    "shiftguard": {
+      "mae": 0.003823,
+      "dir_acc": 0.4932,
+      "f1": 0.5154,
+      "precision": 0.5514,
+      "recall": 0.4838
+    },
+    "shap_action": "RETRAINED (dominant: sentiment)",
+    "dominant_group": "sentiment",
+    "mae_improvement_retrained": 1.32,
+    "dir_improvement_retrained": 4.69,
+    "mae_improvement_shap": 1.32,
+    "dir_improvement_shap": 4.69
+  }
+}

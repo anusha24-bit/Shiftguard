@@ -1,0 +1,101 @@
+{
+  "EURUSD": {
+    "Technical (RSI/MACD)": {
+      "name": "Technical (RSI/MACD)",
+      "win_rate": 50.14,
+      "n_trades": 16740,
+      "trade_pct": 100.0,
+      "avg_win": 0.001263,
+      "avg_loss": 0.001257,
+      "profit_factor": 1.02,
+      "total_return": 0.17083
+    },
+    "ML Direction (XGBoost)": {
+      "name": "ML Direction (XGBoost)",
+      "win_rate": 56.7,
+      "n_trades": 16740,
+      "trade_pct": 100.0,
+      "avg_win": 0.001427,
+      "avg_loss": 0.001041,
+      "profit_factor": 1.81,
+      "total_return": 6.050291
+    },
+    "ShiftGuard (Regime-Filtered)": {
+      "name": "ShiftGuard (Regime-Filtered)",
+      "win_rate": 58.3,
+      "n_trades": 4798,
+      "trade_pct": 28.7,
+      "avg_win": 0.001726,
+      "avg_loss": 0.001145,
+      "profit_factor": 2.12,
+      "total_return": 2.546707
+    },
+    "regime_retrains": 93
+  },
+  "GBPJPY": {
+    "Technical (RSI/MACD)": {
+      "name": "Technical (RSI/MACD)",
+      "win_rate": 50.07,
+      "n_trades": 16740,
+      "trade_pct": 100.0,
+      "avg_win": 0.001815,
+      "avg_loss": 0.00181,
+      "profit_factor": 1.01,
+      "total_return": 0.144068
+    },
+    "ML Direction (XGBoost)": {
+      "name": "ML Direction (XGBoost)",
+      "win_rate": 52.19,
+      "n_trades": 16740,
+      "trade_pct": 100.0,
+      "avg_win": 0.001816,
+      "avg_loss": 0.001809,
+      "profit_factor": 1.1,
+      "total_return": 1.455032
+    },
+    "ShiftGuard (Regime-Filtered)": {
+      "name": "ShiftGuard (Regime-Filtered)",
+      "win_rate": 59.09,
+      "n_trades": 6781,
+      "trade_pct": 40.5,
+      "avg_win": 0.002301,
+      "avg_loss": 0.001695,
+      "profit_factor": 1.97,
+      "total_return": 4.548153
+    },
+    "regime_retrains": 93
+  },
+  "XAUUSD": {
+    "Technical (RSI/MACD)": {
+      "name": "Technical (RSI/MACD)",
+      "win_rate": 50.04,
+      "n_trades": 16560,
+      "trade_pct": 100.0,
+      "avg_win": 0.00245,
+      "avg_loss": 0.002414,
+      "profit_factor": 1.02,
+      "total_return": 0.351596
+    },
+    "ML Direction (XGBoost)": {
+      "name": "ML Direction (XGBoost)",
+      "win_rate": 49.95,
+      "n_trades": 16560,
+      "trade_pct": 100.0,
+      "avg_win": 0.002461,
+      "avg_loss": 0.002403,
+      "profit_factor": 1.02,
+      "total_return": 0.449675
+    },
+    "ShiftGuard (Regime-Filtered)": {
+      "name": "ShiftGuard (Regime-Filtered)",
+      "win_rate": 58.51,
+      "n_trades": 7084,
+      "trade_pct": 42.8,
+      "avg_win": 0.003168,
+      "avg_loss": 0.002344,
+      "profit_factor": 1.91,
+      "total_return": 6.249064
+    },
+    "regime_retrains": 92
+  }
+}

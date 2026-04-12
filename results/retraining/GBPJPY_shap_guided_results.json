@@ -1,0 +1,33 @@
+{
+  "none": {
+    "mae": 0.001642,
+    "dir_acc": 0.5218,
+    "retrains": 0,
+    "rolling_mae_mean": 0.001644,
+    "rolling_mae_max": 0.006409
+  },
+  "blind": {
+    "mae": 0.001644,
+    "dir_acc": 0.5248,
+    "retrains": 47,
+    "rolling_mae_mean": 0.001646,
+    "rolling_mae_max": 0.006429,
+    "improvement_pct": -0.12
+  },
+  "shap_guided": {
+    "mae": 0.001644,
+    "dir_acc": 0.5248,
+    "retrains": 47,
+    "rolling_mae_mean": 0.001646,
+    "rolling_mae_max": 0.006429,
+    "improvement_pct": -0.12
+  },
+  "monthly": {
+    "mae": 0.001644,
+    "dir_acc": 0.5186,
+    "retrains": 47,
+    "rolling_mae_mean": 0.001645,
+    "rolling_mae_max": 0.006444,
+    "improvement_pct": -0.12
+  }
+}

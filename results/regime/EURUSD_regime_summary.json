@@ -1,0 +1,25 @@
+{
+  "no_retrain": {
+    "accuracy": 0.83,
+    "macro_f1": 0.8175,
+    "retrains": 0
+  },
+  "blind_monthly": {
+    "accuracy": 0.828,
+    "macro_f1": 0.8132,
+    "retrains": 93,
+    "improvement_pct": -0.24
+  },
+  "shap_guided": {
+    "accuracy": 0.828,
+    "macro_f1": 0.8132,
+    "retrains": 93,
+    "improvement_pct": -0.24
+  },
+  "regime_matched": {
+    "accuracy": 0.3419,
+    "macro_f1": 0.3268,
+    "retrains": 93,
+    "improvement_pct": -58.81
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "EURUSD": {
+    "No Retrain": {
+      "mae": 0.00119,
+      "dir_acc": 0.5848,
+      "retrains": 0,
+      "improvement_vs_none": 0.0
+    },
+    "Blind Monthly": {
+      "mae": 0.001205,
+      "dir_acc": 0.5918,
+      "retrains": 94,
+      "improvement_vs_none": -1.27,
+      "efficiency": -0.0135
+    },
+    "ShiftGuard": {
+      "mae": 0.001203,
+      "dir_acc": 0.5903,
+      "retrains": 21,
+      "improvement_vs_none": -1.07,
+      "efficiency": -0.051
+    },
+    "Oracle": {
+      "mae": 0.001203,
+      "dir_acc": 0.5893,
+      "retrains": 10,
+      "improvement_vs_none": -1.1,
+      "efficiency": -0.11
+    }
+  },
+  "GBPJPY": {
+    "No Retrain": {
+      "mae": 0.001803,
+      "dir_acc": 0.5164,
+      "retrains": 0,
+      "improvement_vs_none": 0.0
+    },
+    "Blind Monthly": {
+      "mae": 0.001827,
+      "dir_acc": 0.522,
+      "retrains": 94,
+      "improvement_vs_none": -1.31,
+      "efficiency": -0.0139
+    },
+    "ShiftGuard": {
+      "mae": 0.001827,
+      "dir_acc": 0.522,
+      "retrains": 94,
+      "improvement_vs_none": -1.31,
+      "efficiency": -0.0139
+    },
+    "Oracle": {
+      "mae": 0.001826,
+      "dir_acc": 0.5214,
+      "retrains": 10,
+      "improvement_vs_none": -1.27,
+      "efficiency": -0.127
+    }
+  },
+  "XAUUSD": {
+    "No Retrain": {
+      "mae": 0.002435,
+      "dir_acc": 0.5108,
+      "retrains": 0,
+      "improvement_vs_none": 0.0
+    },
+    "Blind Monthly": {
+      "mae": 0.002421,
+      "dir_acc": 0.5461,
+      "retrains": 93,
+      "improvement_vs_none": 0.56,
+      "efficiency": 0.006
+    },
+    "ShiftGuard": {
+      "mae": 0.002421,
+      "dir_acc": 0.5461,
+      "retrains": 93,
+      "improvement_vs_none": 0.56,
+      "efficiency": 0.006
+    },
+    "Oracle": {
+      "mae": 0.002441,
+      "dir_acc": 0.5281,
+      "retrains": 12,
+      "improvement_vs_none": -0.25,
+      "efficiency": -0.0208
+    }
+  }
+}

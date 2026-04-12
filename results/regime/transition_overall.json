@@ -1,0 +1,86 @@
+{
+  "EURUSD": {
+    "Static": {
+      "accuracy": 0.5419,
+      "f1": 0.5911,
+      "precision": 0.445,
+      "recall": 0.8801,
+      "auc_roc": 0.667,
+      "retrains": 0
+    },
+    "Blind Monthly": {
+      "accuracy": 0.5925,
+      "f1": 0.5815,
+      "precision": 0.4738,
+      "recall": 0.7526,
+      "auc_roc": 0.6676,
+      "retrains": 0,
+      "f1_improvement_pct": -1.62
+    },
+    "ShiftGuard": {
+      "accuracy": 0.5568,
+      "f1": 0.5658,
+      "precision": 0.448,
+      "recall": 0.7677,
+      "auc_roc": 0.6307,
+      "retrains": 71,
+      "f1_improvement_pct": -4.28
+    }
+  },
+  "GBPJPY": {
+    "Static": {
+      "accuracy": 0.621,
+      "f1": 0.5916,
+      "precision": 0.4749,
+      "recall": 0.7841,
+      "auc_roc": 0.7009,
+      "retrains": 0
+    },
+    "Blind Monthly": {
+      "accuracy": 0.6055,
+      "f1": 0.5608,
+      "precision": 0.4594,
+      "recall": 0.7196,
+      "auc_roc": 0.6761,
+      "retrains": 0,
+      "f1_improvement_pct": -5.21
+    },
+    "ShiftGuard": {
+      "accuracy": 0.6042,
+      "f1": 0.5604,
+      "precision": 0.4584,
+      "recall": 0.7208,
+      "auc_roc": 0.6755,
+      "retrains": 92,
+      "f1_improvement_pct": -5.27
+    }
+  },
+  "XAUUSD": {
+    "Static": {
+      "accuracy": 0.3873,
+      "f1": 0.5473,
+      "precision": 0.3779,
+      "recall": 0.9918,
+      "auc_roc": 0.6615,
+      "retrains": 0
+    },
+    "Blind Monthly": {
+      "accuracy": 0.5101,
+      "f1": 0.5869,
+      "precision": 0.4283,
+      "recall": 0.9321,
+      "auc_roc": 0.7044,
+      "retrains": 0,
+      "f1_improvement_pct": 7.24
+    },
+    "ShiftGuard": {
+      "accuracy": 0.5101,
+      "f1": 0.5869,
+      "precision": 0.4283,
+      "recall": 0.9321,
+      "auc_roc": 0.7044,
+      "retrains": 92,
+      "f1_improvement_pct": 7.24
+    }
+  }
+}
