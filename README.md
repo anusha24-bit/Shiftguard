@@ -6,7 +6,7 @@ CS 6140 - Machine Learning
 Northeastern University, Silicon Valley
 
 Team:
-- Anusha Ravi Kumar - ravikumar@northeastern.edu
+- Anusha Ravi Kumar - ravikumar.anu@northeastern.edu
 - Sohan Mahesh - mahesh.so@northeastern.edu
 - Disha Manubhai Patel - patel.dishabe@northeastern.edu
 
