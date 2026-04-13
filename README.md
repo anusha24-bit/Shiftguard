@@ -17,7 +17,7 @@ ShiftGuard is an ML systems project for handling **distribution shift in forex m
 1. train a monitored return model,
 2. detect scheduled and unexpected shifts,
 3. explain shifts with SHAP-based attribution,
-4. auto-confirm alerts by default while keeping a human override layer,
+4. materialize approved decisions automatically in the reported regeneration path while keeping a human override layer,
 5. selectively retrain after approved shifts,
 6. adapt trading posture based on the detected shift context.
 
@@ -53,8 +53,8 @@ SHAP attribution
     what feature group drove the shift?
     ->
 Dashboard
-    auto-confirm by default
-    human override / reject / relabel when needed
+    reported regeneration path auto-materializes approved decisions
+    dashboard still supports human override / reject / relabel
     ->
 Adaptive response
     trading posture selection
@@ -82,7 +82,8 @@ Classification and trading-oriented experiments may still exist locally as suppo
 This repository currently supports:
 
 - a connected end-to-end pipeline from model outputs to detection, attribution, dashboard review, and retraining
-- a Streamlit dashboard with **auto-confirm by default** and **human override only when necessary**
+- a Streamlit dashboard for lightweight human review and override
+- a submission-facing regeneration path that auto-materializes approved decisions for reproducible reported results
 - selective retraining that consumes approved dashboard decisions
 - an **adaptive ShiftGuard trading policy** used by the trading comparison path
   - `technical` shift -> technical followthrough posture
@@ -189,6 +190,8 @@ This command:
 4. reruns selective retraining,
 5. refreshes the adaptive win-rate experiment, and
 6. regenerates the dashboard-facing statistical summary and figures in `results/figures/`.
+
+The reported results in this repository were generated through this end-to-end wrapper. Concretely, `src/run_all_phases.py` calls `src/run_pipeline.py` with `--auto-confirm-decisions`, so detected shifts are materialized into approved decisions and then passed into selective retraining without manual intervention. The dashboard still supports manual review and override, but those interactive overrides were not used for the current benchmark results.
 
 For a faster local validation run that still exercises the full flow end to end:
 
@@ -335,6 +338,8 @@ Tracked saved trading summaries in `results/winrate/`:
 - `GBPJPY`: ShiftGuard `58.96%` win rate, `39.5%` market participation, `1.98` profit factor
 - `XAUUSD`: ShiftGuard `58.03%` win rate, `40.6%` market participation, `1.89` profit factor
 
+The saved figure `results/figures/winrate_comparison.png` now visualizes the risk managed comparison through market participation or trade percentage across strategies. Win rate remains part of the tabular summary, while the figure highlights that ShiftGuard trades more selectively than the always on ML baseline.
+
 Paired statistical tests in `results/figures/statistical_tests.json` remain significant for all three pairs:
 
 - `EURUSD`: `p = 0.003182`
@@ -358,7 +363,7 @@ The strongest evaluation framing for this project is:
   auto-confirm keeps the workflow efficient, while overrides and rejections improve downstream adaptation quality
 
 - **Adaptive policy quality**
-  whether shift type and dominant attribution group improve trading posture and retraining choice
+  whether shift type and dominant attribution group improve trading posture and retraining choice, including more selective market participation
 
 The main academic claim is not that ShiftGuard maximizes raw trading profit. The claim is that it provides a more structured and interpretable way to handle shift in a non-stationary financial environment.
 
@@ -366,7 +371,9 @@ The main academic claim is not that ShiftGuard maximizes raw trading profit. The
 
 - The canonical monitored model writes outputs to `results/predictions/`.
 - The dashboard reads from `results/detection/`, `results/attribution/`, `results/predictions/`, and writes decisions to `results/decisions/`.
-- The dashboard currently auto-confirms new shifts by default and queues them for retraining unless a human overrides or rejects them.
+- The reported end-to-end results were regenerated with `src/run_all_phases.py`, which calls `src/run_pipeline.py` with `--auto-confirm-decisions`.
+- In that reported path, detected shifts are materialized into approved decisions and passed into selective retraining without manual intervention.
+- The standard pipeline still supports human review and manual override through the dashboard, but those interactive overrides were not used in the current reported benchmark configuration.
 - Selective retraining consumes approved dashboard decisions when available.
 - `src/models/winrate_experiment.py` contains the adaptive trading-policy implementation used by the trading comparison path.
 - Analysis/reporting scripts live in `src/analysis/` and tracked result artifacts live under `results/`.
