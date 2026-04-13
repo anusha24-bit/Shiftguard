@@ -20,6 +20,7 @@ PAIR_LABELS = {'EURUSD': 'EUR/USD', 'GBPJPY': 'GBP/JPY', 'XAUUSD': 'XAU/USD'}
 REGIME_NAMES = {0: 'Trend Up (Calm)', 1: 'Trend Up (Volatile)', 2: 'Ranging',
                 3: 'Trend Down (Calm)', 4: 'Trend Down (Volatile)'}
 REGIME_COLORS = {0: '#2ecc71', 1: '#0096ff', 2: '#95a5a6', 3: '#ffa500', 4: '#e74c3c'}
+PLOTLY_TEMPLATE = 'simple_white'
 
 
 def load_csv(rel_path):
@@ -44,37 +45,240 @@ def save_decision(pair, dt, decision, notes):
     os.makedirs(os.path.join(ROOT, 'results', 'decisions'), exist_ok=True)
     path = os.path.join(ROOT, 'results', 'decisions', f'{pair}_decisions.csv')
     old = load_decisions(pair)
+    old = old[old['datetime_utc'] != dt]
     new_row = pd.DataFrame([{'datetime_utc': dt, 'decision': decision, 'notes': notes}])
     new = pd.concat([old, new_row], ignore_index=True)
     new.to_csv(path, index=False)
+
+
+def queue_retrain(pair, dt, severity, shift_type, event_name):
+    retrain_log_path = os.path.join(ROOT, 'results', 'decisions', f'{pair}_retrain_queue.csv')
+    os.makedirs(os.path.dirname(retrain_log_path), exist_ok=True)
+    new_row = pd.DataFrame([{
+        'datetime_utc': str(dt),
+        'severity': severity,
+        'type': shift_type,
+        'event': event_name,
+        'status': 'queued',
+    }])
+    if os.path.exists(retrain_log_path):
+        existing = pd.read_csv(retrain_log_path)
+        existing = existing[existing['datetime_utc'] != str(dt)]
+        new_row = pd.concat([existing, new_row], ignore_index=True)
+    new_row.to_csv(retrain_log_path, index=False)
+
+
+def auto_confirm_shifts(pair, shifts_df):
+    if shifts_df.empty or 'datetime_utc' not in shifts_df.columns:
+        return 0
+
+    decisions = load_decisions(pair)
+    decided = set(decisions['datetime_utc'].astype(str)) if not decisions.empty else set()
+    created = 0
+
+    for _, row in shifts_df.iterrows():
+        dt = str(row['datetime_utc'])
+        if dt in decided:
+            continue
+
+        shift_type = row.get('type', 'unknown')
+        event_name = row.get('trigger_event', row.get('event', 'auto-confirmed shift'))
+        severity = int(row['severity']) if 'severity' in row and pd.notna(row['severity']) else 0
+        save_decision(pair, dt, 'auto_confirm', f"type={shift_type} | auto-confirmed by dashboard")
+        queue_retrain(pair, dt, severity, shift_type, event_name)
+        created += 1
+
+    return created
 
 
 # ── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(page_title="ShiftGuard", layout="wide")
 
 # ── Design Tokens ────────────────────────────────────────────────────────────
-BG_PRIMARY = '#0f172a'     # slate-900
-BG_CARD = '#1e293b'        # slate-800
-BG_SURFACE = '#334155'     # slate-700
-ACCENT = '#22c55e'         # green-500 (neon)
-ACCENT_DIM = '#16a34a'     # green-600
-TEXT_PRIMARY = '#f1f5f9'   # slate-100
-TEXT_MUTED = '#94a3b8'     # slate-400
-TEXT_DIM = '#64748b'       # slate-500
-DANGER = '#ef4444'         # red-500
-WARN = '#f59e0b'           # amber-500
+BG_PRIMARY = '#f7f0e4'
+BG_CARD = '#fffaf2'
+BG_SURFACE = '#eadfce'
+ACCENT = '#1f7a73'
+ACCENT_DIM = '#175d58'
+TEXT_PRIMARY = '#000000'
+TEXT_MUTED = '#000000'
+TEXT_DIM = '#000000'
+DANGER = '#c44b3f'
+WARN = '#c18b32'
 
 st.markdown(f"""
 <style>
-    .main > div {{ padding-top: 0.5rem; }}
-    .stApp {{ background-color: {BG_PRIMARY}; }}
-    .stTabs [data-baseweb="tab-list"] {{ gap: 6px; }}
-    .stTabs [data-baseweb="tab"] {{
-        border-radius: 6px 6px 0 0;
-        padding: 10px 20px;
-        font-size: 0.9rem;
+    .main > div {{
+        padding-top: 1.2rem;
+        max-width: 1180px;
     }}
-    .stSelectbox > div > div {{ border-color: {BG_SURFACE}; }}
+    .stApp {{
+        background:
+            radial-gradient(circle at top right, rgba(223, 192, 134, 0.18), transparent 24%),
+            radial-gradient(circle at 18% 18%, rgba(31, 122, 115, 0.10), transparent 20%),
+            linear-gradient(180deg, #f9f3e8 0%, #f5ecdf 100%);
+    }}
+    [data-testid="stSidebar"] {{
+        background: rgba(255, 249, 240, 0.86);
+        border-right: 1px solid {BG_SURFACE};
+    }}
+    [data-testid="stSidebar"] * {{
+        color: {TEXT_PRIMARY};
+    }}
+    label, .stMarkdown, .stCaption, .stText, p, span, div, li {{
+        color: {TEXT_PRIMARY};
+    }}
+    .stTabs [data-baseweb="tab-list"] {{
+        gap: 8px;
+        background: rgba(255, 250, 242, 0.82);
+        padding: 0.4rem;
+        border: 1px solid {BG_SURFACE};
+        border-radius: 999px;
+    }}
+    .stTabs [data-baseweb="tab"] {{
+        border-radius: 999px;
+        padding: 10px 18px;
+        font-size: 0.95rem;
+        color: {TEXT_MUTED};
+    }}
+    .stTabs [aria-selected="true"] {{
+        background: {TEXT_PRIMARY};
+        color: #fffaf2 !important;
+    }}
+    .stTabs [aria-selected="true"] *,
+    .stTabs [aria-selected="true"] p,
+    .stTabs [aria-selected="true"] div {{
+        color: #fffaf2 !important;
+    }}
+    .stSelectbox > div > div,
+    .stTextInput > div > div > input,
+    .stNumberInput > div > div > input {{
+        border-color: {BG_SURFACE};
+        background: rgba(255, 250, 242, 0.9);
+        color: {TEXT_PRIMARY};
+        border-radius: 16px;
+    }}
+    .stNumberInput input {{
+        color: {TEXT_PRIMARY};
+    }}
+    .stNumberInput button {{
+        background: rgba(255, 250, 242, 0.95) !important;
+        color: {TEXT_PRIMARY} !important;
+        border-color: {BG_SURFACE} !important;
+    }}
+    .stNumberInput [data-baseweb="input"] {{
+        background: rgba(255, 250, 242, 0.95) !important;
+        border: 1px solid {BG_SURFACE} !important;
+        border-radius: 16px !important;
+    }}
+    .stSelectbox div[data-baseweb="select"] * {{
+        color: {TEXT_PRIMARY};
+    }}
+    div[data-baseweb="popover"],
+    div[data-baseweb="menu"],
+    ul[role="listbox"] {{
+        background: rgba(255, 250, 242, 0.98) !important;
+        color: {TEXT_PRIMARY} !important;
+        border: 1px solid {BG_SURFACE} !important;
+        border-radius: 18px !important;
+        box-shadow: 0 16px 36px rgba(84, 63, 39, 0.14) !important;
+    }}
+    li[role="option"],
+    div[role="option"] {{
+        background: transparent !important;
+        color: {TEXT_PRIMARY} !important;
+    }}
+    li[role="option"][aria-selected="true"],
+    div[role="option"][aria-selected="true"],
+    li[role="option"]:hover,
+    div[role="option"]:hover {{
+        background: rgba(31, 122, 115, 0.12) !important;
+        color: {TEXT_PRIMARY} !important;
+    }}
+    .stDataFrame, .stTable {{
+        color: {TEXT_PRIMARY};
+    }}
+    .js-plotly-plot,
+    .plot-container,
+    .svg-container {{
+        background: rgba(255, 250, 242, 0.96) !important;
+        border-radius: 24px !important;
+    }}
+    .stButton > button {{
+        border-radius: 999px;
+        border: 1px solid {BG_SURFACE};
+        background: rgba(255, 250, 242, 0.95);
+        color: {TEXT_PRIMARY};
+    }}
+    .stButton > button[kind="primary"] {{
+        background: {TEXT_PRIMARY};
+        color: #fffaf2;
+        border-color: {TEXT_PRIMARY};
+    }}
+    [data-testid="stMetric"] {{
+        background: rgba(255, 250, 242, 0.78);
+        border: 1px solid {BG_SURFACE};
+        border-radius: 24px;
+        padding: 0.8rem;
+        box-shadow: 0 10px 30px rgba(84, 63, 39, 0.08);
+    }}
+    .sg-hero {{
+        background: rgba(255, 250, 242, 0.76);
+        border: 1px solid {BG_SURFACE};
+        border-radius: 36px;
+        padding: 1.8rem 2rem;
+        box-shadow: 0 18px 50px rgba(84, 63, 39, 0.10);
+        backdrop-filter: blur(10px);
+    }}
+    .sg-grid {{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+        margin-top: 1.25rem;
+    }}
+    .sg-card {{
+        background: rgba(255, 250, 242, 0.82);
+        border: 1px solid {BG_SURFACE};
+        border-radius: 24px;
+        padding: 1.1rem 1.2rem;
+        min-height: 138px;
+    }}
+    .sg-kicker {{
+        color: {TEXT_DIM};
+        letter-spacing: 0.18em;
+        font-size: 0.76rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }}
+    .sg-title {{
+        color: {TEXT_PRIMARY};
+        margin: 0.15rem 0 0.7rem 0;
+        font-size: 3.2rem;
+        line-height: 1.02;
+        font-weight: 800;
+    }}
+    .sg-subtitle {{
+        color: {TEXT_MUTED};
+        font-size: 1.22rem;
+        line-height: 1.65;
+        max-width: 880px;
+        margin-bottom: 0;
+    }}
+    .sg-card h4 {{
+        color: {TEXT_PRIMARY};
+        margin: 0 0 0.55rem 0;
+        font-size: 1.15rem;
+    }}
+    .sg-card p {{
+        color: {TEXT_MUTED};
+        margin: 0;
+        line-height: 1.65;
+    }}
+    @media (max-width: 960px) {{
+        .sg-grid {{ grid-template-columns: 1fr; }}
+        .sg-title {{ font-size: 2.3rem; }}
+        .sg-hero {{ padding: 1.4rem; border-radius: 28px; }}
+    }}
     .stDivider {{ margin: 1.5rem 0; }}
     h1, h2, h3, h4 {{ color: {TEXT_PRIMARY}; }}
     .stMarkdown p {{ color: {TEXT_MUTED}; }}
@@ -103,13 +307,31 @@ if not price.empty:
 shifts = load_csv(f'results/detection/{pair}_shifts.csv')
 attr = load_csv(f'results/attribution/{pair}_attribution.csv')
 stats = load_json('results/figures/statistical_tests.json')
+auto_confirmed_count = auto_confirm_shifts(pair, shifts)
 
 # ── Header ───────────────────────────────────────────────────────────────────
 st.markdown(f"""
-<div style="text-align: center; padding: 16px 0 4px 0;">
-    <h1 style="margin: 0; font-size: 2.4rem; letter-spacing: 3px; color: {TEXT_PRIMARY};">SHIFTGUARD</h1>
-    <p style="color: {TEXT_DIM}; margin: 6px 0 0 0; font-size: 0.95rem; letter-spacing: 0.5px;">Distribution Shift Detection, Attribution & Adaptive Retraining</p>
-    <p style="color: {ACCENT}; font-size: 1.05rem; margin: 8px 0 0 0; font-weight: 600;">{PAIR_LABELS[pair]}</p>
+<div class="sg-hero">
+    <div class="sg-kicker">Executive Snapshot</div>
+    <h1 class="sg-title">ShiftGuard</h1>
+    <p class="sg-subtitle">
+        A calmer way to detect distribution shifts, explain what changed, and keep retraining selective.
+        The system auto-confirms each new shift and only asks the analyst to step in when an override is needed.
+    </p>
+    <div class="sg-grid">
+        <div class="sg-card">
+            <h4>{PAIR_LABELS[pair]}</h4>
+            <p>Focused view of signals, shift evidence, and analyst overrides for the currently selected market.</p>
+        </div>
+        <div class="sg-card">
+            <h4>Auto-confirm by default</h4>
+            <p>{auto_confirmed_count} newly detected shifts were queued automatically in this session, so review can stay exception-based.</p>
+        </div>
+        <div class="sg-card">
+            <h4>Human-in-the-loop by design</h4>
+            <p>The analyst now reviews edge cases, corrects labels when needed, and lets the retraining queue flow in the background.</p>
+        </div>
+    </div>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("")
@@ -325,7 +547,7 @@ with tab2:
 
         fig.add_hline(y=capital, line_dash="dot", line_color=DANGER,
                       annotation_text="Break-even")
-        fig.update_layout(template='plotly_dark', height=380,
+        fig.update_layout(template=PLOTLY_TEMPLATE, height=380,
                           yaxis_title='Portfolio Value ($)', xaxis_title='',
                           legend=dict(orientation='h', y=1.1), margin=dict(t=30, b=20),
                           dragmode=False)
@@ -364,7 +586,7 @@ with tab3:
                 name='Price', line=dict(color='#e0e0e0', width=1.3),
                 hovertemplate='%{x}<br>$%{y:,.2f}<extra></extra>'
             ))
-            fig.update_layout(template='plotly_dark', height=420,
+            fig.update_layout(template=PLOTLY_TEMPLATE, height=420,
                               margin=dict(t=20, b=20),
                               yaxis_title='Price',
                               showlegend=False,
@@ -383,7 +605,7 @@ with tab3:
                 hole=0.4, textinfo='label+percent',
                 textfont=dict(size=12),
             ))
-            fig2.update_layout(template='plotly_dark', height=320, margin=dict(t=10, b=10))
+            fig2.update_layout(template=PLOTLY_TEMPLATE, height=320, margin=dict(t=10, b=10))
             st.plotly_chart(fig2, use_container_width=True)
 
 # ══════════════════════════════════════════════════════════════════════════════
@@ -441,7 +663,7 @@ with tab4:
                     marker_color=[ACCENT, '#3498db', '#f39c12', '#e74c3c', '#9b59b6'][:len(counts)],
                     text=counts.values, textposition='outside',
                 ))
-                fig.update_layout(template='plotly_dark', height=280,
+                fig.update_layout(template=PLOTLY_TEMPLATE, height=280,
                                   margin=dict(t=10, b=20, l=100))
                 st.plotly_chart(fig, use_container_width=True)
 
@@ -459,7 +681,7 @@ with tab4:
                         marker_color='#3498db',
                         text=[f'{v:.0%}' for v in means.values], textposition='outside',
                     ))
-                    fig.update_layout(template='plotly_dark', height=280,
+                    fig.update_layout(template=PLOTLY_TEMPLATE, height=280,
                                       margin=dict(t=10, b=20, l=100),
                                       xaxis=dict(tickformat='.0%'))
                     st.plotly_chart(fig, use_container_width=True)
@@ -561,7 +783,7 @@ with tab5:
                         font=dict(color='#ffd700', size=12, family='Arial Black'),
                     )
 
-                    fig_ctx.update_layout(template='plotly_dark', height=300,
+                    fig_ctx.update_layout(template=PLOTLY_TEMPLATE, height=300,
                                           margin=dict(t=30, b=15),
                                           yaxis_title='Price',
                                           legend=dict(orientation='h', y=1.12),
@@ -628,7 +850,7 @@ with tab5:
                             text=[f'{v:.0%}' for v in breakdown.values()],
                             textposition='outside',
                         ))
-                        fig.update_layout(template='plotly_dark', height=200,
+                        fig.update_layout(template=PLOTLY_TEMPLATE, height=200,
                                           margin=dict(t=10, b=10, l=100),
                                           xaxis=dict(tickformat='.0%'))
                         st.plotly_chart(fig, use_container_width=True)
@@ -684,14 +906,11 @@ with tab5:
                 in the price chart above.
                 """)
 
+            st.info("This shift is auto-confirmed by default. You only need to step in if you want to correct the label or reject the alert as noise.")
             st.markdown("""
-            **What each action does:**
-            - **Confirm - Retrain**: This is a real shift. The model queues a retrain using
-              post-shift data so it adapts to the new regime. The adaptive retraining pipeline
-              picks this up alongside its 4 automatic triggers (regime change, vol spike,
-              performance drop, event surprise).
-            - **Reject - False Alarm**: This is noise, not a real shift. The model will NOT
-              retrain on it. Logging false positives helps measure detection accuracy.
+            **What each action does now:**
+            - **Keep / override & stay confirmed**: Preserve the default confirmation and optionally correct the shift type.
+            - **Reject - False Alarm**: Mark the alert as noise and remove it from the selective-retraining path.
 
             Before submitting, you can **override the classification** below. If the system
             labeled this as "unexpected" but you know it was caused by a news event, change
@@ -720,34 +939,25 @@ with tab5:
 
             col1, col2 = st.columns(2)
             with col1:
-                if st.button("Confirm - Retrain", type="primary"):
+                primary_label = "Keep auto-confirmed" if override.startswith('Keep') else "Apply override & keep confirmed"
+                if st.button(primary_label, type="primary"):
                     # Apply override if changed
                     final_type = shift_type
+                    decision_name = "confirm"
                     if not override.startswith('Keep'):
                         apply_override(pair, pick, override)
                         final_type = override
+                        decision_name = f"reclassify_to_{override}"
 
-                    save_decision(pair, pick, "confirm",
+                    save_decision(pair, pick, decision_name,
                                   f"type={final_type}" + (f' | {notes}' if notes else ''))
-
-                    # Queue retrain
-                    retrain_log_path = os.path.join(ROOT, 'results', 'decisions', f'{pair}_retrain_queue.csv')
-                    os.makedirs(os.path.dirname(retrain_log_path), exist_ok=True)
-                    retrain_entry = pd.DataFrame([{
-                        'datetime_utc': pick,
-                        'severity': sev,
-                        'type': final_type,
-                        'event': event_name,
-                        'status': 'queued',
-                    }])
-                    if os.path.exists(retrain_log_path):
-                        existing = pd.read_csv(retrain_log_path)
-                        retrain_entry = pd.concat([existing, retrain_entry], ignore_index=True)
-                    retrain_entry.to_csv(retrain_log_path, index=False)
+                    queue_retrain(pair, pick, sev, final_type, event_name)
 
                     msg = f"Confirmed. Retrain queued for {str(pick)[:10]}."
                     if not override.startswith('Keep'):
                         msg += f" Classification updated to '{final_type}'."
+                    elif notes:
+                        msg += " Notes saved on the confirmed shift."
                     msg += " The adaptive pipeline will retrain on the next cycle."
                     st.success(msg)
                     st.rerun()
@@ -774,9 +984,10 @@ with tab5:
     decisions = load_decisions(pair)
     if not decisions.empty:
         st.dataframe(decisions, use_container_width=True)
-        nc = len(decisions[decisions['decision'] == 'confirm'])
+        nc = len(decisions[decisions['decision'].isin(['confirm', 'auto_confirm', 'reclassify_to_scheduled', 'reclassify_to_unexpected'])])
         nr = len(decisions[decisions['decision'] == 'reject'])
-        st.caption(f"{nc} confirmed · {nr} rejected · {len(decisions)} total")
+        na = len(decisions[decisions['decision'] == 'auto_confirm'])
+        st.caption(f"{nc} confirmed | {na} auto-confirmed | {nr} rejected | {len(decisions)} total")
 
         dc1, dc2 = st.columns(2)
         with dc1:

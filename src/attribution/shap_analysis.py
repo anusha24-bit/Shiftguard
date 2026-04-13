@@ -14,6 +14,7 @@ Usage:
 import sys
 import os
 import json
+import argparse
 import numpy as np
 import pandas as pd
 import xgboost as xgb
@@ -132,6 +133,9 @@ def run_attribution(pair_name):
 
     # Load XGBoost model
     model_path = os.path.join(RESULTS_DIR, f'xgboost_{pair_name}.json')
+    if not os.path.exists(model_path):
+        print(f"  Skipping {pair_name} - monitored model not found at {model_path}")
+        return pd.DataFrame()
     model = xgb.XGBRegressor()
     model.load_model(model_path)
     print(f"  Model loaded: {model_path}")
@@ -217,7 +221,11 @@ def run_attribution(pair_name):
 
 
 if __name__ == '__main__':
-    for pair in ['EURUSD', 'GBPJPY', 'XAUUSD']:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--pairs", nargs="+", default=['EURUSD', 'GBPJPY', 'XAUUSD'])
+    args = parser.parse_args()
+
+    for pair in args.pairs:
         run_attribution(pair)
 
     print(f"\n{'='*60}")

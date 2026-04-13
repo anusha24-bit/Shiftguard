@@ -26,10 +26,14 @@ from src.features.technical import compute_technical_features
 from src.features.volatility import compute_volatility_features
 from src.features.macro import compute_macro_features
 from src.features.sentiment import compute_sentiment_features
+from src.models.baseline_technical import generate_technical_signals
+from src.models.baseline_ml_direction import train_direction_model, predict_direction_signals
 
 DATA_DIR = os.path.join(PROJECT_ROOT, 'data', 'raw')
 PROCESSED_DIR = os.path.join(PROJECT_ROOT, 'data', 'processed')
 RESULTS_DIR = os.path.join(PROJECT_ROOT, 'results', 'winrate')
+DETECTION_DIR = os.path.join(PROJECT_ROOT, 'results', 'detection')
+ATTRIBUTION_DIR = os.path.join(PROJECT_ROOT, 'results', 'attribution')
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 META_COLS = ['datetime_utc', 'date', 'session', 'target_return', 'target_direction',
@@ -51,21 +55,11 @@ REGIME_PARAMS = {
     'eval_metric': 'mlogloss',
 }
 
-DIR_PARAMS = {
-    'learning_rate': 0.01,
-    'max_depth': 5,
-    'n_estimators': 500,
-    'reg_alpha': 0.1,
-    'reg_lambda': 5.0,
-    'tree_method': 'hist',
-    'random_state': 42,
-    'verbosity': 0,
-}
-
 TRAIN_BARS = 180 * 6  # 6 months for 4H
 STEP_BARS = 6         # 1 day (6 × 4H bars) — check triggers daily
 RETRAIN_COOLDOWN = 30 # minimum 30 bars (~5 days) between retrains
 CONFIDENCE_THRESHOLD = 0.55  # only trade when regime confidence > this
+SHIFT_LOOKBACK_BARS = 30
 
 
 def get_feature_cols(df):
@@ -101,38 +95,6 @@ def create_5class_regime(df):
     df['target_market_state'] = df['market_state'].shift(-1).ffill().astype(int)
 
     return df
-
-
-def strategy_technical(df):
-    """
-    Strategy 1: Trade on technical signals alone.
-    Buy when RSI < 30, Sell when RSI > 70.
-    Direction based on MACD crossover.
-    """
-    signals = []
-    for _, row in df.iterrows():
-        signal = 0  # no trade
-        rsi = row.get('rsi_14', 50)
-        macd = row.get('macd_hist', 0)
-
-        if pd.isna(rsi) or pd.isna(macd):
-            signals.append(0)
-            continue
-
-        # RSI signal
-        if rsi < 30:
-            signal = 1  # buy (oversold)
-        elif rsi > 70:
-            signal = -1  # sell (overbought)
-        # MACD confirmation
-        elif macd > 0:
-            signal = 1
-        elif macd < 0:
-            signal = -1
-
-        signals.append(signal)
-
-    return np.array(signals)
 
 
 def evaluate_strategy(signals, actual_returns, name):
@@ -173,6 +135,115 @@ def evaluate_strategy(signals, actual_returns, name):
     }
 
 
+def load_shift_context(pair_name):
+    shifts_path = os.path.join(DETECTION_DIR, f'{pair_name}_shifts.csv')
+    if not os.path.exists(shifts_path):
+        return pd.DataFrame()
+
+    shifts = pd.read_csv(shifts_path)
+    shifts['datetime_utc'] = pd.to_datetime(shifts['datetime_utc'], format='mixed', errors='coerce')
+    shifts = shifts.dropna(subset=['datetime_utc'])
+
+    attr_path = os.path.join(ATTRIBUTION_DIR, f'{pair_name}_attribution.csv')
+    if os.path.exists(attr_path):
+        attr = pd.read_csv(attr_path)
+        attr['datetime_utc'] = pd.to_datetime(attr['datetime_utc'], format='mixed', errors='coerce')
+        attr = attr.dropna(subset=['datetime_utc'])
+        shifts = shifts.merge(
+            attr[['datetime_utc', 'dominant_group']].drop_duplicates('datetime_utc'),
+            on='datetime_utc',
+            how='left',
+        )
+
+    if 'dominant_group' not in shifts.columns:
+        shifts['dominant_group'] = 'unknown'
+    shifts['dominant_group'] = shifts['dominant_group'].fillna('unknown')
+    return shifts.sort_values('datetime_utc').reset_index(drop=True)
+
+
+def get_recent_shift_context(shifts_df, current_dt, lookback_bars=SHIFT_LOOKBACK_BARS):
+    if shifts_df.empty:
+        return None
+
+    lookback_window = pd.Timedelta(hours=4 * lookback_bars)
+    recent = shifts_df[
+        (shifts_df['datetime_utc'] <= current_dt) &
+        (shifts_df['datetime_utc'] >= current_dt - lookback_window)
+    ].copy()
+    if recent.empty:
+        return None
+
+    sort_cols = ['datetime_utc']
+    ascending = [False]
+    if 'severity' in recent.columns:
+        sort_cols = ['severity', 'datetime_utc']
+        ascending = [False, False]
+    recent = recent.sort_values(sort_cols, ascending=ascending)
+    return recent.iloc[0]
+
+
+def choose_shiftguard_policy(shift_ctx):
+    if shift_ctx is None:
+        return 'default_regime'
+
+    shift_type = str(shift_ctx.get('type', 'unknown'))
+    dominant = str(shift_ctx.get('dominant_group', 'unknown'))
+
+    if dominant == 'technical':
+        return 'technical_followthrough'
+    if shift_type == 'scheduled' or dominant in {'macro', 'sentiment'}:
+        return 'event_alignment'
+    if shift_type == 'unexpected' or dominant == 'volatility':
+        return 'defensive_shock'
+    return 'default_regime'
+
+
+def adaptive_shiftguard_signal(row, tech_signal, ml_signal, regime_state, regime_conf, shift_ctx):
+    policy = choose_shiftguard_policy(shift_ctx)
+    bars_since = row.get('bars_since_regime_change', np.inf)
+
+    if policy == 'technical_followthrough':
+        if regime_conf < 0.50 or bars_since < 2:
+            return 0, policy
+        if regime_state in [0, 1]:
+            if ml_signal == 1:
+                return 1, policy
+            if tech_signal == 1:
+                return 1, policy
+        if regime_state in [3, 4]:
+            if ml_signal == -1:
+                return -1, policy
+            if tech_signal == -1:
+                return -1, policy
+        return 0, policy
+
+    if policy == 'event_alignment':
+        if regime_conf < 0.60 or bars_since < 3:
+            return 0, policy
+        if regime_state in [0, 1] and ml_signal == 1:
+            return 1, policy
+        if regime_state in [3, 4] and ml_signal == -1:
+            return -1, policy
+        return 0, policy
+
+    if policy == 'defensive_shock':
+        if regime_conf < 0.68 or bars_since < 5:
+            return 0, policy
+        if regime_state in [0, 1] and ml_signal == 1 and tech_signal >= 0:
+            return 1, policy
+        if regime_state in [3, 4] and ml_signal == -1 and tech_signal <= 0:
+            return -1, policy
+        return 0, policy
+
+    if regime_conf < CONFIDENCE_THRESHOLD or bars_since < 3:
+        return 0, policy
+    if regime_state in [0, 1]:
+        return 1, policy
+    if regime_state in [3, 4]:
+        return -1, policy
+    return 0, policy
+
+
 def run_pair(pair_name):
     print(f"\n{'='*60}")
     print(f"Win Rate Experiment — {pair_name}")
@@ -200,6 +271,7 @@ def run_pair(pair_name):
     df = df.iloc[:-1].reset_index(drop=True)
 
     feature_cols = get_feature_cols(df)
+    shifts_ctx = load_shift_context(pair_name)
     print(f"  Rows: {len(df)}, Features: {len(feature_cols)}")
     print(f"  Market state distribution: {pd.Series(df['market_state']).value_counts().to_dict()}")
 
@@ -218,20 +290,7 @@ def run_pair(pair_name):
 
     # ML direction model — use ONLY Groups 1-4 features (no regime labels)
     # Train on first 6 months, static, never retrain
-    base_feature_cols = [c for c in feature_cols if c not in [
-        'atr_pct_short', 'atr_pct_long', 'vol_ratio_5_60', 'vol_ratio_5_20',
-        'vol_compressed', 'compression_duration', 'range_contraction',
-        'hurst_exponent', 'consecutive_dir_bars', 'vol_divergence',
-        'event_vol_interaction', 'range_expansion', 'abs_gap', 'gap_expansion',
-        'market_state', 'target_market_state', 'target_dir',
-    ]]
-    X_init_base = df.iloc[train_start:cursor][base_feature_cols].values
-    dir_model = xgb.XGBClassifier(
-        learning_rate=0.01, max_depth=5, n_estimators=500,
-        reg_alpha=0.1, reg_lambda=5.0, tree_method='hist',
-        random_state=42, verbosity=0, eval_metric='logloss',
-    )
-    dir_model.fit(X_init_base, y_dir_init, verbose=False)
+    dir_model, base_feature_cols = train_direction_model(df, feature_cols, train_start, cursor)
     print(f'  ML baseline features: {len(base_feature_cols)} (no regime features)')
 
     # Regime classifier (5-class)
@@ -264,12 +323,10 @@ def run_pair(pair_name):
             print(f"    step {step}/{total_steps} ...")
 
         # --- Strategy 1: Technical signals ---
-        tech_signals = strategy_technical(chunk)
+        tech_signals = generate_technical_signals(chunk)
 
         # --- Strategy 2: ML direction (static classifier, no regime features) ---
-        X_chunk_base = chunk[base_feature_cols].values
-        ml_pred = dir_model.predict(X_chunk_base)
-        ml_signals = np.where(ml_pred == 1, 1, -1)
+        ml_signals = predict_direction_signals(dir_model, chunk, base_feature_cols)
 
         # --- Strategy 3: ShiftGuard regime-filtered ---
         regime_probs = regime_model.predict_proba(X_chunk)
@@ -279,9 +336,21 @@ def run_pair(pair_name):
         # Determine trade direction from regime
         # States 0,1 (trending up) → long; States 3,4 (trending down) → short; State 2 (ranging) → skip
         shiftguard_signals = np.zeros(len(X_chunk))
+        shiftguard_policies = []
         for i in range(len(X_chunk)):
-            conf = regime_confidence[i]
-            state = regime_pred[i]
+            row = chunk.iloc[i]
+            shift_ctx = get_recent_shift_context(shifts_ctx, row['datetime_utc'])
+            signal, policy = adaptive_shiftguard_signal(
+                row=row,
+                tech_signal=tech_signals[i],
+                ml_signal=ml_signals[i],
+                regime_state=regime_pred[i],
+                regime_conf=regime_confidence[i],
+                shift_ctx=shift_ctx,
+            )
+            shiftguard_signals[i] = signal
+            shiftguard_policies.append(policy)
+            continue
 
             if conf < CONFIDENCE_THRESHOLD:
                 continue  # low confidence → sit out
@@ -305,6 +374,7 @@ def run_pair(pair_name):
                 'tech_signal': tech_signals[i],
                 'ml_signal': ml_signals[i],
                 'sg_signal': shiftguard_signals[i],
+                'sg_policy': shiftguard_policies[i],
                 'regime': regime_pred[i],
                 'regime_confidence': regime_confidence[i],
             })

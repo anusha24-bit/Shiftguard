@@ -26,6 +26,8 @@ PROCESSED_DIR = os.path.join(PROJECT_ROOT, 'data', 'processed')
 RESULTS_DIR = os.path.join(PROJECT_ROOT, 'results', 'predictions')
 DETECTION_DIR = os.path.join(PROJECT_ROOT, 'results', 'detection')
 RETRAINING_DIR = os.path.join(PROJECT_ROOT, 'results', 'retraining')
+DECISIONS_DIR = os.path.join(PROJECT_ROOT, 'results', 'decisions')
+ATTRIBUTION_DIR = os.path.join(PROJECT_ROOT, 'results', 'attribution')
 os.makedirs(RETRAINING_DIR, exist_ok=True)
 
 EXCLUDE_COLS = ['datetime_utc', 'date', 'session', 'target_return', 'target_direction', 'volume']
@@ -46,16 +48,54 @@ WINDOW_SIZE = 180  # 180 4H bars = 30 trading days
 EVAL_HORIZON = 180  # evaluate recovery over 180 bars after retraining
 ROLLING_WINDOW = 30  # rolling MAE window
 
+GROUPS_PATH = os.path.join(PROCESSED_DIR, 'feature_groups.json')
+with open(GROUPS_PATH) as f:
+    FEATURE_GROUPS = json.load(f)
+
 
 def get_feature_cols(df):
     return [c for c in df.columns if c not in EXCLUDE_COLS]
 
 
 def get_shift_events(pair_name):
-    """Load detected shifts, filter to high-severity + test period only."""
+    """Load reviewed shifts when available, otherwise fall back to detected shifts."""
     shifts_path = os.path.join(DETECTION_DIR, f'{pair_name}_shifts.csv')
     shifts = pd.read_csv(shifts_path)
-    shifts['datetime_utc'] = pd.to_datetime(shifts['datetime_utc'])
+    shifts['datetime_utc'] = pd.to_datetime(shifts['datetime_utc'], format='mixed', errors='coerce')
+    shifts = shifts.dropna(subset=['datetime_utc'])
+
+    decisions_path = os.path.join(DECISIONS_DIR, f'{pair_name}_decisions.csv')
+    if os.path.exists(decisions_path):
+        decisions = pd.read_csv(decisions_path)
+        if not decisions.empty:
+            decisions['datetime_utc'] = pd.to_datetime(decisions['datetime_utc'], format='mixed', errors='coerce')
+            decisions = decisions.dropna(subset=['datetime_utc'])
+            decisions = decisions.sort_values('datetime_utc').drop_duplicates(subset=['datetime_utc'], keep='last')
+            approved = decisions[decisions['decision'].isin(['confirm', 'auto_confirm', 'reclassify_to_scheduled', 'reclassify_to_unexpected'])].copy()
+            if not approved.empty:
+                shifts = shifts.merge(
+                    approved[['datetime_utc', 'decision', 'notes']],
+                    on='datetime_utc',
+                    how='inner'
+                )
+                shifts.loc[shifts['decision'] == 'reclassify_to_scheduled', 'type'] = 'scheduled'
+                shifts.loc[shifts['decision'] == 'reclassify_to_unexpected', 'type'] = 'unexpected'
+
+    attr_path = os.path.join(ATTRIBUTION_DIR, f'{pair_name}_attribution.csv')
+    if os.path.exists(attr_path):
+        attr = pd.read_csv(attr_path)
+        if not attr.empty:
+            attr['datetime_utc'] = pd.to_datetime(attr['datetime_utc'], format='mixed', errors='coerce')
+            attr = attr.dropna(subset=['datetime_utc'])
+            shifts = shifts.merge(
+                attr[['datetime_utc', 'dominant_group']].drop_duplicates('datetime_utc'),
+                on='datetime_utc',
+                how='left'
+            )
+
+    if 'dominant_group' not in shifts.columns:
+        shifts['dominant_group'] = 'unknown'
+    shifts['dominant_group'] = shifts['dominant_group'].fillna('unknown')
 
     # Only test period (2021+)
     shifts = shifts[shifts['datetime_utc'] >= '2021-01-01']
@@ -74,6 +114,45 @@ def get_shift_events(pair_name):
             last_dt = row['datetime_utc']
 
     return pd.DataFrame(filtered)
+
+
+def get_group_feature_cols(feature_cols, groups):
+    wanted = set()
+    for group in groups:
+        wanted.update(FEATURE_GROUPS.get(group, []))
+    selected = [c for c in feature_cols if c in wanted]
+    return selected if selected else feature_cols
+
+
+def choose_adaptive_policy(shift_row, feature_cols):
+    shift_type = str(shift_row.get('type', 'unknown'))
+    dominant = str(shift_row.get('dominant_group', 'unknown'))
+
+    if dominant == 'technical':
+        return {
+            'policy': 'technical_window',
+            'mode': 'window',
+            'feature_cols': get_group_feature_cols(feature_cols, ['technical', 'volatility']),
+            'window_size': 90,
+        }
+    if shift_type == 'scheduled' or dominant in {'macro', 'sentiment'}:
+        return {
+            'policy': 'event_full',
+            'mode': 'full',
+            'feature_cols': feature_cols,
+        }
+    if shift_type == 'unexpected' or dominant == 'volatility':
+        return {
+            'policy': 'shock_weighted',
+            'mode': 'weighted',
+            'feature_cols': get_group_feature_cols(feature_cols, ['volatility', 'technical', 'sentiment']),
+            'decay': 0.99,
+        }
+    return {
+        'policy': 'default_full',
+        'mode': 'full',
+        'feature_cols': feature_cols,
+    }
 
 
 def retrain_no_update(model, X_test_chunk, y_test_chunk):
@@ -117,6 +196,21 @@ def retrain_weighted(df, feature_cols, shift_idx, params, decay=0.995):
     model = xgb.XGBRegressor(**params)
     model.fit(X, y, sample_weight=weights, verbose=False)
     return model
+
+
+def retrain_adaptive(df, feature_cols, shift_idx, params, shift_row):
+    policy = choose_adaptive_policy(shift_row, feature_cols)
+    selected_cols = policy['feature_cols']
+    mode = policy['mode']
+
+    if mode == 'window':
+        model = retrain_window(df, selected_cols, shift_idx, policy.get('window_size', WINDOW_SIZE), params)
+    elif mode == 'weighted':
+        model = retrain_weighted(df, selected_cols, shift_idx, params, decay=policy.get('decay', 0.995))
+    else:
+        model = retrain_full(df, selected_cols, shift_idx, params)
+
+    return model, selected_cols, policy['policy']
 
 
 def compute_recovery_time(rolling_mae, pre_shift_mae, threshold=1.1):
@@ -208,9 +302,20 @@ def run_retraining_experiment(pair_name):
         rolling_weighted = pd.Series(np.abs(y_eval - pred_weighted)).rolling(ROLLING_WINDOW).mean()
         recovery_weighted = compute_recovery_time(rolling_weighted.values, pre_shift_mae)
 
+        # --- Strategy E: Adaptive retrain (uses shift type + attribution) ---
+        model_adaptive, adaptive_cols, adaptive_policy = retrain_adaptive(
+            df, feature_cols, shift_idx, DEFAULT_PARAMS, shift_row
+        )
+        pred_adaptive = model_adaptive.predict(eval_data[adaptive_cols].values)
+        mae_adaptive = mean_absolute_error(y_eval, pred_adaptive)
+        rolling_adaptive = pd.Series(np.abs(y_eval - pred_adaptive)).rolling(ROLLING_WINDOW).mean()
+        recovery_adaptive = compute_recovery_time(rolling_adaptive.values, pre_shift_mae)
+
         result = {
             'shift_datetime': str(shift_dt),
             'shift_type': shift_row.get('type', 'unknown'),
+            'dominant_group': shift_row.get('dominant_group', 'unknown'),
+            'adaptive_policy': adaptive_policy,
             'pre_shift_mae': round(pre_shift_mae, 6),
             # No retrain
             'mae_no_retrain': round(mae_none, 6),
@@ -224,13 +329,16 @@ def run_retraining_experiment(pair_name):
             # Weighted
             'mae_weighted_retrain': round(mae_weighted, 6),
             'recovery_weighted_retrain': recovery_weighted,
+            # Adaptive
+            'mae_adaptive_retrain': round(mae_adaptive, 6),
+            'recovery_adaptive_retrain': recovery_adaptive,
         }
         all_results.append(result)
 
         if (shift_num + 1) % 5 == 0 or shift_num == 0:
             print(f"  [{shift_num+1}/{len(shifts)}] {shift_dt.date()} | "
                   f"No:{mae_none:.5f} Full:{mae_full:.5f} "
-                  f"Win:{mae_window:.5f} Wgt:{mae_weighted:.5f}")
+                  f"Win:{mae_window:.5f} Wgt:{mae_weighted:.5f} Adp:{mae_adaptive:.5f}")
 
     results_df = pd.DataFrame(all_results)
 
@@ -244,6 +352,7 @@ def run_retraining_experiment(pair_name):
         ('Full Retrain', 'mae_full_retrain', 'recovery_full_retrain'),
         ('Window (30d)', 'mae_window_retrain', 'recovery_window_retrain'),
         ('Weighted', 'mae_weighted_retrain', 'recovery_weighted_retrain'),
+        ('Adaptive', 'mae_adaptive_retrain', 'recovery_adaptive_retrain'),
     ]
 
     summary = {}

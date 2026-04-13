@@ -1,0 +1,22 @@
+{
+  "No Retrain": {
+    "avg_mae": 0.001852,
+    "avg_recovery_bars": 60.7,
+    "pct_recovered": 96.3
+  },
+  "Full Retrain": {
+    "avg_mae": 0.001789,
+    "avg_recovery_bars": 57.0,
+    "pct_recovered": 96.3
+  },
+  "Window (30d)": {
+    "avg_mae": 0.0018,
+    "avg_recovery_bars": 56.7,
+    "pct_recovered": 96.3
+  },
+  "Weighted": {
+    "avg_mae": 0.001798,
+    "avg_recovery_bars": 57.0,
+    "pct_recovered": 96.3
+  }
+}

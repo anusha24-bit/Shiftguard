@@ -1,0 +1,34 @@
+{
+  "XAUUSD": {
+    "pair": "XAUUSD",
+    "n_features": 76,
+    "train_rows": 7930,
+    "val_rows": 1604,
+    "test_rows": 8426,
+    "best_params": {
+      "learning_rate": 0.05,
+      "max_depth": 5,
+      "n_estimators": 200,
+      "reg_alpha": 0.1,
+      "reg_lambda": 5.0
+    },
+    "validation": {
+      "mae": 0.003117,
+      "rmse": 0.005036,
+      "dir_acc": 0.5461,
+      "accuracy": 0.5461,
+      "precision": 0.5713,
+      "recall": 0.6424,
+      "f1": 0.6048
+    },
+    "test": {
+      "mae": 0.002695,
+      "rmse": 0.004205,
+      "dir_acc": 0.5366,
+      "accuracy": 0.5373,
+      "precision": 0.5718,
+      "recall": 0.417,
+      "f1": 0.4823
+    }
+  }
+}

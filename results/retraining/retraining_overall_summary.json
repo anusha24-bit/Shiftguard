@@ -1,0 +1,68 @@
+{
+  "EURUSD": {
+    "No Retrain": {
+      "avg_mae": 0.00122,
+      "avg_recovery_bars": 45.7,
+      "pct_recovered": 93.5
+    },
+    "Full Retrain": {
+      "avg_mae": 0.001207,
+      "avg_recovery_bars": 42.7,
+      "pct_recovered": 95.7
+    },
+    "Window (30d)": {
+      "avg_mae": 0.00134,
+      "avg_recovery_bars": 50.1,
+      "pct_recovered": 91.3
+    },
+    "Weighted": {
+      "avg_mae": 0.001336,
+      "avg_recovery_bars": 50.2,
+      "pct_recovered": 91.3
+    }
+  },
+  "GBPJPY": {
+    "No Retrain": {
+      "avg_mae": 0.001852,
+      "avg_recovery_bars": 60.7,
+      "pct_recovered": 96.3
+    },
+    "Full Retrain": {
+      "avg_mae": 0.001789,
+      "avg_recovery_bars": 57.0,
+      "pct_recovered": 96.3
+    },
+    "Window (30d)": {
+      "avg_mae": 0.0018,
+      "avg_recovery_bars": 56.7,
+      "pct_recovered": 96.3
+    },
+    "Weighted": {
+      "avg_mae": 0.001798,
+      "avg_recovery_bars": 57.0,
+      "pct_recovered": 96.3
+    }
+  },
+  "XAUUSD": {
+    "No Retrain": {
+      "avg_mae": 0.002997,
+      "avg_recovery_bars": 47.6,
+      "pct_recovered": 92.1
+    },
+    "Full Retrain": {
+      "avg_mae": 0.002947,
+      "avg_recovery_bars": 47.1,
+      "pct_recovered": 94.7
+    },
+    "Window (30d)": {
+      "avg_mae": 0.003011,
+      "avg_recovery_bars": 45.4,
+      "pct_recovered": 94.7
+    },
+    "Weighted": {
+      "avg_mae": 0.003012,
+      "avg_recovery_bars": 44.7,
+      "pct_recovered": 94.7
+    }
+  }
+}

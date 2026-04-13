@@ -8,6 +8,7 @@ Usage:
 import sys
 import os
 import json
+import argparse
 import pandas as pd
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
@@ -122,7 +123,11 @@ def run_detection(pair_name):
 
 
 if __name__ == '__main__':
-    for pair in ['EURUSD', 'GBPJPY', 'XAUUSD']:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--pairs", nargs="+", default=['EURUSD', 'GBPJPY', 'XAUUSD'])
+    args = parser.parse_args()
+
+    for pair in args.pairs:
         shifts = run_detection(pair)
 
     # Cross-reference with geopolitical events (ground truth)
