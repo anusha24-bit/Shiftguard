@@ -1,0 +1,51 @@
+datetime_utc,severity,type,event,status
+2024-09-12 04:00:00,4,scheduled,Core PPI m/m; PPI m/m; Unemployment Claims,queued
+2024-09-20 08:00:00,1,unexpected,,queued
+2024-09-26 08:00:00,3,scheduled,Fed Chair Powell Speaks,queued
+2024-10-17 04:00:00,2,scheduled,Core Retail Sales m/m; Retail Sales m/m; Unemployment Claims,queued
+2024-10-20 20:00:00,1,unexpected,,queued
+2024-10-24 04:00:00,3,scheduled,Unemployment Claims,queued
+2024-10-28 00:00:00,1,unexpected,,queued
+2024-11-01 04:00:00,3,scheduled,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,queued
+2024-11-05 08:00:00,4,scheduled,ISM Services PMI,queued
+2024-11-11 08:00:00,1,unexpected,,queued
+2024-11-18 12:00:00,1,unexpected,,queued
+2024-12-10 04:00:00,1,unexpected,,queued
+2024-12-20 04:00:00,3,scheduled,Core PCE Price Index m/m,queued
+2025-01-02 12:00:00,1,unexpected,,queued
+2025-01-08 04:00:00,2,scheduled,ADP Non-Farm Employment Change; Unemployment Claims,queued
+2025-03-11 08:00:00,3,scheduled,JOLTS Job Openings,queued
+2025-04-07 12:00:00,3,unexpected,,queued
+2025-04-09 12:00:00,1,scheduled,FOMC Meeting Minutes,queued
+2025-04-22 20:00:00,1,unexpected,,queued
+2025-04-23 08:00:00,1,scheduled,Flash Manufacturing PMI; Flash Services PMI,queued
+2025-05-21 12:00:00,1,unexpected,,queued
+2025-06-27 04:00:00,1,scheduled,Core PCE Price Index m/m,queued
+2025-07-18 00:00:00,1,unexpected,,queued
+2025-08-08 12:00:00,1,unexpected,,queued
+2025-08-22 12:00:00,2,scheduled,President Trump Speaks,queued
+2025-08-28 04:00:00,4,scheduled,Prelim GDP q/q; Unemployment Claims,queued
+2025-09-08 00:00:00,2,unexpected,,queued
+2025-09-10 04:00:00,1,scheduled,Core PPI m/m; PPI m/m,queued
+2025-09-26 04:00:00,3,scheduled,Core PCE Price Index m/m,queued
+2025-09-29 12:00:00,1,unexpected,,queued
+2025-10-03 08:00:00,2,scheduled,ISM Services PMI,queued
+2025-10-10 08:00:00,4,scheduled,Prelim UoM Consumer Sentiment; Prelim UoM Inflation Expectations,queued
+2025-10-13 20:00:00,2,unexpected,,queued
+2025-10-14 08:00:00,4,scheduled,Fed Chair Powell Speaks,queued
+2025-10-21 00:00:00,2,unexpected,,queued
+2025-11-04 08:00:00,2,unexpected,,queued
+2025-11-26 04:00:00,2,scheduled,Unemployment Claims,queued
+2025-12-01 08:00:00,2,scheduled,ISM Manufacturing PMI,queued
+2025-12-17 12:00:00,1,unexpected,,queued
+2026-01-02 16:00:00,2,unexpected,,queued
+2026-01-18 20:00:00,1,unexpected,,queued
+2026-01-23 08:00:00,3,scheduled,Flash Manufacturing PMI; Flash Services PMI,queued
+2026-01-26 00:00:00,2,unexpected,,queued
+2026-01-29 04:00:00,3,scheduled,Unemployment Claims,queued
+2026-02-16 12:00:00,2,unexpected,,queued
+2026-03-13 04:00:00,3,scheduled,Core PCE Price Index m/m; Prelim GDP q/q,queued
+2026-03-17 04:00:00,1,unexpected,,queued
+2026-03-19 04:00:00,2,scheduled,Unemployment Claims,queued
+2026-03-24 08:00:00,3,scheduled,Flash Manufacturing PMI; Flash Services PMI,queued
+2026-03-30 08:00:00,4,scheduled,Fed Chair Powell Speaks,queued

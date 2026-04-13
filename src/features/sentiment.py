@@ -34,10 +34,10 @@ def compute_sentiment_features(df, pair_name, data_dir):
     sent = sent.rename(columns=col_map)
 
     # Compute daily changes before merging
-    sent['vix_change'] = sent['vix'].pct_change()
-    sent['dxy_change'] = sent['dxy'].pct_change()
-    sent['sp500_return'] = sent['sp500'].pct_change()
-    sent['oil_return'] = sent['oil'].pct_change()
+    sent['vix_change'] = sent['vix'].pct_change(fill_method=None)
+    sent['dxy_change'] = sent['dxy'].pct_change(fill_method=None)
+    sent['sp500_return'] = sent['sp500'].pct_change(fill_method=None)
+    sent['oil_return'] = sent['oil'].pct_change(fill_method=None)
     sent['vix_sma_10'] = sent['vix'].rolling(10).mean()
     sent['vix_above_avg'] = (sent['vix'] > sent['vix_sma_10']).astype(int)
 
@@ -109,9 +109,9 @@ def compute_sentiment_features(df, pair_name, data_dir):
                     df[col] = df[col].ffill()
 
             if 'gld_holdings' in df.columns:
-                df['gld_holdings_change'] = df['gld_holdings'].pct_change(6)  # day-over-day (6 bars/day)
+                df['gld_holdings_change'] = df['gld_holdings'].pct_change(6, fill_method=None)  # day-over-day (6 bars/day)
             if 'm2_money_supply' in df.columns:
-                df['m2_yoy_change'] = df['m2_money_supply'].pct_change(6 * 252)  # ~1 year
+                df['m2_yoy_change'] = df['m2_money_supply'].pct_change(6 * 252, fill_method=None)  # ~1 year
         except FileNotFoundError:
             pass
 

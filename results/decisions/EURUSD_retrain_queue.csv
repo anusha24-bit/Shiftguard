@@ -1,198 +1,32 @@
 datetime_utc,severity,type,event,status
-2026-04-06 00:00:00,5,scheduled,ISM Services PMI; President Trump Speaks,queued
-2015-01-27,5,scheduled,auto-confirmed shift,queued
-2015-02-26,4,scheduled,auto-confirmed shift,queued
-2015-03-03,4,scheduled,auto-confirmed shift,queued
-2015-03-12,4,scheduled,auto-confirmed shift,queued
-2015-03-16,4,scheduled,auto-confirmed shift,queued
-2015-03-27,3,scheduled,auto-confirmed shift,queued
-2015-04-16,2,scheduled,auto-confirmed shift,queued
-2015-04-27 12:00:00,1,unexpected,auto-confirmed shift,queued
-2015-05-20,3,scheduled,auto-confirmed shift,queued
-2015-06-03,3,scheduled,auto-confirmed shift,queued
-2015-07-22,2,scheduled,auto-confirmed shift,queued
-2015-08-21,4,scheduled,auto-confirmed shift,queued
-2015-08-25,4,scheduled,auto-confirmed shift,queued
-2015-10-05,2,scheduled,auto-confirmed shift,queued
-2015-10-09 08:00:00,1,unexpected,auto-confirmed shift,queued
-2015-10-22,4,scheduled,auto-confirmed shift,queued
-2015-11-30 08:00:00,1,unexpected,auto-confirmed shift,queued
-2015-12-04,5,scheduled,auto-confirmed shift,queued
-2016-02-03,3,scheduled,auto-confirmed shift,queued
-2016-02-19,3,scheduled,auto-confirmed shift,queued
-2016-02-25,4,scheduled,auto-confirmed shift,queued
-2016-03-02,2,scheduled,auto-confirmed shift,queued
-2016-03-10,3,scheduled,auto-confirmed shift,queued
-2016-03-16,3,scheduled,auto-confirmed shift,queued
-2016-03-30,3,scheduled,auto-confirmed shift,queued
-2016-06-22,2,scheduled,auto-confirmed shift,queued
-2016-07-28,3,scheduled,auto-confirmed shift,queued
-2016-10-06,3,scheduled,auto-confirmed shift,queued
-2016-10-12,3,scheduled,auto-confirmed shift,queued
-2016-10-28,3,scheduled,auto-confirmed shift,queued
-2016-11-03,3,scheduled,auto-confirmed shift,queued
-2016-11-09,4,scheduled,auto-confirmed shift,queued
-2016-11-14,4,scheduled,auto-confirmed shift,queued
-2016-11-21,3,scheduled,auto-confirmed shift,queued
-2016-12-09,2,scheduled,auto-confirmed shift,queued
-2016-12-16,3,scheduled,auto-confirmed shift,queued
-2016-12-26 16:00:00,1,unexpected,auto-confirmed shift,queued
-2017-04-18,2,scheduled,auto-confirmed shift,queued
-2017-04-27,3,scheduled,auto-confirmed shift,queued
-2017-06-09 12:00:00,1,unexpected,auto-confirmed shift,queued
-2017-06-22,3,scheduled,auto-confirmed shift,queued
-2017-07-02 20:00:00,1,unexpected,auto-confirmed shift,queued
-2017-07-24 08:00:00,1,unexpected,auto-confirmed shift,queued
-2017-12-19,2,scheduled,auto-confirmed shift,queued
-2017-12-29 12:00:00,1,unexpected,auto-confirmed shift,queued
-2018-01-25,3,scheduled,auto-confirmed shift,queued
-2018-02-06 04:00:00,1,unexpected,auto-confirmed shift,queued
-2018-04-18,4,scheduled,auto-confirmed shift,queued
-2018-04-25,5,scheduled,auto-confirmed shift,queued
-2018-05-03,3,scheduled,auto-confirmed shift,queued
-2018-05-10,2,scheduled,auto-confirmed shift,queued
-2018-07-06,2,scheduled,auto-confirmed shift,queued
-2018-08-10,2,scheduled,auto-confirmed shift,queued
-2018-09-24,2,scheduled,auto-confirmed shift,queued
-2018-10-16 20:00:00,1,unexpected,auto-confirmed shift,queued
-2019-01-11,3,scheduled,auto-confirmed shift,queued
-2019-01-30,3,scheduled,auto-confirmed shift,queued
-2019-02-20,2,scheduled,auto-confirmed shift,queued
-2019-03-05 04:00:00,1,unexpected,auto-confirmed shift,queued
-2019-03-22,3,scheduled,auto-confirmed shift,queued
-2019-03-26,3,scheduled,auto-confirmed shift,queued
-2019-04-02,3,scheduled,auto-confirmed shift,queued
-2019-04-28,3,scheduled,auto-confirmed shift,queued
-2019-05-30,4,scheduled,auto-confirmed shift,queued
-2019-06-03,4,scheduled,auto-confirmed shift,queued
-2019-06-20 16:00:00,1,unexpected,auto-confirmed shift,queued
-2019-07-03,4,scheduled,auto-confirmed shift,queued
-2019-07-26,3,scheduled,auto-confirmed shift,queued
-2019-07-30,4,scheduled,auto-confirmed shift,queued
-2019-08-05,3,scheduled,auto-confirmed shift,queued
-2019-09-03,2,scheduled,auto-confirmed shift,queued
-2019-09-23,2,scheduled,auto-confirmed shift,queued
-2019-09-27,2,scheduled,auto-confirmed shift,queued
-2019-10-02,2,scheduled,auto-confirmed shift,queued
-2019-10-10,3,scheduled,auto-confirmed shift,queued
-2019-10-17,3,scheduled,auto-confirmed shift,queued
-2019-12-12,3,scheduled,auto-confirmed shift,queued
-2020-01-08,3,scheduled,auto-confirmed shift,queued
-2020-01-24,2,scheduled,auto-confirmed shift,queued
-2020-02-03,4,scheduled,auto-confirmed shift,queued
-2020-02-24,5,scheduled,auto-confirmed shift,queued
-2020-02-28,5,scheduled,auto-confirmed shift,queued
-2020-03-09,4,scheduled,auto-confirmed shift,queued
-2020-03-13,3,scheduled,auto-confirmed shift,queued
-2020-03-24,3,scheduled,auto-confirmed shift,queued
-2020-03-31,2,scheduled,auto-confirmed shift,queued
-2020-04-07,2,scheduled,auto-confirmed shift,queued
-2020-05-19,4,scheduled,auto-confirmed shift,queued
-2020-05-28,4,scheduled,auto-confirmed shift,queued
-2020-06-08,4,scheduled,auto-confirmed shift,queued
-2020-07-06,2,scheduled,auto-confirmed shift,queued
-2020-07-09 12:00:00,1,unexpected,auto-confirmed shift,queued
-2020-07-16,3,scheduled,auto-confirmed shift,queued
-2020-07-21,3,scheduled,auto-confirmed shift,queued
-2020-07-29,4,scheduled,auto-confirmed shift,queued
-2020-08-03,3,scheduled,auto-confirmed shift,queued
-2020-09-28,3,scheduled,auto-confirmed shift,queued
-2020-10-13,2,scheduled,auto-confirmed shift,queued
-2020-10-23,3,scheduled,auto-confirmed shift,queued
-2020-11-05,2,scheduled,auto-confirmed shift,queued
-2020-11-10 04:00:00,1,unexpected,auto-confirmed shift,queued
-2020-11-12,4,scheduled,auto-confirmed shift,queued
-2021-01-20,2,scheduled,auto-confirmed shift,queued
-2021-02-05,3,scheduled,auto-confirmed shift,queued
-2021-02-10,2,scheduled,auto-confirmed shift,queued
-2021-02-24,4,scheduled,auto-confirmed shift,queued
-2021-03-04,3,scheduled,auto-confirmed shift,queued
-2021-03-08 08:00:00,1,unexpected,auto-confirmed shift,queued
-2021-06-10,3,scheduled,auto-confirmed shift,queued
-2021-08-04,3,scheduled,auto-confirmed shift,queued
-2021-08-18,3,scheduled,auto-confirmed shift,queued
-2021-08-23,2,scheduled,auto-confirmed shift,queued
-2021-09-03,3,scheduled,auto-confirmed shift,queued
-2021-11-03,2,scheduled,auto-confirmed shift,queued
-2021-11-10,4,scheduled,auto-confirmed shift,queued
-2021-11-23,3,scheduled,auto-confirmed shift,queued
-2022-01-19 12:00:00,1,unexpected,auto-confirmed shift,queued
-2022-03-01,3,scheduled,auto-confirmed shift,queued
-2022-03-09,2,scheduled,auto-confirmed shift,queued
-2022-03-15,2,scheduled,auto-confirmed shift,queued
-2022-03-25 00:00:00,1,unexpected,auto-confirmed shift,queued
-2022-04-24,3,scheduled,auto-confirmed shift,queued
-2022-04-28,4,scheduled,auto-confirmed shift,queued
-2022-05-02,3,scheduled,auto-confirmed shift,queued
-2022-05-08 20:00:00,1,unexpected,auto-confirmed shift,queued
-2022-05-27,2,scheduled,auto-confirmed shift,queued
-2022-06-09,4,scheduled,auto-confirmed shift,queued
-2022-06-15,4,scheduled,auto-confirmed shift,queued
-2022-06-20 20:00:00,1,unexpected,auto-confirmed shift,queued
-2022-07-01,3,scheduled,auto-confirmed shift,queued
-2022-07-08,2,scheduled,auto-confirmed shift,queued
-2022-07-12 08:00:00,1,unexpected,auto-confirmed shift,queued
-2022-08-11,3,scheduled,auto-confirmed shift,queued
-2022-08-26,2,scheduled,auto-confirmed shift,queued
-2022-09-23,4,scheduled,auto-confirmed shift,queued
-2022-09-27,3,scheduled,auto-confirmed shift,queued
-2022-10-06 08:00:00,1,unexpected,auto-confirmed shift,queued
-2022-11-04,2,scheduled,auto-confirmed shift,queued
-2022-11-08,2,scheduled,auto-confirmed shift,queued
-2022-11-17,3,scheduled,auto-confirmed shift,queued
-2022-11-25 12:00:00,2,unexpected,auto-confirmed shift,queued
-2022-12-15,3,scheduled,auto-confirmed shift,queued
-2022-12-26 00:00:00,1,unexpected,auto-confirmed shift,queued
-2023-01-06,3,scheduled,auto-confirmed shift,queued
-2023-01-09 08:00:00,1,unexpected,auto-confirmed shift,queued
-2023-01-10,3,scheduled,auto-confirmed shift,queued
-2023-01-17,3,scheduled,auto-confirmed shift,queued
-2023-01-26,2,scheduled,auto-confirmed shift,queued
-2023-01-30 20:00:00,1,unexpected,auto-confirmed shift,queued
-2023-02-03,4,scheduled,auto-confirmed shift,queued
-2023-03-10,3,scheduled,auto-confirmed shift,queued
-2023-03-24,3,scheduled,auto-confirmed shift,queued
-2023-05-10,3,scheduled,auto-confirmed shift,queued
-2023-07-07,3,scheduled,auto-confirmed shift,queued
-2023-07-19,3,scheduled,auto-confirmed shift,queued
-2023-07-27,4,scheduled,auto-confirmed shift,queued
-2023-08-02,4,scheduled,auto-confirmed shift,queued
-2023-09-21,4,scheduled,auto-confirmed shift,queued
-2023-09-25,3,scheduled,auto-confirmed shift,queued
-2023-12-01,2,scheduled,auto-confirmed shift,queued
-2023-12-15,3,scheduled,auto-confirmed shift,queued
-2024-01-29 08:00:00,1,unexpected,auto-confirmed shift,queued
-2024-02-08,1,scheduled,auto-confirmed shift,queued
-2024-04-17 04:00:00,1,unexpected,auto-confirmed shift,queued
-2024-06-07,4,scheduled,auto-confirmed shift,queued
-2024-06-21,2,scheduled,auto-confirmed shift,queued
-2024-06-26,2,scheduled,auto-confirmed shift,queued
-2024-07-16,3,scheduled,auto-confirmed shift,queued
-2024-08-05,3,scheduled,auto-confirmed shift,queued
-2024-08-13,2,scheduled,auto-confirmed shift,queued
-2024-08-21,4,scheduled,auto-confirmed shift,queued
-2024-08-26 00:00:00,1,unexpected,auto-confirmed shift,queued
-2024-09-18,3,scheduled,auto-confirmed shift,queued
-2024-09-23,4,scheduled,auto-confirmed shift,queued
-2024-10-04,5,scheduled,auto-confirmed shift,queued
-2024-10-24,2,scheduled,auto-confirmed shift,queued
-2024-11-07,4,scheduled,auto-confirmed shift,queued
-2024-12-16,1,scheduled,auto-confirmed shift,queued
-2025-03-03,4,scheduled,auto-confirmed shift,queued
-2025-03-10 16:00:00,1,unexpected,auto-confirmed shift,queued
-2025-03-13,4,scheduled,auto-confirmed shift,queued
-2025-03-20,3,scheduled,auto-confirmed shift,queued
-2025-04-03,4,scheduled,auto-confirmed shift,queued
-2025-04-08 08:00:00,2,unexpected,auto-confirmed shift,queued
-2025-04-09,3,scheduled,auto-confirmed shift,queued
-2025-04-17,2,scheduled,auto-confirmed shift,queued
-2025-04-24,3,scheduled,auto-confirmed shift,queued
-2025-07-01,4,scheduled,auto-confirmed shift,queued
-2025-10-27 20:00:00,1,unexpected,auto-confirmed shift,queued
-2025-10-29,3,scheduled,auto-confirmed shift,queued
-2025-12-01,2,scheduled,auto-confirmed shift,queued
-2025-12-05,2,scheduled,auto-confirmed shift,queued
-2026-01-21,4,scheduled,auto-confirmed shift,queued
-2026-03-16 04:00:00,1,unexpected,auto-confirmed shift,queued
-2026-04-01,3,scheduled,auto-confirmed shift,queued
-2024-10-17,3,scheduled,auto-confirmed shift,queued
+2024-08-05 08:00:00,3,scheduled,ISM Services PMI,queued
+2024-08-13 04:00:00,3,scheduled,Core PPI m/m; PPI m/m,queued
+2024-08-22 00:00:00,3,scheduled,French Flash Services PMI; French Flash Manufacturing PMI; German Flash Services PMI,queued
+2024-08-26 00:00:00,1,unexpected,,queued
+2024-09-17 04:00:00,2,scheduled,Retail Sales m/m; Core Retail Sales m/m,queued
+2024-09-23 00:00:00,4,scheduled,French Flash Manufacturing PMI; French Flash Services PMI; German Flash Services PMI,queued
+2024-09-27 04:00:00,4,scheduled,Core PCE Price Index m/m,queued
+2024-10-04 04:00:00,5,scheduled,Non-Farm Employment Change; Unemployment Rate; Average Hourly Earnings m/m,queued
+2024-10-17 04:00:00,3,scheduled,Main Refinancing Rate; Monetary Policy Statement; Unemployment Claims,queued
+2024-10-24 04:00:00,2,scheduled,Unemployment Claims,queued
+2024-11-01 08:00:00,3,scheduled,ISM Manufacturing PMI,queued
+2024-11-07 04:00:00,4,scheduled,Unemployment Claims,queued
+2024-11-22 08:00:00,2,scheduled,Flash Manufacturing PMI; Flash Services PMI,queued
+2024-12-16 00:00:00,2,scheduled,French Flash Manufacturing PMI; French Flash Services PMI; German Flash Services PMI,queued
+2025-01-14 04:00:00,2,scheduled,Core PPI m/m; PPI m/m,queued
+2025-03-03 08:00:00,4,scheduled,ISM Manufacturing PMI,queued
+2025-03-10 16:00:00,1,unexpected,,queued
+2025-03-13 04:00:00,4,scheduled,Core PPI m/m; PPI m/m; Unemployment Claims,queued
+2025-03-19 12:00:00,3,scheduled,Federal Funds Rate; FOMC Statement; FOMC Economic Projections,queued
+2025-04-03 04:00:00,4,scheduled,Unemployment Claims,queued
+2025-04-08 08:00:00,2,unexpected,,queued
+2025-04-09 12:00:00,2,scheduled,FOMC Meeting Minutes,queued
+2025-04-16 12:00:00,2,scheduled,Fed Chair Powell Speaks,queued
+2025-04-24 04:00:00,3,scheduled,Unemployment Claims,queued
+2025-07-03 08:00:00,4,scheduled,ISM Services PMI,queued
+2025-10-27 20:00:00,1,unexpected,,queued
+2025-12-01 08:00:00,3,scheduled,ISM Manufacturing PMI,queued
+2025-12-05 08:00:00,3,scheduled,Prelim UoM Inflation Expectations; Prelim UoM Consumer Sentiment; Core PCE Price Index m/m,queued
+2026-01-21 04:00:00,4,scheduled,President Trump Speaks,queued
+2026-03-16 04:00:00,1,unexpected,,queued
+2026-04-01 04:00:00,2,scheduled,ADP Non-Farm Employment Change; Core Retail Sales m/m; Retail Sales m/m,queued

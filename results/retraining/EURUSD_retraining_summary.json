@@ -1,27 +1,27 @@
 {
   "No Retrain": {
-    "avg_mae": 0.00122,
-    "avg_recovery_bars": 45.7,
-    "pct_recovered": 93.5
+    "avg_mae": 0.00118,
+    "avg_recovery_bars": 43.3,
+    "pct_recovered": 85.7
   },
   "Full Retrain": {
-    "avg_mae": 0.001207,
-    "avg_recovery_bars": 42.7,
-    "pct_recovered": 95.7
+    "avg_mae": 0.001173,
+    "avg_recovery_bars": 43.0,
+    "pct_recovered": 85.7
   },
   "Window (30d)": {
-    "avg_mae": 0.00134,
-    "avg_recovery_bars": 50.1,
-    "pct_recovered": 91.3
+    "avg_mae": 0.001314,
+    "avg_recovery_bars": 51.0,
+    "pct_recovered": 85.7
   },
   "Weighted": {
-    "avg_mae": 0.001336,
-    "avg_recovery_bars": 50.2,
-    "pct_recovered": 91.3
+    "avg_mae": 0.001313,
+    "avg_recovery_bars": 51.0,
+    "pct_recovered": 85.7
   },
   "Adaptive": {
-    "avg_mae": 0.001322,
-    "avg_recovery_bars": 51.0,
-    "pct_recovered": 91.3
+    "avg_mae": 0.00132,
+    "avg_recovery_bars": 51.2,
+    "pct_recovered": 85.7
   }
 }

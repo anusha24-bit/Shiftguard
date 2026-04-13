@@ -85,7 +85,7 @@ This repository currently supports:
   - `technical` shift -> technical followthrough posture
   - `scheduled + macro/sentiment` shift -> event-aligned posture
   - `unexpected / volatility` shift -> defensive shock posture
-- adaptive retraining logic in [src/retraining/selective.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/retraining/selective.py), where retrain policy can depend on shift type and dominant attribution group
+- adaptive retraining logic in `src/retraining/selective.py`, where retrain policy can depend on shift type and dominant attribution group
 
 This means attribution is no longer only descriptive; it is beginning to control downstream behavior.
 
@@ -119,16 +119,16 @@ The current project-facing comparison structure is:
 
 - **Strong technical baseline**
   - rule-based trading benchmark
-  - implemented in [src/models/baseline_technical.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_technical.py)
+  - implemented in `src/models/baseline_technical.py`
   - intended to be stronger than a minimal RSI/MACD toy rule and act as the main hand-crafted benchmark
 
 - **ML direction baseline**
   - standard supervised benchmark
-  - implemented in [src/models/baseline_ml_direction.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_ml_direction.py)
+  - implemented in `src/models/baseline_ml_direction.py`
   - used to show what a plain predictive learner can do without explicit shift-aware control
 
 - **Advanced supplementary baseline**
-  - stacked ensemble in [src/models/baseline_stacked.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_stacked.py)
+  - stacked ensemble in `src/models/baseline_stacked.py`
   - current structure: `RandomForest + BiLSTM-Attention -> LightGBM meta-learner`
   - included to test whether additional model complexity alone solves non-stationarity
   - run separately from the canonical submission pipeline
@@ -141,27 +141,59 @@ The current project-facing comparison structure is:
 
 Canonical local pipeline:
 
-- [src/models/main_xgboost.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/main_xgboost.py)
-- [src/detection/engine.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/detection/engine.py)
-- [src/attribution/shap_analysis.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/attribution/shap_analysis.py)
-- [src/dashboard/app.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/dashboard/app.py)
-- [src/retraining/selective.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/retraining/selective.py)
-- [src/run_pipeline.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/run_pipeline.py)
-- [src/models/baseline_technical.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_technical.py)
-- [src/models/baseline_ml_direction.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_ml_direction.py)
-- [src/models/winrate_experiment.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/winrate_experiment.py)
+- `src/models/main_xgboost.py`
+- `src/detection/engine.py`
+- `src/attribution/shap_analysis.py`
+- `src/dashboard/app.py`
+- `src/retraining/selective.py`
+- `src/run_pipeline.py`
+- `src/models/baseline_technical.py`
+- `src/models/baseline_ml_direction.py`
+- `src/models/winrate_experiment.py`
+- `src/run_all_phases.py`
+- `src/analysis/generate_figures.py`
 
 Core feature/data pipeline:
 
-- [src/features/build_dataset.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/features/build_dataset.py)
-- [src/features/technical.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/features/technical.py)
-- [src/features/volatility.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/features/volatility.py)
-- [src/features/macro.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/features/macro.py)
-- [src/features/sentiment.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/features/sentiment.py)
+- `src/features/build_dataset.py`
+- `src/features/technical.py`
+- `src/features/volatility.py`
+- `src/features/macro.py`
+- `src/features/sentiment.py`
 
 ## How To Run Locally
 
-### Full canonical flow
+### Local setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+### Full reviewer-facing regeneration
+
+```bash
+python src/run_all_phases.py --clean
+```
+
+This command:
+
+1. rebuilds the processed feature matrices,
+2. reruns the monitored model, detection, and attribution pipeline,
+3. materializes the dashboard's default auto-confirm decisions from detection outputs,
+4. reruns selective retraining,
+5. refreshes the adaptive win-rate experiment, and
+6. regenerates the dashboard-facing statistical summary and figures in `results/figures/`.
+
+For a faster local validation run that still exercises the full flow end to end:
+
+```bash
+python src/run_all_phases.py --clean --fast
+```
+
+### Canonical monitored-model pipeline only
 
 ```bash
 python src/run_pipeline.py
@@ -173,6 +205,12 @@ This runs:
 2. `src/detection/engine.py`
 3. `src/attribution/shap_analysis.py`
 4. `src/retraining/selective.py` if approved decisions already exist
+
+If you want the pipeline to materialize the default dashboard decisions and continue straight into retraining without opening the UI:
+
+```bash
+python src/run_pipeline.py --pairs EURUSD GBPJPY XAUUSD --auto-confirm-decisions
+```
 
 The supplementary stacked baseline is not part of `src/run_pipeline.py`; run it separately when you want the advanced complexity comparison:
 
@@ -237,37 +275,68 @@ The goal is for **shift type + dominant cause** to determine both:
 
 ## Current Results Snapshot
 
+The snapshot below reflects a clean local regeneration from the current code path using:
+
+```bash
+python src/run_all_phases.py --clean
+```
+
 ### Shift detection / attribution
 
 Tracked cross-pair shift outputs in `results/detection/`:
 
-- `EURUSD`: `166` scheduled, `32` unexpected, `198` total
-- `GBPJPY`: `118` scheduled, `118` unexpected, `236` total
-- `XAUUSD`: `154` scheduled, `112` unexpected, `266` total
+- `EURUSD`: `26` scheduled, `5` unexpected, `31` total
+- `GBPJPY`: `7` scheduled, `19` unexpected, `1` performance drift, `27` total
+- `XAUUSD`: `27` scheduled, `23` unexpected, `50` total
 
-Sample attribution pattern:
+Dominant attribution pattern from `results/attribution/`:
 
-- `EURUSD`: mostly technical / sentiment
-- `GBPJPY`: mixed technical / sentiment
-- `XAUUSD`: technical-heavy with meaningful sentiment contribution
+- `EURUSD`: `technical` on all `31/31` analyzed shifts
+- `GBPJPY`: `sentiment` on all `27/27` analyzed shifts
+- `XAUUSD`: `sentiment` on `34/50` shifts, `technical` on `16/50`
+
+### Monitored model summary
+
+Tracked test-set metrics from `results/predictions/xgboost_summary.json`:
+
+- `EURUSD`: `MAE 0.001141`, directional accuracy `59.5%`
+- `GBPJPY`: `MAE 0.001621`, directional accuracy `52.6%`
+- `XAUUSD`: `MAE 0.003483`, directional accuracy `51.4%`
 
 ### Selective retraining summary
 
 Tracked saved retraining summaries in `results/retraining/`:
 
 - `EURUSD`
-  - No retrain: `MAE 0.001220`, recovery `45.7` bars
-  - Full retrain: `MAE 0.001207`, recovery `42.7` bars
+  - No retrain: `MAE 0.001180`, recovery `43.3` bars
+  - Full retrain: `MAE 0.001173`, recovery `43.0` bars
+  - Adaptive: `MAE 0.001320`, recovery `51.2` bars
 
 - `GBPJPY`
-  - No retrain: `MAE 0.001852`, recovery `60.7` bars
-  - Full retrain: `MAE 0.001789`, recovery `57.0` bars
+  - No retrain: `MAE 0.001652`, recovery `70.7` bars
+  - Full retrain: `MAE 0.001643`, recovery `70.7` bars
+  - Adaptive: `MAE 0.001643`, recovery `70.7` bars
 
 - `XAUUSD`
-  - No retrain: `MAE 0.002997`, recovery `47.6` bars
-  - Full retrain: `MAE 0.002947`, recovery `47.1` bars
+  - No retrain: `MAE 0.004181`, recovery `39.1` bars
+  - Weighted: `MAE 0.004148`, recovery `54.9` bars
+  - Adaptive: `MAE 0.004208`, recovery `39.1` bars
 
-Across all three pairs, **selective retraining outperforms no retraining**, and full retraining is currently the most reliable default baseline.
+Across the refreshed run, retraining remains pair-dependent: `Full Retrain` is the most stable low-friction default on `EURUSD` and `GBPJPY`, while `Weighted` is the best MAE variant on `XAUUSD`.
+
+### Adaptive trading summary
+
+Tracked saved trading summaries in `results/winrate/`:
+
+- `EURUSD`: ShiftGuard `58.45%` win rate, `28.1%` market participation, `2.14` profit factor
+- `GBPJPY`: ShiftGuard `58.96%` win rate, `39.5%` market participation, `1.98` profit factor
+- `XAUUSD`: ShiftGuard `58.03%` win rate, `40.6%` market participation, `1.89` profit factor
+
+Paired statistical tests in `results/figures/statistical_tests.json` remain significant for all three pairs:
+
+- `EURUSD`: `p = 0.003182`
+- `GBPJPY`: `p = 0.000045`
+- `XAUUSD`: `p < 0.000001`
 
 ## Evaluation Story
 
@@ -298,21 +367,28 @@ The main academic claim is not that ShiftGuard maximizes raw trading profit. The
 - Selective retraining consumes approved dashboard decisions when available.
 - `src/models/winrate_experiment.py` contains the adaptive trading-policy implementation used by the trading comparison path.
 - Analysis/reporting scripts live in `src/analysis/` and tracked result artifacts live under `results/`.
+- The reviewer-facing regenerated set is:
+  `results/predictions/xgboost_*`,
+  `results/detection/*`,
+  `results/attribution/*`,
+  `results/decisions/*`,
+  `results/retraining/*_retraining_*`,
+  `results/winrate/*_winrate_*`,
+  and `results/figures/*`.
 
 To regenerate the tracked outputs from the canonical path:
 
 ```bash
-python src/features/build_dataset.py
-python src/run_pipeline.py --pairs EURUSD GBPJPY XAUUSD --fast
-streamlit run src/dashboard/app.py
-python src/retraining/selective.py --pairs EURUSD GBPJPY XAUUSD
+python src/run_all_phases.py --clean --fast
 ```
 
 ## Tests and CI
 
 - Unit tests live in `tests/`.
 - GitHub Actions runs the test suite on every push and pull request.
+- CI sets `MPLBACKEND=Agg` and `MPLCONFIGDIR=/tmp/matplotlib` so Matplotlib-backed imports stay stable in headless environments.
 - The tests currently cover:
+  - auto-confirm decision materialization from detection outputs,
   - review gating for the pipeline,
   - prediction-window filtering for detected shifts,
   - SHAP group percentages,

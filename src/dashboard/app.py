@@ -14,6 +14,12 @@ import sys
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 sys.path.insert(0, ROOT)
 from src.trading_analytics import enrich_shift
+from src.dashboard.decision_utils import (
+    auto_confirm_shifts,
+    load_decisions,
+    queue_retrain,
+    save_decision,
+)
 
 # ── Helpers ──────────────────────────────────────────────────────────────────
 PAIR_LABELS = {'EURUSD': 'EUR/USD', 'GBPJPY': 'GBP/JPY', 'XAUUSD': 'XAU/USD'}
@@ -34,61 +40,6 @@ def load_json(rel_path):
         with open(full) as f:
             return json.load(f)
     return {}
-
-
-def load_decisions(pair):
-    path = os.path.join(ROOT, 'results', 'decisions', f'{pair}_decisions.csv')
-    return pd.read_csv(path) if os.path.exists(path) else pd.DataFrame(columns=['datetime_utc', 'decision', 'notes'])
-
-
-def save_decision(pair, dt, decision, notes):
-    os.makedirs(os.path.join(ROOT, 'results', 'decisions'), exist_ok=True)
-    path = os.path.join(ROOT, 'results', 'decisions', f'{pair}_decisions.csv')
-    old = load_decisions(pair)
-    old = old[old['datetime_utc'] != dt]
-    new_row = pd.DataFrame([{'datetime_utc': dt, 'decision': decision, 'notes': notes}])
-    new = pd.concat([old, new_row], ignore_index=True)
-    new.to_csv(path, index=False)
-
-
-def queue_retrain(pair, dt, severity, shift_type, event_name):
-    retrain_log_path = os.path.join(ROOT, 'results', 'decisions', f'{pair}_retrain_queue.csv')
-    os.makedirs(os.path.dirname(retrain_log_path), exist_ok=True)
-    new_row = pd.DataFrame([{
-        'datetime_utc': str(dt),
-        'severity': severity,
-        'type': shift_type,
-        'event': event_name,
-        'status': 'queued',
-    }])
-    if os.path.exists(retrain_log_path):
-        existing = pd.read_csv(retrain_log_path)
-        existing = existing[existing['datetime_utc'] != str(dt)]
-        new_row = pd.concat([existing, new_row], ignore_index=True)
-    new_row.to_csv(retrain_log_path, index=False)
-
-
-def auto_confirm_shifts(pair, shifts_df):
-    if shifts_df.empty or 'datetime_utc' not in shifts_df.columns:
-        return 0
-
-    decisions = load_decisions(pair)
-    decided = set(decisions['datetime_utc'].astype(str)) if not decisions.empty else set()
-    created = 0
-
-    for _, row in shifts_df.iterrows():
-        dt = str(row['datetime_utc'])
-        if dt in decided:
-            continue
-
-        shift_type = row.get('type', 'unknown')
-        event_name = row.get('trigger_event', row.get('event', 'auto-confirmed shift'))
-        severity = int(row['severity']) if 'severity' in row and pd.notna(row['severity']) else 0
-        save_decision(pair, dt, 'auto_confirm', f"type={shift_type} | auto-confirmed by dashboard")
-        queue_retrain(pair, dt, severity, shift_type, event_name)
-        created += 1
-
-    return created
 
 
 # ── Page Config ──────────────────────────────────────────────────────────────

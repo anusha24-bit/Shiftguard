@@ -3,6 +3,8 @@ Scheduled Shift Detector
 Detects distribution shifts around known economic calendar events.
 Uses KS test + MMD on pre-event vs post-event feature windows.
 """
+from __future__ import annotations
+
 import numpy as np
 import pandas as pd
 from scipy.stats import ks_2samp
@@ -29,11 +31,85 @@ def compute_mmd(X, Y, gamma=1.0):
     return mmd
 
 
+def parse_event_timestamp(date_value, time_value) -> pd.Timestamp | pd.NaT:
+    """Parse calendar date/time into a UTC timestamp."""
+    event_date = pd.to_datetime(date_value, errors='coerce')
+    if pd.isna(event_date):
+        return pd.NaT
+
+    if pd.isna(time_value) or str(time_value).strip() == '':
+        return event_date
+
+    timestamp = pd.to_datetime(
+        f"{event_date.strftime('%Y-%m-%d')} {str(time_value).strip()}",
+        errors='coerce',
+    )
+    return timestamp
+
+
+def align_event_timestamp_to_bar(
+    bar_times: pd.Series,
+    event_timestamp: pd.Timestamp,
+) -> tuple[pd.Timestamp, int] | None:
+    """Align a calendar event to the nearest available feature bar."""
+    if pd.isna(event_timestamp) or bar_times.empty:
+        return None
+
+    time_diffs = (bar_times - event_timestamp).abs()
+    event_idx = int(time_diffs.idxmin())
+    return bar_times.iloc[event_idx], event_idx
+
+
+def build_aligned_high_impact_events(df: pd.DataFrame, calendar_df: pd.DataFrame) -> pd.DataFrame:
+    """Attach high-impact calendar events to the nearest feature bar."""
+    high_events = calendar_df[calendar_df['impact_level'] == 'High'].copy()
+    if high_events.empty:
+        return pd.DataFrame(columns=['event_timestamp', 'aligned_timestamp', 'aligned_index', 'event_names'])
+
+    high_events['event_timestamp'] = high_events.apply(
+        lambda row: parse_event_timestamp(row.get('date'), row.get('time_utc')),
+        axis=1,
+    )
+    high_events = high_events.dropna(subset=['event_timestamp']).sort_values('event_timestamp')
+    if high_events.empty:
+        return pd.DataFrame(columns=['event_timestamp', 'aligned_timestamp', 'aligned_index', 'event_names'])
+
+    aligned_rows = []
+    bar_times = df['datetime_utc']
+    for _, event_row in high_events.iterrows():
+        aligned = align_event_timestamp_to_bar(bar_times, event_row['event_timestamp'])
+        if aligned is None:
+            continue
+        aligned_timestamp, aligned_index = aligned
+        aligned_rows.append({
+            'event_timestamp': event_row['event_timestamp'],
+            'aligned_timestamp': aligned_timestamp,
+            'aligned_index': aligned_index,
+            'event_name': event_row.get('event_name', ''),
+        })
+
+    if not aligned_rows:
+        return pd.DataFrame(columns=['event_timestamp', 'aligned_timestamp', 'aligned_index', 'event_names'])
+
+    aligned_df = pd.DataFrame(aligned_rows)
+    return aligned_df.groupby('aligned_timestamp', as_index=False).agg(
+        event_timestamp=('event_timestamp', 'min'),
+        aligned_index=('aligned_index', 'min'),
+        event_names=(
+            'event_name',
+            lambda values: '; '.join([
+                name for name in pd.unique(values)
+                if isinstance(name, str) and name.strip()
+            ][:3]),
+        ),
+    )
+
+
 def detect_scheduled_shifts(df, calendar_df, feature_cols, window_size=60, alpha=0.05):
     """
     Detect shifts around scheduled economic events.
 
-    For each high-impact event date:
+    For each high-impact event time:
     1. Take pre-event window (window_size 4H bars before)
     2. Take post-event window (window_size 4H bars after)
     3. Run KS test per feature + MMD on full feature vector
@@ -51,23 +127,15 @@ def detect_scheduled_shifts(df, calendar_df, feature_cols, window_size=60, alpha
     """
     df = df.copy()
     df['datetime_utc'] = pd.to_datetime(df['datetime_utc'])
+    df = df.sort_values('datetime_utc').reset_index(drop=True)
 
-    # Get high-impact event dates
-    high_events = calendar_df[calendar_df['impact_level'] == 'High'].copy()
-    high_events['date'] = pd.to_datetime(high_events['date'])
-    event_dates = sorted(high_events['date'].unique())
+    aligned_events = build_aligned_high_impact_events(df, calendar_df)
 
     candidates = []
 
-    for event_date in event_dates:
-        # Find the bar index closest to this event date
-        event_mask = df['datetime_utc'].dt.date == event_date.date()
-        event_indices = df.index[event_mask]
-
-        if len(event_indices) == 0:
-            continue
-
-        event_idx = event_indices[0]
+    for _, event_row in aligned_events.iterrows():
+        event_timestamp = pd.Timestamp(event_row['aligned_timestamp'])
+        event_idx = int(event_row['aligned_index'])
 
         # Pre and post windows
         pre_start = max(0, event_idx - window_size)
@@ -125,16 +193,13 @@ def detect_scheduled_shifts(df, calendar_df, feature_cols, window_size=60, alpha
             gamma=1.0 / pre_data.shape[1]
         )
 
-        # Get event names for this date
-        event_names = high_events[high_events['date'] == event_date]['event_name'].tolist()
-
         candidates.append({
-            'datetime_utc': pd.Timestamp(event_date),
+            'datetime_utc': event_timestamp,
             'type': 'scheduled',
             'significant_features_ratio': float(significant_ratio),
             'mean_ks_stat': float(np.mean(ks_stats)),
             'mmd_score': float(mmd_score),
-            'event_names': '; '.join(event_names[:3]),
+            'event_names': event_row['event_names'],
             'n_significant': int(significant_count),
             'n_tested': int(len(ks_pvalues)),
         })
@@ -183,7 +248,7 @@ def detect_scheduled_shifts(df, calendar_df, feature_cols, window_size=60, alpha
     shifts = []
     for row in deduped:
         shifts.append({
-            'datetime_utc': str(pd.Timestamp(row['datetime_utc']).date()),
+            'datetime_utc': str(pd.Timestamp(row['datetime_utc'])),
             'type': 'scheduled',
             'severity': int(row['severity']),
             'significant_features_ratio': round(row['significant_features_ratio'], 3),

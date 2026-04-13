@@ -19,6 +19,8 @@ import argparse
 from typing import Sequence
 import pandas as pd
 
+from src.dashboard.decision_utils import auto_confirm_from_detection
+
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 DECISIONS_DIR = os.path.join(PROJECT_ROOT, "results", "decisions")
 APPROVED_DECISIONS = {
@@ -64,6 +66,11 @@ if __name__ == "__main__":
         action="store_true",
         help="Run retraining immediately when approved decision files already exist for the selected pairs.",
     )
+    parser.add_argument(
+        "--auto-confirm-decisions",
+        action="store_true",
+        help="Materialize the dashboard's default auto-confirm decisions from detection outputs and continue into retraining.",
+    )
     args = parser.parse_args()
 
     pair_args = ["--pairs", *args.pairs]
@@ -73,11 +80,15 @@ if __name__ == "__main__":
     run_script(os.path.join("src", "detection", "engine.py"), pair_args)
     run_script(os.path.join("src", "attribution", "shap_analysis.py"), pair_args)
 
-    if args.use_existing_decisions and has_review_decisions(args.pairs):
+    if args.auto_confirm_decisions:
+        total_created = sum(auto_confirm_from_detection(pair, project_root=PROJECT_ROOT) for pair in args.pairs)
+        print(f"Auto-confirmed {total_created} shifts across {len(args.pairs)} pair(s).")
+
+    if (args.use_existing_decisions or args.auto_confirm_decisions) and has_review_decisions(args.pairs):
         run_script(os.path.join("src", "retraining", "selective.py"), pair_args)
     else:
         print(f"\n{'=' * 70}")
         print("Pipeline paused for human review")
         print(f"{'=' * 70}")
         print("Next step: streamlit run src/dashboard/app.py")
-        print("After reviewing shifts, rerun this script with --use-existing-decisions or run python src/retraining/selective.py --pairs ...")
+        print("After reviewing shifts, rerun this script with --use-existing-decisions, use --auto-confirm-decisions, or run python src/retraining/selective.py --pairs ...")

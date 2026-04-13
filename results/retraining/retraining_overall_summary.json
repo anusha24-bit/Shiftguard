@@ -1,68 +1,83 @@
 {
   "EURUSD": {
     "No Retrain": {
-      "avg_mae": 0.00122,
-      "avg_recovery_bars": 45.7,
-      "pct_recovered": 93.5
+      "avg_mae": 0.00118,
+      "avg_recovery_bars": 43.3,
+      "pct_recovered": 85.7
     },
     "Full Retrain": {
-      "avg_mae": 0.001207,
-      "avg_recovery_bars": 42.7,
-      "pct_recovered": 95.7
+      "avg_mae": 0.001173,
+      "avg_recovery_bars": 43.0,
+      "pct_recovered": 85.7
     },
     "Window (30d)": {
-      "avg_mae": 0.00134,
-      "avg_recovery_bars": 50.1,
-      "pct_recovered": 91.3
+      "avg_mae": 0.001314,
+      "avg_recovery_bars": 51.0,
+      "pct_recovered": 85.7
     },
     "Weighted": {
-      "avg_mae": 0.001336,
-      "avg_recovery_bars": 50.2,
-      "pct_recovered": 91.3
+      "avg_mae": 0.001313,
+      "avg_recovery_bars": 51.0,
+      "pct_recovered": 85.7
+    },
+    "Adaptive": {
+      "avg_mae": 0.00132,
+      "avg_recovery_bars": 51.2,
+      "pct_recovered": 85.7
     }
   },
   "GBPJPY": {
     "No Retrain": {
-      "avg_mae": 0.001852,
-      "avg_recovery_bars": 60.7,
-      "pct_recovered": 96.3
+      "avg_mae": 0.001652,
+      "avg_recovery_bars": 70.7,
+      "pct_recovered": 85.7
     },
     "Full Retrain": {
-      "avg_mae": 0.001789,
-      "avg_recovery_bars": 57.0,
-      "pct_recovered": 96.3
+      "avg_mae": 0.001643,
+      "avg_recovery_bars": 70.7,
+      "pct_recovered": 85.7
     },
     "Window (30d)": {
-      "avg_mae": 0.0018,
-      "avg_recovery_bars": 56.7,
-      "pct_recovered": 96.3
+      "avg_mae": 0.001678,
+      "avg_recovery_bars": 70.7,
+      "pct_recovered": 85.7
     },
     "Weighted": {
-      "avg_mae": 0.001798,
-      "avg_recovery_bars": 57.0,
-      "pct_recovered": 96.3
+      "avg_mae": 0.001672,
+      "avg_recovery_bars": 70.8,
+      "pct_recovered": 85.7
+    },
+    "Adaptive": {
+      "avg_mae": 0.001643,
+      "avg_recovery_bars": 70.7,
+      "pct_recovered": 85.7
     }
   },
   "XAUUSD": {
     "No Retrain": {
-      "avg_mae": 0.002997,
-      "avg_recovery_bars": 47.6,
-      "pct_recovered": 92.1
+      "avg_mae": 0.004181,
+      "avg_recovery_bars": 39.1,
+      "pct_recovered": 76.9
     },
     "Full Retrain": {
-      "avg_mae": 0.002947,
-      "avg_recovery_bars": 47.1,
-      "pct_recovered": 94.7
+      "avg_mae": 0.004198,
+      "avg_recovery_bars": 39.1,
+      "pct_recovered": 76.9
     },
     "Window (30d)": {
-      "avg_mae": 0.003011,
-      "avg_recovery_bars": 45.4,
-      "pct_recovered": 94.7
+      "avg_mae": 0.004165,
+      "avg_recovery_bars": 54.9,
+      "pct_recovered": 84.6
     },
     "Weighted": {
-      "avg_mae": 0.003012,
-      "avg_recovery_bars": 44.7,
-      "pct_recovered": 94.7
+      "avg_mae": 0.004148,
+      "avg_recovery_bars": 54.9,
+      "pct_recovered": 84.6
+    },
+    "Adaptive": {
+      "avg_mae": 0.004208,
+      "avg_recovery_bars": 39.1,
+      "pct_recovered": 76.9
     }
   }
 }

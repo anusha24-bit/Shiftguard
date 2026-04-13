@@ -1,34 +1,98 @@
 {
-  "XAUUSD": {
-    "pair": "XAUUSD",
-    "n_features": 76,
-    "train_rows": 7930,
-    "val_rows": 1604,
-    "test_rows": 8426,
+  "EURUSD": {
+    "pair": "EURUSD",
+    "n_features": 70,
+    "train_rows": 12670,
+    "val_rows": 2715,
+    "test_rows": 2715,
     "best_params": {
       "learning_rate": 0.05,
       "max_depth": 5,
-      "n_estimators": 200,
+      "n_estimators": 300,
+      "reg_alpha": 0.1,
+      "reg_lambda": 1.0
+    },
+    "validation": {
+      "mae": 0.001022,
+      "rmse": 0.001461,
+      "dir_acc": 0.6081,
+      "accuracy": 0.6096,
+      "precision": 0.6008,
+      "recall": 0.6795,
+      "f1": 0.6377
+    },
+    "test": {
+      "mae": 0.001141,
+      "rmse": 0.001652,
+      "dir_acc": 0.5934,
+      "accuracy": 0.5952,
+      "precision": 0.5996,
+      "recall": 0.6148,
+      "f1": 0.6071
+    }
+  },
+  "GBPJPY": {
+    "pair": "GBPJPY",
+    "n_features": 70,
+    "train_rows": 12669,
+    "val_rows": 2715,
+    "test_rows": 2715,
+    "best_params": {
+      "learning_rate": 0.01,
+      "max_depth": 3,
+      "n_estimators": 300,
       "reg_alpha": 0.1,
       "reg_lambda": 5.0
     },
     "validation": {
-      "mae": 0.003117,
-      "rmse": 0.005036,
-      "dir_acc": 0.5461,
-      "accuracy": 0.5461,
-      "precision": 0.5713,
-      "recall": 0.6424,
-      "f1": 0.6048
+      "mae": 0.001615,
+      "rmse": 0.002454,
+      "dir_acc": 0.5234,
+      "accuracy": 0.5245,
+      "precision": 0.5478,
+      "recall": 0.5274,
+      "f1": 0.5374
     },
     "test": {
-      "mae": 0.002695,
-      "rmse": 0.004205,
-      "dir_acc": 0.5366,
-      "accuracy": 0.5373,
-      "precision": 0.5718,
-      "recall": 0.417,
-      "f1": 0.4823
+      "mae": 0.001621,
+      "rmse": 0.002368,
+      "dir_acc": 0.5245,
+      "accuracy": 0.5263,
+      "precision": 0.5377,
+      "recall": 0.5198,
+      "f1": 0.5286
+    }
+  },
+  "XAUUSD": {
+    "pair": "XAUUSD",
+    "n_features": 76,
+    "train_rows": 12572,
+    "val_rows": 2694,
+    "test_rows": 2694,
+    "best_params": {
+      "learning_rate": 0.01,
+      "max_depth": 5,
+      "n_estimators": 300,
+      "reg_alpha": 0.1,
+      "reg_lambda": 5.0
+    },
+    "validation": {
+      "mae": 0.002135,
+      "rmse": 0.003183,
+      "dir_acc": 0.5776,
+      "accuracy": 0.5783,
+      "precision": 0.5983,
+      "recall": 0.5508,
+      "f1": 0.5736
+    },
+    "test": {
+      "mae": 0.003483,
+      "rmse": 0.005513,
+      "dir_acc": 0.5134,
+      "accuracy": 0.5137,
+      "precision": 0.5836,
+      "recall": 0.4297,
+      "f1": 0.495
     }
   }
 }

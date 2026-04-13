@@ -15,6 +15,7 @@ from __future__ import annotations
 import sys
 import os
 import json
+import argparse
 from typing import Any
 import numpy as np
 import pandas as pd
@@ -368,6 +369,7 @@ def run_pair(pair_name: str) -> dict[str, Any]:
         # Record
         for i in range(len(actual_returns)):
             all_records.append({
+                'pair': pair_name,
                 'datetime_utc': chunk['datetime_utc'].iloc[i],
                 'actual_return': actual_returns[i],
                 'tech_signal': tech_signals[i],
@@ -375,6 +377,7 @@ def run_pair(pair_name: str) -> dict[str, Any]:
                 'sg_signal': shiftguard_signals[i],
                 'sg_policy': shiftguard_policies[i],
                 'regime': regime_pred[i],
+                'target_regime': chunk['target_market_state'].iloc[i],
                 'regime_confidence': regime_confidence[i],
             })
 
@@ -477,8 +480,12 @@ def run_pair(pair_name: str) -> dict[str, Any]:
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--pairs", nargs="+", default=['EURUSD', 'GBPJPY', 'XAUUSD'])
+    args = parser.parse_args()
+
     all_results = {}
-    for pair in ['EURUSD', 'GBPJPY', 'XAUUSD']:
+    for pair in args.pairs:
         results = run_pair(pair)
         all_results[pair] = results
 

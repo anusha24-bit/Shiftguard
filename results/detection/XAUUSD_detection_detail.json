@@ -2,2324 +2,304 @@
   "pair": "XAUUSD",
   "scheduled": [
     {
-      "datetime_utc": "2015-01-27",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4123,
-      "mmd_score": 0.045342,
-      "event_names": "Core Durable Goods Orders m/m; CB Consumer Confidence; New Home Sales",
-      "n_significant": 51,
-      "n_tested": 68
-    },
-    {
-      "datetime_utc": "2015-02-05",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.716,
-      "mean_ks_stat": 0.4398,
-      "mmd_score": 0.035622,
-      "event_names": "Trade Balance; Unemployment Claims",
-      "n_significant": 48,
-      "n_tested": 67
-    },
-    {
-      "datetime_utc": "2015-03-27",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.3919,
-      "mmd_score": 0.03677,
-      "event_names": "Final GDP q/q; Fed Chair Yellen Speaks",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2015-06-03",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.4194,
-      "mmd_score": 0.036334,
-      "event_names": "ADP Non-Farm Employment Change; Trade Balance; ISM Services PMI",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2015-07-14",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.4629,
-      "mmd_score": 0.036186,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m",
-      "n_significant": 53,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2015-07-27",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.736,
-      "mean_ks_stat": 0.4412,
-      "mmd_score": 0.037086,
-      "event_names": "Core Durable Goods Orders m/m",
-      "n_significant": 53,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2015-08-11",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.4769,
-      "mmd_score": 0.035665,
-      "event_names": "Prelim Unit Labor Costs q/q",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2015-09-03",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.736,
-      "mean_ks_stat": 0.4657,
-      "mmd_score": 0.035355,
-      "event_names": "Trade Balance; Unemployment Claims; ISM Services PMI",
-      "n_significant": 53,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2015-10-02",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.4141,
-      "mmd_score": 0.037777,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 53,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2015-10-06",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.718,
-      "mean_ks_stat": 0.431,
-      "mmd_score": 0.038175,
-      "event_names": "Trade Balance",
-      "n_significant": 51,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2015-10-16",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.4718,
-      "mmd_score": 0.037824,
-      "event_names": "Prelim UoM Consumer Sentiment",
-      "n_significant": 53,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2015-10-22",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.732,
-      "mean_ks_stat": 0.4061,
-      "mmd_score": 0.03707,
-      "event_names": "Unemployment Claims",
-      "n_significant": 52,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2015-10-30",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.714,
-      "mean_ks_stat": 0.5233,
-      "mmd_score": 0.038834,
-      "event_names": "Employment Cost Index q/q",
-      "n_significant": 50,
-      "n_tested": 70
-    },
-    {
-      "datetime_utc": "2015-11-13",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.718,
-      "mean_ks_stat": 0.4613,
-      "mmd_score": 0.037127,
-      "event_names": "Core Retail Sales m/m; PPI m/m; Retail Sales m/m",
-      "n_significant": 51,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2016-01-04",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.4585,
-      "mmd_score": 0.035675,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 53,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2016-02-01",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.775,
-      "mean_ks_stat": 0.5211,
-      "mmd_score": 0.034876,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 55,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2016-02-10",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.736,
-      "mean_ks_stat": 0.4812,
-      "mmd_score": 0.034909,
-      "event_names": "Fed Chair Yellen Testifies; Crude Oil Inventories",
-      "n_significant": 53,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2016-03-30",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.4016,
-      "mmd_score": 0.036369,
-      "event_names": "ADP Non-Farm Employment Change; Crude Oil Inventories",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2016-06-08",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.74,
-      "mean_ks_stat": 0.4546,
-      "mmd_score": 0.036013,
-      "event_names": "Crude Oil Inventories",
-      "n_significant": 54,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-06-16",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.775,
-      "mean_ks_stat": 0.4782,
-      "mmd_score": 0.035575,
-      "event_names": "Core CPI m/m; CPI m/m; CPI y/y",
-      "n_significant": 55,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2016-06-24",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.4811,
-      "mmd_score": 0.0349,
-      "event_names": "Core Durable Goods Orders m/m",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-06-30",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.4589,
-      "mmd_score": 0.034787,
-      "event_names": "Unemployment Claims; FOMC Member Bullard Speaks",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-07-07",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.795,
-      "mean_ks_stat": 0.447,
-      "mmd_score": 0.035022,
-      "event_names": "ADP Non-Farm Employment Change; Unemployment Claims; Crude Oil Inventories",
-      "n_significant": 58,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-08-18",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.712,
-      "mean_ks_stat": 0.3578,
-      "mmd_score": 0.037088,
-      "event_names": "Philly Fed Manufacturing Index; Unemployment Claims",
-      "n_significant": 52,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-09-28",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.712,
-      "mean_ks_stat": 0.3966,
-      "mmd_score": 0.036996,
-      "event_names": "Core Durable Goods Orders m/m; Fed Chair Yellen Testifies; Crude Oil Inventories",
-      "n_significant": 52,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-10-03",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.5021,
-      "mmd_score": 0.036409,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 54,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2016-10-07",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.712,
-      "mean_ks_stat": 0.4932,
-      "mmd_score": 0.036502,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 52,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-10-12",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.767,
-      "mean_ks_stat": 0.4877,
-      "mmd_score": 0.036198,
-      "event_names": "FOMC Meeting Minutes",
-      "n_significant": 56,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-11-01",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.767,
-      "mean_ks_stat": 0.4982,
-      "mmd_score": 0.035707,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 56,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2016-11-08",
+      "datetime_utc": "2024-09-12 04:00:00",
       "type": "scheduled",
       "severity": 4,
       "significant_features_ratio": 0.753,
-      "mean_ks_stat": 0.4989,
-      "mmd_score": 0.035694,
-      "event_names": "Presidential Election",
-      "n_significant": 55,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-01-03",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.778,
-      "mean_ks_stat": 0.4956,
-      "mmd_score": 0.036398,
-      "event_names": "ISM Manufacturing PMI; ISM Manufacturing PMI; FOMC Meeting Minutes",
-      "n_significant": 56,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2017-02-24",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.712,
-      "mean_ks_stat": 0.3845,
-      "mmd_score": 0.036684,
-      "event_names": "President Trump Speaks",
-      "n_significant": 52,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-03-10",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.74,
-      "mean_ks_stat": 0.3895,
-      "mmd_score": 0.037284,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 54,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-03-17",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.722,
-      "mean_ks_stat": 0.438,
-      "mmd_score": 0.037395,
-      "event_names": "Prelim UoM Consumer Sentiment",
-      "n_significant": 52,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2017-04-20",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.3648,
-      "mmd_score": 0.036578,
-      "event_names": "Philly Fed Manufacturing Index; Unemployment Claims; Treasury Sec Mnuchin Speaks",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2017-04-27",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.722,
-      "mean_ks_stat": 0.4611,
-      "mmd_score": 0.036434,
-      "event_names": "Core Durable Goods Orders m/m; Unemployment Claims",
-      "n_significant": 52,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2017-05-01",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.712,
-      "mean_ks_stat": 0.4555,
-      "mmd_score": 0.035988,
-      "event_names": "ISM Manufacturing PMI; Treasury Sec Mnuchin Speaks",
-      "n_significant": 52,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-06-07",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.74,
-      "mean_ks_stat": 0.3888,
-      "mmd_score": 0.039352,
-      "event_names": "Crude Oil Inventories",
-      "n_significant": 54,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-06-22",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.3815,
-      "mmd_score": 0.039829,
-      "event_names": "Unemployment Claims",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2017-07-28",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.461,
-      "mmd_score": 0.038685,
-      "event_names": "Advance GDP q/q",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-08-01",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.4468,
-      "mmd_score": 0.038929,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-08-25",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.447,
-      "mmd_score": 0.035757,
-      "event_names": "Core Durable Goods Orders m/m; Fed Chair Yellen Speaks",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-10-02",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.4568,
-      "mmd_score": 0.036856,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-12-14",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.4603,
-      "mmd_score": 0.037823,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2017-12-19",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.712,
-      "mean_ks_stat": 0.4902,
-      "mmd_score": 0.037837,
-      "event_names": "Building Permits",
-      "n_significant": 52,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2018-01-04",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.795,
-      "mean_ks_stat": 0.4753,
-      "mmd_score": 0.03858,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 58,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2018-01-24",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.767,
-      "mean_ks_stat": 0.4402,
-      "mmd_score": 0.035753,
-      "event_names": "Crude Oil Inventories",
-      "n_significant": 56,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2018-03-21",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.736,
-      "mean_ks_stat": 0.441,
-      "mmd_score": 0.036228,
-      "event_names": "Crude Oil Inventories; Federal Funds Rate; FOMC Economic Projections",
-      "n_significant": 53,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2018-04-24",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.778,
-      "mean_ks_stat": 0.4789,
-      "mmd_score": 0.03493,
-      "event_names": "CB Consumer Confidence",
-      "n_significant": 56,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2018-05-01",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.4509,
-      "mmd_score": 0.034642,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 54,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2018-06-14",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.4568,
-      "mmd_score": 0.037372,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2018-06-19",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.736,
-      "mean_ks_stat": 0.5257,
-      "mmd_score": 0.036324,
-      "event_names": "Building Permits",
-      "n_significant": 53,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2018-06-28",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4542,
-      "mmd_score": 0.036674,
-      "event_names": "Final GDP q/q",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2018-11-15",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.3736,
-      "mmd_score": 0.036809,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m; Fed Chair Powell Speaks",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2018-12-21",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.767,
-      "mean_ks_stat": 0.495,
-      "mmd_score": 0.035079,
-      "event_names": "Core Durable Goods Orders m/m; Final GDP q/q",
-      "n_significant": 56,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2019-01-07",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.736,
-      "mean_ks_stat": 0.5049,
-      "mmd_score": 0.035617,
-      "event_names": "ISM Services PMI",
-      "n_significant": 53,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-02-21",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.3903,
-      "mmd_score": 0.03693,
-      "event_names": "Core Durable Goods Orders m/m",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-03-12",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.74,
-      "mean_ks_stat": 0.3979,
-      "mmd_score": 0.037596,
-      "event_names": "Core CPI m/m; CPI m/m; CPI y/y",
-      "n_significant": 54,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2019-03-26",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.74,
-      "mean_ks_stat": 0.3932,
-      "mmd_score": 0.037674,
-      "event_names": "CB Consumer Confidence",
-      "n_significant": 54,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2019-04-11",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.712,
-      "mean_ks_stat": 0.4073,
-      "mmd_score": 0.03666,
-      "event_names": "PPI m/m",
-      "n_significant": 52,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2019-05-30",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.806,
-      "mean_ks_stat": 0.5134,
-      "mmd_score": 0.036691,
-      "event_names": "Prelim GDP q/q",
-      "n_significant": 58,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-06-03",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.5333,
-      "mmd_score": 0.036488,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-06-07",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4278,
-      "mmd_score": 0.036523,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-06-25",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.806,
-      "mean_ks_stat": 0.4736,
-      "mmd_score": 0.036985,
-      "event_names": "CB Consumer Confidence; Fed Chair Powell Speaks",
-      "n_significant": 58,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-07-03",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.795,
-      "mean_ks_stat": 0.3966,
-      "mmd_score": 0.036569,
-      "event_names": "ADP Non-Farm Employment Change; ISM Services PMI",
-      "n_significant": 58,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2019-07-26",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.3819,
-      "mmd_score": 0.036559,
-      "event_names": "Advance GDP q/q",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-08-02",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.822,
-      "mean_ks_stat": 0.5662,
-      "mmd_score": 0.035839,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 60,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2019-10-04",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.764,
-      "mean_ks_stat": 0.3549,
-      "mmd_score": 0.036903,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 55,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-10-10",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.3928,
-      "mmd_score": 0.03643,
-      "event_names": "Core CPI m/m; CPI m/m; CPI y/y",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-11-05",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.722,
-      "mean_ks_stat": 0.4771,
-      "mmd_score": 0.035522,
-      "event_names": "ISM Services PMI",
-      "n_significant": 52,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-12-11",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.722,
-      "mean_ks_stat": 0.394,
-      "mmd_score": 0.036506,
-      "event_names": "Core CPI m/m; CPI m/m; CPI y/y",
-      "n_significant": 52,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2019-12-16",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.718,
-      "mean_ks_stat": 0.4465,
-      "mmd_score": 0.03679,
-      "event_names": "Flash Manufacturing PMI",
-      "n_significant": 51,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2019-12-31",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.819,
-      "mean_ks_stat": 0.5141,
-      "mmd_score": 0.035993,
-      "event_names": "CB Consumer Confidence",
-      "n_significant": 59,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2020-01-08",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.817,
-      "mean_ks_stat": 0.5209,
-      "mmd_score": 0.036167,
-      "event_names": "ADP Non-Farm Employment Change; President Trump Speaks",
-      "n_significant": 58,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2020-01-29",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.434,
-      "mmd_score": 0.036712,
-      "event_names": "Federal Funds Rate; FOMC Statement; FOMC Press Conference",
-      "n_significant": 54,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2020-02-12",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.778,
-      "mean_ks_stat": 0.3836,
-      "mmd_score": 0.037676,
-      "event_names": "Fed Chair Powell Testifies",
-      "n_significant": 56,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2020-02-21",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.778,
-      "mean_ks_stat": 0.5338,
-      "mmd_score": 0.037041,
-      "event_names": "Flash Manufacturing PMI",
-      "n_significant": 56,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2020-02-25",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.806,
-      "mean_ks_stat": 0.5352,
-      "mmd_score": 0.036561,
-      "event_names": "CB Consumer Confidence",
-      "n_significant": 58,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2020-03-02",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.778,
-      "mean_ks_stat": 0.4428,
-      "mmd_score": 0.035226,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 56,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2020-03-11",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.764,
-      "mean_ks_stat": 0.4539,
-      "mmd_score": 0.033939,
-      "event_names": "Core CPI m/m; CPI m/m; CPI y/y",
-      "n_significant": 55,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2020-03-26",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.817,
-      "mean_ks_stat": 0.5223,
-      "mmd_score": 0.034073,
-      "event_names": "Fed Chair Powell Speaks; Unemployment Claims",
-      "n_significant": 58,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2020-04-02",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.775,
-      "mean_ks_stat": 0.488,
-      "mmd_score": 0.034104,
-      "event_names": "Unemployment Claims; President Trump Speaks",
-      "n_significant": 55,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2020-06-17",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.722,
-      "mean_ks_stat": 0.4447,
-      "mmd_score": 0.035327,
-      "event_names": "Fed Chair Powell Testifies",
-      "n_significant": 52,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2020-07-16",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.4653,
-      "mmd_score": 0.036509,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m",
-      "n_significant": 53,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2020-07-21",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.5432,
-      "mmd_score": 0.03477,
-      "event_names": "President Trump Speaks",
-      "n_significant": 53,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2020-07-29",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.817,
-      "mean_ks_stat": 0.5023,
-      "mmd_score": 0.03504,
-      "event_names": "Pending Home Sales m/m; FOMC Statement; FOMC Press Conference",
-      "n_significant": 58,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2020-08-03",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.806,
-      "mean_ks_stat": 0.4632,
-      "mmd_score": 0.034925,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 58,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2020-11-17",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.826,
-      "mean_ks_stat": 0.4628,
-      "mmd_score": 0.03549,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m; Fed Chair Powell Speaks",
-      "n_significant": 57,
-      "n_tested": 69
-    },
-    {
-      "datetime_utc": "2021-01-06",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.722,
-      "mean_ks_stat": 0.4685,
-      "mmd_score": 0.035252,
-      "event_names": "FOMC Meeting Minutes",
-      "n_significant": 52,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2021-02-24",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.4611,
-      "mmd_score": 0.034595,
-      "event_names": "Fed Chair Powell Testifies",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2021-03-10",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4481,
-      "mmd_score": 0.034935,
-      "event_names": "CPI y/y; Core CPI m/m; CPI m/m",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2021-05-07",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4836,
-      "mmd_score": 0.036244,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2021-06-10",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.778,
-      "mean_ks_stat": 0.4442,
-      "mmd_score": 0.034953,
-      "event_names": "Core CPI m/m; CPI m/m; CPI y/y",
-      "n_significant": 56,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2021-06-22",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.736,
-      "mean_ks_stat": 0.4396,
-      "mmd_score": 0.034694,
-      "event_names": "Fed Chair Powell Testifies",
-      "n_significant": 53,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2021-07-01",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.722,
-      "mean_ks_stat": 0.4546,
-      "mmd_score": 0.034735,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 52,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2021-08-06",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4741,
-      "mmd_score": 0.037363,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2021-12-01",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.4547,
-      "mmd_score": 0.035317,
-      "event_names": "ADP Non-Farm Employment Change; Fed Chair Powell Testifies; ISM Manufacturing PMI",
-      "n_significant": 54,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2022-03-02",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.718,
-      "mean_ks_stat": 0.4526,
-      "mmd_score": 0.034754,
-      "event_names": "ADP Non-Farm Employment Change; Fed Chair Powell Testifies",
-      "n_significant": 51,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2022-04-21",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.806,
-      "mean_ks_stat": 0.4667,
-      "mmd_score": 0.034636,
-      "event_names": "Fed Chair Powell Speaks",
-      "n_significant": 58,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2022-06-30",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.71,
-      "mean_ks_stat": 0.4676,
-      "mmd_score": 0.034931,
-      "event_names": "Core PCE Price Index m/m",
-      "n_significant": 49,
-      "n_tested": 69
-    },
-    {
-      "datetime_utc": "2022-07-06",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.71,
-      "mean_ks_stat": 0.4901,
-      "mmd_score": 0.034429,
-      "event_names": "JOLTS Job Openings; FOMC Meeting Minutes",
-      "n_significant": 49,
-      "n_tested": 69
-    },
-    {
-      "datetime_utc": "2022-07-26",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4532,
-      "mmd_score": 0.035004,
-      "event_names": "CB Consumer Confidence",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2022-08-05",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.764,
-      "mean_ks_stat": 0.4546,
-      "mmd_score": 0.035912,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 55,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2022-09-02",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.726,
-      "mean_ks_stat": 0.4584,
-      "mmd_score": 0.035071,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 53,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2022-09-15",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.712,
-      "mean_ks_stat": 0.4973,
-      "mmd_score": 0.034459,
-      "event_names": "Core Retail Sales m/m; Empire State Manufacturing Index; Retail Sales m/m",
-      "n_significant": 52,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2022-11-03",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4796,
-      "mmd_score": 0.035262,
-      "event_names": "ISM Services PMI",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2022-11-16",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.4772,
-      "mmd_score": 0.034207,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m",
-      "n_significant": 54,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2023-01-03",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.817,
-      "mean_ks_stat": 0.5047,
-      "mmd_score": 0.037163,
-      "event_names": "ISM Manufacturing PMI; JOLTS Job Openings; FOMC Meeting Minutes",
-      "n_significant": 58,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2023-01-17",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.729,
-      "mean_ks_stat": 0.4755,
-      "mmd_score": 0.036044,
-      "event_names": "Empire State Manufacturing Index",
-      "n_significant": 51,
-      "n_tested": 70
-    },
-    {
-      "datetime_utc": "2023-02-03",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.778,
-      "mean_ks_stat": 0.5215,
-      "mmd_score": 0.034897,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 56,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2023-02-22",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.757,
-      "mean_ks_stat": 0.4624,
-      "mmd_score": 0.035077,
-      "event_names": "FOMC Meeting Minutes",
-      "n_significant": 53,
-      "n_tested": 70
-    },
-    {
-      "datetime_utc": "2023-03-10",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.781,
-      "mean_ks_stat": 0.5459,
-      "mmd_score": 0.035132,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 57,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2023-03-24",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.753,
-      "mean_ks_stat": 0.4884,
-      "mmd_score": 0.034659,
-      "event_names": "Flash Manufacturing PMI; Flash Services PMI",
-      "n_significant": 55,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2023-05-16",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.4787,
-      "mmd_score": 0.035525,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2023-08-02",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4907,
-      "mmd_score": 0.036341,
-      "event_names": "ADP Non-Farm Employment Change",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2023-09-01",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.457,
-      "mmd_score": 0.035951,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 54,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2023-09-21",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.836,
-      "mean_ks_stat": 0.4856,
-      "mmd_score": 0.036757,
-      "event_names": "Unemployment Claims",
-      "n_significant": 61,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2023-09-26",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.808,
-      "mean_ks_stat": 0.5379,
-      "mmd_score": 0.036371,
-      "event_names": "CB Consumer Confidence",
-      "n_significant": 59,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2023-10-02",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.753,
-      "mean_ks_stat": 0.4539,
-      "mmd_score": 0.036473,
-      "event_names": "ISM Manufacturing PMI; Fed Chair Powell Speaks",
-      "n_significant": 55,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2023-10-13",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.732,
-      "mean_ks_stat": 0.4561,
-      "mmd_score": 0.035972,
-      "event_names": "Prelim UoM Consumer Sentiment",
-      "n_significant": 52,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2023-10-27",
-      "type": "scheduled",
-      "severity": 5,
-      "significant_features_ratio": 0.789,
-      "mean_ks_stat": 0.4927,
-      "mmd_score": 0.036507,
-      "event_names": "Core PCE Price Index m/m; Revised UoM Consumer Sentiment",
-      "n_significant": 56,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2023-11-03",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.4262,
-      "mmd_score": 0.036675,
-      "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2023-11-29",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.743,
-      "mean_ks_stat": 0.4821,
-      "mmd_score": 0.034747,
-      "event_names": "Prelim GDP q/q",
-      "n_significant": 52,
-      "n_tested": 70
-    },
-    {
-      "datetime_utc": "2024-02-27",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.729,
-      "mean_ks_stat": 0.4621,
-      "mmd_score": 0.034423,
-      "event_names": "Durable Goods Orders m/m; CB Consumer Confidence",
-      "n_significant": 51,
-      "n_tested": 70
-    },
-    {
-      "datetime_utc": "2024-03-06",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.729,
-      "mean_ks_stat": 0.4433,
-      "mmd_score": 0.034586,
-      "event_names": "ADP Non-Farm Employment Change; Fed Chair Powell Testifies; JOLTS Job Openings",
-      "n_significant": 51,
-      "n_tested": 70
-    },
-    {
-      "datetime_utc": "2024-03-26",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.771,
-      "mean_ks_stat": 0.4907,
-      "mmd_score": 0.034293,
-      "event_names": "CB Consumer Confidence",
-      "n_significant": 54,
-      "n_tested": 70
-    },
-    {
-      "datetime_utc": "2024-04-01",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.732,
-      "mean_ks_stat": 0.5204,
-      "mmd_score": 0.03378,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 52,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2024-04-10",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.732,
-      "mean_ks_stat": 0.5052,
-      "mmd_score": 0.03364,
-      "event_names": "Core CPI m/m; CPI m/m; CPI y/y",
-      "n_significant": 52,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2024-07-12",
-      "type": "scheduled",
-      "severity": 1,
-      "significant_features_ratio": 0.708,
-      "mean_ks_stat": 0.4502,
-      "mmd_score": 0.034678,
-      "event_names": "Core PPI m/m; PPI m/m; Prelim UoM Consumer Sentiment",
-      "n_significant": 51,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2024-08-21",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.725,
-      "mean_ks_stat": 0.4539,
-      "mmd_score": 0.034432,
-      "event_names": "Prelim Benchmark Payrolls Revision; FOMC Meeting Minutes",
-      "n_significant": 50,
-      "n_tested": 69
-    },
-    {
-      "datetime_utc": "2024-09-12",
-      "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.795,
-      "mean_ks_stat": 0.4973,
-      "mmd_score": 0.035348,
+      "mean_ks_stat": 0.4993,
+      "mmd_score": 0.035253,
       "event_names": "Core PPI m/m; PPI m/m; Unemployment Claims",
-      "n_significant": 58,
+      "n_significant": 55,
       "n_tested": 73
     },
     {
-      "datetime_utc": "2024-09-27",
+      "datetime_utc": "2024-09-26 08:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.74,
-      "mean_ks_stat": 0.4735,
-      "mmd_score": 0.034116,
-      "event_names": "Core PCE Price Index m/m",
-      "n_significant": 54,
-      "n_tested": 73
+      "significant_features_ratio": 0.736,
+      "mean_ks_stat": 0.4843,
+      "mmd_score": 0.03408,
+      "event_names": "Fed Chair Powell Speaks",
+      "n_significant": 53,
+      "n_tested": 72
     },
     {
-      "datetime_utc": "2024-10-24",
+      "datetime_utc": "2024-10-17 04:00:00",
       "type": "scheduled",
       "severity": 2,
+      "significant_features_ratio": 0.714,
+      "mean_ks_stat": 0.4655,
+      "mmd_score": 0.034187,
+      "event_names": "Core Retail Sales m/m; Retail Sales m/m; Unemployment Claims",
+      "n_significant": 50,
+      "n_tested": 70
+    },
+    {
+      "datetime_utc": "2024-10-24 04:00:00",
+      "type": "scheduled",
+      "severity": 3,
       "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4521,
+      "mean_ks_stat": 0.45,
       "mmd_score": 0.034598,
-      "event_names": "Unemployment Claims; Flash Manufacturing PMI; Flash Services PMI",
+      "event_names": "Unemployment Claims",
       "n_significant": 54,
       "n_tested": 72
     },
     {
-      "datetime_utc": "2024-11-01",
+      "datetime_utc": "2024-11-01 04:00:00",
       "type": "scheduled",
-      "severity": 4,
+      "severity": 3,
       "significant_features_ratio": 0.817,
       "mean_ks_stat": 0.4812,
-      "mmd_score": 0.034415,
+      "mmd_score": 0.033948,
       "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
       "n_significant": 58,
       "n_tested": 71
     },
     {
-      "datetime_utc": "2024-11-05",
+      "datetime_utc": "2024-11-05 08:00:00",
+      "type": "scheduled",
+      "severity": 4,
+      "significant_features_ratio": 0.767,
+      "mean_ks_stat": 0.5148,
+      "mmd_score": 0.03425,
+      "event_names": "ISM Services PMI",
+      "n_significant": 56,
+      "n_tested": 73
+    },
+    {
+      "datetime_utc": "2024-12-20 04:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.74,
-      "mean_ks_stat": 0.5066,
-      "mmd_score": 0.034251,
-      "event_names": "ISM Services PMI; Presidential Election; Congressional Elections",
-      "n_significant": 54,
-      "n_tested": 73
-    },
-    {
-      "datetime_utc": "2024-12-20",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.74,
-      "mean_ks_stat": 0.4447,
-      "mmd_score": 0.034666,
+      "significant_features_ratio": 0.753,
+      "mean_ks_stat": 0.4438,
+      "mmd_score": 0.03466,
       "event_names": "Core PCE Price Index m/m",
-      "n_significant": 54,
+      "n_significant": 55,
       "n_tested": 73
     },
     {
-      "datetime_utc": "2025-01-08",
+      "datetime_utc": "2025-01-08 04:00:00",
       "type": "scheduled",
       "severity": 2,
       "significant_features_ratio": 0.714,
-      "mean_ks_stat": 0.4562,
-      "mmd_score": 0.035068,
-      "event_names": "ADP Non-Farm Employment Change; Unemployment Claims; FOMC Meeting Minutes",
+      "mean_ks_stat": 0.4576,
+      "mmd_score": 0.035056,
+      "event_names": "ADP Non-Farm Employment Change; Unemployment Claims",
       "n_significant": 50,
       "n_tested": 70
     },
     {
-      "datetime_utc": "2025-03-11",
+      "datetime_utc": "2025-03-11 08:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.803,
-      "mean_ks_stat": 0.4697,
+      "significant_features_ratio": 0.817,
+      "mean_ks_stat": 0.477,
       "mmd_score": 0.033792,
       "event_names": "JOLTS Job Openings",
-      "n_significant": 57,
+      "n_significant": 58,
       "n_tested": 71
     },
     {
-      "datetime_utc": "2025-04-23",
+      "datetime_utc": "2025-04-09 12:00:00",
       "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.714,
-      "mean_ks_stat": 0.4552,
+      "severity": 1,
+      "significant_features_ratio": 0.704,
+      "mean_ks_stat": 0.4505,
+      "mmd_score": 0.03343,
+      "event_names": "FOMC Meeting Minutes",
+      "n_significant": 50,
+      "n_tested": 71
+    },
+    {
+      "datetime_utc": "2025-04-23 08:00:00",
+      "type": "scheduled",
+      "severity": 1,
+      "significant_features_ratio": 0.704,
+      "mean_ks_stat": 0.4493,
       "mmd_score": 0.033351,
       "event_names": "Flash Manufacturing PMI; Flash Services PMI",
       "n_significant": 50,
-      "n_tested": 70
+      "n_tested": 71
     },
     {
-      "datetime_utc": "2025-07-01",
+      "datetime_utc": "2025-06-27 04:00:00",
       "type": "scheduled",
       "severity": 1,
       "significant_features_ratio": 0.71,
-      "mean_ks_stat": 0.4403,
-      "mmd_score": 0.034004,
-      "event_names": "Fed Chair Powell Speaks; ISM Manufacturing PMI; JOLTS Job Openings",
+      "mean_ks_stat": 0.4447,
+      "mmd_score": 0.034029,
+      "event_names": "Core PCE Price Index m/m",
       "n_significant": 49,
       "n_tested": 69
     },
     {
-      "datetime_utc": "2025-08-28",
+      "datetime_utc": "2025-08-22 12:00:00",
+      "type": "scheduled",
+      "severity": 2,
+      "significant_features_ratio": 0.714,
+      "mean_ks_stat": 0.4676,
+      "mmd_score": 0.033914,
+      "event_names": "President Trump Speaks",
+      "n_significant": 50,
+      "n_tested": 70
+    },
+    {
+      "datetime_utc": "2025-08-28 04:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.797,
-      "mean_ks_stat": 0.5655,
-      "mmd_score": 0.033858,
+      "significant_features_ratio": 0.826,
+      "mean_ks_stat": 0.5671,
+      "mmd_score": 0.033855,
       "event_names": "Prelim GDP q/q; Unemployment Claims",
-      "n_significant": 55,
+      "n_significant": 57,
       "n_tested": 69
     },
     {
-      "datetime_utc": "2025-09-10",
+      "datetime_utc": "2025-09-10 04:00:00",
       "type": "scheduled",
       "severity": 1,
-      "significant_features_ratio": 0.718,
-      "mean_ks_stat": 0.4427,
+      "significant_features_ratio": 0.704,
+      "mean_ks_stat": 0.4446,
       "mmd_score": 0.033973,
       "event_names": "Core PPI m/m; PPI m/m",
-      "n_significant": 51,
+      "n_significant": 50,
       "n_tested": 71
     },
     {
-      "datetime_utc": "2025-09-26",
+      "datetime_utc": "2025-09-26 04:00:00",
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.4638,
-      "mmd_score": 0.033963,
+      "mean_ks_stat": 0.4667,
+      "mmd_score": 0.033934,
       "event_names": "Core PCE Price Index m/m",
       "n_significant": 54,
       "n_tested": 71
     },
     {
-      "datetime_utc": "2025-10-10",
+      "datetime_utc": "2025-10-03 08:00:00",
       "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.803,
-      "mean_ks_stat": 0.5134,
-      "mmd_score": 0.03336,
-      "event_names": "Prelim UoM Consumer Sentiment; Prelim UoM Inflation Expectations",
-      "n_significant": 57,
+      "severity": 2,
+      "significant_features_ratio": 0.718,
+      "mean_ks_stat": 0.4697,
+      "mmd_score": 0.033452,
+      "event_names": "ISM Services PMI",
+      "n_significant": 51,
       "n_tested": 71
     },
     {
-      "datetime_utc": "2025-10-14",
+      "datetime_utc": "2025-10-10 08:00:00",
+      "type": "scheduled",
+      "severity": 4,
+      "significant_features_ratio": 0.789,
+      "mean_ks_stat": 0.5049,
+      "mmd_score": 0.03336,
+      "event_names": "Prelim UoM Consumer Sentiment; Prelim UoM Inflation Expectations",
+      "n_significant": 56,
+      "n_tested": 71
+    },
+    {
+      "datetime_utc": "2025-10-14 08:00:00",
       "type": "scheduled",
       "severity": 4,
       "significant_features_ratio": 0.806,
-      "mean_ks_stat": 0.5023,
+      "mean_ks_stat": 0.4995,
       "mmd_score": 0.03336,
       "event_names": "Fed Chair Powell Speaks",
       "n_significant": 58,
       "n_tested": 72
     },
     {
-      "datetime_utc": "2025-10-29",
-      "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4771,
-      "mmd_score": 0.033335,
-      "event_names": "Federal Funds Rate; FOMC Statement; FOMC Press Conference",
-      "n_significant": 54,
-      "n_tested": 72
-    },
-    {
-      "datetime_utc": "2025-11-25",
+      "datetime_utc": "2025-11-26 04:00:00",
       "type": "scheduled",
       "severity": 2,
-      "significant_features_ratio": 0.743,
-      "mean_ks_stat": 0.4648,
-      "mmd_score": 0.033574,
-      "event_names": "Core PPI m/m; Core Retail Sales m/m; PPI m/m",
-      "n_significant": 52,
+      "significant_features_ratio": 0.729,
+      "mean_ks_stat": 0.481,
+      "mmd_score": 0.033573,
+      "event_names": "Unemployment Claims",
+      "n_significant": 51,
       "n_tested": 70
     },
     {
-      "datetime_utc": "2025-12-03",
+      "datetime_utc": "2025-12-01 08:00:00",
       "type": "scheduled",
       "severity": 2,
-      "significant_features_ratio": 0.732,
-      "mean_ks_stat": 0.4439,
+      "significant_features_ratio": 0.704,
+      "mean_ks_stat": 0.4913,
       "mmd_score": 0.033597,
-      "event_names": "ADP Non-Farm Employment Change; ISM Services PMI",
-      "n_significant": 52,
+      "event_names": "ISM Manufacturing PMI",
+      "n_significant": 50,
       "n_tested": 71
     },
     {
-      "datetime_utc": "2026-01-23",
+      "datetime_utc": "2026-01-23 08:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.481,
+      "significant_features_ratio": 0.761,
+      "mean_ks_stat": 0.4746,
       "mmd_score": 0.033337,
       "event_names": "Flash Manufacturing PMI; Flash Services PMI",
-      "n_significant": 53,
+      "n_significant": 54,
       "n_tested": 71
     },
     {
-      "datetime_utc": "2026-01-29",
+      "datetime_utc": "2026-01-29 04:00:00",
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.826,
-      "mean_ks_stat": 0.4686,
+      "mean_ks_stat": 0.4667,
       "mmd_score": 0.033334,
       "event_names": "Unemployment Claims",
       "n_significant": 57,
       "n_tested": 69
     },
     {
-      "datetime_utc": "2026-03-13",
+      "datetime_utc": "2026-03-13 04:00:00",
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.754,
-      "mean_ks_stat": 0.4635,
+      "mean_ks_stat": 0.4669,
       "mmd_score": 0.033343,
-      "event_names": "Core PCE Price Index m/m; Prelim GDP q/q; JOLTS Job Openings",
+      "event_names": "Core PCE Price Index m/m; Prelim GDP q/q",
       "n_significant": 52,
       "n_tested": 69
     },
     {
-      "datetime_utc": "2026-03-19",
+      "datetime_utc": "2026-03-19 04:00:00",
       "type": "scheduled",
       "severity": 2,
-      "significant_features_ratio": 0.71,
-      "mean_ks_stat": 0.48,
+      "significant_features_ratio": 0.725,
+      "mean_ks_stat": 0.4814,
       "mmd_score": 0.033343,
       "event_names": "Unemployment Claims",
-      "n_significant": 49,
+      "n_significant": 50,
       "n_tested": 69
     },
     {
-      "datetime_utc": "2026-03-26",
+      "datetime_utc": "2026-03-24 08:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.765,
-      "mean_ks_stat": 0.4711,
+      "significant_features_ratio": 0.754,
+      "mean_ks_stat": 0.4766,
       "mmd_score": 0.033348,
-      "event_names": "Unemployment Claims",
+      "event_names": "Flash Manufacturing PMI; Flash Services PMI",
       "n_significant": 52,
-      "n_tested": 68
+      "n_tested": 69
     },
     {
-      "datetime_utc": "2026-03-30",
+      "datetime_utc": "2026-03-30 08:00:00",
       "type": "scheduled",
       "severity": 4,
       "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4675,
-      "mmd_score": 0.04002,
+      "mean_ks_stat": 0.4681,
+      "mmd_score": 0.041688,
       "event_names": "Fed Chair Powell Speaks",
       "n_significant": 51,
       "n_tested": 68
     }
   ],
   "unexpected": [
-    {
-      "datetime_utc": "2015-05-27 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2015-10-12 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2015-10-26 16:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2015-11-10 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2015-12-08 20:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2016-02-08 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2016-02-15 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2016-02-22 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2016-03-22 04:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2016-07-24 20:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2016-08-22 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2016-08-29 16:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2016-09-13 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2016-10-11 16:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2016-12-30 16:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2017-02-21 16:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2017-11-23 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2018-01-09 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2018-03-29 16:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2018-04-30 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2018-05-14 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2018-05-28 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2018-09-20 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2018-10-04 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2018-10-19 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2018-11-26 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2018-12-17 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2018-12-24 16:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2019-01-17 00:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2019-01-31 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2019-04-14 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2019-05-28 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2019-07-18 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2019-08-22 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2019-10-21 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2019-11-11 12:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2019-12-03 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2019-12-24 16:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2020-01-09 20:00:00",
-      "type": "unexpected",
-      "severity": 3,
-      "n_features_triggered": 3,
-      "trigger_features": "atr_14; vol_ratio; bb_width"
-    },
-    {
-      "datetime_utc": "2020-03-01 20:00:00",
-      "type": "unexpected",
-      "severity": 3,
-      "n_features_triggered": 3,
-      "trigger_features": "atr_14; vol_ratio; bb_width"
-    },
-    {
-      "datetime_utc": "2020-05-27 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2020-06-11 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2020-06-25 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2020-07-17 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2020-07-24 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2020-07-31 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2020-08-31 00:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2020-09-14 08:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2020-09-28 16:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2020-10-20 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2020-10-27 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2020-11-10 16:00:00",
-      "type": "unexpected",
-      "severity": 3,
-      "n_features_triggered": 3,
-      "trigger_features": "atr_14; vol_ratio; bb_width"
-    },
-    {
-      "datetime_utc": "2021-01-04 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-01-11 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2021-01-18 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-01-25 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2021-02-08 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-03-02 08:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2021-05-21 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-06-18 20:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2021-07-05 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2021-07-12 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-08-09 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-08-24 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-09-07 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2021-09-21 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-10-20 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2021-10-27 16:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-11-11 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-11-18 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2021-11-25 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2021-12-09 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2022-01-03 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2022-01-31 20:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2022-02-22 08:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2022-06-19 20:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2022-07-11 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2022-08-16 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2022-09-28 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2022-10-19 16:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2022-11-24 12:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2023-04-30 20:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2023-05-08 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2023-05-22 08:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "atr_14"
-    },
-    {
-      "datetime_utc": "2023-06-20 00:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2023-12-11 00:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2023-12-26 08:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
-    {
-      "datetime_utc": "2024-06-19 04:00:00",
-      "type": "unexpected",
-      "severity": 1,
-      "n_features_triggered": 1,
-      "trigger_features": "bb_width"
-    },
-    {
-      "datetime_utc": "2024-07-17 20:00:00",
-      "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "atr_14; bb_width"
-    },
     {
       "datetime_utc": "2024-09-20 08:00:00",
       "type": "unexpected",
@@ -2485,105 +465,10 @@
   "performance_drifts": [],
   "performance_warnings": [
     {
-      "datetime_utc": "2021-01-19 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.4667
-    },
-    {
-      "datetime_utc": "2021-01-20 00:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5
-    },
-    {
-      "datetime_utc": "2021-01-20 04:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.4667
-    },
-    {
-      "datetime_utc": "2021-01-20 08:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5
-    },
-    {
-      "datetime_utc": "2021-01-20 12:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5333
-    },
-    {
-      "datetime_utc": "2021-01-20 16:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5667
-    },
-    {
-      "datetime_utc": "2021-01-20 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6
-    },
-    {
-      "datetime_utc": "2021-01-21 00:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6
-    },
-    {
-      "datetime_utc": "2021-01-21 04:00:00",
+      "datetime_utc": "2024-11-04 20:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.6333
-    },
-    {
-      "datetime_utc": "2021-01-21 08:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6333
-    },
-    {
-      "datetime_utc": "2021-01-21 12:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6333
-    },
-    {
-      "datetime_utc": "2021-01-21 16:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6667
-    },
-    {
-      "datetime_utc": "2021-01-21 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6667
-    },
-    {
-      "datetime_utc": "2021-01-22 00:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.7
-    },
-    {
-      "datetime_utc": "2021-01-22 04:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.7333
-    },
-    {
-      "datetime_utc": "2021-01-22 08:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.7
-    },
-    {
-      "datetime_utc": "2021-01-22 12:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.7
-    },
-    {
-      "datetime_utc": "2021-01-22 16:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.7
-    },
-    {
-      "datetime_utc": "2021-01-22 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.7
-    },
-    {
-      "datetime_utc": "2021-01-24 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.7
     }
   ],
-  "total_shifts": 266
+  "total_shifts": 50
 }

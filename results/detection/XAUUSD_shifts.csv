@@ -1,267 +1,51 @@
 datetime_utc,type,severity,significant_features_ratio,mean_ks_stat,mmd_score,event_names,n_significant,n_tested,n_features_triggered,trigger_features
-2015-01-27,scheduled,3,0.75,0.4123,0.045342,Core Durable Goods Orders m/m; CB Consumer Confidence; New Home Sales,51.0,68.0,,
-2015-02-05,scheduled,2,0.716,0.4398,0.035622,Trade Balance; Unemployment Claims,48.0,67.0,,
-2015-03-27,scheduled,2,0.708,0.3919,0.03677,Final GDP q/q; Fed Chair Yellen Speaks,51.0,72.0,,
-2015-05-27 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2015-06-03,scheduled,2,0.708,0.4194,0.036334,ADP Non-Farm Employment Change; Trade Balance; ISM Services PMI,51.0,72.0,,
-2015-07-14,scheduled,3,0.746,0.4629,0.036186,Core Retail Sales m/m; Retail Sales m/m,53.0,71.0,,
-2015-07-27,scheduled,3,0.736,0.4412,0.037086,Core Durable Goods Orders m/m,53.0,72.0,,
-2015-08-11,scheduled,3,0.708,0.4769,0.035665,Prelim Unit Labor Costs q/q,51.0,72.0,,
-2015-09-03,scheduled,3,0.736,0.4657,0.035355,Trade Balance; Unemployment Claims; ISM Services PMI,53.0,72.0,,
-2015-10-02,scheduled,3,0.746,0.4141,0.037777,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,53.0,71.0,,
-2015-10-06,scheduled,3,0.718,0.431,0.038175,Trade Balance,51.0,71.0,,
-2015-10-12 08:00:00,unexpected,1,,,,,,,1.0,atr_14
-2015-10-16,scheduled,4,0.746,0.4718,0.037824,Prelim UoM Consumer Sentiment,53.0,71.0,,
-2015-10-22,scheduled,3,0.732,0.4061,0.03707,Unemployment Claims,52.0,71.0,,
-2015-10-26 16:00:00,unexpected,1,,,,,,,1.0,bb_width
-2015-10-30,scheduled,4,0.714,0.5233,0.038834,Employment Cost Index q/q,50.0,70.0,,
-2015-11-10 00:00:00,unexpected,1,,,,,,,1.0,bb_width
-2015-11-13,scheduled,3,0.718,0.4613,0.037127,Core Retail Sales m/m; PPI m/m; Retail Sales m/m,51.0,71.0,,
-2015-12-08 20:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2016-01-04,scheduled,3,0.746,0.4585,0.035675,ISM Manufacturing PMI,53.0,71.0,,
-2016-02-01,scheduled,4,0.775,0.5211,0.034876,ISM Manufacturing PMI,55.0,71.0,,
-2016-02-08 04:00:00,unexpected,1,,,,,,,1.0,bb_width
-2016-02-10,scheduled,3,0.736,0.4812,0.034909,Fed Chair Yellen Testifies; Crude Oil Inventories,53.0,72.0,,
-2016-02-15 08:00:00,unexpected,1,,,,,,,1.0,atr_14
-2016-02-22 12:00:00,unexpected,1,,,,,,,1.0,bb_width
-2016-03-22 04:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2016-03-30,scheduled,2,0.708,0.4016,0.036369,ADP Non-Farm Employment Change; Crude Oil Inventories,51.0,72.0,,
-2016-06-08,scheduled,3,0.74,0.4546,0.036013,Crude Oil Inventories,54.0,73.0,,
-2016-06-16,scheduled,4,0.775,0.4782,0.035575,Core CPI m/m; CPI m/m; CPI y/y,55.0,71.0,,
-2016-06-24,scheduled,3,0.726,0.4811,0.0349,Core Durable Goods Orders m/m,53.0,73.0,,
-2016-06-30,scheduled,2,0.726,0.4589,0.034787,Unemployment Claims; FOMC Member Bullard Speaks,53.0,73.0,,
-2016-07-07,scheduled,3,0.795,0.447,0.035022,ADP Non-Farm Employment Change; Unemployment Claims; Crude Oil Inventories,58.0,73.0,,
-2016-07-24 20:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2016-08-18,scheduled,2,0.712,0.3578,0.037088,Philly Fed Manufacturing Index; Unemployment Claims,52.0,73.0,,
-2016-08-22 12:00:00,unexpected,1,,,,,,,1.0,bb_width
-2016-08-29 16:00:00,unexpected,1,,,,,,,1.0,atr_14
-2016-09-13 00:00:00,unexpected,1,,,,,,,1.0,bb_width
-2016-09-28,scheduled,2,0.712,0.3966,0.036996,Core Durable Goods Orders m/m; Fed Chair Yellen Testifies; Crude Oil Inventories,52.0,73.0,,
-2016-10-03,scheduled,4,0.761,0.5021,0.036409,ISM Manufacturing PMI,54.0,71.0,,
-2016-10-07,scheduled,3,0.712,0.4932,0.036502,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,52.0,73.0,,
-2016-10-11 16:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2016-10-12,scheduled,4,0.767,0.4877,0.036198,FOMC Meeting Minutes,56.0,73.0,,
-2016-11-01,scheduled,4,0.767,0.4982,0.035707,ISM Manufacturing PMI,56.0,73.0,,
-2016-11-08,scheduled,4,0.753,0.4989,0.035694,Presidential Election,55.0,73.0,,
-2016-12-30 16:00:00,unexpected,1,,,,,,,1.0,atr_14
-2017-01-03,scheduled,4,0.778,0.4956,0.036398,ISM Manufacturing PMI; ISM Manufacturing PMI; FOMC Meeting Minutes,56.0,72.0,,
-2017-02-21 16:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2017-02-24,scheduled,2,0.712,0.3845,0.036684,President Trump Speaks,52.0,73.0,,
-2017-03-10,scheduled,3,0.74,0.3895,0.037284,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,54.0,73.0,,
-2017-03-17,scheduled,3,0.722,0.438,0.037395,Prelim UoM Consumer Sentiment,52.0,72.0,,
-2017-04-20,scheduled,2,0.708,0.3648,0.036578,Philly Fed Manufacturing Index; Unemployment Claims; Treasury Sec Mnuchin Speaks,51.0,72.0,,
-2017-04-27,scheduled,3,0.722,0.4611,0.036434,Core Durable Goods Orders m/m; Unemployment Claims,52.0,72.0,,
-2017-05-01,scheduled,2,0.712,0.4555,0.035988,ISM Manufacturing PMI; Treasury Sec Mnuchin Speaks,52.0,73.0,,
-2017-06-07,scheduled,3,0.74,0.3888,0.039352,Crude Oil Inventories,54.0,73.0,,
-2017-06-22,scheduled,2,0.708,0.3815,0.039829,Unemployment Claims,51.0,72.0,,
-2017-07-28,scheduled,3,0.726,0.461,0.038685,Advance GDP q/q,53.0,73.0,,
-2017-08-01,scheduled,3,0.726,0.4468,0.038929,ISM Manufacturing PMI,53.0,73.0,,
-2017-08-25,scheduled,2,0.726,0.447,0.035757,Core Durable Goods Orders m/m; Fed Chair Yellen Speaks,53.0,73.0,,
-2017-10-02,scheduled,3,0.726,0.4568,0.036856,ISM Manufacturing PMI,53.0,73.0,,
-2017-11-23 20:00:00,unexpected,1,,,,,,,1.0,bb_width
-2017-12-14,scheduled,3,0.726,0.4603,0.037823,Core Retail Sales m/m; Retail Sales m/m,53.0,73.0,,
-2017-12-19,scheduled,4,0.712,0.4902,0.037837,Building Permits,52.0,73.0,,
-2018-01-04,scheduled,5,0.795,0.4753,0.03858,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,58.0,73.0,,
-2018-01-09 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2018-01-24,scheduled,3,0.767,0.4402,0.035753,Crude Oil Inventories,56.0,73.0,,
-2018-03-21,scheduled,3,0.736,0.441,0.036228,Crude Oil Inventories; Federal Funds Rate; FOMC Economic Projections,53.0,72.0,,
-2018-03-29 16:00:00,unexpected,1,,,,,,,1.0,bb_width
-2018-04-24,scheduled,4,0.778,0.4789,0.03493,CB Consumer Confidence,56.0,72.0,,
-2018-04-30 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2018-05-01,scheduled,3,0.761,0.4509,0.034642,ISM Manufacturing PMI,54.0,71.0,,
-2018-05-14 12:00:00,unexpected,1,,,,,,,1.0,bb_width
-2018-05-28 20:00:00,unexpected,1,,,,,,,1.0,bb_width
-2018-06-14,scheduled,3,0.726,0.4568,0.037372,Core Retail Sales m/m; Retail Sales m/m,53.0,73.0,,
-2018-06-19,scheduled,4,0.736,0.5257,0.036324,Building Permits,53.0,72.0,,
-2018-06-28,scheduled,3,0.75,0.4542,0.036674,Final GDP q/q,54.0,72.0,,
-2018-09-20 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2018-10-04 20:00:00,unexpected,1,,,,,,,1.0,bb_width
-2018-10-19 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2018-11-15,scheduled,3,0.75,0.3736,0.036809,Core Retail Sales m/m; Retail Sales m/m; Fed Chair Powell Speaks,54.0,72.0,,
-2018-11-26 00:00:00,unexpected,1,,,,,,,1.0,atr_14
-2018-12-17 12:00:00,unexpected,1,,,,,,,1.0,bb_width
-2018-12-21,scheduled,4,0.767,0.495,0.035079,Core Durable Goods Orders m/m; Final GDP q/q,56.0,73.0,,
-2018-12-24 16:00:00,unexpected,1,,,,,,,1.0,atr_14
-2019-01-07,scheduled,4,0.736,0.5049,0.035617,ISM Services PMI,53.0,72.0,,
-2019-01-17 00:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2019-01-31 08:00:00,unexpected,1,,,,,,,1.0,bb_width
-2019-02-21,scheduled,2,0.708,0.3903,0.03693,Core Durable Goods Orders m/m,51.0,72.0,,
-2019-03-12,scheduled,3,0.74,0.3979,0.037596,Core CPI m/m; CPI m/m; CPI y/y,54.0,73.0,,
-2019-03-26,scheduled,3,0.74,0.3932,0.037674,CB Consumer Confidence,54.0,73.0,,
-2019-04-11,scheduled,2,0.712,0.4073,0.03666,PPI m/m,52.0,73.0,,
-2019-04-14 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2019-05-28 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2019-05-30,scheduled,5,0.806,0.5134,0.036691,Prelim GDP q/q,58.0,72.0,,
-2019-06-03,scheduled,4,0.75,0.5333,0.036488,ISM Manufacturing PMI,54.0,72.0,,
-2019-06-07,scheduled,3,0.75,0.4278,0.036523,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,54.0,72.0,,
-2019-06-25,scheduled,5,0.806,0.4736,0.036985,CB Consumer Confidence; Fed Chair Powell Speaks,58.0,72.0,,
-2019-07-03,scheduled,3,0.795,0.3966,0.036569,ADP Non-Farm Employment Change; ISM Services PMI,58.0,73.0,,
-2019-07-18 00:00:00,unexpected,1,,,,,,,1.0,atr_14
-2019-07-26,scheduled,3,0.75,0.3819,0.036559,Advance GDP q/q,54.0,72.0,,
-2019-08-02,scheduled,5,0.822,0.5662,0.035839,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,60.0,73.0,,
-2019-08-22 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2019-10-04,scheduled,3,0.764,0.3549,0.036903,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,55.0,72.0,,
-2019-10-10,scheduled,3,0.75,0.3928,0.03643,Core CPI m/m; CPI m/m; CPI y/y,54.0,72.0,,
-2019-10-21 00:00:00,unexpected,1,,,,,,,1.0,atr_14
-2019-11-05,scheduled,3,0.722,0.4771,0.035522,ISM Services PMI,52.0,72.0,,
-2019-11-11 12:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2019-12-03 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2019-12-11,scheduled,2,0.722,0.394,0.036506,Core CPI m/m; CPI m/m; CPI y/y,52.0,72.0,,
-2019-12-16,scheduled,3,0.718,0.4465,0.03679,Flash Manufacturing PMI,51.0,71.0,,
-2019-12-24 16:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2019-12-31,scheduled,5,0.819,0.5141,0.035993,CB Consumer Confidence,59.0,72.0,,
-2020-01-08,scheduled,5,0.817,0.5209,0.036167,ADP Non-Farm Employment Change; President Trump Speaks,58.0,71.0,,
-2020-01-09 20:00:00,unexpected,3,,,,,,,3.0,atr_14; vol_ratio; bb_width
-2020-01-29,scheduled,3,0.761,0.434,0.036712,Federal Funds Rate; FOMC Statement; FOMC Press Conference,54.0,71.0,,
-2020-02-12,scheduled,4,0.778,0.3836,0.037676,Fed Chair Powell Testifies,56.0,72.0,,
-2020-02-21,scheduled,5,0.778,0.5338,0.037041,Flash Manufacturing PMI,56.0,72.0,,
-2020-02-25,scheduled,5,0.806,0.5352,0.036561,CB Consumer Confidence,58.0,72.0,,
-2020-03-01 20:00:00,unexpected,3,,,,,,,3.0,atr_14; vol_ratio; bb_width
-2020-03-02,scheduled,3,0.778,0.4428,0.035226,ISM Manufacturing PMI,56.0,72.0,,
-2020-03-11,scheduled,2,0.764,0.4539,0.033939,Core CPI m/m; CPI m/m; CPI y/y,55.0,72.0,,
-2020-03-26,scheduled,4,0.817,0.5223,0.034073,Fed Chair Powell Speaks; Unemployment Claims,58.0,71.0,,
-2020-04-02,scheduled,3,0.775,0.488,0.034104,Unemployment Claims; President Trump Speaks,55.0,71.0,,
-2020-05-27 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2020-06-11 04:00:00,unexpected,1,,,,,,,1.0,bb_width
-2020-06-17,scheduled,2,0.722,0.4447,0.035327,Fed Chair Powell Testifies,52.0,72.0,,
-2020-06-25 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2020-07-16,scheduled,4,0.746,0.4653,0.036509,Core Retail Sales m/m; Retail Sales m/m,53.0,71.0,,
-2020-07-17 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2020-07-21,scheduled,4,0.746,0.5432,0.03477,President Trump Speaks,53.0,71.0,,
-2020-07-24 08:00:00,unexpected,1,,,,,,,1.0,bb_width
-2020-07-29,scheduled,4,0.817,0.5023,0.03504,Pending Home Sales m/m; FOMC Statement; FOMC Press Conference,58.0,71.0,,
-2020-07-31 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2020-08-03,scheduled,3,0.806,0.4632,0.034925,ISM Manufacturing PMI,58.0,72.0,,
-2020-08-31 00:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2020-09-14 08:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2020-09-28 16:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2020-10-20 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2020-10-27 08:00:00,unexpected,1,,,,,,,1.0,bb_width
-2020-11-10 16:00:00,unexpected,3,,,,,,,3.0,atr_14; vol_ratio; bb_width
-2020-11-17,scheduled,4,0.826,0.4628,0.03549,Core Retail Sales m/m; Retail Sales m/m; Fed Chair Powell Speaks,57.0,69.0,,
-2021-01-04 00:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-01-06,scheduled,3,0.722,0.4685,0.035252,FOMC Meeting Minutes,52.0,72.0,,
-2021-01-11 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2021-01-18 08:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-01-25 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2021-02-08 20:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-02-24,scheduled,2,0.708,0.4611,0.034595,Fed Chair Powell Testifies,51.0,72.0,,
-2021-03-02 08:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2021-03-10,scheduled,3,0.75,0.4481,0.034935,CPI y/y; Core CPI m/m; CPI m/m,54.0,72.0,,
-2021-05-07,scheduled,4,0.75,0.4836,0.036244,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,54.0,72.0,,
-2021-05-21 04:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-06-10,scheduled,3,0.778,0.4442,0.034953,Core CPI m/m; CPI m/m; CPI y/y,56.0,72.0,,
-2021-06-18 20:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2021-06-22,scheduled,2,0.736,0.4396,0.034694,Fed Chair Powell Testifies,53.0,72.0,,
-2021-07-01,scheduled,2,0.722,0.4546,0.034735,ISM Manufacturing PMI,52.0,72.0,,
-2021-07-05 00:00:00,unexpected,1,,,,,,,1.0,atr_14
-2021-07-12 04:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-08-06,scheduled,4,0.75,0.4741,0.037363,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,54.0,72.0,,
-2021-08-09 20:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-08-24 04:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-09-07 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2021-09-21 20:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-10-20 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2021-10-27 16:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-11-11 00:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-11-18 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2021-11-25 08:00:00,unexpected,1,,,,,,,1.0,bb_width
-2021-12-01,scheduled,3,0.761,0.4547,0.035317,ADP Non-Farm Employment Change; Fed Chair Powell Testifies; ISM Manufacturing PMI,54.0,71.0,,
-2021-12-09 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2022-01-03 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2022-01-31 20:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2022-02-22 08:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2022-03-02,scheduled,2,0.718,0.4526,0.034754,ADP Non-Farm Employment Change; Fed Chair Powell Testifies,51.0,71.0,,
-2022-04-21,scheduled,3,0.806,0.4667,0.034636,Fed Chair Powell Speaks,58.0,72.0,,
-2022-06-19 20:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2022-06-30,scheduled,2,0.71,0.4676,0.034931,Core PCE Price Index m/m,49.0,69.0,,
-2022-07-06,scheduled,2,0.71,0.4901,0.034429,JOLTS Job Openings; FOMC Meeting Minutes,49.0,69.0,,
-2022-07-11 08:00:00,unexpected,1,,,,,,,1.0,bb_width
-2022-07-26,scheduled,3,0.75,0.4532,0.035004,CB Consumer Confidence,54.0,72.0,,
-2022-08-05,scheduled,3,0.764,0.4546,0.035912,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,55.0,72.0,,
-2022-08-16 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2022-09-02,scheduled,2,0.726,0.4584,0.035071,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,53.0,73.0,,
-2022-09-15,scheduled,2,0.712,0.4973,0.034459,Core Retail Sales m/m; Empire State Manufacturing Index; Retail Sales m/m,52.0,73.0,,
-2022-09-28 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2022-10-19 16:00:00,unexpected,1,,,,,,,1.0,atr_14
-2022-11-03,scheduled,3,0.75,0.4796,0.035262,ISM Services PMI,54.0,72.0,,
-2022-11-16,scheduled,3,0.761,0.4772,0.034207,Core Retail Sales m/m; Retail Sales m/m,54.0,71.0,,
-2022-11-24 12:00:00,unexpected,1,,,,,,,1.0,bb_width
-2023-01-03,scheduled,5,0.817,0.5047,0.037163,ISM Manufacturing PMI; JOLTS Job Openings; FOMC Meeting Minutes,58.0,71.0,,
-2023-01-17,scheduled,3,0.729,0.4755,0.036044,Empire State Manufacturing Index,51.0,70.0,,
-2023-02-03,scheduled,4,0.778,0.5215,0.034897,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,56.0,72.0,,
-2023-02-22,scheduled,3,0.757,0.4624,0.035077,FOMC Meeting Minutes,53.0,70.0,,
-2023-03-10,scheduled,4,0.781,0.5459,0.035132,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,57.0,73.0,,
-2023-03-24,scheduled,3,0.753,0.4884,0.034659,Flash Manufacturing PMI; Flash Services PMI,55.0,73.0,,
-2023-04-30 20:00:00,unexpected,1,,,,,,,1.0,bb_width
-2023-05-08 00:00:00,unexpected,1,,,,,,,1.0,atr_14
-2023-05-16,scheduled,2,0.708,0.4787,0.035525,Core Retail Sales m/m; Retail Sales m/m,51.0,72.0,,
-2023-05-22 08:00:00,unexpected,1,,,,,,,1.0,atr_14
-2023-06-20 00:00:00,unexpected,1,,,,,,,1.0,bb_width
-2023-08-02,scheduled,4,0.75,0.4907,0.036341,ADP Non-Farm Employment Change,54.0,72.0,,
-2023-09-01,scheduled,3,0.761,0.457,0.035951,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,54.0,71.0,,
-2023-09-21,scheduled,5,0.836,0.4856,0.036757,Unemployment Claims,61.0,73.0,,
-2023-09-26,scheduled,5,0.808,0.5379,0.036371,CB Consumer Confidence,59.0,73.0,,
-2023-10-02,scheduled,3,0.753,0.4539,0.036473,ISM Manufacturing PMI; Fed Chair Powell Speaks,55.0,73.0,,
-2023-10-13,scheduled,3,0.732,0.4561,0.035972,Prelim UoM Consumer Sentiment,52.0,71.0,,
-2023-10-27,scheduled,5,0.789,0.4927,0.036507,Core PCE Price Index m/m; Revised UoM Consumer Sentiment,56.0,71.0,,
-2023-11-03,scheduled,2,0.708,0.4262,0.036675,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,51.0,72.0,,
-2023-11-29,scheduled,3,0.743,0.4821,0.034747,Prelim GDP q/q,52.0,70.0,,
-2023-12-11 00:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2023-12-26 08:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2024-02-27,scheduled,2,0.729,0.4621,0.034423,Durable Goods Orders m/m; CB Consumer Confidence,51.0,70.0,,
-2024-03-06,scheduled,2,0.729,0.4433,0.034586,ADP Non-Farm Employment Change; Fed Chair Powell Testifies; JOLTS Job Openings,51.0,70.0,,
-2024-03-26,scheduled,3,0.771,0.4907,0.034293,CB Consumer Confidence,54.0,70.0,,
-2024-04-01,scheduled,3,0.732,0.5204,0.03378,ISM Manufacturing PMI,52.0,71.0,,
-2024-04-10,scheduled,3,0.732,0.5052,0.03364,Core CPI m/m; CPI m/m; CPI y/y,52.0,71.0,,
-2024-06-19 04:00:00,unexpected,1,,,,,,,1.0,bb_width
-2024-07-12,scheduled,1,0.708,0.4502,0.034678,Core PPI m/m; PPI m/m; Prelim UoM Consumer Sentiment,51.0,72.0,,
-2024-07-17 20:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2024-08-21,scheduled,2,0.725,0.4539,0.034432,Prelim Benchmark Payrolls Revision; FOMC Meeting Minutes,50.0,69.0,,
-2024-09-12,scheduled,4,0.795,0.4973,0.035348,Core PPI m/m; PPI m/m; Unemployment Claims,58.0,73.0,,
+2024-09-12 04:00:00,scheduled,4,0.753,0.4993,0.035253,Core PPI m/m; PPI m/m; Unemployment Claims,55.0,73.0,,
 2024-09-20 08:00:00,unexpected,1,,,,,,,1.0,atr_14
-2024-09-27,scheduled,3,0.74,0.4735,0.034116,Core PCE Price Index m/m,54.0,73.0,,
+2024-09-26 08:00:00,scheduled,3,0.736,0.4843,0.03408,Fed Chair Powell Speaks,53.0,72.0,,
+2024-10-17 04:00:00,scheduled,2,0.714,0.4655,0.034187,Core Retail Sales m/m; Retail Sales m/m; Unemployment Claims,50.0,70.0,,
 2024-10-20 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2024-10-24,scheduled,2,0.75,0.4521,0.034598,Unemployment Claims; Flash Manufacturing PMI; Flash Services PMI,54.0,72.0,,
+2024-10-24 04:00:00,scheduled,3,0.75,0.45,0.034598,Unemployment Claims,54.0,72.0,,
 2024-10-28 00:00:00,unexpected,1,,,,,,,1.0,bb_width
-2024-11-01,scheduled,4,0.817,0.4812,0.034415,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,58.0,71.0,,
-2024-11-05,scheduled,3,0.74,0.5066,0.034251,ISM Services PMI; Presidential Election; Congressional Elections,54.0,73.0,,
+2024-11-01 04:00:00,scheduled,3,0.817,0.4812,0.033948,Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate,58.0,71.0,,
+2024-11-05 08:00:00,scheduled,4,0.767,0.5148,0.03425,ISM Services PMI,56.0,73.0,,
 2024-11-11 08:00:00,unexpected,1,,,,,,,1.0,atr_14
 2024-11-18 12:00:00,unexpected,1,,,,,,,1.0,bb_width
 2024-12-10 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2024-12-20,scheduled,2,0.74,0.4447,0.034666,Core PCE Price Index m/m,54.0,73.0,,
+2024-12-20 04:00:00,scheduled,3,0.753,0.4438,0.03466,Core PCE Price Index m/m,55.0,73.0,,
 2025-01-02 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2025-01-08,scheduled,2,0.714,0.4562,0.035068,ADP Non-Farm Employment Change; Unemployment Claims; FOMC Meeting Minutes,50.0,70.0,,
-2025-03-11,scheduled,3,0.803,0.4697,0.033792,JOLTS Job Openings,57.0,71.0,,
+2025-01-08 04:00:00,scheduled,2,0.714,0.4576,0.035056,ADP Non-Farm Employment Change; Unemployment Claims,50.0,70.0,,
+2025-03-11 08:00:00,scheduled,3,0.817,0.477,0.033792,JOLTS Job Openings,58.0,71.0,,
 2025-04-07 12:00:00,unexpected,3,,,,,,,3.0,atr_14; vol_ratio; bb_width
+2025-04-09 12:00:00,scheduled,1,0.704,0.4505,0.03343,FOMC Meeting Minutes,50.0,71.0,,
 2025-04-22 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2025-04-23,scheduled,2,0.714,0.4552,0.033351,Flash Manufacturing PMI; Flash Services PMI,50.0,70.0,,
+2025-04-23 08:00:00,scheduled,1,0.704,0.4493,0.033351,Flash Manufacturing PMI; Flash Services PMI,50.0,71.0,,
 2025-05-21 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2025-07-01,scheduled,1,0.71,0.4403,0.034004,Fed Chair Powell Speaks; ISM Manufacturing PMI; JOLTS Job Openings,49.0,69.0,,
+2025-06-27 04:00:00,scheduled,1,0.71,0.4447,0.034029,Core PCE Price Index m/m,49.0,69.0,,
 2025-07-18 00:00:00,unexpected,1,,,,,,,1.0,bb_width
 2025-08-08 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2025-08-28,scheduled,4,0.797,0.5655,0.033858,Prelim GDP q/q; Unemployment Claims,55.0,69.0,,
+2025-08-22 12:00:00,scheduled,2,0.714,0.4676,0.033914,President Trump Speaks,50.0,70.0,,
+2025-08-28 04:00:00,scheduled,4,0.826,0.5671,0.033855,Prelim GDP q/q; Unemployment Claims,57.0,69.0,,
 2025-09-08 00:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2025-09-10,scheduled,1,0.718,0.4427,0.033973,Core PPI m/m; PPI m/m,51.0,71.0,,
-2025-09-26,scheduled,3,0.761,0.4638,0.033963,Core PCE Price Index m/m,54.0,71.0,,
+2025-09-10 04:00:00,scheduled,1,0.704,0.4446,0.033973,Core PPI m/m; PPI m/m,50.0,71.0,,
+2025-09-26 04:00:00,scheduled,3,0.761,0.4667,0.033934,Core PCE Price Index m/m,54.0,71.0,,
 2025-09-29 12:00:00,unexpected,1,,,,,,,1.0,atr_14
-2025-10-10,scheduled,4,0.803,0.5134,0.03336,Prelim UoM Consumer Sentiment; Prelim UoM Inflation Expectations,57.0,71.0,,
+2025-10-03 08:00:00,scheduled,2,0.718,0.4697,0.033452,ISM Services PMI,51.0,71.0,,
+2025-10-10 08:00:00,scheduled,4,0.789,0.5049,0.03336,Prelim UoM Consumer Sentiment; Prelim UoM Inflation Expectations,56.0,71.0,,
 2025-10-13 20:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2025-10-14,scheduled,4,0.806,0.5023,0.03336,Fed Chair Powell Speaks,58.0,72.0,,
+2025-10-14 08:00:00,scheduled,4,0.806,0.4995,0.03336,Fed Chair Powell Speaks,58.0,72.0,,
 2025-10-21 00:00:00,unexpected,2,,,,,,,2.0,atr_14; vol_ratio
-2025-10-29,scheduled,3,0.75,0.4771,0.033335,Federal Funds Rate; FOMC Statement; FOMC Press Conference,54.0,72.0,,
 2025-11-04 08:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2025-11-25,scheduled,2,0.743,0.4648,0.033574,Core PPI m/m; Core Retail Sales m/m; PPI m/m,52.0,70.0,,
-2025-12-03,scheduled,2,0.732,0.4439,0.033597,ADP Non-Farm Employment Change; ISM Services PMI,52.0,71.0,,
+2025-11-26 04:00:00,scheduled,2,0.729,0.481,0.033573,Unemployment Claims,51.0,70.0,,
+2025-12-01 08:00:00,scheduled,2,0.704,0.4913,0.033597,ISM Manufacturing PMI,50.0,71.0,,
 2025-12-17 12:00:00,unexpected,1,,,,,,,1.0,atr_14
 2026-01-02 16:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
 2026-01-18 20:00:00,unexpected,1,,,,,,,1.0,atr_14
-2026-01-23,scheduled,3,0.746,0.481,0.033337,Flash Manufacturing PMI; Flash Services PMI,53.0,71.0,,
+2026-01-23 08:00:00,scheduled,3,0.761,0.4746,0.033337,Flash Manufacturing PMI; Flash Services PMI,54.0,71.0,,
 2026-01-26 00:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2026-01-29,scheduled,3,0.826,0.4686,0.033334,Unemployment Claims,57.0,69.0,,
+2026-01-29 04:00:00,scheduled,3,0.826,0.4667,0.033334,Unemployment Claims,57.0,69.0,,
 2026-02-16 12:00:00,unexpected,2,,,,,,,2.0,atr_14; bb_width
-2026-03-13,scheduled,3,0.754,0.4635,0.033343,Core PCE Price Index m/m; Prelim GDP q/q; JOLTS Job Openings,52.0,69.0,,
+2026-03-13 04:00:00,scheduled,3,0.754,0.4669,0.033343,Core PCE Price Index m/m; Prelim GDP q/q,52.0,69.0,,
 2026-03-17 04:00:00,unexpected,1,,,,,,,1.0,atr_14
-2026-03-19,scheduled,2,0.71,0.48,0.033343,Unemployment Claims,49.0,69.0,,
-2026-03-26,scheduled,3,0.765,0.4711,0.033348,Unemployment Claims,52.0,68.0,,
-2026-03-30,scheduled,4,0.75,0.4675,0.04002,Fed Chair Powell Speaks,51.0,68.0,,
+2026-03-19 04:00:00,scheduled,2,0.725,0.4814,0.033343,Unemployment Claims,50.0,69.0,,
+2026-03-24 08:00:00,scheduled,3,0.754,0.4766,0.033348,Flash Manufacturing PMI; Flash Services PMI,52.0,69.0,,
+2026-03-30 08:00:00,scheduled,4,0.75,0.4681,0.041688,Fed Chair Powell Speaks,51.0,68.0,,

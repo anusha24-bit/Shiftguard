@@ -1,32 +1,32 @@
 {
   "EURUSD": {
-    "tech_win_rate": 50.14,
-    "sg_win_rate": 58.3,
-    "t_stat": 8.7561,
-    "p_value": 0.0,
+    "tech_win_rate": 60.18,
+    "sg_win_rate": 62.58,
+    "t_stat": 2.9575,
+    "p_value": 0.003182,
     "significant": "True",
-    "ci_lower": 0.00032,
-    "ci_upper": 0.000504,
-    "n_overlapping_trades": 4798
+    "ci_lower": 7.7e-05,
+    "ci_upper": 0.000383,
+    "n_overlapping_trades": 914
   },
   "GBPJPY": {
-    "tech_win_rate": 50.07,
-    "sg_win_rate": 59.09,
-    "t_stat": 8.3429,
-    "p_value": 0.0,
+    "tech_win_rate": 58.13,
+    "sg_win_rate": 60.83,
+    "t_stat": 4.0925,
+    "p_value": 4.5e-05,
     "significant": "True",
-    "ci_lower": 0.000413,
-    "ci_upper": 0.000663,
-    "n_overlapping_trades": 6781
+    "ci_lower": 6.9e-05,
+    "ci_upper": 0.000197,
+    "n_overlapping_trades": 1366
   },
   "XAUUSD": {
-    "tech_win_rate": 50.04,
-    "sg_win_rate": 58.51,
-    "t_stat": 9.7021,
+    "tech_win_rate": 55.27,
+    "sg_win_rate": 59.56,
+    "t_stat": 5.3029,
     "p_value": 0.0,
     "significant": "True",
-    "ci_lower": 0.000582,
-    "ci_upper": 0.000877,
-    "n_overlapping_trades": 7084
+    "ci_lower": 0.000396,
+    "ci_upper": 0.000861,
+    "n_overlapping_trades": 1261
   }
 }

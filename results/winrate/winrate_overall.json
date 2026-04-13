@@ -2,13 +2,13 @@
   "EURUSD": {
     "Technical (RSI/MACD)": {
       "name": "Technical (RSI/MACD)",
-      "win_rate": 50.17,
-      "n_trades": 16818,
-      "trade_pct": 100.0,
-      "avg_win": 0.001264,
-      "avg_loss": 0.001257,
+      "win_rate": 50.86,
+      "n_trades": 3423,
+      "trade_pct": 20.4,
+      "avg_win": 0.001233,
+      "avg_loss": 0.001255,
       "profit_factor": 1.02,
-      "total_return": 0.192293
+      "total_return": 0.051953
     },
     "ML Direction (XGBoost)": {
       "name": "ML Direction (XGBoost)",
@@ -22,13 +22,13 @@
     },
     "ShiftGuard (Regime-Filtered)": {
       "name": "ShiftGuard (Regime-Filtered)",
-      "win_rate": 58.3,
-      "n_trades": 4825,
-      "trade_pct": 28.7,
+      "win_rate": 58.45,
+      "n_trades": 4727,
+      "trade_pct": 28.1,
       "avg_win": 0.001723,
-      "avg_loss": 0.001145,
-      "profit_factor": 2.11,
-      "total_return": 2.554417
+      "avg_loss": 0.001136,
+      "profit_factor": 2.14,
+      "total_return": 2.539135
     },
     "regime_retrains": 494,
     "retrain_log": [
@@ -1701,20 +1701,20 @@
         "regime_change"
       ],
       [
-        "2024-08-23 08:00:00",
-        "performance_drop"
+        "2024-08-26 04:00:00",
+        "event_surprise"
       ],
       [
-        "2024-08-30 04:00:00",
-        "performance_drop"
-      ],
-      [
-        "2024-09-06 00:00:00",
+        "2024-09-02 00:00:00",
         "regime_change"
       ],
       [
-        "2024-09-12 20:00:00",
-        "event_surprise"
+        "2024-09-08 20:00:00",
+        "regime_change"
+      ],
+      [
+        "2024-09-13 20:00:00",
+        "regime_change"
       ],
       [
         "2024-09-24 12:00:00",
@@ -1833,39 +1833,39 @@
         "regime_change"
       ],
       [
-        "2025-05-02 16:00:00",
+        "2025-05-01 16:00:00",
         "performance_drop"
       ],
       [
-        "2025-05-09 12:00:00",
+        "2025-05-08 12:00:00",
         "regime_change"
       ],
       [
-        "2025-05-19 04:00:00",
+        "2025-05-15 08:00:00",
         "regime_change"
       ],
       [
-        "2025-05-26 00:00:00",
+        "2025-05-22 04:00:00",
         "regime_change"
       ],
       [
-        "2025-06-01 20:00:00",
+        "2025-05-29 00:00:00",
         "regime_change"
       ],
       [
-        "2025-06-06 20:00:00",
+        "2025-06-04 20:00:00",
         "event_surprise"
       ],
       [
-        "2025-06-13 16:00:00",
+        "2025-06-11 16:00:00",
+        "regime_change"
+      ],
+      [
+        "2025-06-18 12:00:00",
         "performance_drop"
       ],
       [
-        "2025-06-20 12:00:00",
-        "performance_drop"
-      ],
-      [
-        "2025-06-27 08:00:00",
+        "2025-06-26 08:00:00",
         "regime_change"
       ],
       [
@@ -1934,7 +1934,7 @@
       ],
       [
         "2025-11-11 00:00:00",
-        "regime_change"
+        "performance_drop"
       ],
       [
         "2025-11-17 20:00:00",
@@ -1998,7 +1998,7 @@
       ],
       [
         "2026-03-26 04:00:00",
-        "regime_change"
+        "performance_drop"
       ],
       [
         "2026-04-02 00:00:00",
@@ -2013,13 +2013,13 @@
   "GBPJPY": {
     "Technical (RSI/MACD)": {
       "name": "Technical (RSI/MACD)",
-      "win_rate": 50.09,
-      "n_trades": 16818,
-      "trade_pct": 100.0,
-      "avg_win": 0.001812,
-      "avg_loss": 0.001807,
-      "profit_factor": 1.01,
-      "total_return": 0.166351
+      "win_rate": 50.92,
+      "n_trades": 3490,
+      "trade_pct": 20.8,
+      "avg_win": 0.001771,
+      "avg_loss": 0.001639,
+      "profit_factor": 1.13,
+      "total_return": 0.360118
     },
     "ML Direction (XGBoost)": {
       "name": "ML Direction (XGBoost)",
@@ -2033,15 +2033,15 @@
     },
     "ShiftGuard (Regime-Filtered)": {
       "name": "ShiftGuard (Regime-Filtered)",
-      "win_rate": 59.13,
-      "n_trades": 6797,
-      "trade_pct": 40.4,
-      "avg_win": 0.0023,
-      "avg_loss": 0.001694,
+      "win_rate": 59.01,
+      "n_trades": 6636,
+      "trade_pct": 39.5,
+      "avg_win": 0.002296,
+      "avg_loss": 0.001683,
       "profit_factor": 1.98,
-      "total_return": 4.565547
+      "total_return": 4.444332
     },
-    "regime_retrains": 454,
+    "regime_retrains": 455,
     "retrain_log": [
       [
         "2015-11-02 20:00:00",
@@ -3713,7 +3713,7 @@
       ],
       [
         "2025-06-06 00:00:00",
-        "regime_change"
+        "performance_drop"
       ],
       [
         "2025-06-12 20:00:00",
@@ -3740,8 +3740,8 @@
         "event_surprise"
       ],
       [
-        "2025-08-04 12:00:00",
-        "performance_drop"
+        "2025-08-05 12:00:00",
+        "regime_change"
       ],
       [
         "2025-08-14 08:00:00",
@@ -3812,28 +3812,32 @@
         "regime_change"
       ],
       [
-        "2026-01-05 04:00:00",
+        "2026-01-02 08:00:00",
+        "performance_drop"
+      ],
+      [
+        "2026-01-09 04:00:00",
         "regime_change"
       ],
       [
-        "2026-01-13 00:00:00",
-        "regime_change"
+        "2026-01-18 20:00:00",
+        "performance_drop"
       ],
       [
-        "2026-01-19 20:00:00",
+        "2026-01-23 20:00:00",
         "event_surprise"
       ],
       [
-        "2026-01-28 16:00:00",
+        "2026-02-02 12:00:00",
         "regime_change"
       ],
       [
-        "2026-02-05 12:00:00",
+        "2026-02-09 08:00:00",
         "regime_change"
       ],
       [
-        "2026-02-13 08:00:00",
-        "event_surprise"
+        "2026-02-16 04:00:00",
+        "regime_change"
       ],
       [
         "2026-02-24 00:00:00",
@@ -3864,13 +3868,13 @@
   "XAUUSD": {
     "Technical (RSI/MACD)": {
       "name": "Technical (RSI/MACD)",
-      "win_rate": 50.01,
-      "n_trades": 16680,
-      "trade_pct": 100.0,
-      "avg_win": 0.002484,
-      "avg_loss": 0.002452,
-      "profit_factor": 1.01,
-      "total_return": 0.292991
+      "win_rate": 50.11,
+      "n_trades": 3117,
+      "trade_pct": 18.7,
+      "avg_win": 0.002335,
+      "avg_loss": 0.002463,
+      "profit_factor": 0.95,
+      "total_return": -0.179178
     },
     "ML Direction (XGBoost)": {
       "name": "ML Direction (XGBoost)",
@@ -3884,13 +3888,13 @@
     },
     "ShiftGuard (Regime-Filtered)": {
       "name": "ShiftGuard (Regime-Filtered)",
-      "win_rate": 58.46,
-      "n_trades": 7179,
-      "trade_pct": 43.0,
-      "avg_win": 0.003223,
-      "avg_loss": 0.002404,
+      "win_rate": 58.01,
+      "n_trades": 6777,
+      "trade_pct": 40.6,
+      "avg_win": 0.003157,
+      "avg_loss": 0.002307,
       "profit_factor": 1.89,
-      "total_return": 6.362948
+      "total_return": 5.8505
     },
     "regime_retrains": 481,
     "retrain_log": [
@@ -5652,7 +5656,7 @@
       ],
       [
         "2025-04-11 16:00:00",
-        "regime_change"
+        "performance_drop"
       ],
       [
         "2025-04-21 08:00:00",
@@ -5763,27 +5767,27 @@
         "regime_change"
       ],
       [
-        "2025-12-10 04:00:00",
-        "event_surprise"
+        "2025-12-09 04:00:00",
+        "performance_drop"
       ],
       [
-        "2025-12-17 00:00:00",
+        "2025-12-16 00:00:00",
         "regime_change"
       ],
       [
-        "2025-12-29 16:00:00",
-        "vol_spike"
-      ],
-      [
-        "2026-01-07 08:00:00",
+        "2025-12-22 20:00:00",
         "regime_change"
       ],
       [
-        "2026-01-14 04:00:00",
+        "2026-01-02 12:00:00",
+        "regime_change"
+      ],
+      [
+        "2026-01-12 04:00:00",
         "event_surprise"
       ],
       [
-        "2026-01-21 00:00:00",
+        "2026-01-19 00:00:00",
         "regime_change"
       ],
       [

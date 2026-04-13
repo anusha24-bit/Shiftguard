@@ -19,7 +19,6 @@ if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
 from src.detection.scheduled import detect_scheduled_shifts
-from src.detection.unexpected import detect_unexpected_shifts
 from src.detection.performance import detect_performance_drift
 
 DATA_DIR = os.path.join(PROJECT_ROOT, 'data', 'raw')
@@ -35,6 +34,20 @@ PAIR_CURRENCIES = {
     'GBPJPY': ['GBP', 'JPY'],
     'XAUUSD': ['USD'],
 }
+
+
+def load_unexpected_shift_detector():
+    """Import ADWIN-based detection only when the full detector is needed."""
+    try:
+        from src.detection.unexpected import detect_unexpected_shifts
+    except ModuleNotFoundError as exc:
+        if exc.name == 'river':
+            raise ModuleNotFoundError(
+                "Unexpected shift detection requires the optional 'river' dependency. "
+                "Install requirements.txt before running the full detection engine."
+            ) from exc
+        raise
+    return detect_unexpected_shifts
 
 
 def load_prediction_window(pair_name: str) -> tuple[pd.Timestamp, pd.Timestamp] | None:
@@ -109,6 +122,7 @@ def run_detection(pair_name: str) -> pd.DataFrame:
 
     # --- 2. Unexpected shifts ---
     print("\n  [2/3] Detecting unexpected shifts (ADWIN)...")
+    detect_unexpected_shifts = load_unexpected_shift_detector()
     unexpected = detect_unexpected_shifts(df, feature_cols, calendar_dates, delta=0.002)
     unexpected = filter_shifts_to_prediction_window(unexpected, prediction_window)
     print(f"    Found: {len(unexpected)} unexpected shifts")

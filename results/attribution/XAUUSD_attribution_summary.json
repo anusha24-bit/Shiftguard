@@ -1,13 +1,13 @@
 {
   "pair": "XAUUSD",
-  "total_shifts_analyzed": 148,
+  "total_shifts_analyzed": 50,
   "dominant_group_counts": {
-    "technical": 110,
-    "sentiment": 38
+    "sentiment": 34,
+    "technical": 16
   },
-  "mean_group_sentiment": "33.1",
-  "mean_group_technical": "37.6",
-  "mean_group_other": "15.8",
-  "mean_group_volatility": "9.5",
-  "mean_group_macro": "4.0"
+  "mean_group_sentiment": "35.4",
+  "mean_group_technical": "33.0",
+  "mean_group_other": "20.4",
+  "mean_group_volatility": "7.2",
+  "mean_group_macro": "4.1"
 }
