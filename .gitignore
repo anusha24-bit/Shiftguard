@@ -1,2 +1,22 @@
 .DS_Store
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+.env
+.env.*
+
+.ipynb_checkpoints/
+
+*.log
+
+# Local helper scripts / scratch outputs
+pnl_05sl.py
+
+# OS / editor noise
+Thumbs.db

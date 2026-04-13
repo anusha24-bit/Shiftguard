@@ -1,13 +1,13 @@
 {
   "Technical (RSI/MACD)": {
     "name": "Technical (RSI/MACD)",
-    "win_rate": 50.09,
-    "n_trades": 16818,
-    "trade_pct": 100.0,
-    "avg_win": 0.001812,
-    "avg_loss": 0.001807,
-    "profit_factor": 1.01,
-    "total_return": 0.166351
+    "win_rate": 50.92,
+    "n_trades": 3490,
+    "trade_pct": 20.8,
+    "avg_win": 0.001771,
+    "avg_loss": 0.001639,
+    "profit_factor": 1.13,
+    "total_return": 0.360118
   },
   "ML Direction (XGBoost)": {
     "name": "ML Direction (XGBoost)",
@@ -21,15 +21,15 @@
   },
   "ShiftGuard (Regime-Filtered)": {
     "name": "ShiftGuard (Regime-Filtered)",
-    "win_rate": 59.13,
-    "n_trades": 6797,
-    "trade_pct": 40.4,
-    "avg_win": 0.0023,
-    "avg_loss": 0.001694,
-    "profit_factor": 1.98,
-    "total_return": 4.565547
+    "win_rate": 59.79,
+    "n_trades": 5320,
+    "trade_pct": 31.6,
+    "avg_win": 0.002258,
+    "avg_loss": 0.00161,
+    "profit_factor": 2.1,
+    "total_return": 3.764739
   },
-  "regime_retrains": 454,
+  "regime_retrains": 455,
   "retrain_log": [
     [
       "2015-11-02 20:00:00",
@@ -116,27 +116,23 @@
       "regime_change"
     ],
     [
-      "2016-04-22 12:00:00",
-      "performance_drop"
+      "2016-04-26 08:00:00",
+      "regime_change"
     ],
     [
-      "2016-05-02 04:00:00",
+      "2016-05-03 04:00:00",
       "event_surprise"
     ],
     [
-      "2016-05-09 00:00:00",
+      "2016-05-12 00:00:00",
       "regime_change"
     ],
     [
-      "2016-05-16 20:00:00",
-      "regime_change"
+      "2016-05-18 20:00:00",
+      "event_surprise"
     ],
     [
-      "2016-05-23 16:00:00",
-      "regime_change"
-    ],
-    [
-      "2016-05-30 12:00:00",
+      "2016-05-25 16:00:00",
       "regime_change"
     ],
     [
@@ -168,11 +164,15 @@
       "event_surprise"
     ],
     [
-      "2016-08-09 20:00:00",
+      "2016-08-07 20:00:00",
+      "performance_drop"
+    ],
+    [
+      "2016-08-12 20:00:00",
       "event_surprise"
     ],
     [
-      "2016-08-16 16:00:00",
+      "2016-08-19 16:00:00",
       "regime_change"
     ],
     [
@@ -197,7 +197,7 @@
     ],
     [
       "2016-10-03 12:00:00",
-      "performance_drop"
+      "regime_change"
     ],
     [
       "2016-10-12 08:00:00",
@@ -796,11 +796,11 @@
       "regime_change"
     ],
     [
-      "2020-02-24 04:00:00",
+      "2020-02-21 08:00:00",
       "performance_drop"
     ],
     [
-      "2020-03-02 00:00:00",
+      "2020-02-28 04:00:00",
       "vol_spike"
     ],
     [
@@ -816,7 +816,7 @@
       "regime_change"
     ],
     [
-      "2020-04-01 08:00:00",
+      "2020-04-09 04:00:00",
       "performance_drop"
     ],
     [
@@ -981,7 +981,7 @@
     ],
     [
       "2021-03-29 08:00:00",
-      "regime_change"
+      "performance_drop"
     ],
     [
       "2021-04-07 04:00:00",
@@ -1017,7 +1017,7 @@
     ],
     [
       "2021-06-02 20:00:00",
-      "performance_drop"
+      "regime_change"
     ],
     [
       "2021-06-09 16:00:00",
@@ -1188,20 +1188,20 @@
       "regime_change"
     ],
     [
-      "2022-06-20 16:00:00",
-      "regime_change"
-    ],
-    [
-      "2022-06-30 12:00:00",
-      "regime_change"
-    ],
-    [
-      "2022-07-08 08:00:00",
-      "regime_change"
-    ],
-    [
-      "2022-07-15 04:00:00",
+      "2022-06-17 20:00:00",
       "performance_drop"
+    ],
+    [
+      "2022-06-24 16:00:00",
+      "regime_change"
+    ],
+    [
+      "2022-07-04 08:00:00",
+      "regime_change"
+    ],
+    [
+      "2022-07-12 04:00:00",
+      "regime_change"
     ],
     [
       "2022-07-22 00:00:00",
@@ -1213,7 +1213,7 @@
     ],
     [
       "2022-08-08 12:00:00",
-      "regime_change"
+      "performance_drop"
     ],
     [
       "2022-08-16 08:00:00",
@@ -1293,7 +1293,7 @@
     ],
     [
       "2023-01-13 20:00:00",
-      "regime_change"
+      "performance_drop"
     ],
     [
       "2023-01-20 16:00:00",
@@ -1488,23 +1488,23 @@
       "regime_change"
     ],
     [
-      "2024-03-06 12:00:00",
-      "performance_drop"
-    ],
-    [
-      "2024-03-13 08:00:00",
+      "2024-03-12 08:00:00",
       "regime_change"
     ],
     [
-      "2024-03-20 04:00:00",
+      "2024-03-19 04:00:00",
       "event_surprise"
     ],
     [
-      "2024-03-27 00:00:00",
+      "2024-03-26 00:00:00",
       "performance_drop"
     ],
     [
-      "2024-04-03 20:00:00",
+      "2024-04-01 20:00:00",
+      "performance_drop"
+    ],
+    [
+      "2024-04-08 16:00:00",
       "regime_change"
     ],
     [
@@ -1612,16 +1612,16 @@
       "regime_change"
     ],
     [
-      "2024-12-02 00:00:00",
+      "2024-11-29 04:00:00",
+      "performance_drop"
+    ],
+    [
+      "2024-12-06 00:00:00",
       "regime_change"
     ],
     [
-      "2024-12-08 20:00:00",
-      "regime_change"
-    ],
-    [
-      "2024-12-13 20:00:00",
-      "regime_change"
+      "2024-12-12 20:00:00",
+      "event_surprise"
     ],
     [
       "2024-12-20 16:00:00",
@@ -1701,7 +1701,7 @@
     ],
     [
       "2025-06-06 00:00:00",
-      "regime_change"
+      "performance_drop"
     ],
     [
       "2025-06-12 20:00:00",
@@ -1765,7 +1765,7 @@
     ],
     [
       "2025-10-15 20:00:00",
-      "regime_change"
+      "performance_drop"
     ],
     [
       "2025-10-22 16:00:00",
@@ -1800,28 +1800,32 @@
       "regime_change"
     ],
     [
-      "2026-01-05 04:00:00",
+      "2026-01-02 08:00:00",
+      "performance_drop"
+    ],
+    [
+      "2026-01-09 04:00:00",
       "regime_change"
     ],
     [
-      "2026-01-13 00:00:00",
-      "regime_change"
+      "2026-01-18 20:00:00",
+      "performance_drop"
     ],
     [
-      "2026-01-19 20:00:00",
+      "2026-01-23 20:00:00",
       "event_surprise"
     ],
     [
-      "2026-01-28 16:00:00",
+      "2026-02-02 12:00:00",
       "regime_change"
     ],
     [
-      "2026-02-05 12:00:00",
+      "2026-02-09 08:00:00",
       "regime_change"
     ],
     [
-      "2026-02-13 08:00:00",
-      "event_surprise"
+      "2026-02-16 04:00:00",
+      "regime_change"
     ],
     [
       "2026-02-24 00:00:00",
