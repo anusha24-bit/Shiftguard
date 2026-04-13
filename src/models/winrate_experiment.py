@@ -334,7 +334,6 @@ def run_pair(pair_name):
         regime_confidence = regime_probs.max(axis=1)
 
         # Determine trade direction from regime
-        # States 0,1 (trending up) → long; States 3,4 (trending down) → short; State 2 (ranging) → skip
         shiftguard_signals = np.zeros(len(X_chunk))
         shiftguard_policies = []
         for i in range(len(X_chunk)):
@@ -350,21 +349,6 @@ def run_pair(pair_name):
             )
             shiftguard_signals[i] = signal
             shiftguard_policies.append(policy)
-            continue
-
-            if conf < CONFIDENCE_THRESHOLD:
-                continue  # low confidence → sit out
-
-            # Check if near regime transition (sit out)
-            bars_since = chunk['bars_since_regime_change'].iloc[i]
-            if bars_since < 3:
-                continue  # just after a transition → sit out
-
-            if state in [0, 1]:   # trending up
-                shiftguard_signals[i] = 1
-            elif state in [3, 4]:  # trending down
-                shiftguard_signals[i] = -1
-            # state 2 (ranging) → skip
 
         # Record
         for i in range(len(actual_returns)):

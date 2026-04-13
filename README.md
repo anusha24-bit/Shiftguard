@@ -81,7 +81,7 @@ The current local version of ShiftGuard now supports:
 - a connected end-to-end pipeline from model outputs to detection, attribution, dashboard review, and retraining
 - a Streamlit dashboard with **auto-confirm by default** and **human override only when necessary**
 - selective retraining that consumes approved dashboard decisions
-- an initial **adaptive ShiftGuard trading policy** for `EURUSD`
+- an **adaptive ShiftGuard trading policy** used by the trading comparison path
   - `technical` shift -> technical followthrough posture
   - `scheduled + macro/sentiment` shift -> event-aligned posture
   - `unexpected / volatility` shift -> defensive shock posture
@@ -131,6 +131,7 @@ The current project-facing comparison structure is:
   - stacked ensemble in [src/models/baseline_stacked.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_stacked.py)
   - current structure: `RandomForest + BiLSTM-Attention -> LightGBM meta-learner`
   - included to test whether additional model complexity alone solves non-stationarity
+  - run separately from the canonical submission pipeline
 
 - **Main system**
   - ShiftGuard
@@ -149,7 +150,6 @@ Canonical local pipeline:
 - [src/models/baseline_technical.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_technical.py)
 - [src/models/baseline_ml_direction.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_ml_direction.py)
 - [src/models/winrate_experiment.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/winrate_experiment.py)
-- [src/models/baseline_stacked.py](/C:/Users/Sohan%20M/Desktop/Shiftguard/src/models/baseline_stacked.py)
 
 Core feature/data pipeline:
 
@@ -161,17 +161,9 @@ Core feature/data pipeline:
 
 ## Legacy / Pivoted Work
 
-Several files in `src/models/` reflect experiments from later pivots, including regime classification, live signal generation, and trading-oriented analysis. These are useful as local references, but they are **not** the canonical submission path.
+Earlier pivots explored regime classification, live signal generation, and profit-first analysis. Those superseded experiments are no longer part of the active repo tree and should not be treated as the canonical submission path.
 
-In particular, the following should be treated as legacy or supporting work unless explicitly needed:
-
-- `src/models/regime_classifier.py`
-- `src/models/live_predict.py`
-- `src/models/hpt_regime.py`
-- `src/models/transition_predictor.py`
-- profit-first analysis scripts
-
-Likewise, `results/archive/` contains superseded experimental work and should not be treated as the source of truth for the final project narrative.
+Legacy materials were moved out of the cleaned repository into a separate local backup, so the repo now reflects only the current submission-facing workflow.
 
 ## How To Run Locally
 
@@ -187,6 +179,12 @@ This runs:
 2. `src/detection/engine.py`
 3. `src/attribution/shap_analysis.py`
 4. `src/retraining/selective.py` if approved decisions already exist
+
+The supplementary stacked baseline is not part of `src/run_pipeline.py`; run it separately when you want the advanced complexity comparison:
+
+```bash
+python src/models/baseline_stacked.py
+```
 
 If no review decisions are present yet, the pipeline pauses and expects:
 
