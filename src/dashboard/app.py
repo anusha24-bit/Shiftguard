@@ -105,25 +105,49 @@ st.markdown(f"""
     .stTextInput > div > div > input,
     .stNumberInput > div > div > input {{
         border-color: {BG_SURFACE};
-        background: rgba(255, 250, 242, 0.9);
-        color: {TEXT_PRIMARY};
+        background: #ffffff !important;
+        color: #000000 !important;
         border-radius: 16px;
     }}
+    .stTextInput input,
     .stNumberInput input {{
-        color: {TEXT_PRIMARY};
+        background: #ffffff !important;
+        color: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+        caret-color: #000000 !important;
     }}
     .stNumberInput button {{
-        background: rgba(255, 250, 242, 0.95) !important;
-        color: {TEXT_PRIMARY} !important;
+        background: #ffffff !important;
+        color: #000000 !important;
         border-color: {BG_SURFACE} !important;
     }}
+    .stNumberInput button * {{
+        color: #000000 !important;
+        fill: #000000 !important;
+    }}
     .stNumberInput [data-baseweb="input"] {{
-        background: rgba(255, 250, 242, 0.95) !important;
+        background: #ffffff !important;
         border: 1px solid {BG_SURFACE} !important;
         border-radius: 16px !important;
     }}
+    .stNumberInput [data-baseweb="input"] > div,
+    .stTextInput [data-baseweb="input"] > div {{
+        background: #ffffff !important;
+        color: #000000 !important;
+    }}
+    .stSelectbox div[data-baseweb="select"] {{
+        background: #ffffff !important;
+        color: #000000 !important;
+        border-color: {BG_SURFACE} !important;
+        border-radius: 16px !important;
+    }}
+    .stSelectbox div[data-baseweb="select"] > div {{
+        background: #ffffff !important;
+        color: #000000 !important;
+    }}
     .stSelectbox div[data-baseweb="select"] * {{
-        color: {TEXT_PRIMARY};
+        color: #000000 !important;
+        fill: #000000 !important;
     }}
     div[data-baseweb="popover"],
     div[data-baseweb="menu"],
