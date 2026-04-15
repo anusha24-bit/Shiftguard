@@ -170,6 +170,52 @@ st.markdown(f"""
         background: rgba(31, 122, 115, 0.12) !important;
         color: {TEXT_PRIMARY} !important;
     }}
+    div[data-baseweb="popover"],
+    div[data-baseweb="popover"] > div,
+    div[data-baseweb="popover"] [data-baseweb="menu"],
+    div[data-baseweb="popover"] [role="listbox"],
+    div[data-baseweb="popover"] ul,
+    div[data-baseweb="menu"],
+    div[data-baseweb="menu"] > div,
+    div[data-baseweb="menu"] ul,
+    div[role="listbox"],
+    ul[role="listbox"] {{
+        background: #ffffff !important;
+        color: #000000 !important;
+        border-color: {BG_SURFACE} !important;
+    }}
+    div[data-baseweb="popover"] *,
+    div[data-baseweb="menu"] *,
+    div[role="listbox"] *,
+    ul[role="listbox"] * {{
+        color: #000000 !important;
+        fill: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+    }}
+    div[data-baseweb="popover"] [role="option"],
+    div[data-baseweb="menu"] [role="option"],
+    li[role="option"],
+    div[role="option"] {{
+        background: #ffffff !important;
+        color: #000000 !important;
+    }}
+    div[data-baseweb="popover"] [role="option"] > div,
+    div[data-baseweb="menu"] [role="option"] > div,
+    li[role="option"] > div,
+    div[role="option"] > div {{
+        background: transparent !important;
+    }}
+    div[data-baseweb="popover"] [role="option"][aria-selected="true"],
+    div[data-baseweb="menu"] [role="option"][aria-selected="true"],
+    div[data-baseweb="popover"] [role="option"]:hover,
+    div[data-baseweb="menu"] [role="option"]:hover,
+    li[role="option"][aria-selected="true"],
+    div[role="option"][aria-selected="true"],
+    li[role="option"]:hover,
+    div[role="option"]:hover {{
+        background: rgba(31, 122, 115, 0.14) !important;
+        color: #000000 !important;
+    }}
     .stDataFrame, .stTable {{
         color: {TEXT_PRIMARY};
     }}
@@ -179,16 +225,48 @@ st.markdown(f"""
         background: rgba(255, 250, 242, 0.96) !important;
         border-radius: 24px !important;
     }}
-    .stButton > button {{
+    .stButton > button,
+    div[data-testid="stButton"] button,
+    button[data-testid="baseButton-primary"],
+    button[data-testid="baseButton-secondary"],
+    button[kind="primary"],
+    button[kind="secondary"] {{
         border-radius: 999px;
         border: 1px solid {BG_SURFACE};
-        background: rgba(255, 250, 242, 0.95);
-        color: {TEXT_PRIMARY};
+        background: #ffffff !important;
+        color: #000000 !important;
     }}
-    .stButton > button[kind="primary"] {{
-        background: {TEXT_PRIMARY};
-        color: #fffaf2;
-        border-color: {TEXT_PRIMARY};
+    .stButton > button *,
+    div[data-testid="stButton"] button *,
+    button[data-testid="baseButton-primary"] *,
+    button[data-testid="baseButton-secondary"] *,
+    button[kind="primary"] *,
+    button[kind="secondary"] * {{
+        color: #000000 !important;
+        fill: #000000 !important;
+        -webkit-text-fill-color: #000000 !important;
+    }}
+    .stButton > button:hover,
+    .stButton > button:focus,
+    .stButton > button:active,
+    div[data-testid="stButton"] button:hover,
+    div[data-testid="stButton"] button:focus,
+    div[data-testid="stButton"] button:active,
+    button[data-testid="baseButton-primary"]:hover,
+    button[data-testid="baseButton-primary"]:focus,
+    button[data-testid="baseButton-primary"]:active,
+    button[data-testid="baseButton-secondary"]:hover,
+    button[data-testid="baseButton-secondary"]:focus,
+    button[data-testid="baseButton-secondary"]:active,
+    button[kind="primary"]:hover,
+    button[kind="primary"]:focus,
+    button[kind="primary"]:active,
+    button[kind="secondary"]:hover,
+    button[kind="secondary"]:focus,
+    button[kind="secondary"]:active {{
+        background: #ffffff !important;
+        color: #000000 !important;
+        border-color: {ACCENT} !important;
     }}
     [data-testid="stMetric"] {{
         background: rgba(255, 250, 242, 0.78);
