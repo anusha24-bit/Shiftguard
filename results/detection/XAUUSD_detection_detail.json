@@ -2,11 +2,22 @@
   "pair": "XAUUSD",
   "scheduled": [
     {
+      "datetime_utc": "2024-08-21 08:00:00",
+      "type": "scheduled",
+      "severity": 1,
+      "significant_features_ratio": 0.71,
+      "mean_ks_stat": 0.4556,
+      "mmd_score": 0.034429,
+      "event_names": "Prelim Benchmark Payrolls Revision",
+      "n_significant": 49,
+      "n_tested": 69
+    },
+    {
       "datetime_utc": "2024-09-12 04:00:00",
       "type": "scheduled",
       "severity": 4,
       "significant_features_ratio": 0.753,
-      "mean_ks_stat": 0.4993,
+      "mean_ks_stat": 0.5007,
       "mmd_score": 0.035253,
       "event_names": "Core PPI m/m; PPI m/m; Unemployment Claims",
       "n_significant": 55,
@@ -16,41 +27,30 @@
       "datetime_utc": "2024-09-26 08:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.736,
-      "mean_ks_stat": 0.4843,
+      "significant_features_ratio": 0.75,
+      "mean_ks_stat": 0.4873,
       "mmd_score": 0.03408,
       "event_names": "Fed Chair Powell Speaks",
-      "n_significant": 53,
+      "n_significant": 54,
       "n_tested": 72
-    },
-    {
-      "datetime_utc": "2024-10-17 04:00:00",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.714,
-      "mean_ks_stat": 0.4655,
-      "mmd_score": 0.034187,
-      "event_names": "Core Retail Sales m/m; Retail Sales m/m; Unemployment Claims",
-      "n_significant": 50,
-      "n_tested": 70
     },
     {
       "datetime_utc": "2024-10-24 04:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.45,
+      "significant_features_ratio": 0.764,
+      "mean_ks_stat": 0.4551,
       "mmd_score": 0.034598,
       "event_names": "Unemployment Claims",
-      "n_significant": 54,
+      "n_significant": 55,
       "n_tested": 72
     },
     {
       "datetime_utc": "2024-11-01 04:00:00",
       "type": "scheduled",
-      "severity": 3,
+      "severity": 4,
       "significant_features_ratio": 0.817,
-      "mean_ks_stat": 0.4812,
+      "mean_ks_stat": 0.4901,
       "mmd_score": 0.033948,
       "event_names": "Average Hourly Earnings m/m; Non-Farm Employment Change; Unemployment Rate",
       "n_significant": 58,
@@ -59,210 +59,210 @@
     {
       "datetime_utc": "2024-11-05 08:00:00",
       "type": "scheduled",
-      "severity": 4,
-      "significant_features_ratio": 0.767,
-      "mean_ks_stat": 0.5148,
+      "severity": 3,
+      "significant_features_ratio": 0.753,
+      "mean_ks_stat": 0.5114,
       "mmd_score": 0.03425,
       "event_names": "ISM Services PMI",
-      "n_significant": 56,
+      "n_significant": 55,
       "n_tested": 73
     },
     {
       "datetime_utc": "2024-12-20 04:00:00",
       "type": "scheduled",
-      "severity": 3,
+      "severity": 2,
       "significant_features_ratio": 0.753,
-      "mean_ks_stat": 0.4438,
+      "mean_ks_stat": 0.4516,
       "mmd_score": 0.03466,
       "event_names": "Core PCE Price Index m/m",
       "n_significant": 55,
       "n_tested": 73
     },
     {
-      "datetime_utc": "2025-01-08 04:00:00",
+      "datetime_utc": "2025-01-07 08:00:00",
       "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.714,
-      "mean_ks_stat": 0.4576,
-      "mmd_score": 0.035056,
-      "event_names": "ADP Non-Farm Employment Change; Unemployment Claims",
-      "n_significant": 50,
+      "severity": 3,
+      "significant_features_ratio": 0.729,
+      "mean_ks_stat": 0.4662,
+      "mmd_score": 0.035068,
+      "event_names": "ISM Services PMI; JOLTS Job Openings",
+      "n_significant": 51,
       "n_tested": 70
     },
     {
       "datetime_utc": "2025-03-11 08:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.817,
-      "mean_ks_stat": 0.477,
+      "significant_features_ratio": 0.789,
+      "mean_ks_stat": 0.465,
       "mmd_score": 0.033792,
       "event_names": "JOLTS Job Openings",
-      "n_significant": 58,
+      "n_significant": 56,
       "n_tested": 71
     },
     {
-      "datetime_utc": "2025-04-09 12:00:00",
+      "datetime_utc": "2025-04-02 12:00:00",
       "type": "scheduled",
       "severity": 1,
-      "significant_features_ratio": 0.704,
-      "mean_ks_stat": 0.4505,
-      "mmd_score": 0.03343,
-      "event_names": "FOMC Meeting Minutes",
+      "significant_features_ratio": 0.725,
+      "mean_ks_stat": 0.4423,
+      "mmd_score": 0.033652,
+      "event_names": "President Trump Speaks",
       "n_significant": 50,
-      "n_tested": 71
-    },
-    {
-      "datetime_utc": "2025-04-23 08:00:00",
-      "type": "scheduled",
-      "severity": 1,
-      "significant_features_ratio": 0.704,
-      "mean_ks_stat": 0.4493,
-      "mmd_score": 0.033351,
-      "event_names": "Flash Manufacturing PMI; Flash Services PMI",
-      "n_significant": 50,
-      "n_tested": 71
+      "n_tested": 69
     },
     {
       "datetime_utc": "2025-06-27 04:00:00",
       "type": "scheduled",
-      "severity": 1,
-      "significant_features_ratio": 0.71,
-      "mean_ks_stat": 0.4447,
+      "severity": 2,
+      "significant_features_ratio": 0.725,
+      "mean_ks_stat": 0.4512,
       "mmd_score": 0.034029,
       "event_names": "Core PCE Price Index m/m",
-      "n_significant": 49,
+      "n_significant": 50,
       "n_tested": 69
     },
     {
       "datetime_utc": "2025-08-22 12:00:00",
       "type": "scheduled",
       "severity": 2,
-      "significant_features_ratio": 0.714,
-      "mean_ks_stat": 0.4676,
+      "significant_features_ratio": 0.729,
+      "mean_ks_stat": 0.474,
       "mmd_score": 0.033914,
       "event_names": "President Trump Speaks",
-      "n_significant": 50,
+      "n_significant": 51,
       "n_tested": 70
     },
     {
       "datetime_utc": "2025-08-28 04:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.826,
-      "mean_ks_stat": 0.5671,
+      "significant_features_ratio": 0.841,
+      "mean_ks_stat": 0.5691,
       "mmd_score": 0.033855,
       "event_names": "Prelim GDP q/q; Unemployment Claims",
-      "n_significant": 57,
+      "n_significant": 58,
       "n_tested": 69
     },
     {
       "datetime_utc": "2025-09-10 04:00:00",
       "type": "scheduled",
-      "severity": 1,
-      "significant_features_ratio": 0.704,
-      "mean_ks_stat": 0.4446,
+      "severity": 2,
+      "significant_features_ratio": 0.732,
+      "mean_ks_stat": 0.4458,
       "mmd_score": 0.033973,
       "event_names": "Core PPI m/m; PPI m/m",
-      "n_significant": 50,
+      "n_significant": 52,
       "n_tested": 71
     },
     {
       "datetime_utc": "2025-09-26 04:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.4667,
+      "significant_features_ratio": 0.775,
+      "mean_ks_stat": 0.473,
       "mmd_score": 0.033934,
       "event_names": "Core PCE Price Index m/m",
-      "n_significant": 54,
+      "n_significant": 55,
       "n_tested": 71
     },
     {
       "datetime_utc": "2025-10-03 08:00:00",
       "type": "scheduled",
       "severity": 2,
-      "significant_features_ratio": 0.718,
-      "mean_ks_stat": 0.4697,
+      "significant_features_ratio": 0.746,
+      "mean_ks_stat": 0.4742,
       "mmd_score": 0.033452,
       "event_names": "ISM Services PMI",
-      "n_significant": 51,
+      "n_significant": 53,
       "n_tested": 71
     },
     {
       "datetime_utc": "2025-10-10 08:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.789,
-      "mean_ks_stat": 0.5049,
+      "significant_features_ratio": 0.803,
+      "mean_ks_stat": 0.5216,
       "mmd_score": 0.03336,
       "event_names": "Prelim UoM Consumer Sentiment; Prelim UoM Inflation Expectations",
-      "n_significant": 56,
+      "n_significant": 57,
       "n_tested": 71
     },
     {
       "datetime_utc": "2025-10-14 08:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.806,
-      "mean_ks_stat": 0.4995,
+      "significant_features_ratio": 0.819,
+      "mean_ks_stat": 0.5213,
       "mmd_score": 0.03336,
       "event_names": "Fed Chair Powell Speaks",
-      "n_significant": 58,
+      "n_significant": 59,
+      "n_tested": 72
+    },
+    {
+      "datetime_utc": "2025-10-29 12:00:00",
+      "type": "scheduled",
+      "severity": 2,
+      "significant_features_ratio": 0.736,
+      "mean_ks_stat": 0.4789,
+      "mmd_score": 0.033335,
+      "event_names": "FOMC Statement; Federal Funds Rate; FOMC Press Conference",
+      "n_significant": 53,
       "n_tested": 72
     },
     {
       "datetime_utc": "2025-11-26 04:00:00",
       "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.729,
-      "mean_ks_stat": 0.481,
+      "severity": 3,
+      "significant_features_ratio": 0.743,
+      "mean_ks_stat": 0.4931,
       "mmd_score": 0.033573,
       "event_names": "Unemployment Claims",
-      "n_significant": 51,
+      "n_significant": 52,
       "n_tested": 70
     },
     {
-      "datetime_utc": "2025-12-01 08:00:00",
+      "datetime_utc": "2025-12-03 04:00:00",
       "type": "scheduled",
       "severity": 2,
-      "significant_features_ratio": 0.704,
-      "mean_ks_stat": 0.4913,
-      "mmd_score": 0.033597,
-      "event_names": "ISM Manufacturing PMI",
-      "n_significant": 50,
+      "significant_features_ratio": 0.761,
+      "mean_ks_stat": 0.4547,
+      "mmd_score": 0.033596,
+      "event_names": "ADP Non-Farm Employment Change",
+      "n_significant": 54,
       "n_tested": 71
     },
     {
       "datetime_utc": "2026-01-23 08:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.4746,
+      "significant_features_ratio": 0.775,
+      "mean_ks_stat": 0.4892,
       "mmd_score": 0.033337,
       "event_names": "Flash Manufacturing PMI; Flash Services PMI",
-      "n_significant": 54,
+      "n_significant": 55,
       "n_tested": 71
     },
     {
       "datetime_utc": "2026-01-29 04:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.826,
-      "mean_ks_stat": 0.4667,
+      "significant_features_ratio": 0.841,
+      "mean_ks_stat": 0.4901,
       "mmd_score": 0.033334,
       "event_names": "Unemployment Claims",
-      "n_significant": 57,
+      "n_significant": 58,
       "n_tested": 69
     },
     {
       "datetime_utc": "2026-03-13 04:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.754,
-      "mean_ks_stat": 0.4669,
+      "significant_features_ratio": 0.768,
+      "mean_ks_stat": 0.4739,
       "mmd_score": 0.033343,
       "event_names": "Core PCE Price Index m/m; Prelim GDP q/q",
-      "n_significant": 52,
+      "n_significant": 53,
       "n_tested": 69
     },
     {
@@ -270,7 +270,7 @@
       "type": "scheduled",
       "severity": 2,
       "significant_features_ratio": 0.725,
-      "mean_ks_stat": 0.4814,
+      "mean_ks_stat": 0.4969,
       "mmd_score": 0.033343,
       "event_names": "Unemployment Claims",
       "n_significant": 50,
@@ -281,7 +281,7 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.754,
-      "mean_ks_stat": 0.4766,
+      "mean_ks_stat": 0.4973,
       "mmd_score": 0.033348,
       "event_names": "Flash Manufacturing PMI; Flash Services PMI",
       "n_significant": 52,
@@ -292,7 +292,7 @@
       "type": "scheduled",
       "severity": 4,
       "significant_features_ratio": 0.75,
-      "mean_ks_stat": 0.4681,
+      "mean_ks_stat": 0.4776,
       "mmd_score": 0.041688,
       "event_names": "Fed Chair Powell Speaks",
       "n_significant": 51,
@@ -352,9 +352,9 @@
     {
       "datetime_utc": "2025-04-07 12:00:00",
       "type": "unexpected",
-      "severity": 3,
-      "n_features_triggered": 3,
-      "trigger_features": "atr_14; vol_ratio; bb_width"
+      "severity": 4,
+      "n_features_triggered": 4,
+      "trigger_features": "atr_14; vol_ratio; bb_width; vix_change"
     },
     {
       "datetime_utc": "2025-04-22 20:00:00",
@@ -465,9 +465,104 @@
   "performance_drifts": [],
   "performance_warnings": [
     {
-      "datetime_utc": "2024-11-04 20:00:00",
+      "datetime_utc": "2024-10-31 12:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-10-31 16:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-10-31 20:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-11-01 00:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-11-01 04:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-11-01 08:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7333
+    },
+    {
+      "datetime_utc": "2024-11-01 16:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7333
+    },
+    {
+      "datetime_utc": "2024-11-01 20:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-11-03 20:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-11-04 00:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-11-04 04:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7667
+    },
+    {
+      "datetime_utc": "2024-11-04 08:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7333
+    },
+    {
+      "datetime_utc": "2024-11-04 12:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7
+    },
+    {
+      "datetime_utc": "2025-01-02 16:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.6333
+    },
+    {
+      "datetime_utc": "2025-01-05 20:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.6667
+    },
+    {
+      "datetime_utc": "2025-01-06 00:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7
+    },
+    {
+      "datetime_utc": "2025-01-06 04:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.6667
+    },
+    {
+      "datetime_utc": "2025-01-06 08:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.6667
+    },
+    {
+      "datetime_utc": "2025-01-06 12:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.6667
+    },
+    {
+      "datetime_utc": "2025-01-06 16:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.7
     }
   ],
   "total_shifts": 50

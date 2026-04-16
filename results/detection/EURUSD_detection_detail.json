@@ -6,32 +6,32 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.4846,
-      "mmd_score": 0.036848,
+      "mean_ks_stat": 0.4858,
+      "mmd_score": 0.036849,
       "event_names": "ISM Services PMI",
       "n_significant": 50,
       "n_tested": 67
     },
     {
-      "datetime_utc": "2024-08-13 04:00:00",
+      "datetime_utc": "2024-08-14 04:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.727,
-      "mean_ks_stat": 0.4432,
-      "mmd_score": 0.038062,
-      "event_names": "Core PPI m/m; PPI m/m",
-      "n_significant": 48,
+      "significant_features_ratio": 0.712,
+      "mean_ks_stat": 0.4343,
+      "mmd_score": 0.040872,
+      "event_names": "Core CPI m/m; CPI m/m; CPI y/y",
+      "n_significant": 47,
       "n_tested": 66
     },
     {
       "datetime_utc": "2024-08-22 00:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.738,
-      "mean_ks_stat": 0.4303,
+      "significant_features_ratio": 0.754,
+      "mean_ks_stat": 0.4236,
       "mmd_score": 0.039968,
       "event_names": "French Flash Services PMI; French Flash Manufacturing PMI; German Flash Services PMI",
-      "n_significant": 48,
+      "n_significant": 49,
       "n_tested": 65
     },
     {
@@ -39,8 +39,8 @@
       "type": "scheduled",
       "severity": 2,
       "significant_features_ratio": 0.716,
-      "mean_ks_stat": 0.4634,
-      "mmd_score": 0.037237,
+      "mean_ks_stat": 0.4682,
+      "mmd_score": 0.037238,
       "event_names": "Retail Sales m/m; Core Retail Sales m/m",
       "n_significant": 48,
       "n_tested": 67
@@ -49,19 +49,19 @@
       "datetime_utc": "2024-09-23 00:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.791,
-      "mean_ks_stat": 0.441,
+      "significant_features_ratio": 0.776,
+      "mean_ks_stat": 0.4333,
       "mmd_score": 0.039777,
       "event_names": "French Flash Manufacturing PMI; French Flash Services PMI; German Flash Services PMI",
-      "n_significant": 53,
+      "n_significant": 52,
       "n_tested": 67
     },
     {
       "datetime_utc": "2024-09-27 04:00:00",
       "type": "scheduled",
-      "severity": 4,
+      "severity": 3,
       "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.4386,
+      "mean_ks_stat": 0.4391,
       "mmd_score": 0.040363,
       "event_names": "Core PCE Price Index m/m",
       "n_significant": 50,
@@ -72,7 +72,7 @@
       "type": "scheduled",
       "severity": 5,
       "significant_features_ratio": 0.769,
-      "mean_ks_stat": 0.5315,
+      "mean_ks_stat": 0.539,
       "mmd_score": 0.03968,
       "event_names": "Non-Farm Employment Change; Unemployment Rate; Average Hourly Earnings m/m",
       "n_significant": 50,
@@ -83,8 +83,8 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.727,
-      "mean_ks_stat": 0.4957,
-      "mmd_score": 0.038018,
+      "mean_ks_stat": 0.4997,
+      "mmd_score": 0.038019,
       "event_names": "Main Refinancing Rate; Monetary Policy Statement; Unemployment Claims",
       "n_significant": 48,
       "n_tested": 66
@@ -92,12 +92,12 @@
     {
       "datetime_utc": "2024-10-24 04:00:00",
       "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.731,
-      "mean_ks_stat": 0.4438,
+      "severity": 3,
+      "significant_features_ratio": 0.761,
+      "mean_ks_stat": 0.4567,
       "mmd_score": 0.037041,
       "event_names": "Unemployment Claims",
-      "n_significant": 49,
+      "n_significant": 51,
       "n_tested": 67
     },
     {
@@ -105,7 +105,7 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.821,
-      "mean_ks_stat": 0.4465,
+      "mean_ks_stat": 0.4537,
       "mmd_score": 0.037712,
       "event_names": "ISM Manufacturing PMI",
       "n_significant": 55,
@@ -115,55 +115,33 @@
       "datetime_utc": "2024-11-07 04:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.818,
-      "mean_ks_stat": 0.5578,
+      "significant_features_ratio": 0.848,
+      "mean_ks_stat": 0.5639,
       "mmd_score": 0.037159,
       "event_names": "Unemployment Claims",
-      "n_significant": 54,
-      "n_tested": 66
-    },
-    {
-      "datetime_utc": "2024-11-22 08:00:00",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.697,
-      "mean_ks_stat": 0.4384,
-      "mmd_score": 0.038052,
-      "event_names": "Flash Manufacturing PMI; Flash Services PMI",
-      "n_significant": 46,
+      "n_significant": 56,
       "n_tested": 66
     },
     {
       "datetime_utc": "2024-12-16 00:00:00",
       "type": "scheduled",
       "severity": 2,
-      "significant_features_ratio": 0.701,
-      "mean_ks_stat": 0.446,
+      "significant_features_ratio": 0.716,
+      "mean_ks_stat": 0.4555,
       "mmd_score": 0.035626,
       "event_names": "French Flash Manufacturing PMI; French Flash Services PMI; German Flash Services PMI",
-      "n_significant": 47,
+      "n_significant": 48,
       "n_tested": 67
-    },
-    {
-      "datetime_utc": "2025-01-14 04:00:00",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.692,
-      "mean_ks_stat": 0.3746,
-      "mmd_score": 0.039138,
-      "event_names": "Core PPI m/m; PPI m/m",
-      "n_significant": 45,
-      "n_tested": 65
     },
     {
       "datetime_utc": "2025-03-03 08:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.821,
-      "mean_ks_stat": 0.5386,
+      "significant_features_ratio": 0.836,
+      "mean_ks_stat": 0.5405,
       "mmd_score": 0.038143,
       "event_names": "ISM Manufacturing PMI",
-      "n_significant": 55,
+      "n_significant": 56,
       "n_tested": 67
     },
     {
@@ -171,7 +149,7 @@
       "type": "scheduled",
       "severity": 4,
       "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.4448,
+      "mean_ks_stat": 0.4485,
       "mmd_score": 0.039777,
       "event_names": "Core PPI m/m; PPI m/m; Unemployment Claims",
       "n_significant": 51,
@@ -182,7 +160,7 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.761,
-      "mean_ks_stat": 0.4403,
+      "mean_ks_stat": 0.4435,
       "mmd_score": 0.038595,
       "event_names": "Federal Funds Rate; FOMC Statement; FOMC Economic Projections",
       "n_significant": 51,
@@ -193,7 +171,7 @@
       "type": "scheduled",
       "severity": 4,
       "significant_features_ratio": 0.785,
-      "mean_ks_stat": 0.5744,
+      "mean_ks_stat": 0.5777,
       "mmd_score": 0.037414,
       "event_names": "Unemployment Claims",
       "n_significant": 51,
@@ -204,7 +182,7 @@
       "type": "scheduled",
       "severity": 2,
       "significant_features_ratio": 0.716,
-      "mean_ks_stat": 0.4535,
+      "mean_ks_stat": 0.4652,
       "mmd_score": 0.036307,
       "event_names": "FOMC Meeting Minutes",
       "n_significant": 48,
@@ -215,7 +193,7 @@
       "type": "scheduled",
       "severity": 2,
       "significant_features_ratio": 0.716,
-      "mean_ks_stat": 0.4463,
+      "mean_ks_stat": 0.4547,
       "mmd_score": 0.037105,
       "event_names": "Fed Chair Powell Speaks",
       "n_significant": 48,
@@ -226,21 +204,32 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.746,
-      "mean_ks_stat": 0.4311,
+      "mean_ks_stat": 0.4398,
       "mmd_score": 0.037813,
       "event_names": "Unemployment Claims",
       "n_significant": 50,
       "n_tested": 67
     },
     {
+      "datetime_utc": "2025-04-30 04:00:00",
+      "type": "scheduled",
+      "severity": 2,
+      "significant_features_ratio": 0.712,
+      "mean_ks_stat": 0.4449,
+      "mmd_score": 0.037387,
+      "event_names": "ADP Non-Farm Employment Change; Advance GDP q/q; Employment Cost Index q/q",
+      "n_significant": 47,
+      "n_tested": 66
+    },
+    {
       "datetime_utc": "2025-07-03 08:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.738,
-      "mean_ks_stat": 0.4741,
+      "significant_features_ratio": 0.754,
+      "mean_ks_stat": 0.4682,
       "mmd_score": 0.039196,
       "event_names": "ISM Services PMI",
-      "n_significant": 48,
+      "n_significant": 49,
       "n_tested": 65
     },
     {
@@ -248,7 +237,7 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.716,
-      "mean_ks_stat": 0.449,
+      "mean_ks_stat": 0.4575,
       "mmd_score": 0.038902,
       "event_names": "ISM Manufacturing PMI",
       "n_significant": 48,
@@ -259,7 +248,7 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.742,
-      "mean_ks_stat": 0.4346,
+      "mean_ks_stat": 0.4444,
       "mmd_score": 0.038721,
       "event_names": "Prelim UoM Inflation Expectations; Prelim UoM Consumer Sentiment; Core PCE Price Index m/m",
       "n_significant": 49,
@@ -269,23 +258,12 @@
       "datetime_utc": "2026-01-21 04:00:00",
       "type": "scheduled",
       "severity": 4,
-      "significant_features_ratio": 0.758,
-      "mean_ks_stat": 0.5033,
+      "significant_features_ratio": 0.742,
+      "mean_ks_stat": 0.499,
       "mmd_score": 0.038553,
       "event_names": "President Trump Speaks",
-      "n_significant": 50,
+      "n_significant": 49,
       "n_tested": 66
-    },
-    {
-      "datetime_utc": "2026-04-01 04:00:00",
-      "type": "scheduled",
-      "severity": 2,
-      "significant_features_ratio": 0.698,
-      "mean_ks_stat": 0.3525,
-      "mmd_score": 0.052818,
-      "event_names": "ADP Non-Farm Employment Change; Core Retail Sales m/m; Retail Sales m/m",
-      "n_significant": 44,
-      "n_tested": 63
     }
   ],
   "unexpected": [
@@ -306,9 +284,9 @@
     {
       "datetime_utc": "2025-04-08 08:00:00",
       "type": "unexpected",
-      "severity": 2,
-      "n_features_triggered": 2,
-      "trigger_features": "vol_ratio; bb_width"
+      "severity": 3,
+      "n_features_triggered": 3,
+      "trigger_features": "vol_ratio; bb_width; vix_change"
     },
     {
       "datetime_utc": "2025-10-27 20:00:00",
@@ -328,105 +306,30 @@
   "performance_drifts": [],
   "performance_warnings": [
     {
-      "datetime_utc": "2025-03-05 12:00:00",
+      "datetime_utc": "2024-08-27 08:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.6667
+      "rolling_error_rate": 0.6
     },
     {
-      "datetime_utc": "2025-03-05 16:00:00",
+      "datetime_utc": "2024-08-27 16:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.6667
+      "rolling_error_rate": 0.6
     },
     {
-      "datetime_utc": "2025-03-05 20:00:00",
+      "datetime_utc": "2024-08-27 20:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.6667
+      "rolling_error_rate": 0.6
     },
     {
-      "datetime_utc": "2025-03-06 00:00:00",
+      "datetime_utc": "2024-08-28 00:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.6
+    },
+    {
+      "datetime_utc": "2024-08-28 08:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.6333
-    },
-    {
-      "datetime_utc": "2025-03-06 04:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6333
-    },
-    {
-      "datetime_utc": "2025-03-06 08:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6
-    },
-    {
-      "datetime_utc": "2025-03-06 12:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6
-    },
-    {
-      "datetime_utc": "2025-03-06 16:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6
-    },
-    {
-      "datetime_utc": "2025-03-06 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5667
-    },
-    {
-      "datetime_utc": "2025-03-07 00:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5333
-    },
-    {
-      "datetime_utc": "2025-03-07 04:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5333
-    },
-    {
-      "datetime_utc": "2025-03-07 08:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5333
-    },
-    {
-      "datetime_utc": "2025-03-11 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5
-    },
-    {
-      "datetime_utc": "2025-03-12 00:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5
-    },
-    {
-      "datetime_utc": "2025-03-12 04:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.4667
-    },
-    {
-      "datetime_utc": "2025-03-12 08:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.4667
-    },
-    {
-      "datetime_utc": "2025-03-12 12:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.4333
-    },
-    {
-      "datetime_utc": "2025-03-12 16:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.4
-    },
-    {
-      "datetime_utc": "2025-03-12 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.4333
-    },
-    {
-      "datetime_utc": "2025-03-13 00:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.4333
     }
   ],
-  "total_shifts": 31
+  "total_shifts": 29
 }

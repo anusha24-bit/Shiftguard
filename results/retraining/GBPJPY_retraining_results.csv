@@ -1,8 +1,6 @@
 shift_datetime,shift_type,dominant_group,adaptive_policy,pre_shift_mae,mae_no_retrain,recovery_no_retrain,mae_full_retrain,recovery_full_retrain,mae_window_retrain,recovery_window_retrain,mae_weighted_retrain,recovery_weighted_retrain,mae_adaptive_retrain,recovery_adaptive_retrain
-2024-08-14 20:00:00,performance_drift,sentiment,event_full,0.002264,0.002081,29,0.002073,29,0.002146,29,0.002102,29,0.002073,29
-2024-11-15 00:00:00,scheduled,sentiment,event_full,0.00126,0.002011,179,0.002008,179,0.002005,179,0.002005,179,0.002008,179
-2025-03-28 00:00:00,scheduled,sentiment,event_full,0.001606,0.00194,94,0.001925,94,0.002011,94,0.002005,94,0.001925,94
-2025-04-11 00:00:00,scheduled,sentiment,event_full,0.003382,0.001431,29,0.001419,29,0.001465,29,0.001468,29,0.001419,29
-2025-05-01 00:00:00,scheduled,sentiment,event_full,0.001142,0.001461,30,0.001456,30,0.001472,30,0.001476,31,0.001456,30
-2025-07-31 00:00:00,scheduled,sentiment,event_full,0.001048,0.001245,63,0.001234,63,0.001245,63,0.001245,63,0.001234,63
-2025-10-02 20:00:00,scheduled,sentiment,event_full,0.000856,0.001397,-1,0.001386,-1,0.001405,-1,0.001405,-1,0.001386,-1
+2025-03-28 00:00:00,scheduled,sentiment,event_full,0.001676,0.001992,94,0.001988,94,0.002011,94,0.002005,94,0.001988,94
+2025-04-11 00:00:00,scheduled,sentiment,event_full,0.003549,0.001462,29,0.001456,29,0.001465,29,0.001468,29,0.001456,29
+2025-05-01 00:00:00,scheduled,sentiment,event_full,0.001171,0.001476,30,0.001472,30,0.001472,30,0.001476,30,0.001472,30
+2025-07-31 00:00:00,scheduled,sentiment,event_full,0.001039,0.001248,77,0.001247,77,0.001245,77,0.001245,77,0.001247,77
+2025-10-02 20:00:00,scheduled,sentiment,event_full,0.000889,0.001404,98,0.001402,-1,0.001405,98,0.001405,98,0.001402,-1

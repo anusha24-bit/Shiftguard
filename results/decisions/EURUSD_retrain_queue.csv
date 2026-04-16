@@ -1,32 +1,30 @@
 datetime_utc,severity,type,event,status
 2024-08-05 08:00:00,3,scheduled,ISM Services PMI,queued
-2024-08-13 04:00:00,3,scheduled,Core PPI m/m; PPI m/m,queued
+2024-08-14 04:00:00,3,scheduled,Core CPI m/m; CPI m/m; CPI y/y,queued
 2024-08-22 00:00:00,3,scheduled,French Flash Services PMI; French Flash Manufacturing PMI; German Flash Services PMI,queued
 2024-08-26 00:00:00,1,unexpected,,queued
 2024-09-17 04:00:00,2,scheduled,Retail Sales m/m; Core Retail Sales m/m,queued
 2024-09-23 00:00:00,4,scheduled,French Flash Manufacturing PMI; French Flash Services PMI; German Flash Services PMI,queued
-2024-09-27 04:00:00,4,scheduled,Core PCE Price Index m/m,queued
+2024-09-27 04:00:00,3,scheduled,Core PCE Price Index m/m,queued
 2024-10-04 04:00:00,5,scheduled,Non-Farm Employment Change; Unemployment Rate; Average Hourly Earnings m/m,queued
 2024-10-17 04:00:00,3,scheduled,Main Refinancing Rate; Monetary Policy Statement; Unemployment Claims,queued
-2024-10-24 04:00:00,2,scheduled,Unemployment Claims,queued
+2024-10-24 04:00:00,3,scheduled,Unemployment Claims,queued
 2024-11-01 08:00:00,3,scheduled,ISM Manufacturing PMI,queued
 2024-11-07 04:00:00,4,scheduled,Unemployment Claims,queued
-2024-11-22 08:00:00,2,scheduled,Flash Manufacturing PMI; Flash Services PMI,queued
 2024-12-16 00:00:00,2,scheduled,French Flash Manufacturing PMI; French Flash Services PMI; German Flash Services PMI,queued
-2025-01-14 04:00:00,2,scheduled,Core PPI m/m; PPI m/m,queued
 2025-03-03 08:00:00,4,scheduled,ISM Manufacturing PMI,queued
 2025-03-10 16:00:00,1,unexpected,,queued
 2025-03-13 04:00:00,4,scheduled,Core PPI m/m; PPI m/m; Unemployment Claims,queued
 2025-03-19 12:00:00,3,scheduled,Federal Funds Rate; FOMC Statement; FOMC Economic Projections,queued
 2025-04-03 04:00:00,4,scheduled,Unemployment Claims,queued
-2025-04-08 08:00:00,2,unexpected,,queued
+2025-04-08 08:00:00,3,unexpected,,queued
 2025-04-09 12:00:00,2,scheduled,FOMC Meeting Minutes,queued
 2025-04-16 12:00:00,2,scheduled,Fed Chair Powell Speaks,queued
 2025-04-24 04:00:00,3,scheduled,Unemployment Claims,queued
+2025-04-30 04:00:00,2,scheduled,ADP Non-Farm Employment Change; Advance GDP q/q; Employment Cost Index q/q,queued
 2025-07-03 08:00:00,4,scheduled,ISM Services PMI,queued
 2025-10-27 20:00:00,1,unexpected,,queued
 2025-12-01 08:00:00,3,scheduled,ISM Manufacturing PMI,queued
 2025-12-05 08:00:00,3,scheduled,Prelim UoM Inflation Expectations; Prelim UoM Consumer Sentiment; Core PCE Price Index m/m,queued
 2026-01-21 04:00:00,4,scheduled,President Trump Speaks,queued
-2026-03-16 04:00:00,1,unexpected,,queued
-2026-04-01 04:00:00,2,scheduled,ADP Non-Farm Employment Change; Core Retail Sales m/m; Retail Sales m/m,queued
+2026-03-16 04:00:00,1,unexpected,nan,queued

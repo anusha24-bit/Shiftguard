@@ -11,23 +11,23 @@
   },
   "ML Direction (XGBoost)": {
     "name": "ML Direction (XGBoost)",
-    "win_rate": 49.95,
+    "win_rate": 49.57,
     "n_trades": 16680,
     "trade_pct": 100.0,
-    "avg_win": 0.002499,
-    "avg_loss": 0.002437,
-    "profit_factor": 1.02,
-    "total_return": 0.489408
+    "avg_win": 0.002506,
+    "avg_loss": 0.002431,
+    "profit_factor": 1.01,
+    "total_return": 0.286028
   },
   "ShiftGuard (Regime-Filtered)": {
     "name": "ShiftGuard (Regime-Filtered)",
-    "win_rate": 58.01,
-    "n_trades": 6777,
-    "trade_pct": 40.6,
-    "avg_win": 0.003157,
-    "avg_loss": 0.002307,
+    "win_rate": 58.04,
+    "n_trades": 6785,
+    "trade_pct": 40.7,
+    "avg_win": 0.003152,
+    "avg_loss": 0.002306,
     "profit_factor": 1.89,
-    "total_return": 5.8505
+    "total_return": 5.850182
   },
   "regime_retrains": 481,
   "retrain_log": [
@@ -1673,7 +1673,7 @@
     ],
     [
       "2024-08-28 00:00:00",
-      "regime_change"
+      "performance_drop"
     ],
     [
       "2024-09-03 20:00:00",
@@ -1705,7 +1705,7 @@
     ],
     [
       "2024-10-22 16:00:00",
-      "regime_change"
+      "performance_drop"
     ],
     [
       "2024-10-29 12:00:00",
@@ -1789,7 +1789,7 @@
     ],
     [
       "2025-04-11 16:00:00",
-      "performance_drop"
+      "regime_change"
     ],
     [
       "2025-04-21 08:00:00",
@@ -1900,27 +1900,27 @@
       "regime_change"
     ],
     [
-      "2025-12-09 04:00:00",
-      "performance_drop"
-    ],
-    [
-      "2025-12-16 00:00:00",
-      "regime_change"
-    ],
-    [
-      "2025-12-22 20:00:00",
-      "regime_change"
-    ],
-    [
-      "2026-01-02 12:00:00",
-      "regime_change"
-    ],
-    [
-      "2026-01-12 04:00:00",
+      "2025-12-10 04:00:00",
       "event_surprise"
     ],
     [
-      "2026-01-19 00:00:00",
+      "2025-12-17 00:00:00",
+      "regime_change"
+    ],
+    [
+      "2025-12-29 16:00:00",
+      "vol_spike"
+    ],
+    [
+      "2026-01-07 08:00:00",
+      "performance_drop"
+    ],
+    [
+      "2026-01-14 04:00:00",
+      "event_surprise"
+    ],
+    [
+      "2026-01-21 00:00:00",
       "regime_change"
     ],
     [

@@ -1,12 +1,13 @@
 {
   "pair": "EURUSD",
-  "total_shifts_analyzed": 31,
+  "total_shifts_analyzed": 29,
   "dominant_group_counts": {
-    "technical": 31
+    "technical": 18,
+    "sentiment": 11
   },
-  "mean_group_technical": "50.9",
-  "mean_group_sentiment": "39.9",
-  "mean_group_volatility": "5.5",
-  "mean_group_macro": "2.2",
-  "mean_group_other": "1.4"
+  "mean_group_sentiment": "40.6",
+  "mean_group_technical": "43.9",
+  "mean_group_volatility": "8.0",
+  "mean_group_macro": "5.0",
+  "mean_group_other": "2.5"
 }

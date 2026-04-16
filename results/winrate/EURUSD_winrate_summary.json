@@ -11,23 +11,23 @@
   },
   "ML Direction (XGBoost)": {
     "name": "ML Direction (XGBoost)",
-    "win_rate": 56.68,
+    "win_rate": 54.01,
     "n_trades": 16818,
     "trade_pct": 100.0,
-    "avg_win": 0.001425,
-    "avg_loss": 0.001043,
-    "profit_factor": 1.8,
-    "total_return": 6.039058
+    "avg_win": 0.001388,
+    "avg_loss": 0.00111,
+    "profit_factor": 1.48,
+    "total_return": 4.075878
   },
   "ShiftGuard (Regime-Filtered)": {
     "name": "ShiftGuard (Regime-Filtered)",
     "win_rate": 58.45,
-    "n_trades": 4727,
-    "trade_pct": 28.1,
-    "avg_win": 0.001723,
+    "n_trades": 4700,
+    "trade_pct": 27.9,
+    "avg_win": 0.001719,
     "avg_loss": 0.001136,
     "profit_factor": 2.14,
-    "total_return": 2.539135
+    "total_return": 2.512324
   },
   "regime_retrains": 494,
   "retrain_log": [
@@ -1832,39 +1832,39 @@
       "regime_change"
     ],
     [
-      "2025-05-01 16:00:00",
+      "2025-05-02 16:00:00",
       "performance_drop"
     ],
     [
-      "2025-05-08 12:00:00",
+      "2025-05-09 12:00:00",
       "regime_change"
     ],
     [
-      "2025-05-15 08:00:00",
+      "2025-05-19 04:00:00",
       "regime_change"
     ],
     [
-      "2025-05-22 04:00:00",
+      "2025-05-26 00:00:00",
       "regime_change"
     ],
     [
-      "2025-05-29 00:00:00",
+      "2025-06-01 20:00:00",
       "regime_change"
     ],
     [
-      "2025-06-04 20:00:00",
+      "2025-06-06 20:00:00",
       "event_surprise"
     ],
     [
-      "2025-06-11 16:00:00",
-      "regime_change"
-    ],
-    [
-      "2025-06-18 12:00:00",
+      "2025-06-13 16:00:00",
       "performance_drop"
     ],
     [
-      "2025-06-26 08:00:00",
+      "2025-06-20 12:00:00",
+      "performance_drop"
+    ],
+    [
+      "2025-06-27 08:00:00",
       "regime_change"
     ],
     [
@@ -1933,7 +1933,7 @@
     ],
     [
       "2025-11-11 00:00:00",
-      "performance_drop"
+      "regime_change"
     ],
     [
       "2025-11-17 20:00:00",

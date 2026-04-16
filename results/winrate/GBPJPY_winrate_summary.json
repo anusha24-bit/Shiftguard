@@ -11,23 +11,23 @@
   },
   "ML Direction (XGBoost)": {
     "name": "ML Direction (XGBoost)",
-    "win_rate": 52.15,
+    "win_rate": 51.9,
     "n_trades": 16818,
     "trade_pct": 100.0,
-    "avg_win": 0.001813,
-    "avg_loss": 0.001805,
-    "profit_factor": 1.1,
-    "total_return": 1.436116
+    "avg_win": 0.001832,
+    "avg_loss": 0.001784,
+    "profit_factor": 1.11,
+    "total_return": 1.633693
   },
   "ShiftGuard (Regime-Filtered)": {
     "name": "ShiftGuard (Regime-Filtered)",
-    "win_rate": 59.01,
-    "n_trades": 6636,
-    "trade_pct": 39.5,
-    "avg_win": 0.002296,
-    "avg_loss": 0.001683,
-    "profit_factor": 1.98,
-    "total_return": 4.444332
+    "win_rate": 59.12,
+    "n_trades": 6619,
+    "trade_pct": 39.4,
+    "avg_win": 0.002302,
+    "avg_loss": 0.001684,
+    "profit_factor": 1.99,
+    "total_return": 4.481531
   },
   "regime_retrains": 455,
   "retrain_log": [
@@ -1601,7 +1601,7 @@
     ],
     [
       "2024-11-04 16:00:00",
-      "performance_drop"
+      "regime_change"
     ],
     [
       "2024-11-14 12:00:00",
@@ -1728,8 +1728,8 @@
       "event_surprise"
     ],
     [
-      "2025-08-05 12:00:00",
-      "regime_change"
+      "2025-08-04 12:00:00",
+      "performance_drop"
     ],
     [
       "2025-08-14 08:00:00",

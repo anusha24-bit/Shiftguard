@@ -1,12 +1,12 @@
 {
   "pair": "GBPJPY",
-  "total_shifts_analyzed": 27,
+  "total_shifts_analyzed": 28,
   "dominant_group_counts": {
-    "sentiment": 27
+    "sentiment": 28
   },
-  "mean_group_sentiment": "59.6",
-  "mean_group_volatility": "7.7",
-  "mean_group_technical": "24.8",
-  "mean_group_macro": "3.4",
-  "mean_group_other": "4.4"
+  "mean_group_sentiment": "81.1",
+  "mean_group_technical": "16.2",
+  "mean_group_macro": "2.8",
+  "mean_group_other": "0.0",
+  "mean_group_volatility": "0.0"
 }

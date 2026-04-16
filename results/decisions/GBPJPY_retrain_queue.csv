@@ -1,9 +1,9 @@
 datetime_utc,severity,type,event,status
 2024-08-02 20:00:00,1,unexpected,,queued
-2024-08-14 20:00:00,3,performance_drift,,queued
 2024-08-19 00:00:00,1,unexpected,,queued
 2024-08-26 04:00:00,1,unexpected,,queued
-2024-11-15 00:00:00,3,scheduled,GDP m/m,queued
+2024-10-31 00:00:00,2,scheduled,BOJ Press Conference,queued
+2024-11-15 00:00:00,2,scheduled,GDP m/m,queued
 2024-11-27 08:00:00,1,unexpected,,queued
 2025-01-10 16:00:00,1,unexpected,,queued
 2025-02-03 00:00:00,1,unexpected,,queued
@@ -20,9 +20,10 @@ datetime_utc,severity,type,event,status
 2025-08-08 08:00:00,1,unexpected,,queued
 2025-08-22 16:00:00,1,unexpected,,queued
 2025-09-07 20:00:00,1,unexpected,,queued
-2025-10-02 20:00:00,3,scheduled,BOJ Gov Ueda Speaks,queued
+2025-10-02 20:00:00,4,scheduled,BOJ Gov Ueda Speaks,queued
 2025-10-20 20:00:00,2,unexpected,,queued
 2025-12-17 04:00:00,1,unexpected,,queued
 2026-01-09 00:00:00,1,unexpected,,queued
 2026-02-13 20:00:00,1,unexpected,,queued
-2026-03-30 16:00:00,2,unexpected,nan,queued
+2026-03-30 16:00:00,2,unexpected,,queued
+2026-04-06 20:00:00,1,unexpected,nan,queued

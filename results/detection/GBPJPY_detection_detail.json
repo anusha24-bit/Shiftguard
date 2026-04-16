@@ -2,11 +2,22 @@
   "pair": "GBPJPY",
   "scheduled": [
     {
+      "datetime_utc": "2024-10-31 00:00:00",
+      "type": "scheduled",
+      "severity": 2,
+      "significant_features_ratio": 0.758,
+      "mean_ks_stat": 0.4462,
+      "mmd_score": 0.037628,
+      "event_names": "BOJ Press Conference",
+      "n_significant": 50,
+      "n_tested": 66
+    },
+    {
       "datetime_utc": "2024-11-15 00:00:00",
       "type": "scheduled",
-      "severity": 3,
+      "severity": 2,
       "significant_features_ratio": 0.738,
-      "mean_ks_stat": 0.4592,
+      "mean_ks_stat": 0.4538,
       "mmd_score": 0.039342,
       "event_names": "GDP m/m",
       "n_significant": 48,
@@ -16,22 +27,22 @@
       "datetime_utc": "2025-03-28 00:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.866,
-      "mean_ks_stat": 0.4448,
-      "mmd_score": 0.037732,
+      "significant_features_ratio": 0.881,
+      "mean_ks_stat": 0.4547,
+      "mmd_score": 0.037731,
       "event_names": "Retail Sales m/m",
-      "n_significant": 58,
+      "n_significant": 59,
       "n_tested": 67
     },
     {
       "datetime_utc": "2025-04-11 00:00:00",
       "type": "scheduled",
       "severity": 5,
-      "significant_features_ratio": 0.776,
-      "mean_ks_stat": 0.4806,
+      "significant_features_ratio": 0.791,
+      "mean_ks_stat": 0.49,
       "mmd_score": 0.041006,
       "event_names": "GDP m/m",
-      "n_significant": 52,
+      "n_significant": 53,
       "n_tested": 67
     },
     {
@@ -39,8 +50,8 @@
       "type": "scheduled",
       "severity": 4,
       "significant_features_ratio": 0.758,
-      "mean_ks_stat": 0.45,
-      "mmd_score": 0.041597,
+      "mean_ks_stat": 0.4588,
+      "mmd_score": 0.041596,
       "event_names": "Claimant Count Change",
       "n_significant": 50,
       "n_tested": 66
@@ -49,11 +60,11 @@
       "datetime_utc": "2025-05-01 00:00:00",
       "type": "scheduled",
       "severity": 3,
-      "significant_features_ratio": 0.727,
-      "mean_ks_stat": 0.4732,
+      "significant_features_ratio": 0.758,
+      "mean_ks_stat": 0.4851,
       "mmd_score": 0.038981,
       "event_names": "BOJ Press Conference",
-      "n_significant": 48,
+      "n_significant": 50,
       "n_tested": 66
     },
     {
@@ -61,7 +72,7 @@
       "type": "scheduled",
       "severity": 3,
       "significant_features_ratio": 0.758,
-      "mean_ks_stat": 0.4563,
+      "mean_ks_stat": 0.4652,
       "mmd_score": 0.037942,
       "event_names": "BOJ Press Conference",
       "n_significant": 50,
@@ -70,12 +81,12 @@
     {
       "datetime_utc": "2025-10-02 20:00:00",
       "type": "scheduled",
-      "severity": 3,
-      "significant_features_ratio": 0.731,
-      "mean_ks_stat": 0.4512,
+      "severity": 4,
+      "significant_features_ratio": 0.761,
+      "mean_ks_stat": 0.4617,
       "mmd_score": 0.040099,
       "event_names": "BOJ Gov Ueda Speaks",
-      "n_significant": 49,
+      "n_significant": 51,
       "n_tested": 67
     }
   ],
@@ -212,118 +223,117 @@
       "severity": 2,
       "n_features_triggered": 2,
       "trigger_features": "atr_14; bb_width"
-    }
-  ],
-  "performance_drifts": [
+    },
     {
-      "datetime_utc": "2024-08-14 20:00:00",
-      "type": "performance_drift",
-      "rolling_error_rate": 0.5667,
-      "rolling_mae": 0.002189,
-      "severity": 3
+      "datetime_utc": "2026-04-06 20:00:00",
+      "type": "unexpected",
+      "severity": 1,
+      "n_features_triggered": 1,
+      "trigger_features": "vix_change"
     }
   ],
+  "performance_drifts": [],
   "performance_warnings": [
     {
-      "datetime_utc": "2024-08-11 20:00:00",
+      "datetime_utc": "2024-09-25 04:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.4
+      "rolling_error_rate": 0.7333
     },
     {
-      "datetime_utc": "2024-08-12 00:00:00",
+      "datetime_utc": "2024-09-25 12:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.4333
+      "rolling_error_rate": 0.7
     },
     {
-      "datetime_utc": "2024-08-12 04:00:00",
+      "datetime_utc": "2024-09-25 20:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.4333
+      "rolling_error_rate": 0.6667
     },
     {
-      "datetime_utc": "2024-08-12 08:00:00",
+      "datetime_utc": "2024-09-26 04:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.4333
+      "rolling_error_rate": 0.6667
     },
     {
-      "datetime_utc": "2024-08-12 12:00:00",
+      "datetime_utc": "2024-09-26 12:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.4
+      "rolling_error_rate": 0.6667
     },
     {
-      "datetime_utc": "2024-08-12 20:00:00",
+      "datetime_utc": "2024-09-30 16:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.4333
+      "rolling_error_rate": 0.6
     },
     {
-      "datetime_utc": "2024-08-13 00:00:00",
+      "datetime_utc": "2024-09-30 20:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.4667
+      "rolling_error_rate": 0.6333
     },
     {
-      "datetime_utc": "2024-08-13 04:00:00",
+      "datetime_utc": "2024-10-01 00:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.4667
+      "rolling_error_rate": 0.6
     },
     {
-      "datetime_utc": "2024-08-13 08:00:00",
+      "datetime_utc": "2024-10-02 08:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.5
     },
     {
-      "datetime_utc": "2024-08-13 12:00:00",
+      "datetime_utc": "2024-10-02 12:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.5333
     },
     {
-      "datetime_utc": "2024-08-13 16:00:00",
+      "datetime_utc": "2024-10-02 16:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.5333
     },
     {
-      "datetime_utc": "2024-08-13 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5333
-    },
-    {
-      "datetime_utc": "2024-08-14 00:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5333
-    },
-    {
-      "datetime_utc": "2024-08-14 04:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.5333
-    },
-    {
-      "datetime_utc": "2024-08-14 08:00:00",
+      "datetime_utc": "2024-10-02 20:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.5667
     },
     {
-      "datetime_utc": "2024-08-14 12:00:00",
+      "datetime_utc": "2024-10-03 00:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.5333
+    },
+    {
+      "datetime_utc": "2024-10-03 04:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.5333
+    },
+    {
+      "datetime_utc": "2024-10-03 08:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.5333
+    },
+    {
+      "datetime_utc": "2024-10-03 12:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.5667
     },
     {
-      "datetime_utc": "2024-08-14 16:00:00",
+      "datetime_utc": "2024-10-03 16:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.6
+    },
+    {
+      "datetime_utc": "2024-10-03 20:00:00",
+      "type": "performance_warning",
+      "rolling_error_rate": 0.6
+    },
+    {
+      "datetime_utc": "2024-10-04 00:00:00",
       "type": "performance_warning",
       "rolling_error_rate": 0.5667
     },
     {
-      "datetime_utc": "2024-10-31 16:00:00",
+      "datetime_utc": "2024-10-04 04:00:00",
       "type": "performance_warning",
-      "rolling_error_rate": 0.6667
-    },
-    {
-      "datetime_utc": "2024-10-31 20:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6667
-    },
-    {
-      "datetime_utc": "2024-11-01 00:00:00",
-      "type": "performance_warning",
-      "rolling_error_rate": 0.6333
+      "rolling_error_rate": 0.5667
     }
   ],
-  "total_shifts": 27
+  "total_shifts": 28
 }
