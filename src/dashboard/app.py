@@ -42,6 +42,90 @@ def load_json(rel_path):
     return {}
 
 
+SPREAD_MAP = {'EURUSD': 0.00010, 'GBPJPY': 0.00020, 'XAUUSD': 0.00030}
+COMMISSION_COST = 0.00003
+SLIPPAGE_COST = 0.00002
+SWAP_COST = 0.000005
+TAX_RATE = 0.30
+
+
+def strategy_net_returns(
+    df: pd.DataFrame,
+    signal_col: str,
+    pair_name: str,
+    leverage: float,
+    stop_loss_pct: float,
+) -> pd.Series:
+    """Per-bar leveraged net return after stop-loss and trading costs."""
+    if df.empty:
+        return pd.Series(dtype=float)
+
+    signals = df[signal_col].fillna(0).astype(float)
+    actual_returns = df['actual_return'].fillna(0).astype(float)
+    active = signals != 0
+    net = pd.Series(0.0, index=df.index, dtype=float)
+    if not active.any():
+        return net
+
+    leveraged = signals[active] * actual_returns[active] * leverage
+    stop_loss = (stop_loss_pct / 100) * leverage
+    capped = leveraged.clip(lower=-stop_loss)
+    cost_per_trade = (
+        SPREAD_MAP.get(pair_name, 0.00020) + COMMISSION_COST + SLIPPAGE_COST + SWAP_COST
+    ) * leverage
+    net.loc[active] = capped - cost_per_trade
+    return net
+
+
+def summarize_pnl(
+    df: pd.DataFrame,
+    signal_col: str,
+    pair_name: str,
+    capital: float,
+    leverage: float,
+    stop_loss_pct: float,
+) -> dict[str, float]:
+    net = strategy_net_returns(df, signal_col, pair_name, leverage, stop_loss_pct)
+    active = df[signal_col].fillna(0).astype(float) != 0
+    trades = int(active.sum())
+    if trades == 0:
+        return {'trades': 0, 'wr': 0, 'after_tax': 0}
+
+    pre_tax_profit = capital * net.cumsum()
+    running_tax = pre_tax_profit.clip(lower=0) * TAX_RATE
+    equity = (capital + pre_tax_profit - running_tax).clip(lower=0)
+    blown = equity <= 0
+    if blown.any():
+        first_blow_index = blown.idxmax()
+        equity.loc[first_blow_index:] = 0
+    after_tax = float(equity.iloc[-1] - capital)
+    return {
+        'trades': trades,
+        'wr': float((net.loc[active] > 0).mean() * 100),
+        'after_tax': after_tax,
+    }
+
+
+def equity_curve(
+    df: pd.DataFrame,
+    signal_col: str,
+    pair_name: str,
+    capital: float,
+    leverage: float,
+    stop_loss_pct: float,
+) -> pd.Series:
+    net = strategy_net_returns(df, signal_col, pair_name, leverage, stop_loss_pct)
+    pre_tax_profit = capital * net.cumsum()
+    running_tax = pre_tax_profit.clip(lower=0) * TAX_RATE
+    equity = (capital + pre_tax_profit - running_tax).clip(lower=0)
+
+    blown = equity <= 0
+    if blown.any():
+        first_blow_index = blown.idxmax()
+        equity.loc[first_blow_index:] = 0
+    return equity
+
+
 # ── Page Config ──────────────────────────────────────────────────────────────
 st.set_page_config(page_title="ShiftGuard", layout="wide")
 
@@ -352,6 +436,7 @@ with st.sidebar:
 trades = load_csv(f'results/winrate/{pair}_winrate_trades.csv')
 if not trades.empty:
     trades['datetime_utc'] = pd.to_datetime(trades['datetime_utc'])
+    trades = trades.sort_values('datetime_utc').reset_index(drop=True)
 
 price = load_csv(f'data/raw/price/{pair}_4h.csv')
 if not price.empty:
@@ -406,7 +491,7 @@ with tab1:
         overview_end = trades['datetime_utc'].max()
         overview_start = overview_end - pd.DateOffset(months=3)
         ov_chunk = trades[(trades['datetime_utc'] >= overview_start) & (trades['datetime_utc'] <= overview_end)]
-        spread_map = {'EURUSD': 0.00010, 'GBPJPY': 0.00020, 'XAUUSD': 0.00030}
+        overview_sl_pct = {'EURUSD': 0.5, 'GBPJPY': 0.75, 'XAUUSD': 1.0}.get(pair, 1.0)
 
         strategies = {}
         for sname, col in [('Technical (RSI/MACD)', 'tech_signal'),
@@ -425,26 +510,11 @@ with tab1:
             else:
                 wr, total_ret, n = 0, 0, 0
 
-            # 1-year realistic P&L
-            ov_s = ov_chunk[col].values
-            ov_r = ov_chunk['actual_return'].values
-            ov_mask = ov_s != 0
-            ov_nt = int(ov_mask.sum())
-            if ov_nt > 0:
-                ov_raw = ov_s[ov_mask] * ov_r[ov_mask]
-                ov_lp = ov_raw * overview_lev
-                ov_sl = {'EURUSD': 0.005, 'GBPJPY': 0.0075, 'XAUUSD': 0.01}.get(pair, 0.01)
-                ov_slv = ov_sl * overview_lev
-                ov_capped = np.where(ov_lp < -ov_slv, -ov_slv, ov_lp)
-                ov_cpt = (spread_map.get(pair, 0.0002) + 0.00003 + 0.00002 + 0.000005) * overview_lev
-                ov_gross = overview_capital * ov_capped.sum()
-                ov_costs = overview_capital * ov_cpt * ov_nt
-                ov_pt = ov_gross - ov_costs
-                ov_tax = max(0, ov_pt * 0.30)
-                ov_profit = ov_pt - ov_tax
-                ov_ret_pct = ov_profit / overview_capital * 100
-            else:
-                ov_profit, ov_ret_pct = 0, 0
+            ov_summary = summarize_pnl(
+                ov_chunk, col, pair, overview_capital, overview_lev, overview_sl_pct
+            )
+            ov_profit = ov_summary['after_tax']
+            ov_ret_pct = ov_profit / overview_capital * 100 if overview_capital > 0 else 0
 
             strategies[sname] = {'wr': wr, 'n': n, 'total_ret': total_ret,
                                  'pct': n / len(trades) * 100,
@@ -480,7 +550,7 @@ with tab1:
                     <hr style="border-color: {BG_SURFACE}; margin: 12px 0;">
                     <p style="color: {p_color}; font-size: 1.4rem; margin: 0; font-weight: 700;">${profit:+,.0f}</p>
                     <p style="color: {p_color}; font-size: 0.9rem; margin: 4px 0 0 0;">{ret_pct:+.1f}% return</p>
-                    <p style="color: {TEXT_DIM}; font-size: 0.7rem; margin: 6px 0 0 0;">3-month, 1:20 leverage, {ov_sl*100:.1f}% SL, after costs & tax</p>
+                    <p style="color: {TEXT_DIM}; font-size: 0.7rem; margin: 6px 0 0 0;">3-month, 1:20 leverage, {overview_sl_pct:.1f}% SL, after costs & tax</p>
                 </div>
                 """, unsafe_allow_html=True)
 
@@ -522,44 +592,12 @@ with tab2:
         end_date = trades['datetime_utc'].max()
         start_date = end_date - pd.DateOffset(months=horizon_months)
 
-        spread_map = {'EURUSD': 0.00010, 'GBPJPY': 0.00020, 'XAUUSD': 0.00030}
-        commission = 0.00003
-        slippage_cost = 0.00002
-        swap_cost = 0.000005
-        sl = sl_pct / 100
-        tax_rate = 0.30
-
         chunk = trades[(trades['datetime_utc'] >= start_date) & (trades['datetime_utc'] <= end_date)]
 
         results_pnl = {}
         for sname, col in [('Technical', 'tech_signal'), ('ML Direction', 'ml_signal'),
                            ('ShiftGuard', 'sg_signal')]:
-            s = chunk[col].values
-            r = chunk['actual_return'].values
-            tm = s != 0
-            nt = int(tm.sum())
-            if nt == 0:
-                results_pnl[sname] = {'trades': 0, 'wr': 0, 'after_tax': 0}
-                continue
-
-            raw = s[tm] * r[tm]
-            lp = raw * leverage
-            slv = sl * leverage
-            capped = np.where(lp < -slv, -slv, lp)
-            cpt = (spread_map.get(pair, 0.0002) + commission + slippage_cost + swap_cost) * leverage
-            net = capped - cpt
-
-            gross = capital * capped.sum()
-            costs = capital * cpt * nt
-            pt = gross - costs
-            tx = max(0, pt * tax_rate)
-            at = pt - tx
-
-            results_pnl[sname] = {
-                'trades': nt,
-                'wr': int((net > 0).sum()) / nt * 100,
-                'after_tax': at,
-            }
+            results_pnl[sname] = summarize_pnl(chunk, col, pair, capital, leverage, sl_pct)
 
         st.markdown(f"#### Results: {horizon_months}mo with 1:{leverage} leverage on {PAIR_LABELS[pair]}")
         cols = st.columns(3)
@@ -586,14 +624,13 @@ with tab2:
                 """, unsafe_allow_html=True)
 
         st.markdown("#### Equity Curve")
-        st.markdown("*Watch how each strategy grows (or destroys) your capital over time.*")
+        st.markdown("*Uses the same leverage, stop-loss, transaction-cost, and tax assumptions as the cards above.*")
 
         fig = go.Figure()
         for sname, col, color in [('Technical', 'tech_signal', '#555'),
                                    ('ML Direction', 'ml_signal', '#888'),
                                    ('ShiftGuard', 'sg_signal', ACCENT)]:
-            pnl = chunk[col] * chunk['actual_return']
-            equity = capital * (1 + (pnl * leverage).cumsum())
+            equity = equity_curve(chunk, col, pair, capital, leverage, sl_pct)
             width = 3 if 'ShiftGuard' in sname else 1
             fig.add_trace(go.Scatter(x=chunk['datetime_utc'], y=equity, name=sname,
                                      line=dict(color=color, width=width)))

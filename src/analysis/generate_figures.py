@@ -21,6 +21,15 @@ WINRATE_DIR = PROJECT_ROOT / 'results' / 'winrate'
 FIGURES_DIR = PROJECT_ROOT / 'results' / 'figures'
 FIGURES_DIR.mkdir(parents=True, exist_ok=True)
 
+DEFAULT_CAPITAL = 10000
+DEFAULT_LEVERAGE = 20
+DEFAULT_STOP_LOSS_PCT = 1.0
+SPREAD_MAP = {'EURUSD': 0.00010, 'GBPJPY': 0.00020, 'XAUUSD': 0.00030}
+COMMISSION_COST = 0.00003
+SLIPPAGE_COST = 0.00002
+SWAP_COST = 0.000005
+TAX_RATE = 0.30
+
 
 def load_trade_data(pairs: list[str]) -> dict[str, pd.DataFrame]:
     data: dict[str, pd.DataFrame] = {}
@@ -45,8 +54,46 @@ def load_winrate_overall() -> dict[str, dict[str, dict[str, float]]]:
         return json.load(f)
 
 
-def strategy_curve(df: pd.DataFrame, signal_col: str) -> pd.Series:
-    return (df[signal_col].astype(float) * df['actual_return'].astype(float)).cumsum()
+def strategy_net_returns(
+    df: pd.DataFrame,
+    signal_col: str,
+    pair: str,
+    leverage: float = DEFAULT_LEVERAGE,
+    stop_loss_pct: float = DEFAULT_STOP_LOSS_PCT,
+) -> pd.Series:
+    signals = df[signal_col].fillna(0).astype(float)
+    returns = df['actual_return'].fillna(0).astype(float)
+    active = signals != 0
+    net = pd.Series(0.0, index=df.index, dtype=float)
+    if not active.any():
+        return net
+
+    leveraged = signals[active] * returns[active] * leverage
+    stop_loss = (stop_loss_pct / 100) * leverage
+    capped = leveraged.clip(lower=-stop_loss)
+    cost_per_trade = (
+        SPREAD_MAP.get(pair, 0.00020) + COMMISSION_COST + SLIPPAGE_COST + SWAP_COST
+    ) * leverage
+    net.loc[active] = capped - cost_per_trade
+    return net
+
+
+def strategy_equity_curve(
+    df: pd.DataFrame,
+    signal_col: str,
+    pair: str,
+    capital: float = DEFAULT_CAPITAL,
+) -> pd.Series:
+    net = strategy_net_returns(df, signal_col, pair)
+    pre_tax_profit = capital * net.cumsum()
+    running_tax = pre_tax_profit.clip(lower=0) * TAX_RATE
+    equity = (capital + pre_tax_profit - running_tax).clip(lower=0)
+
+    blown = equity <= 0
+    if blown.any():
+        first_blow_index = blown.idxmax()
+        equity.loc[first_blow_index:] = 0
+    return equity
 
 
 def compute_statistical_tests(data: dict[str, pd.DataFrame]) -> dict[str, dict[str, float | int | str]]:
@@ -138,11 +185,11 @@ def plot_equity_curves(data: dict[str, pd.DataFrame], pairs: list[str]) -> None:
 
     for ax, pair in zip(axes, pairs):
         df = data[pair]
-        ax.plot(df['datetime_utc'], strategy_curve(df, 'tech_signal'), label='Technical', alpha=0.9)
-        ax.plot(df['datetime_utc'], strategy_curve(df, 'ml_signal'), label='ML Direction', alpha=0.9)
-        ax.plot(df['datetime_utc'], strategy_curve(df, 'sg_signal'), label='ShiftGuard', alpha=0.9)
-        ax.set_title(f'Equity Curves - {pair}')
-        ax.set_ylabel('Cumulative Return')
+        ax.plot(df['datetime_utc'], strategy_equity_curve(df, 'tech_signal', pair), label='Technical', alpha=0.9)
+        ax.plot(df['datetime_utc'], strategy_equity_curve(df, 'ml_signal', pair), label='ML Direction', alpha=0.9)
+        ax.plot(df['datetime_utc'], strategy_equity_curve(df, 'sg_signal', pair), label='ShiftGuard', alpha=0.9)
+        ax.set_title(f'Equity Curves - {pair} ($10k, 1:20, 1% SL)')
+        ax.set_ylabel('Portfolio Value ($)')
         ax.grid(alpha=0.2)
         ax.legend()
 
